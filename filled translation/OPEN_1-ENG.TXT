@@ -1,0 +1,813 @@
+Character Name: Cole
+Dialog: ‥‥やっと家についたか。
+New Dialog: ...Finally, back home.
+
+Character Name: Cole
+Dialog: 大体、壁塗装なんてパートにやらせりゃいいのに、社員の俺までコキ使うんだもんな。
+New Dialog: I'm a full-time employee but I got worked hard today painting walls. They should've made the temps do it.
+
+Character Name: Cole
+Dialog: 何で俺がそんな雑用までやらなきゃいけないんだ。おかげで今日もまた残業だよ。
+New Dialog: Why do I get to do all the chores? Thanks to that, I had to work overtime again today.
+
+Character Name: Cole
+Dialog: ま、残業手当がデカイしな‥‥しかたないか‥‥。
+New Dialog: Oh well. They pay well for overtime so I guess I can't complain.
+
+Character Name: Cole
+Dialog: もう汗でグチョグチョだよ。シャワーでも浴びてすっきりするか。
+New Dialog: I've gotten all sweaty. I should go take a shower and relax.
+
+Character Name: Cole
+Dialog: ふう、すっきりしたぜ‥‥。
+New Dialog: Sigh, all relaxed now...
+
+Character Name: Cole
+Dialog: シャワーの後のビールがたまらなく好きでね。この味を一度覚えたら、死ぬまで止められないな。
+New Dialog: I absolutely love my after-shower beer. Once you try it once, you can't stop until you die.
+
+Character Name: Cole
+Dialog: 今日も１日が仕事で終わっちゃったな。何か面白い事でもないかな‥‥。
+New Dialog: Another work day over. I just want something interesting to happen for once...
+
+Character Name: Cole
+Dialog: ‥‥世間がアッと驚くような大事件でもさ。
+New Dialog: ...Even if it's some huge incident that astounds the entire world.
+
+Character Name: Cole
+Dialog: ん！？　こんな夜遅くに誰からだろう。
+New Dialog: Hm?! Who could it be, calling this late?
+
+Character Name: Cole
+Dialog: はい、コールですが‥‥。
+New Dialog: Hello, this is Cole speaking...
+
+Character Name: Doc
+Dialog: もしもしコールか、わしだクーガーだ。
+New Dialog: Cole, it's me, Cooger.
+
+Character Name: Cole
+Dialog: なんだ、ドクか。
+New Dialog: Oh, it's you, Doc.
+
+Character Name: Cole
+Dialog: ‥‥‥こんな夜中にどうしたんだ？
+New Dialog: ...Why are you calling in the middle of the night?
+
+Character Name: Doc
+Dialog: 凄いんだよコール！　今回の発明を見れば流石のお前さんでもビックリして階段から転げ落ちるぞ。
+New Dialog: It's amazing, Cole! Once you see my new invention, even someone like you will get so surprised you'd fall off the stairs!
+
+Character Name: Cole
+Dialog: またかよ、この間も人工心臓の実験中に血液を送りすぎてパンクしちゃったじゃないか。
+New Dialog: This again? During your last experiment you pumped too much blood into that artifical  t and got it punctured.
+
+Character Name: Cole
+Dialog: 俺のブルゾンまで血みどろになったんだ。あいつを洗うのは生臭くて大変だったんだぞ。
+New Dialog: My jacket got soaked in blood. It was a pain to wash it and get rid of the smell.
+
+Character Name: Doc
+Dialog: 今度は間違いなく大丈夫だよ、すぐ支度して来てくれないか？
+New Dialog: This time I assure you it's amazing. And no blood! Well, less blood. Can you come over right now?
+
+Character Name: Cole
+Dialog: え、今からか？　俺、今日疲れてんだよな。明日じゃダメ？
+New Dialog: Right now? I'm too tired today. How about tomorrow?
+
+Character Name: Doc
+Dialog: だめ。じゃないとお前さんとシーラ君の仲をテリーに言っちゃう。
+New Dialog: Right now. If you don't, I'll tell Terry about you and Sheila.
+
+Character Name: Cole
+Dialog: わ、判ったよ。行けばいいんでしょ、行けば。
+New Dialog: G-Got it. You won't do that if I come over, right?
+
+Character Name: Doc
+Dialog: あははは。じゃ、待ってるからね。
+New Dialog: Ha ha ha. I'll be waiting!
+
+Character Name: Cole
+Dialog: ドクは何かあると、すぐに俺とシーラの仲をバラすって脅しかけるんだ。
+New Dialog: Doc's always threatening to expose me and Sheila whenever he wants something.
+
+Character Name: Cole
+Dialog: ドクもドクだけど、テリーの奴にもまいっちまうよ。俺とシーラが付き合ってる事を知らずにシーラを口説こうとしてるし。その上、その相談まで俺に持ってくるなんて‥‥‥。
+New Dialog: Well, it's not like the situation with Terry is any better. He doesn't know I'm seeing her, and he's planning to make a move on her. And he came to ask me for advice about it...
+
+Character Name: Cole
+Dialog: ま、この事はバレた時になったら考えればいいか。
+New Dialog: Well, I'll figure it out when he finds out.
+
+Character Name: Cole
+Dialog: あ、そろそろ行かないとドクはうるさいからな。今度は何を作ったんだろ‥‥。
+New Dialog: Ah, if I don't leave now Doc will never let me hear the end of it. I wonder what he's been making this time...
+
+Character Name: Cole
+Dialog: ドク、ここで待ってたのか？
+New Dialog: Why are you waiting here, Doc?
+
+Character Name: Doc
+Dialog: うむ、近所の目もあるし、こんな所でお前さんに大声で呼び出されてはかなわんからな。
+New Dialog: I have peeping neighbors, so I couldn't have you call me out loud.
+
+Character Name: Doc
+Dialog: ‥‥‥今度の研究だけは他人には絶対に知られたくないんだよ。
+New Dialog: ...I don't want anyone else to know about this invention.
+
+Character Name: Cole
+Dialog: そんな大袈裟な‥‥ところで今度の発明っていうのは？
+New Dialog: How bombastic... So, what is this invention of yours?
+
+Character Name: Doc
+Dialog: 研究室にあるんだ。さあ、上がってくれ。
+New Dialog: It's in the lab. Come on up.
+
+Character Name: Cole
+Dialog: ‥‥‥しかし、いつ見てもすごい研究室だなぁ。誰が見たってここが大学教授の家だとは信じないぜ？
+New Dialog: ...I never fail to be impressed how amazing this lab is. I bet most people won't even believe this is just a university professor's house.
+
+Character Name: Doc
+Dialog: まあ、そう言うな。嫁さんが死んでからというもの、楽しみが研究しかないんでな。仕方なかろう？
+New Dialog: Come on, don't say that. Since my wife died all I have is my research.
+
+Character Name: Cole
+Dialog: あ‥‥‥ごめんよ。そうだったよね‥‥‥そう落ち込むなよ。
+New Dialog: Ah... I'm sorry. I forgot... Don't look so sad.
+
+Character Name: Cole
+Dialog: 口が過ぎたよ、俺だって悪気は‥‥‥‥‥‥‥‥‥
+New Dialog: I just spoke without thinking, I didn't mean......
+
+Character Name: Cole
+Dialog: ‥‥‥‥あれ？
+New Dialog: ...Huh?
+
+Character Name: Cole
+Dialog: ドク、今なんか変な声が聞こえなかったかい？　なんかうめき声のような‥‥。
+New Dialog: Doc, did you hear a strange voice right now? Like someone moaning...
+
+Character Name: Cole
+Dialog: ‥‥ほら、なんか赤ん坊のような‥‥。
+New Dialog: ...Yeah, kinda sounds like a baby...
+
+Character Name: Doc
+Dialog: コール、危ない！
+New Dialog: Cole, look out!
+
+Character Name: Cole
+Dialog: うわわわああああっ！ Cooger: 伏せろ、コール！！
+New Dialog: Uwaaaaaaaaaaaa!\nCooger: Cole, duck!
+
+Character Name: Cole
+Dialog: な、なんだぁ！！　今の猫は！？
+New Dialog: W-What was up with that cat?!
+
+Character Name: Doc
+Dialog: コール！　噛まれたか？　引っ掻かれなかったか？
+New Dialog: Cole! Did you get bitten? Scratched? Overly frazzled?
+
+Character Name: Cole
+Dialog: あ、ああ、ああ‥‥‥どこも痛くはない。大丈夫だよ。それより‥‥‥
+New Dialog: Um... Nothing hurts. I'm okay. But forget about me...
+
+Character Name: Cole
+Dialog: あの猫はドクが飼っている猫じゃなかったの？
+New Dialog: That was the cat you're keeping, wasn't it?
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥そうだ。キティだよ。
+New Dialog: ...That's right. It's Kitty.
+
+Character Name: Cole
+Dialog: 「キティだよ」って‥‥どうして飼い猫が襲ってくるんだよ！？　狂犬病にでもかかったのか！？
+New Dialog: "It's Kitty", huh? Why's your pet cat attacked me?! Does it have the rabies?
+
+Character Name: Doc
+Dialog: 違うんだ、あの猫は１週間も前に死んでしまったんだよ。
+New Dialog: No, no. The cat died a week ago.
+
+Character Name: Cole
+Dialog: 馬鹿言うなよ。現に今、俺に飛び掛かってきたじゃないか！　あの借りてきた猫のようにおとなしいキティがだぞ！？
+New Dialog: Don't be crazy. It just jumped right at me! Was it really the same meek and quiet Kitty I know?!
+
+Character Name: Cole
+Dialog: キティは狂犬病にやられていたんだろ？　隠さずに言えよ。俺は保健所の人間じゃないんだしさ。
+New Dialog: It must have gotten the rabies! Just give it to me straight. I'm not a health inspector, you know.
+
+Character Name: Doc
+Dialog: コール‥‥‥キティは狂犬病じゃない。違うんだ。
+New Dialog: Cole... Kitty doesn't have the rabies. You've got it wrong.
+
+Character Name: Cole
+Dialog: 何が違うんだよ！　何が《１週間前に死んでる》だよ！　しかも銃でメッタ撃ちにするなんて、俺を助ける為だとしてもあまりにひどすぎるよ！！
+New Dialog: What do you mean, got it wrong?! What's up with that "died a week ago" shit?! Besides, even if you wanted to save me, shooting it with a gun was way too cruel!!
+
+Character Name: Doc
+Dialog: とにかく聞いてくれ！　コール！
+New Dialog: Just listen, Cole!
+
+Character Name: Doc
+Dialog: キティは１週間前に、確かに老衰で死んでしまったんだ。間違っても狂犬病なんかじゃあなかったよ。
+New Dialog: Kitty did die of old age a week ago. I'm quite certain it wasn't the rabies.
+
+Character Name: Doc
+Dialog: キティの死骸を見つけたときに、ちょうど蘇生薬のサンプルが出来てな。
+New Dialog: I found the body just after I made the first sample of my resurrection drug.
+
+Character Name: Cole
+Dialog: 蘇生薬！？　蘇生薬って死んだ者を生き返らせるっていうアレかい？
+New Dialog: Ressurection drug?! You mean the kind that can bring dead things back to life?
+
+Character Name: Doc
+Dialog: そうだ。老衰とはいえ、あまりにも可哀想だったんでな‥‥実験がてらキティに蘇生薬を打ってしまったんだよ。
+New Dialog: Yes. Kitty died of old age, but I still felt sorry for it... So I made it my test subject.
+
+Character Name: Cole
+Dialog: ドク、俺はあんたが理解できないよ。蘇生薬なんて作れる筈がないだろう。確かにあんたは優秀な科学者だけど‥‥そんな映画みたいな話は‥‥。
+New Dialog: Doc, I can't understand what you're saying. There's no way you made a resurrection drug. Sure, you're a genius scientist, but that's just stuff you see in movies...
+
+Character Name: Doc
+Dialog: 蘇生薬の話なんか、誰だって馬鹿馬鹿しくて聞いてられなくなるのが正常だ。コール、お前さんが信じないのは判るよ。それは誠にもって正しい反応だ。
+New Dialog: I know quite well anyone would think a resurrection drug is impossible. I know you don't believe me, Cole. Your reaction is quite correct, in fact.
+
+Character Name: Doc
+Dialog: しかしだ、お前さんには不可解な事実も事実として受けとめる事も必要だな。
+New Dialog: And yet, I must make you realize that the impossible is very much real.
+
+Character Name: Cole
+Dialog: な、何をするんだ？
+New Dialog: W-What are you going to do?
+
+Character Name: Doc
+Dialog: 理解できないかどうか見せてやろう。
+New Dialog: I'll show you whether you can understand it or not.
+I’m going to prove the impossible, in a way anyone can understand.
+
+Character Name: Cole
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥。
+New Dialog: ...........
+
+Character Name: Doc
+Dialog: たしかに死んでるな？　あれだけ撃ったんだ、生きている方がおかしいだろう？
+New Dialog: It's most certainly dead, isn't it? It would be strange if it was alive after I shot it like that.
+We agree that Kitty is dead, at least right now, yes? You saw me shoot it and it’s not moving. You’re free to check its vitals.
+
+Character Name: Cole
+Dialog: ‥‥‥ドク、やっぱり止めないか？　ドクの言う事は信じるからさ。
+New Dialog: ...Doc, will you please stop? I believe you.
+...Doc, it’s fine. I believe you. About everything. Let’s just stop, this is getting weird.
+
+
+Character Name: Doc
+Dialog: いや、お前さんは疑ってるよ。わしがイカれたと思っているだろう？　目を見れば判るさ。
+New Dialog: No, you're still doubting. You must think I've become mad. You must see it with your own eyes.
+No, no, you still don’t believe. Don’t worry, I haven’t gone mad. But you have to see this for yourself.
+
+Character Name: Doc
+Dialog: この注射器に入っている液体が、蘇生薬のサンプルだ。今から投与するから時計を見ていてくれ。今までのデータによると１３秒後に蘇っている。
+New Dialog: The liquid in this syringe is resurrection drug sample. Check your watch right after I inject it. According to my data, it'll revive in 13 seconds.
+This syringe contains my prototype resurrection drug. Please time it with the chronometer on your watch. When I inject it, Kitty will revive in approximately 13 seconds.
+
+Character Name: Doc
+Dialog: ‥‥‥‥いくぞ。
+New Dialog: ...Here I go.
+...Starting now.
+
+Character Name: Cole
+Dialog: ま‥‥まさか！？
+New Dialog: N-No way!
+N- No way!
+
+Character Name: Cole
+
+Dialog: い‥‥生き返ったのか！？　な、なんて事だ‥‥‥！！
+New Dialog: I-It came back to life?! W-What the hell...?!
+Th-the cat’s moving! It came back to life! It really came back!
+
+Character Name: Doc
+Dialog: この動作は間違っても死後硬直による痙攣なんかじゃない。
+New Dialog: Those are undoubtedly not post-death convulsions.
+To be clear, these are absolutely not cadaveric spams... or in easier terminology, post-mortem convulsions.
+
+Character Name: Doc
+Dialog: どうだ、これでも信じられないとは言わせないぞ。
+New Dialog: How about it? You can't say you don't believe me anymore.
+How about it? You can’t say your skepticism isn’t shaken now!
+
+Character Name: Cole
+Dialog: ま、まさかそんな事が‥‥。う、嘘だろ！？
+New Dialog: T-That's unbelievable... I-Is it some kind of trick?!
+T-This is incredible. ...I-Is it some kind of trick?
+
+Character Name: Doc
+Dialog: 嘘も何も現にコールの目の前で動いているじゃないか。
+New Dialog: It's not a trick. It's moving right here before your eyes, isn't it?
+No trick! Look, it’s moving plain as day, don’t you agree?
+
+Character Name: Cole
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥す、凄いじゃないかドク！！　ノーベル賞間違いないよ！！　早く発表しようよ！　い、いつ発表するんだ？
+New Dialog: ...T-That's amazing, Doc! You're going to win a Nobel prize! You have to make this public! When are you going to do it?
+Doc, t-this is amazing. You’re going to change everything! Win a Nobel Prize! You have to make this public! When are you going to tell the world?!
+
+Character Name: Doc
+Dialog: それがまだ発表できる段階じゃないんだよ。さっきも言った通りまだこの薬はサンプル《試作品》なんだ。
+New Dialog: We're not at that stage yet. Like I said before, this is a sample. A prototype.
+We’re not there yet. Like I said earlier, this is a prototype. Just an experiment. It still needs to be refined.
+
+
+Character Name: Cole
+Dialog: どうして！？　ちゃんと完成してるじゃないか。
+New Dialog: How come?! It just worked perfectly, didn't it?
+Refined?! It’s a resurrection drug and it brought the dead back to life. I don’t think it needs any refinement!
+
+Character Name: Doc
+Dialog: この薬には不可解な副作用があってな、この薬で蘇生した生物は狂暴性が増長してしまうようなんだ。
+New Dialog: There are some baffling side effects. Living things resurrected with this drugs have their feral tendencies grow stronger.
+No, there are some unpleasant side effects. It appears living things have their feral instincts grow much stronger after resurrection. They become aggressive.
+
+Character Name: Cole
+Dialog: 狂暴性？　映画のゾンビみたいな？
+New Dialog: Feral tendencies? You mean like zombies in the movies?
+Feral instincts? Aggressive... revived ... you mean like zombies?
+
+Character Name: Doc
+Dialog: はははは！　ゾンビとは上手い言い回しだ。いや、人間には試した事がないんで判らないが‥‥ま、試したら犯罪になってしまうからな。わしは科学者であって医者でないのだから。
+New Dialog: Ha ha ha ha! That's a fine analogy. But no, I still haven't tested this on humans, so I don't know... Well, human testing would be against the law. I'm a scientist, not a doctor.
+Ha ha ha ha, not quite like zombies! More like mindless aggressive undead life forms! I mean, of course I haven’t tried it on humans, that would be unethical as well as illegal. Also I don’t have a medical license so I’d be screwed if there were complications.
+
+
+Character Name: Doc
+Dialog: とにかく、この猫を見ても判るようにこの薬で蘇生させた生物は「おとなしさ」というものが全く無くなってしまうんだよ。
+New Dialog: Anyway, as you can see revived animals lose any docility they once had.
+But as you can see, at least with Kitty as a test subject, revived animals lose any docility they once had.
+
+Character Name: Doc
+Dialog: 人間を自ら襲う猫なんて聞いた事もない。お前さんの言う狂犬病以外にな。
+New Dialog: I've never heard of cats who attack humans without provocation. Not unless they had rabies, like you said.
+Outside of rabies, which I’ll remind you, Kitty did not have (I don’t think), cats don’t attack humans without provocation.
+
+Character Name: Cole
+Dialog: そうなのか‥‥‥。キティ、どうして人間を襲ったりするんだい？　襲う目的はあるのかい？
+New Dialog: I see... Why do you attack humans, Kitty? What's your goal?
+So... Kitty, why did you try and attack me? Are you some kind of jerk?!
+
+Character Name: Doc
+Dialog: コール、触るな！！　もう１つ言い忘れたが、蘇生された生物は筋力が以前より倍増されているようなんだ。
+New Dialog: Cole, don't touch it! I forgot to tell you, but revived animals' physical strength also double.
+No Cole, don’t touch it! I forgot to mention, but revived animals also have roughly double their physical strength.
+
+Character Name: Doc
+Dialog: お前さんは「手加減」という言葉を知っているな？
+New Dialog: You know what the word "restrain" means, don't you?
+You know what the words "muscle restraint" mean, don’t you?
+
+
+Character Name: Doc
+Dialog: 実は元々筋肉とは己の骨を砕いてしまうほどの力を持っているものなんだ。普通の生き物は本能で力をセーブして自分の肉体を守っているのだよ。
+New Dialog: Our muscles contain enough strength to break our own bones. Under normal circumstances, you instinctively save that strength and protect your own body.
+Our muscles actually contain enough strength to break our own bones. Under normal circumstances, you instinctively don’t use your muscles’ full strength in order to protect your own body.
+
+
+Character Name: Doc
+Dialog: 狂暴性だけが著しく増長された生き物。いわゆる「本能の手加減」を忘れた動物は信じられない程の力を出す事ができるのさ。こいつも骨が折れていなければ人間より厄介かもしれんよ。
+New Dialog: But once ferality takes over, that instinctive restrain is forgotten and you can exhibit unbelievable strength. If this cat's bones weren't broken, it could probably take on humans.
+But once ferality takes over, that instinctive muscle restraint is forgotten, and you can exhibit unbelievable strength. If Kitty’s bones weren’t already broken, it could probably take on a human!
+
+Character Name: Jack
+Dialog: クーガーさん！　ジャックです、１６分署のジャックです。
+New Dialog: Mr. Cooger! It's Jack, from the 16th precinct.
+Dr. Cooger? It’s Jack, from the 16th precinct.
+
+Character Name: Jack
+Dialog: 開けてください、クーガーさん！！
+New Dialog: Please open the door, Mr. Cooger!
+Can you please come to the door?
+
+Character Name: Cole
+Dialog: 警官だ！！　ドク、ヤバイよ！！
+New Dialog: It's the police! What are we going to do, Doc?!
+
+Character Name: Jack
+Dialog: クーガーさん、開けてください。ジャックです。
+New Dialog: Mr. Cooger, open the door. It's Jack.
+
+Character Name: Doc
+Dialog: コール、お前さんはここにいろ。あとこの猫を冷蔵庫にでも隠しておいてくれ、頼んだぞ。まちがっても噛まれないようにな！！
+New Dialog: Stay here, Cole. And hide that cat in the fridge, please. But don't let it bite you!
+
+Character Name: Cole
+Dialog: ‥‥‥‥‥‥‥わ、判った。
+New Dialog: ...G-Got it.
+
+Character Name: Jack
+Dialog: クーガーさん？　クーガーさん！！
+New Dialog: Mr. Cooger? Mr. Cooger!
+
+Character Name: Doc
+Dialog: ジャック警部補、こんな夜中にどうしました？
+New Dialog: Officer Jack, what brings you here at this hour?
+
+Character Name: Cole
+Dialog: 《この家が古いせいか話し声がこの研究室まで聞こえてくるな》
+New Dialog: (This house is old so I can hear their voices through the wall)
+
+Character Name: Jack
+Dialog: ああ、クーガーさん。いやね、妙な猫の叫び声がするって近所から苦情が出たんですよ。
+New Dialog: Oh, Mr. Cooger. We had complaints about strange cat voices in the neighbourhood.
+
+Character Name: Doc
+Dialog: そうなんですよ、この辺はノラ猫が多くて夜中じゅう鳴いてるから私も困ってるんだ。だけどノラ猫の事まで警察に任せる市民ってのも少し変ですからね‥‥‥。
+New Dialog: That's right. There are many stray cats around here and I'm quite troubled myself. But, isn't it strange to involve the police over some stray cats...?
+Well, that’s not unusual with all the stray cats around. I find it annoying myself. But that doesn’t seem like a job for the police. Maybe you can leave and Animal Control can take a look! Tomorrow!
+
+Character Name: Jack
+Dialog: それが猫と言っても、ただのノラ猫じゃないらしいんです。無気味な悲鳴のようなものらしくてね。苦情は１週間も前から出つづけているんですよ。
+New Dialog: Seems like this is no regular stray cat. They said it's more like eerie shrieks. We've been getting the complaints since last week.
+
+Character Name: Jack
+Dialog: それで少し気になって私もパトロールがてら来てみたって訳です。
+New Dialog: I got curious, so I came to patrol the area.
+
+Character Name: Doc
+Dialog: なるほど、そうでしたか。だけど無気味な悲鳴というのは聞いた事はありませんね。
+New Dialog: I see. I haven't heard any eerie shrieks myself, though.
+
+Character Name: Jack
+Dialog: ‥‥‥そうですか。失礼ですが少し中を拝見させていただけますか？　一応規則なもんでして、少しだけでいいんです。
+New Dialog: ...I see. I'm sorry, but may I look inside? It's routine, I won't take long.
+Would you mind if I took around your premises?
+
+Character Name: Doc
+Dialog: 別に構いませんが‥‥今、来客中なんですよ。だから手短にお願いしますね。
+New Dialog: I don't mind, but... I have a guest right now. So, please, be quick.
+... No! Not at all. Except... well, I have a guest over, so if you could make it quick?
+
+Character Name: Jack
+Dialog: はい、判りました。それではお邪魔します。
+New Dialog: Of course. I'm coming in, then.
+It won’t take long. Excuse me, Doctor.
+
+Character Name: Jack
+
+Dialog: ここは寝室ですか？
+New Dialog: Is this your bedroom?
+This is the bedroom?
+
+Character Name: Doc
+Dialog: ええ、そうです。妻が交通事故で死んでからというもの掃除を怠けてしまってね、こんなに散らかってしまって‥‥‥。
+New Dialog: Yes. Since my wife died in a traffic accident I neglected cleaning, so it's pretty messy...
+Yes. I apologize for the mess. My wife died in a traffic accident so I haven’t been keeping up with cleaning very well...
+
+Character Name: Jack
+Dialog: いえ、いいんですよ。
+New Dialog: That's quite alright.
+That’s fine, Doctor. I don’t see anything in here.
+
+Character Name: Doc
+Dialog: ここは書斎です。この部屋は私の研究の全てですから、あまりいじらないようにお願いしますね。
+New Dialog: This is the study. All my research is collected here, so please don't touch anything.
+This is the study. I must ask, I have all my research collected here, so please don’t touch anything.
+
+Character Name: Jack
+Dialog: 大丈夫ですよ、何も触りませんから‥‥‥。隣は何の部屋ですか？
+New Dialog: I won't, don't worry. What's the next room over?
+It’s fine, I don’t see anything here. What’s in this room?
+
+Character Name: Doc
+Dialog: 研究室ですよ、お客さんがいますけど。
+New Dialog: It's the lab. My guest is over there, though.
+That room? Well, the lab. My, uh, guest is in there, though.
+
+Character Name: Jack
+Dialog: 拝見してよろしいですか？ 《えっ‥‥ここにも来るのかよ‥‥ドク、もう帰してくれよ‥‥》 
+New Dialog: May I look inside?\nCole(What? He’s coming in here? Doc, just get rid of him already...)
+
+Mind if I take a look?
+
+Character Name: Cole
+Dialog: 
+New Dialog: (What? He's coming in here? Doc, just get rid of him already...)
+
+Character Name: Doc
+Dialog: ええ‥‥‥別に構いませんが‥‥‥。
+New Dialog: Sure... I don't really mind...
+
+Character Name: JackOrSheila
+Dialog: ここに飾られてる絵は？
+New Dialog: What are these photos hanging over here?
+
+Character Name: Doc
+Dialog: 有名な学者さん達です。私も科学者の端くれですから、こういった人達に憧れるんですよ。
+New Dialog: They're famous scientists. I'm a bit of a scientist myself, so I look up to these people.
+
+Character Name: Doc
+Dialog: コール‥‥‥こちら１６分署の刑事さん。
+New Dialog: Kole... This is an officer from the 16th district.
+
+Character Name: Cole
+Dialog: 初めまして、コールです。
+New Dialog: Nice to meet you, I'm Kole.
+
+Character Name: JackOrSheila
+Dialog: 今晩はコール君、私はジャック・キースマン。
+New Dialog: Good evening, Kole. My name is Jack Kirshman.
+
+Character Name: JackOrSheila
+Dialog: 君達はこんな夜中にここで何をしているんだ？
+New Dialog: What are you two doing here at this time of night?
+
+Character Name: Cole
+Dialog: はい、近々パーティをやろうと思いまして、ドク‥‥いや、教授と相談してた所ですよ。
+New Dialog: We've been thinking of holding a party soon and I've just been discussing it with Doc... I mean, with the Professor.
+
+Character Name: JackOrSheila
+Dialog: なるほど、そうだったんですか。ところでクーガーさん、ここではどんな研究をなさっているんですか？
+New Dialog: I see. By the way, Mr. Cooger, What kind of research are you doing over here?
+
+Character Name: Doc
+Dialog: ガン細胞の研究が主ですが‥‥いつもライバルに先を超されてしまってね、私も歳をとったのかね。
+New Dialog: My main focus is on cancer cell research... But my rivals always beat me to it. I've grown old, you see.
+
+Character Name: JackOrSheila
+Dialog: ん！？　今の声は？
+New Dialog: Hm?! What was that voice?
+
+Character Name: Doc
+Dialog: 裏のノラ猫でしょう。家の裏はゴミ捨て場になってますから、ディナーを食べによく集まるんですよ。
+New Dialog: Must be stray cats from behind the house. There's a garbage dump, so they often gather there for dinner.
+
+Character Name: Cole
+Dialog: 墓地もあるしね、デザート付きですよ。
+New Dialog: There's also a graveyard, so they can have dessert.
+
+Character Name: JackOrSheila
+Dialog: ははは、なるほど。あなた方も誤ってサラダにならないように頼みますよ。
+New Dialog: Ha ha ha, I see. I hope they don't mistake you for the salad.
+
+Character Name: JackOrSheila
+Dialog: それでは私はこれで‥‥‥何かお気付きになった事があったら知らせてください。
+New Dialog: Well, I'll be going, then... If you notice anything, please call and let me know.
+
+Character Name: Cole
+Dialog: どうもご苦労様です。
+New Dialog: Thank you for your hard work.
+
+Character Name: JackOrSheila
+Dialog: ん？　ちょっと待ってください。今の声はあそこの冷蔵庫の辺りから聞こえてきませんでした？
+New Dialog: Hm? Wait a second. Didn't you just hear a voice coming from the refrigerator over there?
+
+Character Name: Doc
+Dialog: いえ、あの冷蔵庫には薬品しか入っていませんから。
+New Dialog: No, there's nothing but medicine in there.
+
+Character Name: JackOrSheila
+Dialog: ほら、やっぱりあそこから聞こえてきますね。開けてもよろしいですか？
+New Dialog: See? I definitely heard something. May I please open it?
+
+Character Name: Doc
+Dialog: ええ、別に構いませんが‥‥‥。
+New Dialog: Sure, I don't really mind...
+
+Character Name: Cole
+Dialog: 〔ドク、ヤバイよ！！　どうして断らないんだよ！？〕
+New Dialog: (Doc, that's bad!! Why didn't you refuse?!)
+
+Character Name: Doc
+Dialog: 〔断ったら逆に怪しまれるだろ！？　今までに蘇生薬を打った動物は全て２分以内で絶命するというデータが出ているんだ〕
+New Dialog: (If I did it would've been suspicious, wouldn't it?! Up until now every animal injected with the resurrection drug expired within two mintes.)
+
+Character Name: Cole
+Dialog: 〔だ、だってあの猫まだ生きてるよ！？　どうするんだよ！？〕
+New Dialog: (B-But, that cat is still alive, isn't it?! What are we going to do?!)
+
+Character Name: JackOrSheila
+Dialog: ウワァアアアア‥‥‥‥‥‥！！
+New Dialog: UWAAAAAAAAA.........!!
+
+Character Name: Cole
+Dialog: ドク！！　ジャックさんが！！
+New Dialog: Doc!! Jack's...!!!
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥。
+New Dialog: ............
+
+Character Name: Cole
+Dialog: ドク、どうしたんだよ！！　早くジャックさんを病院に連れていかないと！！
+New Dialog: Doc, what are you doing?! We have to take him to hospital immediately!
+
+Character Name: Doc
+Dialog: もう手遅れだよ、ジャックは喉を掻き切られてしまったよ。頚静脈と‥‥‥頚動脈も見事に切断されているな。
+New Dialog: It's too late. Kitty slashed his throat. The jugular vein and the carotid artery are completely severed.
+
+Character Name: Cole
+Dialog: キティは！？
+New Dialog: What about Kitty?!
+
+Character Name: Doc
+Dialog: キティは完全に死んでるよ。最後の力でジャックの喉を‥‥‥。
+New Dialog: She's completely dead. She used her final strength to slash Jack's...
+
+Character Name: Cole
+Dialog: ど、どうするんだよ！！　このままじゃ俺達、殺人犯じゃないか！！
+New Dialog: W-What are we going to do?!! They're going to say we murdered him!!
+
+Character Name: Cole
+Dialog: ‥‥‥そうだ！　大丈夫だよ、実際に生き返る所を見せてやれば‥‥‥！！
+New Dialog: ...I know! We'll be fine. We just have to tell them about Kitty coming back to life...!!
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥。
+New Dialog: ............
+
+Character Name: Cole
+Dialog: ドク、何とか言えよ！？　こうなったら本当の事を警察に話して‥‥‥。
+New Dialog: Doc, Say something! We have to tell the truth to the police...
+
+Character Name: Doc
+Dialog: お前さんだって蘇生薬の効能を疑ってたろ！！　本当の事を話したところで素直に信じる警察官などがいると思うのかね！？
+New Dialog: Even you doubted that it really works, didn't you?! Do you really think a police officer would just take our word for it?!
+
+Character Name: Doc
+Dialog: 頭がおかしくなってるとしか思わないよ。警察が我々に弁明の余地を与えてくれるはずがないだろう！！
+New Dialog: They'll think we've gone mad. There's no way the police are going to accept that kind of explanation.
+
+Character Name: Doc
+Dialog: やっちゃった相手が警官なんだ。我々の行くつくところは電気椅子か、ガス室でたんまりとシアンの芳香を嗅ぐ事になるだろうな‥‥‥
+New Dialog: A police officer is dead. We'll both be sent to the electric chair, or to inhale some cyanide inside a gas chamber.
+
+Character Name: Cole
+Dialog: い、いやだよ！　どうすればいいんだよ！！　このまま放っておけばすぐに見つかるぞ！！
+New Dialog: F-Fuck that! What should we do?! They're going to discover us in no time!
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥！？
+New Dialog: ............?!
+
+Character Name: Doc
+Dialog: キティはジャックの喉に噛付いたよな？
+New Dialog: Kitty bit Jack's throat, didn't she?
+
+Character Name: Cole
+Dialog: そうだけど‥‥‥何か案が？
+New Dialog: She did, yeah... Did you think of something?
+
+Character Name: Doc
+Dialog: あの蘇生薬は素がヴィールスなんだよ。サンプルは精製が充分じゃない。生菌がウヨウヨしているんだよ。
+New Dialog: The resurrection drug is basically a virus. It's far from being refined, and has living microorganisms swarming inside it.
+
+Character Name: Doc
+Dialog: 粘膜感染‥‥‥つまり、噛まれたり引っ掻かれたりすると感染してしまうんだ。傷口から感染したヴィールスが脳に伝わって‥‥‥。
+New Dialog: Membrane infection... That is, when you get bitten, you get infected. The virus goes from the open wound into the brain...
+
+Character Name: Cole
+Dialog: ‥‥‥という事は、ジャックはゾンビになっちゃうのか！？
+New Dialog: ...You mean Jack's going to turn into a zombie?!
+
+Character Name: Doc
+Dialog: いや、それは判らない。さっきも言ったように、今まで人間に試した事は一度もないんだ。
+New Dialog: I don't know. As I told you before, I haven't tested the drug on humans at all.
+
+Character Name: Doc
+Dialog: だが、１つだけ言える事は、これだけ時間が経っているのにジャックはピクリともしないという事実だ。
+New Dialog: But there's one thing I *can* say. It's been a while now and Jack isn't moving at all.
+
+Character Name: Doc
+Dialog: 人間の方が身体が大きい。つまり体容積が猫に比べて大きいため、キティに噛まれた程度の微量では、効果が現れるまでに多少の時間が必要なんだろう。
+New Dialog: Humans have larger bodies. That is, since our body mass is bigger than that of a cat, the miniscule amount carried by Kitty's bite would take a long time to take effect.
+
+Character Name: Doc
+Dialog: 確かにキティは飼い猫だけれど、元々が攻撃的な動物だったために狂暴化してしまったのかもしれない。獣よりも人間の方が理性が強いのは説明するまでもないだろう。
+New Dialog: Kitty was a pet cat, but since cats are naturally violent animals her feral instincts must have taken over. Humans, on the other hand, are rational beings.
+
+Character Name: Cole
+Dialog: つまり‥‥‥人間は猫と違って狂暴性がないって事か？
+New Dialog: You mean... humans won't go feral like a cat would?
+
+Character Name: Doc
+Dialog: はっきりした事はまだ判らないが、とにかくこのままではラチがあかないからな。一度生き返らせてみるしかないだろう。
+New Dialog: I can't say anything for sure, but... We're making no progress. We have to try and bring him back to life.
+
+Character Name: Cole
+Dialog: とりあえずジャックが生き返ってくれさえすれば、死刑だけは免れられるよな‥‥‥。
+New Dialog: Yeah, if we do we can avoid the death penalty.
+
+Character Name: Cole
+Dialog: 駄目だったら‥‥‥やっぱり死刑か？
+New Dialog: 'Cause if it doesn't work... we're dead, right?
+
+Character Name: Doc
+Dialog: コール、離れていたまえ。もし失敗したら、この銃で奴を撃て。
+New Dialog: Cole, please step away. If it fails, shoot him with this gun.
+
+Character Name: Cole
+Dialog: 判った‥‥‥‥‥。
+New Dialog: Got it...
+
+Character Name: Doc
+Dialog: やった、目を覚ましたぞ！！　コール、銃を構えて！！・・・ｚ・・・ｂＳｙジ、ジャックが‥‥‥‥！！　生き返った‥‥‥！！
+New Dialog: He opened his eyes!! Cole, put the gun away!!
+
+Character Name: Cole
+Dialog: ジ、ジャックが‥‥‥‥！！　生き返った‥‥‥！！
+New Dialog: J-Jack... came back to life...!!
+
+Character Name: Doc
+Dialog: ジャックさん、判りますか！？　私です、クーガーです！！
+New Dialog: Officer Jack, can you understand me?! It's me, Doctor Cooger!!
+
+Character Name: JackOrSheila
+Dialog: ウ、ウウウウウ‥‥‥‥。
+New Dialog: U...Uuuuuuuu.....
+
+Character Name: Doc
+Dialog: ジャックさん、聞こえますか！？　ジャックさん、私ですよ！！
+New Dialog: Officer Jack, can you hear me?! It's me, officer Jack!!
+
+Character Name: JackOrSheila
+Dialog: グァアアアアア！！！
+New Dialog: Guaaaaaa!!!
+
+Character Name: Cole
+Dialog: ドク、危ない！！
+New Dialog: Doc, look out!!
+
+Character Name: Cole
+Dialog: いくら撃っても死なないじゃないか！！
+New Dialog: He doesn't die no matter how much I shoot him!!
+
+Character Name: Doc
+Dialog: コール！！　先に表へ逃げろ、わしもすぐ行く！！
+New Dialog: Cole!! Try to escape, I'll follow soon!!
+
+Character Name: Cole
+Dialog: 一緒に逃げようよ！！
+New Dialog: We should escape together!!
+
+Character Name: Doc
+Dialog: さっさと行け！！！
+New Dialog: Just go!!
+
+Character Name: Cole
+Dialog: 判った、急いでくれ！！
+New Dialog: Got it, but hurry!!
+
+Character Name: Cole
+Dialog: ドク、墓地だ！！
+New Dialog: Doc, it's the graveyard!!
+
+Character Name: Doc
+Dialog: この中へ逃げよう！！　なんとか奴をまくんだ！！
+New Dialog: Let's go in!! We'll lose him somehow!!
+
+Character Name: Cole
+Dialog: ハアハア‥‥何が人間は狂暴性がないだよ！！　ジャックの理性はどこに行ったんだ！？
+New Dialog: *pant* *pant*... What was that about humans having no feral instincts?! Where's that rationality you were talking about?!
+
+Character Name: Doc
+Dialog: 所詮、人間の祖先は猿なのだよ‥‥ハアハア‥‥‥。
+New Dialog: When all is said and done, humans are descended from monkeys... *pant* *pant*
+
+Character Name: Cole
+Dialog: は、話が違うじゃないか！！　ハアハア‥‥‥。
+New Dialog: T-That's the opposite of what you told me before!! *pant* *pant*
+
+Character Name: Cole
+Dialog: そ、そのバッグは‥‥？
+New Dialog: W-What's in that bag...?
+
+Character Name: Doc
+Dialog: 蘇生薬だ！　そ、それで奴はまだ追いかけて来てるか‥‥‥？　ハアハア‥‥‥
+New Dialog: It's the ressurection drug! B-But is he still after us...? *pant* *pant*
+
+Character Name: Cole
+Dialog: まだ‥‥まだ追いかけて来てるよ！！
+New Dialog: He's... He's still coming!!
+
+Character Name: Doc
+Dialog: な、なんてしつこい奴なんだ‥‥‥はあはあ‥‥‥。
+New Dialog: H-He's very insistent... *pant* *pant*
+
+Character Name: Doc
+Dialog: うわっ！！
+New Dialog: Uwa!!
+
+Character Name: Cole
+Dialog: ドク！！　大丈夫か！？
+New Dialog: Doc!! Are you alright?!
+
+Character Name: Doc
+Dialog: い、いかん！！　蘇生薬が‥‥‥！！
+New Dialog: N-No!! My ressurection drug...!
+
+Character Name: Cole
+Dialog: ドク、ジャックが来る！！　早く行こう！！
+New Dialog: Doc, Jack is coming!! We have to run!!
+
+Character Name: Doc
+Dialog: 私の蘇生薬が！！
+New Dialog: My ressurection drug!!
+
+Character Name: Cole
+Dialog: 薬ならまた作ればいいだろ！！　早く逃げよう！！
+New Dialog: You can make more later!! Let's run!!

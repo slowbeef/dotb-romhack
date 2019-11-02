@@ -1,0 +1,83 @@
+Cole: ‚³‚ÄAŸ‚Í‚Ç‚Ì•”‰®‚ğ’²‚×‚æ‚¤‚©dddB
+New Dialog: Okay, so which room should I investigate next...?
+
+Cole: ‚QŠK‚Ì˜L‰º‚¾dddB‚±‚±‚ÍÆ–¾‚ª‚Â‚¢‚Ä‚¢‚ÄŒ‹\–¾‚é‚¢‚ÈB‚Ü‚¾¶‘¶Ò‚ªc‚Á‚Ä‚¢‚ê‚Î‚¢‚¢‚ñ‚¾‚ªdddB
+New Dialog: The second floor corridor... The light's on, so it's not as dark here. I hope there are still some survivors here...
+
+Cole: °‚É‚ÍŒŒ­‚ªc‚Á‚Ä‚¢‚éB‚©‚È‚èŠÔ‚ªŒo‚Â‚Ì‚©ŒŒ‚ªŒÅ‚Ü‚Á‚Ä‚¢‚éB
+New Dialog: There are blood stains on the floor. The blood's gotten dry, so I think some time have passed.
+
+Cole: ‚±‚ÌŒŒ­‚ğŒ©‚é‚Æ‚QŠK‚Å‚à‚©‚È‚èE‚ç‚ê‚Ä‚¢‚é‚æ‚¤‚¾‚ÈB
+New Dialog: Judging by all the blood, I guess a lot of people were killed here too.
+
+Cole: Œx@‚Ì˜L‰º‚ªˆêu‚ÅŒŒ‚ÌŠC‚É‚È‚é‚È‚ñ‚ÄA’N‚à—\‘ª‚µ‚Ä‚È‚©‚Á‚½–‚¾‚ë‚¤‚ÈB
+New Dialog: No one probably ever imagined a police station's floor would turn into a sea of blood in a matter of moments.
+
+Cole: ‚±‚Ì•”‰®‚Í‰ï‹cº‚¾‚Á‚½‚ÈB”–ˆÃ‚­‚Ä‹C–¡‚Ìˆ«‚¢•”‰®‚¾dddB
+New Dialog: That was the meeting room. There's not much light there and it's creepy.
+
+Cole: ‚QŠK‚Ì”à‚Í‘S•”‚Å‚T‚Â‚©ddd‚Ç‚±‚ª‰½‚Ì•”‰®‚©‚Í”»‚ç‚È‚¢‚ÈB‚±‚è‚áA•Ğ‚Á’[‚©‚ç’²‚×‚Ä‚İ‚é‚Ù‚¤‚ª‚æ‚³‚»‚¤‚¾‚ÈB
+New Dialog: There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+
+Cole: ‚Æ‚É‚©‚­“ü‚Á‚Ä‚İ‚È‚¢–‚É‚Í‰½‚à”»‚ç‚È‚¢‚ÈB
+New Dialog: I won't know what's inside until I go in.
+
+Cole: ‚±‚±‚Í’·º‚¾‚Á‚½‚ÈB¡‚Æ‚È‚Á‚Ä‚ÍA‚±‚±‚Ì’·‚àE‚ç‚ê‚Ä‚¢‚é‰Â”\«‚Í‚Å‚©‚¢‚¼B
+New Dialog: That was the station chief's office. It's possible he was killed too.
+
+Cole: ‚QŠK‚Ì”à‚Í‘S•”‚Å‚T‚Â‚©ddd‚Ç‚±‚ª‰½‚Ì•”‰®‚©‚Í”»‚ç‚È‚¢‚ÈB‚±‚è‚áA•Ğ‚Á’[‚©‚ç’²‚×‚Ä‚İ‚é‚Ù‚¤‚ª‚æ‚³‚»‚¤‚¾‚ÈB
+New Dialog: There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+
+Cole: ‚Æ‚É‚©‚­“ü‚Á‚Ä‚İ‚È‚¢–‚É‚Í‰½‚à”»‚ç‚È‚¢‚ÈB
+New Dialog: I won't know what's inside until I go in.
+
+Cole: ‚±‚Ì“dZº‚Å‚ÍA‚©‚È‚èE‚ç‚ê‚Ä‚¢‚½‚æ‚¤‚¾‚ÈdddB
+New Dialog: !! More people dead in this computer room...
+
+Cole: ‚QŠK‚Ì”à‚Í‘S•”‚Å‚T‚Â‚©ddd‚Ç‚±‚ª‰½‚Ì•”‰®‚©‚Í”»‚ç‚È‚¢‚ÈB‚±‚è‚áA•Ğ‚Á’[‚©‚ç’²‚×‚Ä‚İ‚é‚Ù‚¤‚ª‚æ‚³‚»‚¤‚¾‚ÈB
+New Dialog: There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+
+Cole: ‚Æ‚É‚©‚­“ü‚Á‚Ä‚İ‚È‚¢–‚É‚Í‰½‚à”»‚ç‚È‚¢‚ÈB
+New Dialog: I won't know what's inside until I go in.
+
+Cole: ‚±‚±‚Íæ’²‚×º‚¾‚Á‚½‚ÈdddB‚±‚±‚Å‘—Ş®—‚ğ‚µ‚Ä‚¢‚½ŒY–‚àE‚ç‚ê‚Ä‚µ‚Ü‚Á‚½‚ñ‚¾dddB
+New Dialog: !! This is the interrogation room. The person who was organizing documents was also killed.
+
+Cole: ‚QŠK‚Ì”à‚Í‘S•”‚Å‚T‚Â‚©ddd‚Ç‚±‚ª‰½‚Ì•”‰®‚©‚Í”»‚ç‚È‚¢‚ÈB‚±‚è‚áA•Ğ‚Á’[‚©‚ç’²‚×‚Ä‚İ‚é‚Ù‚¤‚ª‚æ‚³‚»‚¤‚¾‚ÈB
+New Dialog: There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+
+Cole: ‚Æ‚É‚©‚­“ü‚Á‚Ä‚İ‚È‚¢–‚É‚Í‰½‚à”»‚ç‚È‚¢‚ÈB
+New Dialog: I won't know what's inside until I go in.
+
+Cole: ‚±‚Ì”à‚¾‚¯‘¼‚Ì‚à‚Ì‚Æ‚Íˆá‚Á‚½‘¢‚è‚É‚È‚Á‚Ä‚¢‚é‚İ‚½‚¢‚¾‚ÈB‚Æ‚Ä‚àŠæä‚»‚¤‚È”à‚¾‚ªAˆê‘Ì‰½‚Ì•”‰®‚¾‚ë‚¤dddB
+New Dialog: This door is built different than everything else here. It's way more sturdy -- I wonder what's in there...
+
+Cole: ‚±‚ÌŒx@‚É‚Í—¯’uŠ‚ª‚È‚¢”¤‚¾‚µddd‚ÜAl‚¦‚é‚æ‚è“ü‚Á‚Ä‚İ‚é‚Ì‚ªˆê”Ôè‚Áæ‚è‘‚¢‚ÈB
+New Dialog: There is probably no detention facility in this police station... Well, instead of thinking about it too much I should just go in and see.
+
+Cole: ‚±‚ñ‚ÈŠ‚ÉÁ‰ÎŠí‚ª’u‚¢‚Ä‚ ‚éBŒx@‚à‰Î–‚É‚Íã‚¢‚©dddB
+New Dialog: Huh, there's a fire hydrant here. I guess the police aren't very good with fires.
+
+Cole: ‚©‚È‚èŒÃ‚¢Á‰ÎŠí‚¾‚Èdddæ‚Áè‚ªK•t‚¢‚Ä‚¢‚é‚¼B‚±‚ê‚¶‚á‰Î–‚É‚È‚Á‚Ä‚àg—p‚Å‚«‚È‚³‚»‚¤‚¾B
+New Dialog: !! This is a pretty old fire extinguisher, the handle is all rusty. I don't think it could even put out a fire!
+
+Cole: ‚±‚ÌÁ‰ÎŠí‚ğ•Ší‚É‚µ‚æ‚¤‚Æv‚Á‚½‚¯‚ÇAg‚¦‚È‚¢‚ñ‚¶‚ád•û‚È‚¢‚ÈB
+New Dialog: !! I thought about using the fire extinguisher as a weapon, but I don't think it'd be very good.
+
+Cole: <SWITCH>g‚¢•¨‚É‚È‚ç‚È‚¢‚à‚Ì‚ğ‚Á‚Ä•à‚­–ó‚É‚Í‚¢‚©‚È‚¢‚ÈB×–‚‚É‚È‚é‚¾‚¯‚¾<ELSE>g—p‚Å‚«‚È‚¢Á‰ÎŠí‚È‚ñ‚Ä‚½‚¾d‚¢‚¾‚¯‚Å‰½‚Ì–ğ‚É‚à—§‚½‚È‚¢‚È</SWITCH>B
+New Dialog: <SWITCH>!! I don't want to lug useless stuff around. It'll just get in the way. <ELSE>!! Carrying a heavy, broken fire extinguishers is more trouble than it's worth.</SWITCH>
+
+Cole: <C 11>‚à‚¤‚P“x</C>‚±‚ÌƒhƒA‚ÌŠJ‚¢‚Ä‚¢‚é•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©dddB
+New Dialog: I should investigate the room behind this door<C 11> one more time</C>.
+
+Cole: ‚±‚Ì•”‰®‚Í”à‚ª•Â‚Ü‚Á‚Ä‚¢‚é‚ÈdddB<C 12>‚à‚¤‚P“x’²‚×‚Ä‚İ‚æ‚¤‚©B</C>
+New Dialog: The door to this room is closed...<C 12> Let's investigate it again.</C>
+
+Cole: <C 13>‚±‚Ì•”‰®‚Í€‘Ì‚ª‘½‚¢‚¹‚¢‚©A‰½‚©“õ‚¤‚ÈB”à‚ª•Â‚Ü‚Á‚Ä‚¢‚é‚Æ‚È‚ñ‚¾‚©–³‹C–¡‚¾‚ÈdddB</C>
+New Dialog: <C 13>There are a lot of corpses inside, and I can smell them out here. </C>The door is closed, which is a little creepy...
+
+Cole: <C 14>‚½‚µ‚©‚±‚Ì•”‰®‚ÍŒxŠ¯‚ª€‚ñ‚Å‚¢‚½‚ÈB‚±‚Ì•”‰®‚ÍƒhƒA‚ªŠJ‚¢‚Ä‚¢‚é‚¼B</C>
+New Dialog: <C 14>That room's door is open. The officer in there is definitely dead.</C>
+
+Cole: <C 15>‚à‚¤‚P“x</C>‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©dddB
+New Dialog: <C 15>Once more... </C>Let's investigate that room.

@@ -1,0 +1,27 @@
+Cole: １階に戻ってきたが‥‥‥あれ？　二人がいない‥‥‥
+New Dialog: 
+
+Officer: ‥‥‥その刑事が‥‥とは思えな‥‥わ‥‥‥。
+New Dialog: 
+
+Cole: ん？　シーラの声だ‥‥‥。声はあそこの資料室から聞こえたな。
+New Dialog: 
+
+ﾆ(Cole: <SWITCH>まさか、シーラが死体になってしまったとは思えないな<ELSE>死体が喋る訳がない。声は別の方向から聞こえたな</SWITCH>。
+New Dialog: 
+
+Cole: <SWITCH>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな</SWITCH>。
+New Dialog: 
+
+Cole: <SWITCH>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな</SWITCH>。
+New Dialog: 
+
+Cole: <SWITCH>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな</SWITCH>。
+New Dialog: 
+
+Cole: <SWITCH>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな</SWITCH>。
+New Dialog: 
+
+Cole: シーラの声はここから聞こえたよな。
+New Dialog: 
+

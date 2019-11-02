@@ -1,0 +1,12 @@
+Cooger: お、開いたみたいだな。
+New Dialog: 
+
+Cole: あの数字は部屋番号じゃなく、ここの暗証だったのか‥‥‥。
+New Dialog: 
+
+Officer: さあ、入りましょ。
+New Dialog: 
+
+Cole: だめみたいだな‥‥‥番号が違うのか‥‥‥？ﾌ(
+New Dialog: 
+

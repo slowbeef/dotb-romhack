@@ -1,0 +1,69 @@
+Cole: ここは会議室だったな、もう少し調べてみるか。
+New Dialog: That's the meeting room. Let's investigate it a little more.
+
+Cole: ここは‥‥‥会議室かな？
+New Dialog: This must be... a meeting room?
+
+Cole: 会議用の大きな机が部屋の中央に設置され、その周りを８つの椅子が囲んでいる。掃除が行き届いてるのか、ゴミ１つない。
+New Dialog: There's a large table in the center of the room, with 8 chairs surrounding it. They have good cleaning service here, there's not a single piece of garbage.
+
+Cole: 警察署の会議室にしては珍しくサッパリとした部屋だ。
+New Dialog: This is a pretty plain room for a police station's meeting room.
+
+Cole: 血痕がどこにもついてないようだ。ここには死霊が立入った形跡がないな。
+New Dialog: There isn't any blood around. No sign that any zombies visited this room.
+
+Cole: 椅子が机の周りに並んでいる。死霊がここに集まって会議してたら‥‥‥ちょっと怖いな。
+New Dialog: The chairs surrond the table. Wouldn't it be scary if some zombies decided to hold a meeting here?
+
+Cole: 中央の椅子に座る人は多分署内で一番偉い人だろう。
+New Dialog: The chair at the top of the table is probably reserved to the highest ranked officer.
+
+Cole: 月の光が室内を照らしている。なんとも無気味な感じだな‥‥‥匂ってきそうだ。
+New Dialog: The moon's light illuminates the room. It's quite an eerie feeling... 
+
+Cole: 窓の外は静まり返った街の風景が続いている。まるで街自体が死んでしまったみたいだ。
+New Dialog: The cityscape outside the window is completely silent. It's as if the city itself died.
+
+Cole: 窓ばかり見ててもしょうがないな、他の所も調べてみるか‥‥‥。
+New Dialog: It won't do me any good to keep looking out the window. I should explore somewhere else...
+
+Cole: ハンドライトを設置するためのフックがついている。さすがにこれは必要ないだろう。
+New Dialog: There's a hook where you hang the flashlight. I don't think I need it.
+
+Cole: 非常用のハンドライトが壁に設置されている。停電になった時に使うものだろう。
+New Dialog: There's an emergency flashlight hanging on the wall. They probably use it if the lights go out.
+
+Cole: 何かの役に立つかもしれないから取っておくか。
+New Dialog: It might be useful later, so I guess I'll take it.
+
+Cole: ハンドライトはもう取ったよ。
+New Dialog: I've already taken the flashlight.
+
+Cole: よし、電池は入っているな。これで暗い所もなんとか行けるぜ。
+New Dialog: Cool, there's a battery inside. I'll be able to search dark places now.
+
+廊下に出る　
+New Dialog: Leave
+
+キャンセル　
+New Dialog: Cancel
+
+Cole: いつまでもここにいる訳にはいかないな。
+New Dialog: I shouldn't stay in this room long.
+
+Cole: やっぱり止めとくか‥‥‥。
+New Dialog: I'll just stay here...
+
+廊下に出る　
+New Dialog: Leave
+
+キャンセル　
+New Dialog: Cancel
+
+Cole: <C 1e>ハンドライトも手に入れたし、</C>そろそろ別の部屋を調べてみようか。
+New Dialog: <C 1e>I got the flashlight. </C>Let's explore some other rooms.
+
+Cole: やっぱり止めとくか‥‥‥。
+New Dialog: I'll just stay here...
+

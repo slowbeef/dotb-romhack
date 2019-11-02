@@ -1,0 +1,417 @@
+Character Name: Cole
+Dialog: ドク、どうすんのさ！？　こんな事になっちまって、一体どうすりゃいいんだよ！
+New Dialog: Doc, what are we going to do?! They don't teach you how to handle this stuff at school!
+
+Character Name: Cole
+Dialog: 俺達はこのままずうっとあんなおぞましい警官ゾンビに追い回され続けるのか！？
+New Dialog: Are we just going to keep getting chased by this creepy zombie policeman?
+
+Character Name: Doc
+Dialog: コール、落ち着いてくれ。
+New Dialog: Cole, calm down.
+
+Character Name: Cole
+Dialog: 見たかよあの警官の姿、この世のものとは思えないよ！　ドク、一体どうするつもりなんだい！？
+New Dialog: You've seen this guy, it's like he's not even human! What are you planning to do?
+
+Character Name: Doc
+Dialog: 落ち着いてわしの話を聞いてくれよ！　あの蘇生薬は、あくまでも試作品なんだよ。ジャックが蘇生している時間にも限りがある。そんなに長い時間じゃないと思うんだ。
+New Dialog: Just listen calmly to what I have to say! The resurrecting drug is still in the experimental stage. There's a limit to how long Jack can stay ressurected. I don't think it's going to take long.
+
+Character Name: Doc
+Dialog: 効果が切れた頃になったらジャックの亡骸を探しに行くよ。多分どこかで２度目の死を迎えているだろう。彼の死体を‥‥‥
+New Dialog: When the effect runs out, we'll go looking for his body. He's probably out there somewhere, nearing a second death. We'll take his body, and...
+
+Character Name: Doc
+Dialog: ジャックの死体を見つけたら‥‥‥自首するしかないだろう。
+New Dialog: When we find his body... We'll have to surrender ourselves.
+
+Character Name: Cole
+Dialog: 自首って‥‥‥警察に捕まったら死刑になっちゃうんでしょ！？
+New Dialog: Surrender...? But if the police catches us we'll get the death penalty for sure, won't we?!
+
+Character Name: Doc
+Dialog: このままジャックを放っておいても、警察にはいずれ見つかってしまうさ。決定された未来の事を悩んでもしかたがないよ。
+New Dialog: If we just leave him like this, the police is going to find him sooner or later. There's no use worrying about what we cannot change.
+
+Character Name: Cole
+Dialog: そうさ、死刑の事なんかもう悩んじゃいないさ！　それよりも、俺に残された短い人生がドクと一緒だったって事が悔やまれて居ても立ってもいられねえよ！
+New Dialog: You're right, I'm no longer worried about the death penalty! I'm more worried that I'll have to spend the rest of my short life with you, Doc!
+
+Character Name: Doc
+Dialog: いや、そんな事よりも、もっと困った事が起こりうる可能性があるんだ。・ｎ
+New Dialog: No, even worse than that, there's a much more worrying possibilty ahead of us.
+
+Character Name: Doc
+Dialog: まずいな‥‥‥早めに手を打たないと大変な事になりうるぞ。
+New Dialog: It's terrible... If we don't do something soon something terrible is going to happen.
+
+Character Name: Cole
+Dialog: 『ゾンビの夜明け』の映画では心臓を撃つと死んでしまうようだけど、ドクの研究室では心臓をいくら撃ってもビクともしなかったよな。あの映画は嘘だったのか！？・ｂ
+New Dialog: In "Dawn of the Zombies", they died when you shot them in the heart. But that didn't work at all back at Doc's lab. Did that movie lie to me?!
+
+Character Name: Cole
+Dialog: もしあの警官が市民を襲っていたりしたら映画どころじゃ済まなくなってしまうぞ。
+New Dialog: If that policeman attacks other people, it won't end like the movie did. *
+
+Character Name: Sheila
+Dialog: コール、助けて！！　お願い、開けて！！
+New Dialog: Cole, help me!! Please, open the door!!
+
+Character Name: Cole
+Dialog: シーラだ！！　ちょっと待って、今開けるから！！
+New Dialog: It's Sheila! Wait, I'll be right there!!
+
+Character Name: Doc
+Dialog: コール、頼むから今の話はしないでくれよ。
+New Dialog: Please don't tell her about what happened, Cole.
+
+Character Name: Cole
+Dialog: わかってるよ、心配しないで。・ｃ
+New Dialog: Yeah, I know. Don't worry.
+
+Character Name: Cole
+Dialog: もしあの警官が市民を襲っていたりしたら映画どころじゃ済まなくなってしまうぞ。
+New Dialog: If that policeman attacks other people, it won't end like the movie did.
+
+Character Name: Doc
+Dialog: シーラ君の言うとおり、ここはもう少し待ってみるか。
+New Dialog: Let's wait here a little longer, as Sheila said.
+
+Character Name: Cole
+Dialog: 警察が話し中だという事を知ったせいか、少しホッとした様子だ。
+New Dialog: S/He looks a little more relaxed now that they know the lines to the police are busy.
+
+Character Name: Cole
+Dialog: 警察が話し中だという事を知ったせいか、少しホッとした様子だ。
+New Dialog: S/He looks a little more relaxed now that they know the lines to the police are busy.
+
+Character Name: Cole
+Dialog: ドクが死刑になるぐらいだったら、あの警官はこのまま見つからない方がいいのかもしれないな。
+New Dialog: If Doc's going to get the death penalty, maybe we shouldn't find that policeman after all.
+
+Character Name: Cole
+Dialog: かなり走ったからドクも疲れているようだな。しかし、こんな真剣な顔をしたドクは初めて見たよ。でも、あれだけの事があったんだから無理もないか‥‥‥。・・
+New Dialog: We've been running a while, so Doc looks tired. But... I've never seen Doc that serious before. With everything that has happened, I can't blame him.
+
+Character Name: Cole
+Dialog: ドクはいつに無く深刻だ。
+New Dialog: Doc is unusually serious.
+
+Character Name: Doc
+Dialog: シーラ君、ちょっとコールに用事があってここに来ているんだ。お邪魔なら帰るが‥‥‥。
+New Dialog: Sheila, I had some business with Cole so I came over. If I'm in your way I'll go back home...
+
+Character Name: Sheila
+Dialog: いえ、そんな事ないです。
+New Dialog: Oh no, I don't mind.
+
+Character Name: Cole
+Dialog: だめだよ、警察は話し中みたいだ。
+New Dialog: Seems like all the police lines are busy.
+
+Character Name: Doc
+Dialog: 話し中か‥‥‥じゃ、もう少し経ってからまた掛けてみるか。
+New Dialog: Busy...? In that case, let's wait a while and try again.
+
+Character Name: Cole
+Dialog: 最近、警察の話し中が多いらしいぜ。よくあれで市民を守るなんて言えるよな。・ｋ
+New Dialog: It's been that way a lot lately. I guess they're busy protecting the public order or something.
+
+Character Name: Doc
+Dialog: 警察への電話はもう少し経ってから掛けてみる事にするか。・ｍ
+New Dialog: Let's wait a while and try calling the police again.
+
+Character Name: Doc
+Dialog: コール、被害が大きくならんうちに警察に電話を‥‥。
+New Dialog: Cole, let's call the police before this gets any worse...
+
+Character Name: Doc
+Dialog: 信じられん‥‥‥こんな短時間にそんな事がありえる訳がない‥‥‥。
+New Dialog: I can't believe it... It hasn't been long enough for something like this to have happened...
+
+Character Name: Doc
+Dialog: 何よりもわしが心配しているのは、ジャックが他の人に食らいついてはいないかと言う事だ。
+New Dialog: The thing I'm most worried of is that Jack's going to bite other people.
+
+Character Name: Cole
+Dialog: 感染は大丈夫だよ、キティが噛付いた時だって何も起きなかったじゃないか。
+New Dialog: It's okay. Nothing happened when Kitty bit him, remember?
+
+Character Name: Doc
+Dialog: もしキティが他の猫に噛付いたのなら、その猫も感染してしまうよ。逆に人間が猫に噛付いた時もそうだ。
+New Dialog: If Kitty had bitten other cats, thouse cats would have gotten infected. And it would also happen if a human bites a cat.
+
+Character Name: Cole
+Dialog: つまり‥‥‥人間同士だとヤバイって事かい？
+New Dialog: You mean... if it's two humans it's gonna get bad?
+
+Character Name: Doc
+Dialog: ‥‥‥そういう事だ。・・
+New Dialog: ...Yes, that's what I'm saying.
+
+Character Name: Cole
+Dialog: ドク、『ゾンビの夜明け』っていう映画知ってるかい？　フランケンシュタインを作ろうと完成させたのが死霊になってしまう話だ。
+New Dialog: Doc, have you heard of a movie calle "Dawn of the Zombies"? It's about someone trying to create Frankenstein and ending up dealing with the undead.
+
+Character Name: Doc
+Dialog: うむ、そのたった一体の死霊がニューヨークで仲間を増やしていき、最終的にはゴーストタウンになってしまうんだったな。今まさにそんな心境だよ。
+New Dialog: Yes. And then the single zombie went into New York and got some friends. In the end the entire city turned into a ghost town. This is indeed how I currently feel.
+
+Character Name: Cole
+Dialog: あの映画の死霊は銃で死んでたぜ！？　どうしてあの警官は死なないんだ？
+New Dialog: The zombies in that movie could be killed by guns! Why didn't that policeman died when you shot him?
+
+Character Name: Doc
+Dialog: それが映画と現実との違いだよ。死んだ人間を蘇生させても神経までは蘇らない。血液も循環しないから出血多量で死ぬ事もない、蘇るのは脳だけだ。・・
+New Dialog: Movies are not real life. When you revive dead people their nervous system isn't ressurected. The blood isn't circulating, so they can't die from loss of blood. It's only the brain that's revived.
+
+Character Name: Cole
+Dialog: 脳だけで生きていけるなんて‥‥‥。
+New Dialog: How can just the brain be alive...?
+
+Character Name: Doc
+Dialog: 生きているというより、生きている人間の真似をさせているというのか‥‥‥たまに自分でも判らなくなる時があるよ。
+New Dialog: Rather than "alive", it's more like it's imitating a live person... Sometimes I'm not sure myself how it works.
+
+Character Name: Doc
+Dialog: とにかくこの街がゴーストタウンにならないよう、後で探しに行かなくてはな。・ａ
+New Dialog: Anyway, we have to go find him soon so this city doesn't turn into a ghost town too.
+
+Character Name: Doc
+Dialog: とにかくこの街がゴーストタウンにならないよう、後で探しに行かなくてはな。
+New Dialog: Anyway, we have to go find him soon so this city doesn't turn into a ghost town too.
+
+Character Name: Cole
+Dialog: シーラは先程より少し落ち着いた様子だ。
+New Dialog: Sheila is looking calmer than she was before.
+
+Character Name: Cole
+Dialog: シーラは震えているようだ。一体どうしたんだろう‥‥‥。・ｄ
+New Dialog: Sheila is shaking. What happened to her...?
+
+Character Name: Cole
+Dialog: シーラは息をきらしているが、一体何があったんだろうか‥‥‥。
+New Dialog: Sheila is out of breath. What happened to her...?
+
+Character Name: Cole
+Dialog: だめだよ、警察は話し中みたいだ。
+New Dialog: It's no use, the lines are busy.
+
+Character Name: Sheila
+Dialog: そう‥‥‥じゃ、もう少し経ってからまた掛けてみましょ？　ね。・ｌ
+New Dialog: So... let's wait a little and call again, okay?
+
+Character Name: Sheila
+Dialog: 警察へはもう少し経ってから掛けてみましょ？・ｍ
+New Dialog: Let's wait a little and call the police again.
+
+Character Name: Sheila
+Dialog: 話し中だったら仕方ないね。早く繋がるといいんだけど‥‥‥。
+New Dialog: There's nothing we can do if the lines are busy. I wish we'd get through quickly...
+
+Character Name: Cole
+Dialog: ドクも来てるけどいいかな？　だけど一体どうしたんだよ、こんな遅くに。
+New Dialog: I hope you don't mind that Doc is also here. But, what's going on, this late at night?
+
+Character Name: Sheila
+Dialog: それよりコール、私殺されそうになって‥‥‥。怖いわ‥‥‥
+New Dialog: I almost got killed... I'm scared...
+
+Character Name: Cole
+Dialog: ちょっと落ち着けよ。それで殺されるって誰に？
+New Dialog: Calm down. What's that about almost getting killed?
+
+Character Name: Sheila
+Dialog: 私の会社が隣の駅だって事を知ってるでしょ？　そこから電車に乗って駅についてメインストリートを歩いてたの。そしたらいつもと雰囲気が違うのよ‥‥。
+New Dialog: You know the station next to the company I work at? I took a train from there, got off at my station and walked down Main Street. But something felt weird...
+
+Character Name: Doc
+Dialog: 雰囲気っていうと？
+New Dialog: Weird? In what way?
+
+Character Name: Sheila
+Dialog: いたる所のショウウィンドウが割れてて、変な人達がたくさん歩いているの。私、酔っぱらいだと思って気にしないで歩いていたら、２・３人がこっちに向かってきて‥‥・ｅ
+New Dialog: Some store windows were broken, and weird people were walking down the street. I thought they were drunks so I didn't worry, but then two or three of them came toward me...
+
+Character Name: Cole
+Dialog: そいつらがシーラの事を脅したの？
+New Dialog: Did they threaten you?
+
+Character Name: Sheila
+Dialog: ううん、すごく変な臭いがしたの。その人達が私の目の前に来たから顔をみたの‥‥‥それが３人共腐ってるみたいで血が流れてて‥‥‥。
+New Dialog: No, but they smelled weird. When they approached I saw their faces... All three of them had blood all over it, and looked like they were rotting...
+
+Character Name: Cole
+Dialog: ‥‥‥‥‥‥‥‥‥！？
+New Dialog: .........?!  Doc: .........?!
+
+Character Name: Sheila
+Dialog: 初めはメイクかと思ったけど‥‥やっぱり違うみたいだし、血も流れてたわ。私、すごく怖くなって走ってここまで‥‥‥。
+New Dialog: I thought it was just makeup at first, but... I don't think it was, and there was lots of blood. I got scared and ran away...
+
+Character Name: Cole
+Dialog: ‥‥‥ドク、まさか！？
+New Dialog: ...Doc, you don't think?!
+
+Character Name: Doc
+Dialog: まさかそんな‥‥‥信じられん。こんな短時間でそこまで繁殖するなんて‥‥‥。
+New Dialog: I can't believe it. In such a short time, the infection spread that much...?
+
+Character Name: Cole
+Dialog: 信じられるも信じられないもシーラが見たのは死霊なんだよ！シーラにまで危険な目にあわせて‥‥‥！！
+New Dialog: I don't care if you can believe it or not, Sheila saw zombies! You put her in danger...!!
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥。・ｇ
+New Dialog: .........
+
+Character Name: Sheila
+Dialog: コール、どういう事？
+New Dialog: Cole, what's going on?
+
+Character Name: Cole
+Dialog: あの死霊はドクが作ったんだよ。ドクが蘇生薬を作って死んだ猫に打って蘇らせたんだ。その猫がパトロールに来た警官の喉に噛付いて殺してしまった。
+New Dialog: Doc made those zombies. He made a resurrection drug and shot it into his dead cat. Then the cat bit the throat of a policeman and killed him.
+
+Character Name: Cole
+Dialog: ‥‥‥そしてその警官にも蘇生薬を使って蘇らせ‥‥‥
+New Dialog: ...And then we used the resurrection drug on the officer and brought him back to life...
+
+Character Name: Sheila
+Dialog: うそ‥‥‥嘘よ！？　そんな事、絶対に考えられない‥‥‥。
+New Dialog: You can't be serious! How can this be real...?
+
+Character Name: Doc
+Dialog: シーラ君、コールの言ってる事は事実なんだ。さっきその警官から逃げてきたから、わしは今こうしてここにいるんだよ。そしてあの警官が見つかったら自首しようと思っていた。
+New Dialog: Sheila, Cole is telling the truth. We'd been running away from that policeman, and that's why I'm here now. We thought we'd turn ourselves in after we find him.
+
+Character Name: Sheila
+Dialog: そんな‥‥‥じゃ、クーガーさん警察に捕まってしまうの？
+New Dialog: No way... So, you're going to get arrested, Mr. Cooger?
+
+Character Name: Doc
+Dialog: シーラ君の見た死霊がそんなに大勢いるのなら、警官を捜すどころじゃなくなってしまったがな。・ｈ
+New Dialog: If there are as many living dead as you observed, Sheila, we have more important things to do than looking for that police officer.
+
+Character Name: Sheila
+Dialog: で‥‥でも信じられない‥‥‥蘇生薬なんて‥‥‥。
+New Dialog: I--I can't believe it... A ressurection drug...
+
+Character Name: Cole
+Dialog: とにかくここまできたら警察に話した方がいいな。
+New Dialog: Anyway, since it got so serious we'd better talk to the poilce.
+
+Character Name: Sheila
+Dialog: 他に何かよい方法はないの？
+New Dialog: Isn't there anything else we can do?
+
+Character Name: Doc
+Dialog: もうわし等の力じゃどうする事もできない。あの警官を蘇らせたのがマズかったんだ‥‥。コール、警察に電話をしてくれんか‥‥‥。・ｉ
+New Dialog: There's nothing we can do by ourselves anymore. Bringing the policeman back to life was a mistake... Cole, please call the police.
+
+Character Name: Sheila
+Dialog: 私も警察の方に任せた方がいいと思うわ‥‥‥。
+New Dialog: I also think it's best if we let the police handle it...
+
+Character Name: Cole
+Dialog: もう一度かけてみるか‥‥‥‥。
+New Dialog: 
+
+Character Name: Cole
+Dialog: あれ？　‥‥‥‥‥？
+New Dialog: Huh? ........?
+
+Character Name: Cole
+Dialog: 変だな　‥‥‥‥‥？
+New Dialog: That's strange......
+
+Character Name: Doc
+Dialog: どうした？
+New Dialog: What's wrong?
+
+Character Name: Cole
+Dialog: 電話が通じない‥‥‥‥。
+New Dialog: I can't make a call...
+
+Character Name: Cole
+Dialog: ‥‥‥う、うわあああああ！！！
+New Dialog: ...U-UWAAAAAAAA!!!  Sheila: Kyaaaaaa!!
+
+Character Name: Doc
+Dialog: いかん！！　もうこんな所まで来てしまったか！！
+New Dialog: Unbelievable!! Did he really chase us all the way here?!
+
+Character Name: Cole
+Dialog: ドク！！　こいつ、さっきの警官じゃないよ！！　
+New Dialog: Doc!! This isn't the police officer from before!!
+
+Character Name: Doc
+Dialog: そんな事よりコール！！　さっきの銃を！！
+New Dialog: More importantly, hand me the gun, Cole!!
+
+Character Name: Cole
+Dialog: 判った！！　シーラ、こっちだ！！
+New Dialog: Got it!! Sheila, over here!!
+
+Character Name: Cole
+Dialog: ドク、全然効いてないよ！！
+New Dialog: Doc, it's not doing anything!!
+
+Character Name: Doc
+Dialog: くそっ、どうして倒れないんだ！？　こんなに筋肉を狙っているというのに！！
+New Dialog: Shit, why isn't he falling after I hit his muscles so many time?!
+
+Character Name: Cole
+Dialog: ヤバいよ、こっちに来るよ！！　ドク、外へ逃げるぞ！！
+New Dialog: Fuck, he's coming right at us!! Doc, we have to run outside!!
+
+Character Name: Doc
+Dialog: 判った！！　くそっ‥‥‥どうしてダメなんだ！！
+New Dialog: I know!! Shit... why isn't this working?
+
+Character Name: Sheila
+Dialog: クーガーさん、早く！！
+New Dialog: Mr. Cooger, hurry up!!
+
+Character Name: Cole
+Dialog: うわっ！　こいつら全員死霊なのか！？　なんて数だ‥‥‥。
+New Dialog: Whoa! Are they all zombies?! There's so many of them...
+
+Character Name: Doc
+Dialog: 信じられん‥‥‥もうこんなに増えているなんて‥‥‥。わしの計算をはるかに超えているぞ！！
+New Dialog: I can't believe it... How could they multiply so quickly...? It far surpasses my calculations!!
+
+Character Name: Sheila
+Dialog: 私が見た時よりずっと増えているわ‥‥‥。
+New Dialog: There's more than I saw before...
+
+Character Name: Doc
+Dialog: こんな所でモタモタしてられん。とにかく警察に行こう！！
+New Dialog: We can't stay here doing nothing. We have to go to the police!!
+
+Character Name: Cole
+Dialog: ここから一番近い警察は‥‥‥１６分署だな！！
+New Dialog: The closest station is... the 16th precint!!
+
+Character Name: Cole
+Dialog: ドクの言う通り警察に任せるしかないな。
+New Dialog: Just like Doc said, we have to let the police handle it.
+
+Character Name: Cole
+Dialog: ダメだ‥‥‥話し中だ‥‥‥。犯罪の多い街だからな、珍しい事でもないが‥‥‥。・ｊ
+New Dialog: The line's busy... There's lost of crime in this city, so it's not that strange.
+
+Character Name: Cole
+Dialog: もう一度かけてみるか‥‥‥。
+New Dialog: Let's try calling again...
+
+Character Name: Cole
+Dialog: ・・やっぱりダメみたいだな‥‥‥・何度かけても通じないみたいだな‥‥‥。・
+New Dialog: ...It's not use. No matter how many times I try, I can't get through.
+
+
+只今、大変混雑しておりますのでお掛け直しください。
+The lines are currently very busy. Please try to call again.
+
+

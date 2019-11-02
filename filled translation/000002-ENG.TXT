@@ -1,0 +1,100 @@
+Character Name: Cole
+Dialog: ハアハア‥‥‥ここが１６分署だ、結構遠かったな。
+New Dialog: *Pant* *Pant*... This is the 16th precint. It was pretty far away.
+
+Character Name: JackOrSheila
+Dialog: 昼間と違ってなんだか寂しいわ。
+New Dialog: It feels... lonely. So different than during the day.
+
+Character Name: Cole
+Dialog: ２階建のなかなか大きな警察署だ。俺がこんな所に来るなんて考えても見なかったが‥‥‥。・・
+New Dialog: It's a relatively large 2 floor police station. I've never imagined I'd have to go to a place like this...
+
+Character Name: Cole
+Dialog: きっと、さっきドクの家に来たジャックという警官もここの所属なのだろう。・・
+New Dialog: This must be the police station where Jack's stationed...
+
+Character Name: Cole
+Dialog: まさかこんな形で警察の厄介になるとは思わなかったな。・・
+New Dialog: I'd never thought I'd have to come to the police for this reason.
+
+Character Name: Cole
+Dialog: こんな所で油を売っている訳にもいかないな。さっさと中へ入ろう。
+New Dialog: We can't just idle here forever. Let's go inside.
+
+Character Name: Cole
+Dialog: 警察署の２階には電気がついている所があるな。多分、宿直の人が何人かでポーカーゲームでもしているんだろう。
+New Dialog: There's a room on the second floor where the light's on. The officers on night duty are probably playing poker or something.
+
+Character Name: Cole
+Dialog: ここに間違いないな。ちゃんと１６分署と書いてある。・・
+New Dialog: Yeah, there's no doubt. It says this is the 16th precint right here.
+
+Character Name: Cole
+Dialog: 薄汚れた文字を見ると、この建物は造られて３０年以上は経っている事が判る。・ａ
+New Dialog: The small print is dirty, but it says the station was build more than 30 years ago.
+
+Character Name: Cole
+Dialog: ここに連れてこられた犯罪者は、この文字を見てどう思ったのだろうか‥‥‥。・・・ａ
+New Dialog: I wonder what goes through suspects' minds when they see this sign as they're brought in.
+
+Character Name: Cole
+Dialog: 入り口がこの広さだと、中も相当広い造りになっているのだろう。・ｂ
+New Dialog: This entrance is spaceous. It must be pretty large inside too.
+
+Character Name: Cole
+Dialog: 車が邪魔をしていてハッキリ見えないな。
+New Dialog: The car's in the way so I can't see it too well.
+
+Character Name: Cole
+Dialog: この車は１６分署のパトだろう。誰も乗っていないようだ。・ｃ
+New Dialog: This is a 16th precing patrol car. There's no one in it.
+
+Character Name: Cole
+Dialog: こんなパトをいつまでも眺めている訳にもいかない。
+New Dialog: There's no reason to stare at this patrol car so much.
+
+Character Name: Cole
+Dialog: あのゴミ箱はよく浮浪者にあさられている事がある。食べ物は殆ど入っていない警察のゴミ箱なのに、どうして浮浪者がたかるのか疑問だが‥‥‥
+New Dialog: I sometimes see homeless people around this garbage can. It's a police station, so there probably isn't much leftover food in there -- I wonder why they always gather there..
+
+Character Name: Doc
+Dialog: シュレッダーで刻まれた重要書類を組み合わせてマフィアに売るそうだよ。まったく気が遠くなる話だな。・ｄ
+New Dialog: Seems like they're searching for shredded police documents to sell to the mafia. It's a pretty frightening story.
+
+Character Name: Doc
+Dialog: コール、そんな物をいつまでも見てる暇はないぞ。
+New Dialog: Cole, we don't have time to look at this.
+
+Character Name: Cole
+Dialog: とにかく話してみようぜ、警察だってきっと判ってくれるさ。
+New Dialog: Anyway, let's try talking to the police. I'm sure they'll understand.
+
+Character Name: Doc
+Dialog: うん‥‥‥そうだな。
+New Dialog: Yes... You're right.
+
+Character Name: Cole
+Dialog: とにかく話してみようぜ、警察だってきっと判ってくれるさ。
+New Dialog: Anyway, let's try talking to the police. I'm sure they'll understand.
+
+Character Name: Doc
+Dialog: うん‥‥‥そうだな。
+New Dialog: Yes... You're right.
+
+Character Name: Cole
+Dialog: とにかく話してみようぜ、警察だってきっと判ってくれるさ。
+New Dialog: Anyway, let's try talking to the police. I'm sure they'll understand.
+
+Character Name: Doc
+Dialog: うん‥‥‥そうだな。
+New Dialog: Yes... You're right.
+
+Character Name: Cole
+Dialog: とにかく話してみようぜ、警察だってきっと判ってくれるさ。
+New Dialog: Anyway, let's try talking to the police. I'm sure they'll understand.
+
+Character Name: Doc
+Dialog: うん‥‥‥そうだな。
+New Dialog: Yes... You're right.
+

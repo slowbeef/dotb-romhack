@@ -1,0 +1,152 @@
+Character Name: Cole
+Dialog: な、なんだ！？　一体何がどうしたっていうんだ！？
+New Dialog: W-What the fuck's going on?!
+
+Character Name: Cole
+Dialog: こ、これも死霊達の仕業だっていうのか！？　ドク！！
+New Dialog: It's the zombies again, isn't it?! Doc!!
+
+Character Name: Doc
+Dialog: ‥‥‥‥‥‥‥‥‥‥‥‥。
+New Dialog: ......
+
+Character Name: Cole
+Dialog: ‥‥‥そういえば２階に明かりのついた窓があったな。誰か居るかもしれないから、ちょっと行ってくるよ。
+New Dialog: ...By the way, there was a light on somewhere on the second floor. There's probably someone there. I'll go take a look.
+
+Character Name: Doc
+Dialog: 一人で行くのか？
+New Dialog: Alone?
+
+Character Name: Cole
+Dialog: ‥‥‥大丈夫さ。それよりさっきの銃を貸してくれないか？
+New Dialog: ...It's okay. Can you lend me your gun?
+
+Character Name: Doc
+Dialog: 拳銃か‥‥‥実はさっき全部撃ってしまったんだよ。銃も持たずに一人で行くのは危険だな。
+New Dialog: Oh... To tell you the truth, I used up all of the bullets. It's dangerous to go alone even if I give it to you.
+
+Character Name: Cole
+Dialog: でも、ここにいてもラチがあかないからな。大丈夫さ、二階の明かりを確かめに行くだけさ。
+New Dialog: But we won't make any progress if we just stay here. It's okay, I just want to see what that light is.
+
+Character Name: JackOrSheila
+Dialog: 危険よ、やめた方がいいわ。
+New Dialog: You shouldn't, it's dangerous.
+
+Character Name: Cole
+Dialog: 平気さ。だけど、くれぐれもここから動かないようにな。何かあったら呼んでくれればすぐに戻るから。
+New Dialog: I'll be fine. Don't go anywhere while I'm gone. If something happens just yell and I'll come down immediately.
+
+Character Name: JackOrSheila
+Dialog: コール、気を付けてね。
+New Dialog: Be careful, Cole.
+
+Character Name: Cole
+Dialog: 酷い殺され方だ‥‥‥警官でさえ太刀打ちできないなんて‥‥‥。・・
+New Dialog: That's a terrible way to die... Not something even a police officer can handle...
+
+Character Name: Cole
+Dialog: ものすごい屍臭だ‥‥‥。ここにあまり長くいたら気分が悪くなりそうだ‥‥‥。・・
+New Dialog: The rotting smell is unbearable... If we stay here long I'll end up sick...
+
+Character Name: Cole
+Dialog: どの警官の銃を見ても弾倉には弾の残っているものは１つもない。・・
+New Dialog: There aren't any bullets remaining in any of these officers' guns.
+
+Character Name: Cole
+Dialog: みんな頭を見事に割られてるな‥‥‥。
+New Dialog: Everyone's head is completely broken.
+
+Character Name: Doc
+Dialog: もしかしたら奴等は元々が人間だったせいもあって、人間の弱点を知っているのかもしれないな。
+New Dialog: Perhaps because the zombies had been human before, they knew where a human's weak point is.
+
+Character Name: Cole
+Dialog: どうして人間を殺すんだ？　何か目的があるんじゃないか？
+New Dialog: But why are they even killing? What are they after?
+
+Character Name: Doc
+Dialog: 目的は判らんが‥‥‥とにかくこうなってしまった以上、我々だけで何とかしないといけないな。・・
+New Dialog: I have no idea... but since it's come to this, we must do something.
+
+Character Name: JackOrSheila
+Dialog: コール、まだ他に生存者がいるかもしれないわ。捜してみましょうよ。
+New Dialog: Cole, someone might still be alive here. Let's search for survivors.
+
+Character Name: Cole
+Dialog: そうだな。
+New Dialog: You're right.
+
+Character Name: Cole
+Dialog: 壁の至る所に弾痕がある。警官が撃ちまくったものだろう。・ａ
+New Dialog: There are bullet marks in various places along the wall. It must've been quite a gunfight.
+
+Character Name: Cole
+Dialog: これだけ撃ったにも関らず死体の中に死霊が一体もないっていうのは、やっぱり不死身なんだろうか‥‥‥。
+New Dialog: They shot so much and yet there's not a single zombie among the bodies. Yeah, they sure are undead...
+
+Character Name: Cole
+Dialog: あの血の跡から察すると、死霊の一人がそこの男を持ち上げて壁に叩き付けたように思える。並の人間にはできない技だな。・ｂ
+New Dialog: From the look of the blood here, I think a zombie picked up this man and threw him against the wall. A normal man couldn't have possibly done that. 
+
+Character Name: Cole
+Dialog: 生々しい血の跡を見ていると、その辺に死霊がまだ潜んでいるように思える。
+New Dialog: The blood is fresh. There must be zombies still hiding nearby.
+
+Character Name: Cole
+Dialog: 受付けの人も殺られている。おそらくこの人が一番最初に殺られてしまったのだろう。・ｃ
+New Dialog: The receptionist is dead. He must've been the first officer killed.
+
+Character Name: Doc
+Dialog: これだけの警官が相手にしても駄目だったという事は、多分死霊は１人だけじゃないのかもしれないな。・ｄ
+New Dialog: If so many officers were defeated, there must have been more than one zombie.
+
+Character Name: Doc
+Dialog: さすがの警官も死霊には勝てなかったか‥‥‥？
+New Dialog: So, even the police couldn't defeat them...?
+
+Character Name: Cole
+Dialog: 電気が消えているな‥‥‥シーラ、電気のスイッチをつけてくれないか？
+New Dialog: The light's out... Sheila, can you try the light switch?
+
+Character Name: JackOrSheila
+Dialog: ええ、判ったわ。
+New Dialog: Sure.
+
+Character Name: Cole
+Dialog: ‥‥‥どうした？
+New Dialog: ...What's wrong?
+
+Character Name: JackOrSheila
+Dialog: それが‥‥‥電気がきていないみたいなの。・ｅ
+New Dialog: It... doesn't seem to be working.
+
+Character Name: Cole
+Dialog: 電気もつかないか‥‥‥少し不安になるな。
+New Dialog: So the light isn't working... That's a little unsettling.
+
+Character Name: Cole
+Dialog: ドク‥‥‥まさかこの警官、死霊になるなんて事はないよな？
+New Dialog: Doc... You don't think these officers will turn into zombies, do you?
+
+Character Name: Doc
+Dialog: 恐らく大丈夫だ。みんな頭をやられているから脳はグチャグチャだ。脳が完全でないと生き返ったりはしない筈だろう。・ｆ
+New Dialog: It's probably fine. Everyone's head is broken so the brain's all over the place. If the brain isn't in one piece they shouldn't be able to revive.
+
+Character Name: Cole
+Dialog: もしもし‥‥‥
+New Dialog: Hello...?
+
+Character Name: Cole
+Dialog: だめだ、完全に死んでるよ‥‥‥。
+New Dialog: It's no use. They're completely dead.
+
+Character Name: Cole
+Dialog: もしもし‥‥‥もしもし‥‥‥
+New Dialog: Hello...? Hello...?
+
+Character Name: Cole
+Dialog: やっぱりだめみたいだ‥‥‥。
+New Dialog: Nope, no use.
+

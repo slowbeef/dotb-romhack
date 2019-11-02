@@ -1,0 +1,90 @@
+Cole: ここは取調べ室だったな‥‥‥この警官も可哀想に‥‥‥。
+English: This is the interrogation room. Another one of these poor guys...
+
+Cole: ウッ‥‥‥！！　この取調べ室にも死霊がいたのか！？
+English: Ahh!! Were the zombies here too?
+
+Cole: 他に銃を持ってるか調べてみたが、ポケットにはサイフしか入っていない。拳銃の１つでもあれば相手を殺せなくても時間稼ぎにはなるんだが‥‥‥。
+English: No other gun on him, just his wallet. Even just a single gun could buy some time to get away; to say nothing of killing one of them!
+
+Cole: この署の警官だろう。<C 4c>この警官も死霊に脳ミソを喰われたらしい。頭を割られ大量の血を流している。</C>これだけの出血じゃ、まず助からないだろう。
+English: Seems to be a police officer from this station. <C 4c>Looks like the zombies ate his brains. His head is smashed open and there's blood everywhere... </C> Something something bleeding first.
+
+Cole: 警官の手には拳銃が握られている。その場の状況が目に浮かぶようだ。
+English: He's got a gun in his hand. Looks obvious what happened here...
+
+Cole: どうしても目が頭部へいってしまう。床に落ちた肉片を見ていると、だんだんと吐き気を催してきそうだ。
+English: My eyes are drawn to his head... or what's left of it. This is nauseating...
+
+Cole: １階の死体もこの警官と同じように脳ミソを喰われてた訳か‥‥‥。
+English: 
+
+Cole: １階の警官もそうだが、殺られた人間は全て頭を割られている。ドクの言ったように弱点を重点的に狙って殺したものなのか‥‥‥。
+English: 
+
+Cole: だとしたら人間を殺す原因とは一体なんだろう？　何か理由があるのかな‥‥‥？
+English: 
+
+Cole: 手に持っている拳銃を調べてみると、全て撃ち尽した後のようだった。弾倉には１発の弾も残っていない。
+English: 
+
+Cole: 何度調べたところで、弾は１発も残っていない。拳銃のスライドが引かれたままの状態だ。
+English: 
+
+Cole: 床には机の上の物が全て落ちたように思える。激しい乱闘の末、こうなったものだろう。
+English: 
+
+Cole: 書類、椅子、灰皿、封筒などが散らばっている。この刑事は煙草を吸いながら椅子に座って書類整理をしていたと思われる。
+English: 
+
+Cole: この部屋で唯一、この机だけが倒れていないようだ。だが、かなり所定地から移動している様子だ。
+English: 
+
+Cole: 机の引出を調べてみたが、ファイルが入っているだけで何もない。
+English: 
+
+Cole: 椅子のパイプが曲がっている。警官が曲げたとは思えないし、どこをどうすればこんな事が起きるのだろう。
+English: 
+
+Cole: 警官がこの椅子に座って仕事をしていた所に、死霊が襲ってきたと思われる。
+English: 
+
+Cole: 話しかけた所で脳が無いんじゃ返事はできないな。
+English: 
+
+Cole: もしもし‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥‥。
+English: 
+
+Cole: やはり返事がない。さすがに、この出血で人間が生きていられる訳がない。
+English: 
+
+Cole: 俺は再度呼び掛けたが、警官は喋るどころかピクリとも動かない。
+English: 
+
+Cole: 死体を持ち歩く程、俺は馬鹿じゃない。死霊に襲われた時にこの警官を盾にする事ができるかもしれないが、そんな事をしてもいい死に方をしないだろう。
+English: 
+
+Cole: 死体を持ち歩く訳にはいかないな。
+English: 
+
+Cole: 弾の入っていない拳銃は必要ない。邪魔になるだけだ。
+English: 
+
+Cole: この拳銃はスライドが引かれた状態だ。これは取る前に調べてみた方がよさそうだ。
+English: 
+
+Cole: 俺は床に落ちた物を取ろうとしたが、どれも使えそうに思えない。諦めた方がよさそうだ。
+English: 
+
+廊下に出る　
+English: Leave
+
+キャンセル　
+English: Cancel
+
+Cole: よし、廊下に戻ろう。
+English: Okay, let's go back to the hallway.
+
+Cole: もう少しこの部屋で調べてみようか‥‥‥。
+English: I should investigate this room a little more...
+
