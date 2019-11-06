@@ -2,6 +2,9 @@
 
 import re
 
+#outputType = 'lined'
+outputType = 'spreadsheet'
+
 filename = './OPEN_1.MES'
 with open(filename, 'rb') as f:
     content = f.read()
@@ -9,6 +12,8 @@ with open(filename, 'rb') as f:
 # 23 == cole, 24 == doc, 25 == jack(?)
 results = re.findall(br'(\xBA[\x23-\x25].*?)\xBA\x26', content)
 if results:
+    if outputType == 'spreadsheet':
+        print "Nametag,Japanese,English"
     for r in results:
         # print repr(r)
         # r = results[0]
@@ -20,13 +25,22 @@ if results:
             if c == '\xBA' and not skip:    # control byte
                 control = True
             elif control and c == '\x23':   # dialog start cole
-                sub += '\x83\x52\x81\x5B\x83\x8B\x81\x46'
+                if outputType == 'lined':
+                    sub += '\x83\x52\x81\x5B\x83\x8B\x81\x46'
+                elif outputType == 'spreadsheet':
+                    sub += 'Cole,'
                 control = False
             elif control and c == '\x24':   # dialog start doc
-                sub += '\x83\x4E\x81\x5B\x83\x4B\x81\x5B\x81\x46'
+                if outputType == 'lined':
+                    sub += '\x83\x4E\x81\x5B\x83\x4B\x81\x5B\x81\x46'
+                elif outputType == 'spreadsheet':
+                    sub += 'Cooger,'
                 control = False
             elif control and c == '\x25':   # dialog start jack?
-                sub += '\x81\x46'
+                if outputType == 'lined':
+                    sub += '\x81\x5B\x81\x46'
+                elif outputType == 'spreadsheet':
+                    sub += 'Officer Jack,'
                 control = False
             elif control and c == '\x26':   # dialog end
                 control = False
@@ -67,5 +81,8 @@ if results:
             else:
                 # hiragana char, prefix 82 and shift by 74
                 sub += '\x82' + chr(ord(c)+114)
-        sub += '\n'
-        print (sub.decode('shift-jis')).encode('utf-8', 'ignore') + 'English: \n'
+        if outputType == 'lined':
+            sub += '\n'
+            print (sub.decode('shift-jis')).encode('utf-8', 'ignore') + 'English: \n'
+        elif outputType == 'spreadsheet':
+            print (sub.decode('shift-jis')).encode('utf-8', 'ignore') + ','
