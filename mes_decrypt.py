@@ -15,15 +15,22 @@ filename = mesName + '.MES'
 def writeJapaneseToTranslationFile(japaneseLines):
     if outputType == 'lined':
         for (nameTag, japanese, english) in japaneseLines:
-            print (nameTag + ': ' + line.decode('shift-jis')).encode('utf-8', 'ignore') + 'English: \n'
+            print (nameTag + ': ' + japanese + '\nEnglish: \n')
     elif outputType == 'spreadsheet':
-        with open(mesName + '.CSV.1', 'w') as csvfile:
+        with open(mesName + '.CSV', 'w') as csvfile:
             fieldnames = 'Nametag','Japanese','English'
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
             writer.writeheader()
-            for (nameTag, japanese, english) in japaneseLines:
-                writer.writerow({'Nametag' : nameTag, 'Japanese' : japanese.decode('shift-jis').encode('utf-8', 'ignore'), 'English' : ''})
+            for (orig, nameTag, japanese, english) in japaneseLines:
+                writer.writerow({'Nametag' : nameTag, 'Japanese' : japanese, 'English' : ''})
+        with open(mesName + '.MASTER.CSV', 'w') as csvfile:
+            fieldnames = 'Original Bytes','Nametag','Japanese','English'
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            writer.writeheader()
+            for (originalByteSequence, nameTag, japanese, english) in japaneseLines:
+                writer.writerow({'Original Bytes' : originalByteSequence, 'Nametag' : nameTag, 'Japanese' : japanese, 'English' : ''})
 
 puncutation = {
     '\x0D' : '\x81\x41',
@@ -47,19 +54,28 @@ with open(filename, 'rb') as f:
     content = f.read()
 # get lines from bytes start marker BA 23-25 to end marker BA 26
 # 23 == cole, 24 == doc, 25 == jack(?)
-results = re.findall(br'(\xBA[\x23-\x25].*?)\xBA\x26', content)
+
+results = []
+results = results + re.findall(br'(\xBA[\x23-\x25].*?)(?:(?:\xBA\x26)|(?:\xA3\xA3))', content)
+results = results + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', content)
+
 extractedLines = []
 if results:
     for result in results:
         isPunctuation = False
         isControl = False
+        isConditional = False
         skip = False
         sub = ''
         english = ''
         nameTag = ''
+        originalByteSequence = result
+
         for c in result:
             if c == '\xBA' and not skip:    # control byte
                 isControl = True
+            elif c == '\xA3' and not isConditional:
+                break
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
@@ -84,10 +100,9 @@ if results:
                 isControl = False
             else:
                 # hiragana char, prefix 82 and shift by 74
-                print hex(ord(c))
                 sub += '\x82' + chr(ord(c)+114)
         japanese = sub
-        extractedText = (nameTag, japanese, english)
+        extractedText = (originalByteSequence, nameTag, japanese, english)
         extractedLines.append(extractedText)
 
 writeJapaneseToTranslationFile(extractedLines)
