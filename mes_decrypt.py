@@ -6,10 +6,12 @@
 import re
 import csv
 
+debug = True
+
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = 'OPEN_2'
+mesName = '000001'
 filename = mesName + '.MES'
 
 def writeJapaneseToTranslationFile(japaneseLines):
@@ -56,7 +58,7 @@ with open(filename, 'rb') as f:
 # 23 == cole, 24 == doc, 25 == jack(?)
 
 results = []
-results = results + re.findall(br'(\xBA[\x23-\x25].*?)(?:(?:\xBA\x26)|(?:\xA3\xA3))', content)
+results = results + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3))', content)
 results = results + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', content)
 
 extractedLines = []
@@ -65,17 +67,28 @@ if results:
         isPunctuation = False
         isControl = False
         isConditional = False
-        skip = False
+        skip = False  # Skip is a misnomer, it actually collects the next byte
         sub = ''
         english = ''
         nameTag = ''
         originalByteSequence = result
 
+        print ('')
         for c in result:
+            if debug:
+                print (c,)
             if c == '\xBA' and not skip:    # control byte
                 isControl = True
+            elif c == '\xB2':
+                isConditional = True
+            elif c == '\xA2' and isConditional:
+                sub += '<IF>'
             elif c == '\xA3' and not isConditional:
                 break
+            elif c == '\xA4' and isConditional:
+                sub += '<ELSE>'
+            elif c == '\xA3' and isConditional:
+                sub += '<ENDIF>'
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
