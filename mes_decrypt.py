@@ -11,7 +11,7 @@ debug = True
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = '000001'
+mesName = 'MES_IN/000005'
 filename = mesName + '.MES'
 
 def writeJapaneseToTranslationFile(japaneseLines):
@@ -67,11 +67,14 @@ if results:
         isPunctuation = False
         isControl = False
         isConditional = False
+        isFlagTest = False
         skip = False  # Skip is a misnomer, it actually collects the next byte
         sub = ''
         english = ''
         nameTag = ''
         originalByteSequence = result
+
+        result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
 
         print ('')
         for c in result:
@@ -79,7 +82,18 @@ if results:
                 print (c,)
             if c == '\xBA' and not skip:    # control byte
                 isControl = True
+            elif skip:
+                sub += c
+                skip = False
             elif c == '\xB2':
+                isConditional = True
+            elif c == '\xBC':
+                sub += '<IF '
+                isFlagTest = True
+            elif isFlagTest == True:
+                sub += str(ord(c))
+                sub += '>'
+                isFlagTest = False
                 isConditional = True
             elif c == '\xA2' and isConditional:
                 sub += '<IF>'
@@ -89,6 +103,7 @@ if results:
                 sub += '<ELSE>'
             elif c == '\xA3' and isConditional:
                 sub += '<ENDIF>'
+                isConditional = False
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
@@ -101,9 +116,6 @@ if results:
             elif isPunctuation and re.match('[\x0D-\x13]', c): # punctuation value
                 sub += puncutation[c]
                 isPunctuation = False
-            elif skip:
-                sub += c
-                skip = False
             elif re.match('[\x81-\x83,\x88-\x9F,\xE0-\xEA]', c):    # kana, kanji and some symbols - skip next byte
                 sub += c
                 skip = True
