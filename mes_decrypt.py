@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
+#TODO: What is that A8 28 05 thing in 000007.MES? (interrogation room. Moshi moshi {} .....)
 #TODO: Genericize Nametags
-#TODO: Conditionals!
 
 import re
 import csv
@@ -11,7 +11,7 @@ debug = True
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = 'MES_IN/000005'
+mesName = 'MES_IN/000010'
 filename = mesName + '.MES'
 
 def writeJapaneseToTranslationFile(japaneseLines):
@@ -58,8 +58,11 @@ with open(filename, 'rb') as f:
 # 23 == cole, 24 == doc, 25 == jack(?)
 
 results = []
-results = results + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3))', content)
+results = results + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xA4\xBA[\x23-25])|(?:\xC9\x22\x42))', content)
 results = results + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', content)
+
+#options = []
+results = results + re.findall(br'\x02\x2C\xA2(.*?)\xA3', content)
 
 extractedLines = []
 if results:
@@ -75,6 +78,7 @@ if results:
         originalByteSequence = result
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
+        result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
 
         print ('')
         for c in result:
@@ -101,9 +105,14 @@ if results:
                 break
             elif c == '\xA4' and isConditional:
                 sub += '<ELSE>'
+            elif c == '\xA4' and not isConditional:
+                sub += '<>'
             elif c == '\xA3' and isConditional:
                 sub += '<ENDIF>'
                 isConditional = False
+            elif c== '\xAB':
+                #TODO: Remove this; just debugging a weird thing in 000007
+                sub += '<WHAT IS THIS>'
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
@@ -129,5 +138,11 @@ if results:
         japanese = sub
         extractedText = (originalByteSequence, nameTag, japanese, english)
         extractedLines.append(extractedText)
+
+#if options:
+#    for option in options:
+#        o = option.split('\xA4')
+#        extractedText = (option, 'OPTION', o[0] + '<>' + o[1], '')
+#        extractedLines.append(extractedText)
 
 writeJapaneseToTranslationFile(extractedLines)
