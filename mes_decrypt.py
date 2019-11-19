@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 #TODO: Genericize Nametags
+#TODO: 000007 has an annoying <SET VAR><OR><NAMETAG> thing (0C__A4BA23)
 
 import re
 import csv
@@ -9,15 +10,18 @@ import sys
 
 import nametags
 
-debug = False
+debugBytes = False  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
 gotTranslation = False
 
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = 'MES_IN/OPEN_2'
+mesName = 'MES_IN/000006'
 filename = mesName + '.MES'
 transFile = mesName + '.ENG.CSV'
+
+if os.path.exists(transFile):
+    gotTranslation = True
 
 def encodeEnglish(line):
     nametag = line["Nametag"]
@@ -32,13 +36,16 @@ def encodeEnglish(line):
         english = '\xBA\x24' + english
     elif nametag == 'Officer Jack':
         english = '\xBA\x25' + english
+    elif nametag == 'Sheila':
+        english = '\xBA\x25' + english
 
     p = re.compile(r'<IF (.)>')
-    english = p.sub(b'\xBC\xA2\x0C\1', english)
-    english = english.replace('<IF>',b'\xA2')
-    english = english.replace('<ELSE>',b'\xA4')
-    english = english.replace('<ENDIF>',b'\xA3')
-    english = english.replace('<OR>',b'\xA3')
+    english = p.sub(b'\x00\xBC\xA2\x0C\\1\x21', english)
+    english = english.replace('<IF>',b'\x00\xA2\x21')
+    english = english.replace('<ELSE>',b'\x00\xA4\x21')
+    english = english.replace('<ENDIF>',b'\x00\xA3\x21')
+    english = english.replace('<OR>',b'\x00\xA3\x21')
+    english = english.replace('\\n',b'\xA5')
     english = english.replace('<SPECIAL NEWLINE?>',b'\xA8\x28\x05')
 
     return english
@@ -52,7 +59,8 @@ def readEnglishFromTranslationFile():
                 encodedEnglishLine = encodeEnglish(line)
                 englishLines.append(encodedEnglishLine)
             return englishLines
-
+    else:
+        print "No translation file found " + transFile
 # Function to handle writing the Japanese to a CSV. It supports the old 'linefile'
 # format I used on Policenauts, but my translator asked for CSV so he could add notes, etc.
 def writeJapaneseToTranslationFile(japaneseLines):
@@ -99,16 +107,31 @@ with open(filename, 'rb') as f:
 # 23 == cole, 24 == doc, 25 == jack(?)
 
 encodedJapaneseLines = []
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xA4\xBA[\x23-25])|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
+
+# This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
+# Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
+#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xA4\xBA[\x23-25])|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
+
+# Nonstandard lines - usually with no nametag - start with A4AA280E...AC
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', encodedMESbytes)
 
+# Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2(.*?)\xA3', encodedMESbytes)
+
+# Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0].*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+
+# Oof, there's control codes for displaying an image mid-dialog box too!
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+
+
 finalMES = encodedMESbytes
 
 extractedLines = []
 
-englishLines = readEnglishFromTranslationFile()
-#print englishLines
+if gotTranslation:
+    englishLines = readEnglishFromTranslationFile()
 
 if encodedJapaneseLines:
     for result in encodedJapaneseLines:
@@ -122,14 +145,17 @@ if encodedJapaneseLines:
         nameTag = ''
         originalByteSequence = result
 
-        finalMES = finalMES.replace(result, englishLines[0])
-        del englishLines[0]
+#        print englishLines[0]
+        if gotTranslation:
+            if (len(englishLines) > 0):
+                finalMES = finalMES.replace(result, englishLines[0])
+                del englishLines[0]
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
         result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
 
         for c in result:
-            if debug:
+            if debugBytes:
                 print (c,)
             if c == '\xBA' and not skip:    # control byte
                 isControl = True
@@ -146,7 +172,7 @@ if encodedJapaneseLines:
                 isFlagTest = True
             elif isFlagTest == True:
                 # Turn the hex flag into a readable hex number. Translator, please C&P it!
-                sub += str(ord(c))
+                sub += c.encode()
                 sub += '>'
                 isFlagTest = False
                 isConditional = True
@@ -154,16 +180,10 @@ if encodedJapaneseLines:
                 # If conditional, but there's no flag present. Not really sure how DotB knows
                 # which flag to test in cases like this, honestly.
                 sub += '<IF>'
-            elif c == '\xA3' and not isConditional:
-                # Regardless of the conditional type, A3 is always the endif
-                # But once in a blue moon, an A3 can be by itself before the end
-                # of a dialogue box, before BA26
-                if isConditional:
-                    sub += '<ENDIF>'
-                    isConditional = False
-                else:
-                    break
-            elif c == '\xA4' and isConditional:
+            elif c == '\xA3':
+                sub += '<ENDIF>'
+                isConditional = False
+            elif c == '\xA4':
                 # Regardless of the conditional type, A4 is always an ELSE
                 # In options, meaning when you can do things like "Leave or Cancel",
                 # A4 is just a delimiter. I used '<>' originally but '<OR>' makes more sense.
@@ -171,6 +191,8 @@ if encodedJapaneseLines:
                     sub += '<ELSE>'
                 else:
                     sub += '<OR>'
+            elif c == '\xA5':
+                sub += '\n'
             elif c== '\xAB':
                 # TODO: I'm a little worried about encountering AB as a control code later.
                 # Probably a better way to do this but multibyte parsing mid-text makes this
@@ -204,6 +226,8 @@ if encodedJapaneseLines:
 
 writeJapaneseToTranslationFile(extractedLines)
 
-outputFile = open(mesName + '.ENG.MES', 'w+b')
-outputFile.write(finalMES)
-outputFile.close()
+if gotTranslation:
+    print "Translating"
+    outputFile = open(mesName + '.ENG.MES', 'w+b')
+    outputFile.write(finalMES)
+    outputFile.close()
