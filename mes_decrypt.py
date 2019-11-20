@@ -10,13 +10,13 @@ import sys
 
 import nametags
 
-debugBytes = False  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
+debugBytes = True  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
 gotTranslation = False
 
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = 'MES_IN/000006'
+mesName = 'MES_IN/10PLUS'
 filename = mesName + '.MES'
 transFile = mesName + '.ENG.CSV'
 
@@ -41,12 +41,20 @@ def encodeEnglish(line):
 
     p = re.compile(r'<IF (.)>')
     english = p.sub(b'\x00\xBC\xA2\x0C\\1\x21', english)
-    english = english.replace('<IF>',b'\x00\xA2\x21')
-    english = english.replace('<ELSE>',b'\x00\xA4\x21')
-    english = english.replace('<ENDIF>',b'\x00\xA3\x21')
-    english = english.replace('<OR>',b'\x00\xA3\x21')
-    english = english.replace('\\n',b'\xA5')
+
+    p2 = re.compile(r'<IMAGE ("[^"]+")')
+    english = p2.sub(b'\xC9\\1\xCF\x24\x23',english)
+
+    # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
+    # Put one after a null to get things back to regular reading so control codes work again.
+
+    english = english.replace('<IF>',b'\x00\x81\x40\xA2\x21')
+    english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
+    english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
+    english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
+    english = english.replace('\\n',b'\x00\xBA\x28\x13\x21')
     english = english.replace('<SPECIAL NEWLINE?>',b'\xA8\x28\x05')
+    english = english.replace('<A8280F>',b'\xA8\x28\x0F')
 
     return english
 
@@ -111,7 +119,8 @@ encodedJapaneseLines = []
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
 #encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xA4\xBA[\x23-25])|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
+#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d\xf6)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14))', encodedMESbytes)
 
 # Nonstandard lines - usually with no nametag - start with A4AA280E...AC
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', encodedMESbytes)
@@ -120,10 +129,11 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA4\xAA\x28\x0E(.*?
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2(.*?)\xA3', encodedMESbytes)
 
 # Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0].*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A))', encodedMESbytes)
 
 # Oof, there's control codes for displaying an image mid-dialog box too!
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+# Okay, this collides with 000001.MES
+# encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
 
 
 finalMES = encodedMESbytes
@@ -138,12 +148,13 @@ if encodedJapaneseLines:
         isPunctuation = False
         isControl = False
         isConditional = False
-        isFlagTest = False
+        isFlag = False
         skip = False  # Skip is a misnomer, it actually collects the next byte
         sub = ''
         english = ''
         nameTag = ''
         originalByteSequence = result
+        isQuote = False
 
 #        print englishLines[0]
         if gotTranslation:
@@ -153,6 +164,11 @@ if encodedJapaneseLines:
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
         result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
+        result = re.sub(br'\xCF\x24\x23', b'\xCF', result) # C9-CF2423 defines an image which can appear mid dialog.
+        result = re.sub(br'\xA8\x28\x0F', b'\xA8', result) # In 000008, A8280F seems to end a dialog box? Not really sure.
+
+        if debugBytes:
+            print "----===----"
 
         for c in result:
             if debugBytes:
@@ -162,6 +178,15 @@ if encodedJapaneseLines:
             elif skip:
                 sub += c
                 skip = False
+            elif c == '\xC9':
+                # Encountered in 000006 - When Cole looks at the letter, image comes inline with the dialog
+                sub += "<IMAGE "
+                isQuote = True
+            elif c == '\xCF':
+                sub += ">"
+                isQuote = False
+            elif isQuote:
+                sub += c
             elif c == '\xB2':
                 isConditional = True
             elif c == '\xBC':
@@ -169,13 +194,15 @@ if encodedJapaneseLines:
                 # but it happens mid text and we have to retain it, hence we turn on a
                 # toggle to tell the reader that the next byte is the flag.
                 sub += '<IF '
-                isFlagTest = True
-            elif isFlagTest == True:
+                isFlag = True
+            elif isFlag == True:
                 # Turn the hex flag into a readable hex number. Translator, please C&P it!
                 sub += c.encode()
                 sub += '>'
-                isFlagTest = False
+                isFlag = False
                 isConditional = True
+            elif c == '\xA8':
+                sub += '<A828OF>'
             elif c == '\xA2' and isConditional:
                 # If conditional, but there's no flag present. Not really sure how DotB knows
                 # which flag to test in cases like this, honestly.
@@ -193,11 +220,14 @@ if encodedJapaneseLines:
                     sub += '<OR>'
             elif c == '\xA5':
                 sub += '\n'
-            elif c== '\xAB':
+            elif c == '\xAB':
                 # TODO: I'm a little worried about encountering AB as a control code later.
                 # Probably a better way to do this but multibyte parsing mid-text makes this
                 # uglier.
                 sub += '<SPECIAL NEWLINE?>'
+            elif c == '\x0C': # This can be encountered if there's a variable set in the middle of text.
+                sub += '<VAR '
+                isFlag = True
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
