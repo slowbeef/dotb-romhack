@@ -1,12 +1,15 @@
 #!/usr/bin/python
 
 #TODO: Genericize Nametags
-#TODO: 000007 has an annoying <SET VAR><OR><NAMETAG> thing (0C__A4BA23)
+#TODO: Extract these random control codes into a dictionary or function or something.
+
+#TODO: Multilines seem like they don't work - possibly because second line gets caught in results first?
 
 import re
 import csv
 import os
 import sys
+import argparse
 
 import nametags
 
@@ -16,9 +19,23 @@ gotTranslation = False
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-mesName = 'MES_IN/10PLUS'
+#000030 still has a problem
+#000041 still has a problem
+#000044 still has a problem
+#000045 still has a problem... and beyond. A lot look like the same problem.
+#000020 has weird bytes in the import - A lot of those weird test variables?
+#Nothing in 38?
+mesName = 'MES_IN/000020'
+
+parser = argparse.ArgumentParser(description='MES files to pass in')
+parser.add_argument("-m", default="MES_IN/000001", help="This is the name of the MES file with the directory it's in (and where to put stuff)")
+args = parser.parse_args()
+mesName = args.m
+
 filename = mesName + '.MES'
 transFile = mesName + '.ENG.CSV'
+
+
 
 if os.path.exists(transFile):
     gotTranslation = True
@@ -27,7 +44,7 @@ def encodeEnglish(line):
     nametag = line["Nametag"]
     english = line["English"]
 
-    english = '!' + english + '\x00'
+    english = '!' + english + '\x00\x81\x40'
 
     #TODO: I know, I know, I'm just testing eng insertion
     if nametag == 'Cole':
@@ -43,18 +60,39 @@ def encodeEnglish(line):
     english = p.sub(b'\x00\xBC\xA2\x0C\\1\x21', english)
 
     p2 = re.compile(r'<IMAGE ("[^"]+")')
-    english = p2.sub(b'\xC9\\1\xCF\x24\x23',english)
+    english = p2.sub(b'\x00\x81\x40\xC9\\1\xCF\x24\x23\x21',english)
+
+    p3 = re.compile(r'<VAR (.)>')
+    english = p3.sub(b'\x00\x81\x40\x0C\\1\x21', english)
+
+    p4 = re.compile(r'<TEST (.)>')
+    english = p4.sub(b'\x00\x81\x40\x08\\1\x21', english)
+
+    p5 = re.compile(r'<VAL (.)>')
+    english = p5.sub(b'\x00\x81\x40\x0D\\1\x21', english)
+
+    p6 = re.compile(r'<SET (.)>')
+    english = p6.sub(b'\x00\x81\x40\xB8\\1\x21', english)
 
     # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
     # Put one after a null to get things back to regular reading so control codes work again.
 
-    english = english.replace('<IF>',b'\x00\x81\x40\xA2\x21')
+    english = english.replace('<IF>',b'\x00\x81\x40\xB2\xA2\x21')
     english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
     english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
-    english = english.replace('\\n',b'\x00\xBA\x28\x13\x21')
-    english = english.replace('<SPECIAL NEWLINE?>',b'\xA8\x28\x05')
-    english = english.replace('<A8280F>',b'\xA8\x28\x0F')
+    english = english.replace('\n',b'\x00\x81\x40\xBA\x28\x13\x21')
+    english = english.replace('\\n',b'\x00\x81\x40\xBA\x28\x13\x21')
+    english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x40\xA8\x28\x05\x21')
+    english = english.replace('<A828OF>',b'\x00\x81\x40\xA8\x28\x0F\x21')
+    english = english.replace('<C523280f>',b'\x00\x81\x40\xC5\x23\x28\x0F\x21')
+    english = english.replace('<86A2>',b'\x00\x86\xA2\x21')
+    english = english.replace('<A0A1>',b'\x00\xA0\xA1\x21')
+
+    #Cleanup
+#    english = english.replace(b'\x81\x40\xBA\x26', b'\xBA\x26')
+#    english = english.replace(b'\x21\x00', '')
+    nametag = ''
 
     return english
 
@@ -92,6 +130,15 @@ def writeJapaneseToTranslationFile(japaneseLines):
                 writer.writerow({'Original Bytes' : originalByteSequence, 'Nametag' : nameTag, 'Japanese' : japanese, 'English' : ''})
 
 puncutation = {
+    '\x04' : 'Kill: ',
+    '\x05' : 'Guul: ',
+    '\x06' : 'Nose: ',
+    '\x07' : 'Ray: ',
+    '\x08' : 'Cain: ',
+    '\x09' : 'Sally: ',
+    '\x0A' : 'Cathy: ',
+    '\x0B' : 'Man A: ',
+    '\x0C' : 'Main B: ',
     '\x0D' : '\x81\x41',
     '\x0E' : '\x81\x64',
     '\x0F' : '\x81\x42',
@@ -116,24 +163,32 @@ with open(filename, 'rb') as f:
 
 encodedJapaneseLines = []
 
+
+# Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
+# This should come first because dialogue boxes will also match second/third lines in these sorts of
+# constructs, so the replace will modify one line in multi-line replacements.
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A))', encodedMESbytes)
+
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAF\xB0\xB4\xB6\xCD\xC9\xC5-\xC6\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAA)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A))', encodedMESbytes)
+
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
 #encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xA4\xBA[\x23-25])|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
 #encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC9\x22\x42)|(?:\xC3\x23\x24))', encodedMESbytes)
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\x0c.)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d\xf6)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14))', encodedMESbytes)
 
-# Nonstandard lines - usually with no nametag - start with A4AA280E...AC
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA4\xAA\x28\x0E(.*?)\xAC', encodedMESbytes)
+# As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d\xf6)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14))', encodedMESbytes)
 
+# Nonstandard lines - usually with no nametag - start with A4AA280E...AC
+#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E(.*?)(?:(?:\xBA\x26)|(?:\xAC)|(?:\xFF\xFF))', encodedMESbytes)
 # Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2(.*?)\xA3', encodedMESbytes)
 
-# Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0c.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A))', encodedMESbytes)
 
 # Oof, there's control codes for displaying an image mid-dialog box too!
 # Okay, this collides with 000001.MES
-# encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
 
 
 finalMES = encodedMESbytes
@@ -163,9 +218,14 @@ if encodedJapaneseLines:
                 del englishLines[0]
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
+        result = re.sub(br'\xBC\xA2\x08', b'\xB8', result) # Is this another flag test? Might be a setter? Not sure diff between 08 and 0C
+
         result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
         result = re.sub(br'\xCF\x24\x23', b'\xCF', result) # C9-CF2423 defines an image which can appear mid dialog.
         result = re.sub(br'\xA8\x28\x0F', b'\xA8', result) # In 000008, A8280F seems to end a dialog box? Not really sure.
+        result = re.sub(br'\xC5\x23\x28\x0F', b'\xC5', result) # In 17PLUS, looks kind of like a newline?
+        result = re.sub(br'\x86\xA2',b'\x86', result) # In 000025, not sure. It's mid text.
+        result = re.sub(br'\xA0\xA1',b'\xA0',result) # In 000029
 
         if debugBytes:
             print "----===----"
@@ -178,6 +238,16 @@ if encodedJapaneseLines:
             elif skip:
                 sub += c
                 skip = False
+            elif isFlag == True:
+                # Turn the hex flag into a readable hex number. Translator, please C&P it!
+                sub += c.encode()
+                sub += '>'
+                isFlag = False
+                isConditional = True
+            elif c == '\x86':
+                sub += '<86A2>'
+            elif c == '\xA0':
+                sub += '<A0A1>'
             elif c == '\xC9':
                 # Encountered in 000006 - When Cole looks at the letter, image comes inline with the dialog
                 sub += "<IMAGE "
@@ -195,12 +265,9 @@ if encodedJapaneseLines:
                 # toggle to tell the reader that the next byte is the flag.
                 sub += '<IF '
                 isFlag = True
-            elif isFlag == True:
-                # Turn the hex flag into a readable hex number. Translator, please C&P it!
-                sub += c.encode()
-                sub += '>'
-                isFlag = False
-                isConditional = True
+            elif c == '\xB8':
+                sub += '<SET '
+                isFlag = True
             elif c == '\xA8':
                 sub += '<A828OF>'
             elif c == '\xA2' and isConditional:
@@ -225,9 +292,18 @@ if encodedJapaneseLines:
                 # Probably a better way to do this but multibyte parsing mid-text makes this
                 # uglier.
                 sub += '<SPECIAL NEWLINE?>'
-            elif c == '\x0C': # This can be encountered if there's a variable set in the middle of text.
+            elif c == '\x0C' and not isPunctuation: # This can be encountered if there's a variable set in the middle of text.
                 sub += '<VAR '
                 isFlag = True
+            elif c == '\x0D' and not isPunctuation:
+                sub += '<VAL '
+                print "VAL"
+                isFlag = True
+            elif c == '\x08' and not isPunctuation: # Found in 000020.MES, looks like it's something that tages an argument.
+                sub += '<TEST '
+                isFlag = True
+            elif c == '\xC5':
+                sub += '<C523280F>'
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
@@ -237,18 +313,19 @@ if encodedJapaneseLines:
             elif isControl and c == '\x28':   # punctuation control byte
                 isPunctuation = True
                 isControl = False
-            elif isPunctuation and re.match('[\x0D-\x13]', c): # punctuation value
+            elif isPunctuation and re.match('[\x04-\x13]', c): # punctuation value
                 sub += puncutation[c]
                 isPunctuation = False
             elif re.match('[\x81-\x83,\x88-\x9F,\xE0-\xEA]', c):    # kana, kanji and some symbols - skip parsing next byte
                 sub += c
                 skip = True
             elif isPunctuation or isControl:
-                print "ERROR isPunctuation/control byte skipped"
+                print "ERROR isPunctuation/control byte skipped" + c.encode()
                 isPunctuation = False
                 isControl = False
             else:
                 # hiragana char, prefix 82 and shift by 74 to get the SJIS value
+                # print hex(ord(c))
                 sub += '\x82' + chr(ord(c)+114)
         japanese = sub
         extractedText = (originalByteSequence, nameTag, japanese, english)
