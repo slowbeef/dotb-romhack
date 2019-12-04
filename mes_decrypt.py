@@ -19,12 +19,6 @@ gotTranslation = False
 #outputType = 'lined'
 outputType = 'spreadsheet'
 
-#000030 still has a problem
-#000041 still has a problem
-#000044 still has a problem
-#000045 still has a problem... and beyond. A lot look like the same problem.
-#000020 has weird bytes in the import - A lot of those weird test variables?
-#Nothing in 38?
 mesName = 'MES_IN/000020'
 
 parser = argparse.ArgumentParser(description='MES files to pass in')
@@ -174,8 +168,9 @@ encodedJapaneseLines = []
 # constructs, so the replace will modify one line in multi-line replacements.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28))', encodedMESbytes)
 
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xCD\xC9\xC5-\xC6\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAA)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5-\xC6\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAA)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
+encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5-\xC6\xCD\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
+
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
