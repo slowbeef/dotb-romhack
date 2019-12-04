@@ -113,7 +113,7 @@ def writeJapaneseToTranslationFile(japaneseLines):
         for (nameTag, japanese, english) in japaneseLines:
             print (nameTag + ': ' + japanese + '\nEnglish: \n')
     elif outputType == 'spreadsheet':
-        with open(mesName + '.CSV', 'w') as csvfile:
+        with open(mesName + '.CSV', 'wb') as csvfile:
             fieldnames = 'Nametag','Japanese','English'
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -162,6 +162,8 @@ with open(filename, 'rb') as f:
 
 encodedJapaneseLines = []
 
+# 11PLUS introduced another weird edge case - 08CD29100027?!
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00\x27(.*?)(?:\xBA\x26)', encodedMESbytes)
 
 # Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
