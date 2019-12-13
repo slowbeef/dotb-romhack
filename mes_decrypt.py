@@ -87,21 +87,21 @@ def addLineBreaks(unbrokenLine, tag):
         if c == ' ' and not inTag:
             lastSpace = count - 1
         if count > linebreak:
-            if numLines < 4:
+            if numLines < 3:
                 line[lastSpace] = '\n'
                 linebreak = linebreak + linewidth
             else:
                 numLines = 0
                 if len(tag) > 0:
                     linebreak = linebreak + linewidth
-                    tag = "<NEXTBOX>" + tag + ":"
+                    print "Got a nextbox"
+                    tag = "<NEXTBOX>"
                     tagAsList = list(tag)
                     line[lastSpace:len(tagAsList)] = tagAsList
                     skip = len(tagAsList)
                     linebreak = linebreak - skip
                     inNameTag = True
             numLines = numLines + 1
-
 
         if c == '\n' and not inTag:
             linebreak = linewidth + count
@@ -118,7 +118,7 @@ def encodeEnglish(line, count):
     english = addLineBreaks(english, nametag)
 
 # Make this into a general debug thing for newlines?
-    if count == 9:
+    if count == 31:
         print english
 #        quit()
 
@@ -178,7 +178,7 @@ def encodeEnglish(line, count):
 #    english = english.replace(b'\x21\x00', '')
     nametag = ''
 
-    if count == 9:
+    if count == 31:
         print english
     return english
 
