@@ -1,9 +1,14 @@
 #!/usr/bin/python
 
 #TODO: Genericize Nametags
+# How this works.
+# B9 23/24/25 sets the name tag.
+# BA 23/24/25 uses it.
+# Look for B9 25 to figure out the new nametag
 #TODO: Extract these random control codes into a dictionary or function or something.
-
-#TODO: Multilines seem like they don't work - possibly because second line gets caught in results first?
+#TODO: Multilines might have nametags on the second line, but if you identify them, you're putting them on line 1
+#TODO: 000027 has some bytecode - there's a C5 24 23 following a C5 23 28 0F - since you're translating those as C5,
+# it collides. Anyway, gotta ignore that somehow.
 
 import re
 import csv
@@ -36,9 +41,86 @@ transFile = mesName + '.ENG.CSV'
 if os.path.exists(transFile):
     gotTranslation = True
 
-def encodeEnglish(line):
+def addNametags(mesCode):
+    startToTag = b'\xBC\xA2\x0E\x59\xB9'
+    startOfName = b'\xA2\xA8\x28\x0F\x21'
+    middle = b'\x00\x81\x97\xA3\xA4\xB9'
+    startToLowSpeedTag = b'\xA2\xD0\x73\x65\x20\x28\x1D\xA9\x23\xA8\x28\x0F\x21'
+    end = b'\x00\x81\x97\xA9\x28\x06\x23\xD0\x73\x65\x20\x28\x1B\x18\x12\xA3\xA3'
+
+    tagLookup = {
+        "MES_IN/OPEN_1" : [b'\x23', b'\x24']
+    }
+
+    nameLookup = {
+        "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "]
+    }
+
+    names = nameLookup[mesName]
+    tags = tagLookup[mesName]
+    if nameLookup[mesName] and tagLookup[mesName]:
+        count = 0
+        for name in names:
+            mesCode = startToTag + tags[count] + startOfName + name + middle + tags[count] + startToLowSpeedTag + name + end + mesCode
+            count = count + 1
+    return mesCode
+
+def addLineBreaks(unbrokenLine, tag):
+    linewidth = 57
+    linebreak = 57
+    count = 0
+    inTag = False
+    lastSpace = -1
+    numLines = 1
+    skip = 0
+    inNameTag = False
+
+    if len(tag) > 0:
+        linebreak = linebreak - len(tag)
+
+    # Strings are immutable in Python?!!
+    line = list(unbrokenLine)
+
+    for c in line:
+        if not inTag:
+            count = count + 1
+        if c == ' ' and not inTag:
+            lastSpace = count - 1
+        if count > linebreak:
+            if numLines < 4:
+                line[lastSpace] = '\n'
+                linebreak = linebreak + linewidth
+            else:
+                numLines = 0
+                if len(tag) > 0:
+                    linebreak = linebreak + linewidth
+                    tag = "<NEXTBOX>" + tag + ":"
+                    tagAsList = list(tag)
+                    line[lastSpace:len(tagAsList)] = tagAsList
+                    skip = len(tagAsList)
+                    linebreak = linebreak - skip
+                    inNameTag = True
+            numLines = numLines + 1
+
+
+        if c == '\n' and not inTag:
+            linebreak = linewidth + count
+        if c == '<':
+            inTag = True
+        if c == '>':
+            inTag = False
+    return ''.join(line)
+
+def encodeEnglish(line, count):
     nametag = line["Nametag"]
     english = line["English"]
+
+    english = addLineBreaks(english, nametag)
+
+# Make this into a general debug thing for newlines?
+    if count == 9:
+        print english
+#        quit()
 
     english = '!' + english + '\x00\x81\x40'
 
@@ -55,7 +137,7 @@ def encodeEnglish(line):
     p = re.compile(r'<IF (.)>')
     english = p.sub(b'\x00\xBC\xA2\x0C\\1\x21', english)
 
-    p2 = re.compile(r'<IMAGE ("[^"]+")')
+    p2 = re.compile(r'<IMAGE ("[^"]+")>')
     english = p2.sub(b'\x00\x81\x40\xC9\\1\xCF\x24\x23\x21',english)
 
     p3 = re.compile(r'<VAR (.)>')
@@ -77,15 +159,18 @@ def encodeEnglish(line):
     english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
     english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
-    english = english.replace('\n',b'\x00\x81\x40\xBA\x28\x13\x21')
-    english = english.replace('\\n',b'\x00\x81\x40\xBA\x28\x13\x21')
+    english = english.replace('\n',b'\x00\x81\x97\xBA\x28\x13\x21')
+    english = english.replace('\\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x40\xA8\x28\x05\x21')
     english = english.replace('<A828OF>',b'\x00\x81\x40\xA8\x28\x0F\x21')
     english = english.replace('<C523280f>',b'\x00\x81\x40\xC5\x23\x28\x0F\x21')
-    english = english.replace('<86A2>',b'\x00\x86\xA2\x21')
+    english = english.replace('<C523280FC52423>',b'\x00\x81\x40\xC5\x23\x28\x0F\xC5\x24\x23\x21')
+    english = english.replace('<EMDASH>',b'\x00\x86\xA2\x21')
     english = english.replace('<A0A1>',b'\x00\xA0\xA1\x21')
     english = english.replace('<LONEIF>',b'\x00\x81\x40\xBC\xA2\x21')
     english = english.replace('<BA27>',b'\xBA\x27')
+    english = english.replace('<NEXTBOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
+
 
 
     #Cleanup
@@ -93,6 +178,8 @@ def encodeEnglish(line):
 #    english = english.replace(b'\x21\x00', '')
     nametag = ''
 
+    if count == 9:
+        print english
     return english
 
 def readEnglishFromTranslationFile():
@@ -100,8 +187,10 @@ def readEnglishFromTranslationFile():
     if os.path.exists(transFile):
         with open(transFile) as csvfile:
             reader = csv.DictReader(csvfile)
+            count = 0
             for line in reader:
-                encodedEnglishLine = encodeEnglish(line)
+                count = count + 1
+                encodedEnglishLine = encodeEnglish(line, count)
                 englishLines.append(encodedEnglishLine)
             return englishLines
     else:
@@ -168,7 +257,8 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00
 # Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
 # constructs, so the replace will modify one line in multi-line replacements.
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28))', encodedMESbytes)
+# OOOOOO.MES contains A928 and A3B9
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9))', encodedMESbytes)
 
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5-\xC6\xCD\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
@@ -182,15 +272,20 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
 
 # Nonstandard lines - usually with no nametag - start with A4AA280E...AC
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E(.*?)(?:(?:\xBA\x26)|(?:\xAC)|(?:\xFF\xFF))', encodedMESbytes)
 # Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2(.*?)\xA3', encodedMESbytes)
+# Also OOOOOO.MES has these for NEW GAME, in English so let's exclude that.
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2([^\x21].*?)\xA3', encodedMESbytes)
 
 
 # Oof, there's control codes for displaying an image mid-dialog box too!
 # Okay, this collides with 000001.MES
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
 
+# 000025.MES has an incredible thing where one half of a sentnce starts, there's an <IF> and if it succeeds, you get one
+# entire cutscene which also includes an <ELSE>. Then you get the <ELSE> that matches the first <IF> and an alternate second
+# half of a sentence.
+# This is a hack to get around that while I discover if the game has more stuff like that in it.
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c\xba\x28\x0e\xba\x28\x0e\xba\x28\x0e\xba\x28\x0f', encodedMESbytes)
 
 finalMES = encodedMESbytes
 
@@ -225,8 +320,9 @@ if encodedJapaneseLines:
         result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
         result = re.sub(br'\xCF\x24\x23', b'\xCF', result) # C9-CF2423 defines an image which can appear mid dialog.
         result = re.sub(br'\xA8\x28\x0F', b'\xA8', result) # In 000008, A8280F seems to end a dialog box? Not really sure.
+        result = re.sub(br'\xC5\x23\x28\x0F\xC5\x24\x23', b'\xC7', result) # In 000027, There's 2 in a row like this that collides with C5 replacement.
         result = re.sub(br'\xC5\x23\x28\x0F', b'\xC5', result) # In 17PLUS, looks kind of like a newline?
-        result = re.sub(br'\x86\xA2',b'\x86', result) # In 000025, not sure. It's mid text.
+        result = re.sub(br'\x86\xA2',b'\x86', result) # In 000025, not sure. It's an EMDASH
         result = re.sub(br'\xA0\xA1',b'\xA0',result) # In 000029
 
         if debugBytes:
@@ -247,7 +343,7 @@ if encodedJapaneseLines:
                 isFlag = False
                 isConditional = True
             elif c == '\x86':
-                sub += '<86A2>'
+                sub += '<EMDASH>'
             elif c == '\xA0':
                 sub += '<A0A1>'
             elif c == '\xC9':
@@ -308,6 +404,8 @@ if encodedJapaneseLines:
                 isFlag = True
             elif c == '\xC5':
                 sub += '<C523280F>'
+            elif c == '\xC7':
+                sub += '<C523280FC52423>'
             elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
                 if nameTag == '':
                     nameTag = nameTags[c]
@@ -343,5 +441,6 @@ writeJapaneseToTranslationFile(extractedLines)
 if gotTranslation:
     print "Translating"
     outputFile = open(mesName + '.ENG.MES', 'w+b')
+    finalMES = addNametags(finalMES)
     outputFile.write(finalMES)
     outputFile.close()
