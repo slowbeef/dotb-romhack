@@ -5,10 +5,15 @@
 # B9 23/24/25 sets the name tag.
 # BA 23/24/25 uses it.
 # Look for B9 25 to figure out the new nametag
+
 #TODO: Extract these random control codes into a dictionary or function or something.
-#TODO: Multilines might have nametags on the second line, but if you identify them, you're putting them on line 1
-#TODO: 000027 has some bytecode - there's a C5 24 23 following a C5 23 28 0F - since you're translating those as C5,
-# it collides. Anyway, gotta ignore that somehow.
+#TODO: Linebreaking on if statements
+# 000009 has a lot, it looks like, specifically line 8.
+
+#TODO: Double space after Officer:
+
+#TODO: BA28_ nametags
+# 17PLUS has Nose
 
 import re
 import csv
@@ -49,66 +54,107 @@ def addNametags(mesCode):
     end = b'\x00\x81\x97\xA9\x28\x06\x23\xD0\x73\x65\x20\x28\x1B\x18\x12\xA3\xA3'
 
     tagLookup = {
-        "MES_IN/OPEN_1" : [b'\x23', b'\x24']
+        "MES_IN/OPEN_1" : [b'\x23', b'\x24'],
+        "MES_IN/000001" : [b'\x23', b'\x24', b'\x25']
     }
 
     nameLookup = {
-        "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "]
+        "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "],
+        "MES_IN/000001" : ["Cole: ", "Cooger: ", "Sheila: "]
     }
 
-    names = nameLookup[mesName]
-    tags = tagLookup[mesName]
-    if nameLookup[mesName] and tagLookup[mesName]:
+    names = nameLookup.get(mesName, '')
+    tags = tagLookup.get(mesName, '')
+    if names != '' and tags != '':
         count = 0
         for name in names:
             mesCode = startToTag + tags[count] + startOfName + name + middle + tags[count] + startToLowSpeedTag + name + end + mesCode
             count = count + 1
     return mesCode
 
-def addLineBreaks(unbrokenLine, tag):
-    linewidth = 57
-    linebreak = 57
+def addLineBreaks(unbrokenLine, nametag):
+    linewidth = 59
+    linebreak = 59
     count = 0
     inTag = False
     lastSpace = -1
     numLines = 1
     skip = 0
     inNameTag = False
+    foundIfOrImage = False
+    foundIf = False
+    foundElseOrOther = False
+    foundElse = False
+    foundOr = False
+    tagCount = 0
+    countSinceIf = 0
+    escaping = False
 
-    if len(tag) > 0:
-        linebreak = linebreak - len(tag)
+    if len(nametag) > 0:
+        unbrokenLine = nametag + ": " + unbrokenLine
 
     # Strings are immutable in Python?!!
     line = list(unbrokenLine)
+    debugLine = False
 
     for c in line:
-        if not inTag:
-            count = count + 1
-        if c == ' ' and not inTag:
-            lastSpace = count - 1
-        if count > linebreak:
+        if c == '\\':
+            escaping = True
+
+        if escaping and c == 'n':
+            escaping = False
+            c = '\n'
+
+        if (count >= linebreak and not inTag) or c == '\n':
             if numLines < 3:
-                line[lastSpace] = '\n'
-                linebreak = linebreak + linewidth
+                if count != lastSpace and c != '\n':
+                    line[lastSpace] = '\n'
             else:
                 numLines = 0
-                if len(tag) > 0:
-                    linebreak = linebreak + linewidth
-                    print "Got a nextbox"
-                    tag = "<NEXTBOX>"
-                    tagAsList = list(tag)
-                    line[lastSpace:len(tagAsList)] = tagAsList
-                    skip = len(tagAsList)
-                    linebreak = linebreak - skip
-                    inNameTag = True
+                linebreak = linebreak + linewidth
+                tag = "<BOX>"
+                tagAsList = list(tag)
+                line[lastSpace:len(tagAsList) + 1] = tagAsList
+                skip = len(tagAsList)
+#                linebreak = linebreak  skip
+#                inNameTag = True
             numLines = numLines + 1
+#            linebreak = linebreak + linebreak - 2
+            linebreak = lastSpace + linewidth
+            if c == '\n':
+                linebreak = count + linewidth
 
-        if c == '\n' and not inTag:
-            linebreak = linewidth + count
+        if c == ' ' and not inTag:
+            lastSpace = count
+
+        if not inTag:
+            count = count + 1
+
+        if inTag:
+            if c == 'I' and tagCount == 0:
+                foundIfOrImage = True
+            elif c == 'F' and tagCount == 1:
+                foundIf = True
+                countSinceIf = count
+            elif c == 'O' and tagCount == 0:
+                foundOr = True
+                count = countSinceIf
+            elif c == 'E' and tagCount == 0:
+                foundElseOrOther = True
+            elif c == 'L' and tagCount == 1:
+                foundElse = True
+                count = countSinceIf
+
+            tagCount = tagCount + 1
+
+#        if c == '\n' and not inTag:
+#            linebreak = linewidth + lastSpace
         if c == '<':
             inTag = True
         if c == '>':
             inTag = False
+    if len(nametag) > 0:
+        del line[0:len(nametag) + 2]
     return ''.join(line)
 
 def encodeEnglish(line, count):
@@ -116,13 +162,10 @@ def encodeEnglish(line, count):
     english = line["English"]
 
     english = addLineBreaks(english, nametag)
-
-# Make this into a general debug thing for newlines?
-    if count == 31:
+    if count == 101 and mesName == "MES_IN/OPEN_1":
         print english
-#        quit()
 
-    english = '!' + english + '\x00\x81\x40'
+    english = '!' + english + '\x00\x81\x97'
 
     #TODO: I know, I know, I'm just testing eng insertion
     if nametag == 'Cole':
@@ -133,71 +176,68 @@ def encodeEnglish(line, count):
         english = '\xBA\x25' + english
     elif nametag == 'Sheila':
         english = '\xBA\x25' + english
+    elif nametag == 'Killer':
+        english = '\xBA\x27' + english
 
     p = re.compile(r'<IF (.)>')
     english = p.sub(b'\x00\xBC\xA2\x0C\\1\x21', english)
 
     p2 = re.compile(r'<IMAGE ("[^"]+")>')
-    english = p2.sub(b'\x00\x81\x40\xC9\\1\xCF\x24\x23\x21',english)
+    english = p2.sub(b'\x00\x81\x97\xC9\\1\xCF\x24\x23\x21',english)
 
     p3 = re.compile(r'<VAR (.)>')
-    english = p3.sub(b'\x00\x81\x40\x0C\\1\x21', english)
+    english = p3.sub(b'\x00\x81\x97\x0C\\1\x21', english)
 
     p4 = re.compile(r'<TEST (.)>')
-    english = p4.sub(b'\x00\x81\x40\x08\\1\x21', english)
+    english = p4.sub(b'\x00\x81\x97\x08\\1\x21', english)
 
     p5 = re.compile(r'<VAL (.)>')
-    english = p5.sub(b'\x00\x81\x40\x0D\\1\x21', english)
+    english = p5.sub(b'\x00\x81\x97\x0D\\1\x21', english)
 
     p6 = re.compile(r'<SET (.)>')
-    english = p6.sub(b'\x00\x81\x40\xB8\\1\x21', english)
+    english = p6.sub(b'\x00\x81\x97\xB8\\1\x21', english)
 
     # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
     # Put one after a null to get things back to regular reading so control codes work again.
 
-    english = english.replace('<IF>',b'\x00\x81\x40\xB2\xA2\x21')
-    english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
+    english = english.replace('<IF>',b'\x00\x81\x97\xB2\xA2\x21')
+    english = english.replace('<ELSE>',b'\x00\x81\x97\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
-    english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
+    english = english.replace('<OR>',b'\x00\x81\x97\xA4\x21')
     english = english.replace('\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('\\n',b'\x00\x81\x97\xBA\x28\x13\x21')
-    english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x40\xA8\x28\x05\x21')
-    english = english.replace('<A828OF>',b'\x00\x81\x40\xA8\x28\x0F\x21')
-    english = english.replace('<C523280f>',b'\x00\x81\x40\xC5\x23\x28\x0F\x21')
-    english = english.replace('<C523280FC52423>',b'\x00\x81\x40\xC5\x23\x28\x0F\xC5\x24\x23\x21')
+    english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x97\xA8\x28\x05\x21')
+    english = english.replace('<A828OF>',b'\x00\x81\x97\xA8\x28\x0F\x21')
+    english = english.replace('<C523280f>',b'\x00\x81\x97\xC5\x23\x28\x0F\x21')
+    english = english.replace('<C523280FC52423>',b'\x00\x81\x97\xC5\x23\x28\x0F\xC5\x24\x23\x21')
     english = english.replace('<EMDASH>',b'\x00\x86\xA2\x21')
     english = english.replace('<A0A1>',b'\x00\xA0\xA1\x21')
-    english = english.replace('<LONEIF>',b'\x00\x81\x40\xBC\xA2\x21')
+    english = english.replace('<LONEIF>',b'\x00\x81\x97\xBC\xA2\x21')
     english = english.replace('<BA27>',b'\xBA\x27')
-    english = english.replace('<NEXTBOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
-
-
-
-    #Cleanup
-#    english = english.replace(b'\x81\x40\xBA\x26', b'\xBA\x26')
-#    english = english.replace(b'\x21\x00', '')
+    english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     nametag = ''
 
-    if count == 31:
-        print english
     return english
 
 def readEnglishFromTranslationFile():
     englishLines = []
+    japaneseEnglish = {}
     if os.path.exists(transFile):
         with open(transFile) as csvfile:
             reader = csv.DictReader(csvfile)
             count = 0
             for line in reader:
+                japaneseEnglish[line["Japanese"]] = line["English"]
                 count = count + 1
                 encodedEnglishLine = encodeEnglish(line, count)
                 englishLines.append(encodedEnglishLine)
-            return englishLines
+            return (japaneseEnglish, englishLines)
     else:
         print "No translation file found " + transFile
+
 # Function to handle writing the Japanese to a CSV. It supports the old 'linefile'
 # format I used on Policenauts, but my translator asked for CSV so he could add notes, etc.
-def writeJapaneseToTranslationFile(japaneseLines):
+def writeJapaneseToTranslationFile(japaneseLines, both):
     if outputType == 'lined':
         for (nameTag, japanese, english) in japaneseLines:
             print (nameTag + ': ' + japanese + '\nEnglish: \n')
@@ -208,7 +248,7 @@ def writeJapaneseToTranslationFile(japaneseLines):
 
             writer.writeheader()
             for (orig, nameTag, japanese, english) in japaneseLines:
-                writer.writerow({'Nametag' : nameTag, 'Japanese' : japanese, 'English' : ''})
+                writer.writerow({'Nametag' : nameTag, 'Japanese' : japanese, 'English' : both.get(japanese.decode("shift-jis").encode("utf-8"), '') })
         with open(mesName + '.MASTER.CSV', 'w') as csvfile:
             fieldnames = 'Original Bytes','Nametag','Japanese','English'
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -226,7 +266,7 @@ puncutation = {
     '\x09' : 'Sally: ',
     '\x0A' : 'Cathy: ',
     '\x0B' : 'Man A: ',
-    '\x0C' : 'Main B: ',
+    '\x0C' : 'Man B: ',
     '\x0D' : '\x81\x41',
     '\x0E' : '\x81\x64',
     '\x0F' : '\x81\x42',
@@ -241,7 +281,8 @@ puncutation = {
 nameTags = {
     '\x23' : 'Cole',
     '\x24' : 'Cooger',
-    '\x25' : 'Officer Jack',
+    '\x25' : 'Sheila',
+    '\x27' : 'Killer'
 }
 
 with open(filename, 'rb') as f:
@@ -258,7 +299,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
 # constructs, so the replace will modify one line in multi-line replacements.
 # OOOOOO.MES contains A928 and A3B9
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5-\xC6\xCD\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
@@ -266,7 +307,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23-\x25].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xC6\x28))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xC6\x28))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
@@ -290,9 +331,12 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c
 finalMES = encodedMESbytes
 
 extractedLines = []
+both = {}
 
 if gotTranslation:
-    englishLines = readEnglishFromTranslationFile()
+    translation = readEnglishFromTranslationFile()
+    both = translation[0]
+    englishLines = translation[1]
 
 if encodedJapaneseLines:
     for result in encodedJapaneseLines:
@@ -300,6 +344,8 @@ if encodedJapaneseLines:
         isControl = False
         isConditional = False
         isFlag = False
+        isFirst = True
+        couldBeNametag = False
         skip = False  # Skip is a misnomer, it actually collects the next byte
         sub = ''
         english = ''
@@ -307,7 +353,6 @@ if encodedJapaneseLines:
         originalByteSequence = result
         isQuote = False
 
-#        print englishLines[0]
         if gotTranslation:
             if (len(englishLines) > 0):
                 finalMES = finalMES.replace(result, englishLines[0])
@@ -329,6 +374,12 @@ if encodedJapaneseLines:
             print "----===----"
 
         for c in result:
+            if c != '\xBA' and isFirst:
+                isFirst = False
+            if c == '\xBA' and isFirst:
+                couldBeNametag = True
+                isFirst = False
+
             if debugBytes:
                 print (c,)
             if c == '\xBA' and not skip:    # control byte
@@ -406,15 +457,15 @@ if encodedJapaneseLines:
                 sub += '<C523280F>'
             elif c == '\xC7':
                 sub += '<C523280FC52423>'
-            elif isControl and re.match('[\x23-\x25]', c):   # dialog start cole
-                if nameTag == '':
+            elif isControl and re.match('[\x23\x24\x25\x27]', c):   # dialog start cole
+                if nameTag == '' and couldBeNametag:
                     nameTag = nameTags[c]
+                    if nameTag == 'Sheila' and (mesName == 'MES_IN/OPEN_1' or mesName == 'MES_IN/OPEN_2'):
+                        nameTag = 'Officer Jack'
                 else:
                     sub += nameTags[c] + ': '
                 isControl = False
-            elif isControl and c == '\x27':
-                sub += '<BA27>'
-                isControl = False
+                couldBeNametag = False
             elif isControl and c == '\x28':   # punctuation control byte
                 isPunctuation = True
                 isControl = False
@@ -436,7 +487,7 @@ if encodedJapaneseLines:
         extractedText = (originalByteSequence, nameTag, japanese, english)
         extractedLines.append(extractedText)
 
-writeJapaneseToTranslationFile(extractedLines)
+writeJapaneseToTranslationFile(extractedLines, both)
 
 if gotTranslation:
     print "Translating"
