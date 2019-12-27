@@ -55,12 +55,30 @@ def addNametags(mesCode):
 
     tagLookup = {
         "MES_IN/OPEN_1" : [b'\x23', b'\x24'],
-        "MES_IN/000001" : [b'\x23', b'\x24', b'\x25']
+        "MES_IN/000001" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000002" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000003" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000004" : [b'\x23'],
+        "MES_IN/000005" : [b'\x23'],
+        "MES_IN/000006" : [b'\x23'],
+        "MES_IN/000007" : [b'\x23'],
+        "MES_IN/000008" : [b'\x23'],
+        "MES_IN/000009" : [b'\x23'],
+        "MES_IN/000010" : [b'\x23']
     }
 
     nameLookup = {
         "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "],
-        "MES_IN/000001" : ["Cole: ", "Cooger: ", "Sheila: "]
+        "MES_IN/000001" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000002" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000003" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000004" : ["Cole: "],
+        "MES_IN/000005" : ["Cole: "],
+        "MES_IN/000006" : ["Cole: "],
+        "MES_IN/000007" : ["Cole: "],
+        "MES_IN/000008" : ["Cole: "],
+        "MES_IN/000009" : ["Cole: "],
+        "MES_IN/000010" : ["Cole: "]
     }
 
     names = nameLookup.get(mesName, '')
@@ -116,19 +134,13 @@ def addLineBreaks(unbrokenLine, nametag):
                 tagAsList = list(tag)
                 line[lastSpace:len(tagAsList) + 1] = tagAsList
                 skip = len(tagAsList)
-#                linebreak = linebreak  skip
-#                inNameTag = True
             numLines = numLines + 1
-#            linebreak = linebreak + linebreak - 2
             linebreak = lastSpace + linewidth
             if c == '\n':
                 linebreak = count + linewidth
 
         if c == ' ' and not inTag:
             lastSpace = count
-
-        if not inTag:
-            count = count + 1
 
         if inTag:
             if c == 'I' and tagCount == 0:
@@ -143,16 +155,20 @@ def addLineBreaks(unbrokenLine, nametag):
                 foundElseOrOther = True
             elif c == 'L' and tagCount == 1:
                 foundElse = True
-                count = countSinceIf
 
             tagCount = tagCount + 1
+            linebreak = linebreak + 1
 
-#        if c == '\n' and not inTag:
-#            linebreak = linewidth + lastSpace
         if c == '<':
             inTag = True
         if c == '>':
             inTag = False
+            tagCount = 0
+            if foundElse:
+                linebreak = count + linewidth
+
+        count = count + 1
+
     if len(nametag) > 0:
         del line[0:len(nametag) + 2]
     return ''.join(line)
@@ -162,7 +178,7 @@ def encodeEnglish(line, count):
     english = line["English"]
 
     english = addLineBreaks(english, nametag)
-    if count == 101 and mesName == "MES_IN/OPEN_1":
+    if count == 23 and mesName == "MES_IN/000004":
         print english
 
     english = '!' + english + '\x00\x81\x97'
@@ -307,7 +323,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xC6\x28))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
