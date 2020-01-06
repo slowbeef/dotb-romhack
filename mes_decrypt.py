@@ -12,6 +12,8 @@
 
 #TODO: Double space after Officer:
 
+#TODO: 000063 is missing a big <IF>else construct at the end.
+
 #TODO: BA28_ nametags
 # 17PLUS has Nose
 
@@ -23,7 +25,7 @@ import argparse
 
 import nametags
 
-debugBytes = False  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
+debugBytes = True  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
 gotTranslation = False
 
 #outputType = 'lined'
@@ -211,7 +213,10 @@ def encodeEnglish(line, count):
     english = p5.sub(b'\x00\x81\x97\x0D\\1\x21', english)
 
     p6 = re.compile(r'<SET (.)>')
-    english = p6.sub(b'\x00\x81\x97\xB8\\1\x21', english)
+    english = p6.sub(b'\x00\x81\x97\xBC\xA2\x08\\1\x21', english)
+
+    p7 = re.compile(r'<SETVAR (.)>')
+    english = p6.sub(b'\x00\x81\x97\x19\\1\x21', english)
 
     # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
     # Put one after a null to get things back to regular reading so control codes work again.
@@ -317,13 +322,18 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00
 # OOOOOO.MES contains A928 and A3B9
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 
+# Findall collides - meaning a previous match can influence another - ending on AB AA will screw it up if the next line
+# starts with AA. Hence the replace below.
+
+# One file will break without the BCA208 thing below, but then it doesn't match something with BCA219 in 000063. How to fix?
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5-\xC6\xCD\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
+#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[\xA8\xAA]\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0(\xBC\xA2\x08)].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08)?.*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xAC\x28))', encodedMESbytes)
 
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
@@ -376,6 +386,7 @@ if encodedJapaneseLines:
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
         result = re.sub(br'\xBC\xA2\x08', b'\xB8', result) # Is this another flag test? Might be a setter? Not sure diff between 08 and 0C
+        result = re.sub(br'\xBC\xA2\x19', b'\xB9', result) # BC A2 19 30 - Found in 000063
         result = re.sub(br'\xBC\xA2([^\x0C\x08])', b'\xBF\\1', result) # BCA2 by itself? It happens (000044)
 
         result = re.sub(br'\xA8\x28\x05', b'\xAB', result) # TODO: Remove this, just temp to debug this weird part
@@ -432,6 +443,9 @@ if encodedJapaneseLines:
                 isFlag = True
             elif c == '\xB8':
                 sub += '<SET '
+                isFlag = True
+            elif c == '\xB9':
+                sub += '<SETVAR '
                 isFlag = True
             elif c == '\xBF':
                 sub += '<LONEIF>'
