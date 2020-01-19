@@ -11,7 +11,7 @@ The Japanese is all Shift-JIS, sorta. Hiragana is encoded funny; I guess as real
 
 There's markup code in there - the mes_extractor.rb has some of it; things like alternate lines in a dialogue box that can appear depending on flags, or lines that might or might not appear at all.
 
-There's no real text pointers, either. It just reads the lines serially so you don't have to worry about space in that sense. 
+There's no real text pointers, either. It just reads the lines serially so you don't have to worry about space in that sense.
 
 TODO: Get rid of mes_decrypt.py maybe? Or make it work.
 
@@ -138,7 +138,36 @@ Well, the first section is the default. The second is if the player selects high
 
 Each nametag is suffixed with 0x815B which is a Shift-JIS colon. Unfortunately, the script reader is using 5B in that location and if you try to change it to a half-width English colon, the game hangs! There's two solutions:
 
-* Make nametags like this: 0x21 Cole 0x00 0x815B - Use half-width text with a full-width colon. 
+* Make nametags like this: 0x21 Cole 0x00 0x815B - Use half-width text with a full-width colon.
 * Remove nametags entirely with 0xA3 - this tells the reader to abort. You can then print the nametag directly in your dialogue box (i.e. put it in the English manually.) Only thing is, with the Normal speed, the nametag will "blip" in like regular text, then. But you can use the half-width colon.
 
 Honestly, the full-width colon doesn't look bad or anything, but the separate nametag does throw off linebreak calculation. It's fine either way, in my opinion.
+
+---
+
+OPEN_1 - Part 1 of the intro (no interactivity)
+OPEN_2 - Part 2 of the intro (no interactivity)
+000001 - Cole's apartment before zombies break in
+000002 - Outside police station.
+000003 - First floor of police station.
+000004 - Second floor hallway.
+000005 - Meeting room.
+000006 - Chief's Office
+000007 - Interrogation Room (dead cop on the ground)
+000008 - Communications Room
+000009 - Armory (shelves)
+000010 - Armory (inside room)
+10PLUS - Zombie attack inside armory
+000011 - First floor, after zombies, etc.
+11PLUS - Zombie attack part two
+000012 - Record room
+000013 - Outside Central hotel
+13PLUS - Entering ID pad
+000014 - Hotel Lobby
+000015 - Hotel, 3rd Floor
+000016 - Conference Room with the "Squad"
+000017 - Hotel, 3rd Floor after meeting everyone
+17PLUS - Talk with Nose
+000018 - In the hotel room with Doc and Sheila
+000019 - Talk with Sally
+000020 - Hotel, 2nd Floor hallway

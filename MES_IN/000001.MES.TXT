@@ -52,7 +52,7 @@ New Dialog: In "Dawn of the Zombies", they died when you shot them in the heart.
 
 Character Name: Cole
 Dialog: もしあの警官が市民を襲っていたりしたら映画どころじゃ済まなくなってしまうぞ。
-New Dialog: If that policeman attacks other people, it won't end like the movie did. *
+New Dialog: If that policeman attacks other people, it won't end like the movie did.
 
 Character Name: Sheila
 Dialog: コール、助けて！！　お願い、開けて！！
