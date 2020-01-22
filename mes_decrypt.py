@@ -3,9 +3,9 @@
 #LINEBREAKS ARE FIXED. NOW MARCH THROUGH THE ENG MES FILES
 
 #10PLUS - Breaking bug when fighting the zombie and clicking on the eyes.
-#Wrong people are talking in the research room.
+#Wrong people are talking in the records room.
 
-#ELSE should have 8140, not 8197 - Rerun so this fixes blank things in 000004 - 000008
+# Missing a -Ga- in 000008 - Line 28. Stops at a linebreak.
 
 #TODO: Genericize Nametags
 # How this works.
@@ -352,7 +352,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F)|(?:\xBC\xA2\x0A\x59))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
@@ -372,6 +372,9 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24
 # half of a sentence.
 # This is a hack to get around that while I discover if the game has more stuff like that in it.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c\xba\x28\x0e\xba\x28\x0e\xba\x28\x0e\xba\x28\x0f', encodedMESbytes)
+
+# 000008.MES has a crappy one-off for zombie on the comms
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBC\xA2\x0A\x59\x81\x97\xD0\x73\x65\x20\x28\x1D\xA9\x23\x23\xA3(.*?)(?:\xBA\x26)', encodedMESbytes)
 
 finalMES = encodedMESbytes
 
