@@ -1,24 +1,16 @@
 #!/usr/bin/python
 
-#LINEBREAKS ARE FIXED. NOW MARCH THROUGH THE ENG MES FILES
-
-#10PLUS - Breaking bug when fighting the zombie and clicking on the eyes.
-#Wrong people are talking in the records room.
-
-# Missing a -Ga- in 000008 - Line 28. Stops at a linebreak.
-
 #TODO: Genericize Nametags
 # How this works.
 # B9 23/24/25 sets the name tag.
 # BA 23/24/25 uses it.
 # Look for B9 25 to figure out the new nametag
-# Put them into nametags
-
-#TODO - I think Fixed.
-# Empty "Cole: " when you enter the flashlight room from the hall
-# "I've already taken the flashlight" before you do. - Missing line in the flashlight room.
 
 #TODO: Extract these random control codes into a dictionary or function or something.
+#TODO: Linebreaking on if statements
+# 000009 has a lot, it looks like, specifically line 8.
+
+#TODO: 000063 is missing a big <IF>else construct at the end.
 
 #TODO: BA28_ nametags
 # 17PLUS has Nose
@@ -75,11 +67,9 @@ def addNametags(mesCode):
         "MES_IN/000008" : [b'\x23'],
         "MES_IN/000009" : [b'\x23'],
         "MES_IN/000010" : [b'\x23'],
-        "MES_IN/000011" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000012" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000013" : [b'\x23', b'\x24', b'\x25']
+        "MES_IN/000011" : [b'\x23', b'\x25'],
+        "MES_IN/000012" : [b'\x23', b'\x24', b'\x25']
     }
-
 
     nameLookup = {
         "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "],
@@ -93,9 +83,8 @@ def addNametags(mesCode):
         "MES_IN/000008" : ["Cole: "],
         "MES_IN/000009" : ["Cole: "],
         "MES_IN/000010" : ["Cole: "],
-        "MES_IN/000011" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000013" : ["Cole: ", "Cooger: ", "Sheila: "]
+        "MES_IN/000011" : ["Cole: ", "Sheila: "],
+        "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "]
     }
 
     names = nameLookup.get(mesName, '')
@@ -236,13 +225,16 @@ def encodeEnglish(line, count):
     p8 = re.compile(r'<FINAL (.)>')
     english = p8.sub(b'\x00\x81\x97\x19\\1\x21', english)
 
+    p8 = re.compile(r'<LAST (.)>')
+    english = p8.sub(b'\x00\x81\x97\x19\\1\x21', english)
+
     # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
     # Put one after a null to get things back to regular reading so control codes work again.
 
     english = english.replace('<IF>',b'\x00\x81\x97\xB2\xA2\x21')
-    english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
+    english = english.replace('<ELSE>',b'\x00\x81\x97\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
-    english = english.replace('<OR>',b'\x00\x81\x97\xA4\x21')
+    english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('\\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x97\xA8\x28\x05\x21')
@@ -256,6 +248,8 @@ def encodeEnglish(line, count):
     english = english.replace('<BA27>',b'\xBA\x27')
     english = english.replace('<SETVAR91>', b'\x00\x81\x97\xBC\xA2\x19\x91\x21')
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
+    english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
+    english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     nametag = ''
 
     return english
@@ -346,13 +340,14 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\x
 # starts with AA. Hence the replace below.
 
 # One file will break without the BCA208 thing below, but then it doesn't match something with BCA219 in 000063. How to fix?
+# Negating C52424 for an edge case in 000012
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08)?.*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28))', encodedMESbytes)
-
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08)?.*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28))', encodedMESbytes)
+encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F)|(?:\xBC\xA2\x0A\x59))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
