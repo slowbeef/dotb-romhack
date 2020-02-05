@@ -1,0 +1,28 @@
+Nametag,Japanese,English
+,<IF J>Cole: ここは武器庫だったな‥‥‥。,<IF J>Cole: This looks like the armory...
+Cole,ここは武器庫だったな‥‥‥。,This looks like the armory...
+Cole,この火薬の臭いは‥‥‥多分ここは武器庫だろうな。こう暗くちゃ危なくて歩けないぜ。,The smell of gunpowder... this is probably the armory. I shouldn't walk around in here too long; it's dangerous.
+Cole,何か火薬のような臭いがする‥‥‥ここは武器庫かな。こう暗くちゃ何も見えないな‥‥‥‥。,Something smells like gunpowder... this is an armory. It's too dark to see anything...
+Cole,ハンドライトはついているから、このままでいいだろう。,"With the flashlight on, it's fine."
+Cole,よし、これで周囲が見えるようになったぞ。,"Ok, this is where you can see outside..."
+Cole,ここで使うのは勿体ないな‥‥‥。,I can't use that here.
+Cole,<IF>暗くてよく見えないな。何か照明になるものがあればいいんだが‥‥‥<ELSE>こんなに暗くては何も見えないな。もう一度、出直した方がよさそうだ<ELSE>いくら視力のいい俺でも、さすがにこれだけ暗くちゃ何も見えないな<ENDIF>。,"<IF>It's too dark in here. If only I had a light source...<ELSE>I can't see a thing when it's so dark... I should use the flashlight again.<ELSE>As good as my eyesight is, I can't see anything in this darkness.<ENDIF>"
+Cole,左右に並んでいる棚には武器らしいものが見当たらない。死霊の襲撃でこれだけのスペースの武器を全部持ち出してしまったとは思えないしな。,"There's no weapons on any of these shelves! With all the undead around, what can I do without a weapon?!"
+Cole,ガランとした棚には銃どころか弾の１つも乗っていない。拳銃の１つでもあれば心強いのにな。,Not even one bullet or a gun on these shelves. Even one handgun would make me feel better...
+Cole,いくら捜してみても武器になるような物は何１つ見つからないな。,"No matter how much I looked, I couldn't even find one thing that resembeled a weapon."
+Cole,<IF>暗くてよく見えないな。何か照明になるものがあればいいんだが‥‥‥<ELSE>こんなに暗くては何も見えないな。もう一度、出直した方がよさそうだ<ELSE>いくら視力のいい俺でも、さすがにこれだけ暗くちゃ何も見えないな<ENDIF>。,"<IF>It's too dark in here. If only I had a light source...<ELSE>I can't see a thing when it's so dark... I should use the flashlight again.<ELSE>As good as my eyesight is, I can't see anything in this darkness.<ENDIF>"
+Cole,床についているのは血痕か？　この血痕は奥の部屋まで続いているようだけど、奥に誰かいるのかな‥‥‥？,Is that a blood streak on the floor? It goes to the back of the room... is someone back there?
+Cole,まだ血痕が固まりきっていないから、付着してそんなに時間は経っていないようだ。,"Since the blood hasn't dried, it hasn't been that long..."
+Cole,これだけの出血じゃ、まず生きてはいられないだろうな。,No one could survive that much bleeding...
+Cole,<IF>暗くてよく見えないな。何か照明になるものがあればいいんだが‥‥‥<ELSE>こんなに暗くては何も見えないな。もう一度、出直した方がよさそうだ<ELSE>いくら視力のいい俺でも、さすがにこれだけ暗くちゃ何も見えないな<ENDIF>。,"<IF>It's too dark in here. If only I had a light source...<ELSE>I can't see a thing when it's so dark... I should use the flashlight again.<ELSE>As good as my eyesight is, I can't see anything in this darkness.<ENDIF>"
+Cole,机のような物が見えるが、突き当たりに何かの部屋があるようだな。,I see something like a desk; maybe a whole 'nother room in the back.
+Cole,床の血の跡があの部屋に向かってるって事は、あの部屋にはこの血痕の主がいるって事かな。だとすると死体か死霊のどちらかだな。注意しないと取り返しのつかない事になりそうだ。,The fact that there's a blood trail leading there means someone was bleeding a lot. Either they're dead or a zombie now... I'd better stay alert!
+Cole,ここから見ると、そんなに広い部屋ではなさそうだな。,"From here, the room doesn't look very large."
+Cole,よし、奥の部屋に行ってみよう。,"Ok, let's go to the back room..."
+Cole,よし、とりあえず廊下に戻るか。,Ok... go out to the hall for now?
+Cole,もう少しこの部屋を調べてみるか‥‥‥。,Maybe I'll check out this room...
+Cole,よし、とりあえず廊下に戻るか。,Ok... go out to the hall for now?
+Cole,もう少しこの部屋を調べてみるか‥‥‥。,Maybe I'll check out this room...
+,ハンドライト<OR>キャンセル,Flashlight<OR>Cancel
+,廊下に出る　<OR>キャンセル,Leave<OR>Cancel
+,廊下に出る　<OR>キャンセル,Leave<OR>Cancel

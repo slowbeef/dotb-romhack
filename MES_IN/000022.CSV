@@ -1,0 +1,35 @@
+Nametag,Japanese,English
+Cole,先程、俺が倒した死霊がいる。ドク、あの死霊まさか生き返ったりしないだろうな。,"There's a zombie I killed over there. Doc, that one won't be coming back."
+Cooger,それは大丈夫だよ。脳は完全に破壊されているから動く事さえできない筈だ。,"That's right. The brain is completely destroyed, so it can't move or do anything."
+Cole,うわっ！！！　ドク、死霊が２体もいるぞ！！\nCooger: 奴等はまだわしらに気がついていないようだ。殺るなら今しかないぞ！,"Gasp! Doc, there's two zombies.\nCooger: Cole, they haven't noticed us yet. if we're going to to act, the time is now!"
+Cooger,見事だコール。奴等の脳に完全にヒットしたよ。これでもう歩き回ったりしないだろう。,"Splendid, Cole! We got them completely! They won't be 'walking' dead anymore!"
+Cole,床には俺が撃ち殺した死霊が２体転がっている。自分で殺っといていうのもなんだが、見ててあまり気持ちのいいものではないな。,On the floor are the two zombies I killed. It's not a pleasant sight.
+Cole,死霊の死体とでも言うのだろうか‥‥‥それが２体とそいつらの喰っていた死体のかけらが転がっているな。,I guess you could say they're the zombie's corpses. It's them and the people they were eating.
+Cooger,死霊でも完全に死んでしまえば死体と変わらんよ。,A dead zombie... I don't know that I'd call it a corpse...
+Cole,死体の他には目につくような物は見当たらないようだな。,Nothing else besides the bodies.
+Cole,こいつらが喰っていたのは脳だけじゃないみたいだな。,Looks like they're not just eating brains.
+Cooger,うむ、脳を喰い終わった後に死体の各部を喰っていたのだろう。とんでもない奴等だな‥‥‥。,"Well, after the brain, they must move onto the rest of the body. Disgusting monsters..."
+Cole,これで<IF D>３<ELSE>２<ENDIF>体目だから残るは<IF D>１<ELSE>２<ENDIF>体か‥‥‥。全部殺ってからでないと安心して寝れないな。,This is the <IF D>3rd<ELSE>2nd<ENDIF>body. That means there's <IF D>1<ELSE>2<ENDIF> left.
+Cooger,そうだな、早く残りの死霊を見つけて部屋に戻るとしよう。,"Well, let's get the remaining and go back to the room."
+Cooger,もうこの２体の死霊は二度と起き上がる事はないよ。,These two zombies aren't ever getting up again.
+Cole,俺が死霊の頭を撃ち抜いた時に出た血が壁に飛び散ったようだ。かなり残酷なやり方だが、一番安全なやり方でもあるからな。,Looks like the blood sprayed out of where I shot him. It's gory but it's the only way to be sure.
+Cooger,壁には血の他に死霊の脳ミソなんかも飛び散ったようだな。,There's brain matter on the wall as well as blood.
+Cole,ドク、そんなに細かく説明するなよ‥‥‥気分が悪くなるぜ。,"Doc, we don't need to into detail. I'm nauseous enough as is."
+Cole,これはこいつらが喰っていた死体の残骸だろう。下半身がないという事は、既に喰ってしまったのか‥‥‥なんて恐ろしい奴等だ。,The remains of the guy they were eating. His legs are completely gone. What monsters...
+Cole,勿論、この残骸も脳を喰われている。それでも足りなかった死霊は下半身まで喰ってしまった訳だな。,"Of course, the corpse is missing its brain, but the zombies also ate his lower half."
+Cole,このままほうっておいたら跡形もなく喰われていただろうな。,"If we hadn't come, there might not be any trace left."
+Cole,この箱には何も入っていないようだな。きっと工事に使われていたのだろう。,Nothing left in the box. Must've been used for construction
+Cole,この木箱は、きっと工事に必要な機材でも入っていたのだろうな。,This wooden box must've contained materials for construction.
+Cole,ドク、この箱には何が入っているんだい？,"Doc, what's in that box?"
+Cooger,ああ、ゴミしか入っていないよ。コール、持っていくかい？,"Ah, looks like only trash. Cole, you don't want any of it?"
+Cole,いや、いらないな。,"I'm good, thanks,"
+Cole,この箱にはゴミ以外の物は入っていないのかい？,Anything other than trash in the box?
+Cooger,うむ、ゴミといってもアクリル板のかけらやネジなんかも入っておるよ。,"Well, among the trash there are acrylic boards and screws."
+Cole,‥‥‥‥ゴミだな。,"So, trash."
+Cole,あの箱にはゴミしか入っていないようだな。ゴミ箱にでも使われていたんだろう。,That box only contains trash. I guess the construction workers didn't have a garbage can.
+Cole,これはただのダンボールだな。見ただけで判るよ。,"This is just cardboard, you can tell by how it looks."
+Cole,何が入っていたのかは判らないが、工事に使う物だという事は確かだろう。,"I don't know what's inside, but I bet it was used for construction."
+Cole,こんなダンボールをこれ以上調べても意味がないな。,There's no point in examining this cardboard box further.
+Cole,今度は別の部屋を調べてみるか‥‥‥。,Time to check another room.
+Cole,もう少しこの部屋で調べてみようか‥‥‥。,Let's keep investigating this room.
+,廊下に出る　<OR>キャンセル　,

@@ -1,0 +1,43 @@
+Nametag,Japanese,English
+,グァアアアアア‥‥‥‥\nCole: な、なんだこの声‥‥‥１０３号室から聞こえたが‥‥‥ドクを襲った死霊か！？,
+Cooger,ん？　コール、さっきの死霊はいないようだぞ。,"Hm? Cole, there don't seem to be any zombies here."
+Cole,うん、どこかの部屋に入っているんだろう。気をつけろよ。<OR><VAR ><TEST ><TEST ><TEST ><TEST >Cole: あの宙吊りの女性の死体、なんだか可哀想だったな。,"Yeah, it's one of these rooms. Watch out!<OR><VAR ><TEST ><TEST ><TEST ><TEST >Cole: The dead woman's corpse. Sad."
+Cooger,うむ、コールは結構やさしいところがあるんだな。<OR><TEST ><VAR ><TEST ><TEST ><TEST >Cole: でも、あの２体の死霊が俺達に気付かなくてよかったよ。さすがに２体一気に襲ってきたらマジで俺達もヤバかったかもしれないよな。<ELSE><TEST ><TEST ><VAR ><TEST ><TEST >Cole: さっきの部屋に死霊はいなかったな。,"That was easier than I thought, Cole.<OR><TEST ><VAR ><TEST ><TEST ><TEST >Cole: I'm glad we got by those two zombies. If we got attacked by more than one, it'd be a nightmare.<ELSE><TEST ><TEST ><VAR ><TEST ><TEST >Cole: There weren't zombies here before."
+Cooger,別の部屋を捜した方がいいかもしれんな。<OR><TEST ><TEST ><TEST ><VAR ><TEST >Cole: 死霊になってもあのロケットを手放さなかった事を考えると、少し可哀想な事をしたかな‥‥‥。,"We should check another room.<OR><TEST ><TEST ><TEST ><VAR ><TEST >Cole: Do you think if you were a zombie, and you had that locket, you'd feel a little sad?"
+Cooger,‥‥‥‥‥‥‥‥‥。,.........
+Cole,ドク、そう落ち込むなって‥‥‥。<OR><TEST ><TEST ><TEST ><TEST ><VAR ><TEST O>Cole: さっきの部屋は何もなかったようだな。やっぱり死霊は別の部屋にいるのかな？<ELSE><TEST ><TEST ><TEST ><TEST ><VAR ><VAR O>Cole: 俺があんなにモタついてなければ、ドクは死なずにすんだのに‥‥‥。シーラに話したらえらく悲しがるだろうな‥‥‥。,Doc seems so depressed...<OR><TEST ><TEST ><TEST ><TEST ><VAR ><TEST O>Looks like there was nothing in the last room... could the zombie be in another room?<ELSE><TEST ><TEST ><TEST ><TEST ><VAR ><VAR O>Cole: It's my fault that Doc died. Sheila is going to be so upset when I tell her.
+Cole,な、なんだこの声‥‥‥１０３号室から聞こえたが‥‥‥ドクを襲った死霊か！？,
+Cole,とにかく中に入ってやっつけないと！！,"Anyway, we have to get inside!!"
+Cole,もうこの部屋には入りたくないな。宙吊りの死体なんて見てられるほど、俺は非情な人間じゃないよ。,No need to go back in here. I'm not a sicko who wants to keep looking at a suspended body.
+Cole,この部屋にいた２体の死霊は倒したから、今度は別の部屋を捜してみるか‥‥‥。,"Since the zombies in here were defeated, is it safe to search the room again?"
+Cole,この部屋には死霊が居なかったな‥‥‥。別の部屋を捜した方がいいかもしれないな。,"No zombies here, might be better to go on to a different room."
+Cole,この部屋にはレイの恋人がいたんだよな。なんだか可哀想だったな‥‥‥。,"Ray's girlfriend was in here. I'm sorry, Ray..."
+Cole,この部屋には死霊が居なかったな‥‥‥。別の部屋を捜した方がいいかもしれないな。,"No zombies here, might be better to go on to a different room."
+Cole,この部屋だけドアが取り付けられていないようだな。中は‥‥‥暗くてよく見えないな。,Looks like doors weren't put on this room yet. The inside is dark and I can't see inside.
+Cole,こんな所からいきなり死霊が出てきたら喰われる前にショック死するかもしれないぜ。,"If a zombie were to come out at me suddenly, I might die of shock before it kills me!"
+Cole,ここには死霊がいるんだろうか‥‥‥。,Is there a zombie in here...?
+Cole,<IF>この部屋と限らずどの部屋でも言える事だが、防音処理をしているためか中の音が全然聞こえないな。<ELSE>この階のドアにはオートロックがついていないようだ。これならカードを使わずにすぐ入れるな。<ELSE>とにかく中に入ってみないことには中の様子が判らないな。<ENDIF>,"<IF>The soundproofing makes it difficult to hear sound outside this room.<ELSE>The doors here don't require ID cards like upstairs.<ELSE>Anyway, we won't know what's in there until we look.<ENDIF>"
+Cole,ここには死霊がいるんだろうか‥‥‥。,Is there a zombie in here...?
+Cole,<IF>この部屋と限らずどの部屋でも言える事だが、防音処理をしているためか中の音が全然聞こえないな。<ELSE>この階のドアにはオートロックがついていないようだ。これならカードを使わずにすぐ入れるな。<ELSE>とにかく中に入ってみないことには中の様子が判らないな。<ENDIF>,"<IF>The soundproofing makes it difficult to hear sound outside this room.<ELSE>The doors here don't require ID cards like upstairs.<ELSE>Anyway, we won't know what's in there until we look.<ENDIF>"
+Cole,ここには死霊がいるんだろうか‥‥‥。,Is there a zombie in here...?
+Cole,<IF>この部屋と限らずどの部屋でも言える事だが、防音処理をしているためか中の音が全然聞こえないな。<ELSE>この階のドアにはオートロックがついていないようだ。これならカードを使わずにすぐ入れるな。<ELSE>とにかく中に入ってみないことには中の様子が判らないな。<ENDIF>,"<IF>The soundproofing makes it difficult to hear sound outside this room.<ELSE>The doors here don't require ID cards like upstairs.<ELSE>Anyway, we won't know what's in there until we look.<ENDIF>"
+Cole,ここには死霊がいるんだろうか‥‥‥。,Is there a zombie in here...?
+Cole,<IF>この部屋と限らずどの部屋でも言える事だが、防音処理をしているためか中の音が全然聞こえないな。<ELSE>この階のドアにはオートロックがついていないようだ。これならカードを使わずにすぐ入れるな。<ELSE>とにかく中に入ってみないことには中の様子が判らないな。<ENDIF>,"<IF>The soundproofing makes it difficult to hear sound outside this room.<ELSE>The doors here don't require ID cards like upstairs.<ELSE>Anyway, we won't know what's in there until we look.<ENDIF>"
+Cole,床には血糊がべったりついている。これならどこから死霊が現れてもおかしくないぜ。,Blood stains on the floor. Not surprising since there are zombies around.
+Cole,これだけの血がついているんだ、死霊はこの部屋のどこかに必ずいるな。,"There's so much blood, there's no doubt zombies were in here."
+Cole,また血糊で滑らないようにしないとな。二度も成功するとは限らないし‥‥‥。,I have to be careful not to slip on the blood (again).
+Cole,まずはこの部屋を調べてみるか。,"First, let's check this room."
+Cole,この部屋にはまだ入った事がなかったな‥‥‥。,I haven't been in this room yet.
+Cole,この部屋には宙吊りの死体があったっけ‥‥‥。,There was a suspended corpse in this room...
+Cole,まずはこの部屋を調べてみるか。<VAR ><TEST >,"First, let's check this room.<VAR ><TEST >"
+Cole,この部屋にはまだ入った事がなかったな‥‥‥。,I haven't been in this room yet.
+Cole,この部屋では死霊を２体やっつけたっけ‥‥‥。,Got rid of two zombies in here...
+Cole,まずはこの部屋を調べてみるか。,"First, let's check this room."
+Cole,この部屋にはまだ入った事がなかったな‥‥‥。,I haven't been in this room yet.
+Cole,この部屋には何もなかったけど、もう一度入ってみるかな‥‥‥。,"I didn't find anything in here, but I can check one more time..."
+Cole,まずはこの部屋を調べてみるか。,"First, let's check this room."
+Cole,この部屋にはまだ入った事がなかったな‥‥‥。,I haven't been in this room yet.
+Cole,この部屋にはレイの恋人がいたんだっけ‥‥‥。,Ray's girlfriend was in this room.
+Cole,まずはこの部屋を調べてみるか。,"First, let's check this room."
+Cole,この部屋にはまだ入った事がなかったな‥‥‥。,I haven't been in this room yet.
+Cole,この部屋には確か死霊がいなかったんだよな。,No zombies in this room.

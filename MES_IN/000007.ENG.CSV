@@ -1,0 +1,30 @@
+Nametag,Japanese,English
+,<IF 8>Cole: ここは取調べ室だったな‥‥‥この警官も可哀想に‥‥‥。,<IF 8>Cole: This was an interrogation room. This poor policeman...
+Cole,ここは取調べ室だったな‥‥‥この警官も可哀想に‥‥‥。,This was an interrogation room. This poor policeman...
+Cole,ウッ‥‥‥！！　この取調べ室にも死霊がいたのか！？,Uwaaa! Was there a zombie in this interrogation room?!
+Cole,他に銃を持ってるか調べてみたが、ポケットにはサイフしか入っていない。拳銃の１つでもあれば相手を殺せなくても時間稼ぎにはなるんだが‥‥‥。,"Looked in his pocket, hoping to find another gun, but only a wallet. Even if a gun can't kill a zombie, it could slow it down..."
+Cole,この署の警官だろう。<IF L>この警官も死霊に脳ミソを喰われたらしい。<ELSE>頭を割られ大量の血を流している。<ENDIF>これだけの出血じゃ、まず助からないだろう。,"<IF L>It's a policeman at this station. Looks like his brains were also eaten... There's so much blood, no way he could've lived.<ELSE>It's a policeman at this station. His head's been cracked open and there's a large amount of blood. No way he could've lived.<ENDIF>"
+Cole,警官の手には拳銃が握られている。その場の状況が目に浮かぶようだ。,"A policeman holding a handgun. This is not surprising, given the circumstances."
+Cole,どうしても目が頭部へいってしまう。床に落ちた肉片を見ていると、だんだんと吐き気を催してきそうだ。,My eyes are drawn to his head. Looking at the other chunks of flesh on the floor makes me even more nauseous.
+Cole,１階の死体もこの警官と同じように脳ミソを喰われてた訳か‥‥‥。<VAR ]><ELSE>Cole: １階の警官もそうだが、殺られた人間は全て頭を割られている。ドクの言ったように弱点を重点的に狙って殺したものなのか‥‥‥。,"The corpse on the first floor also had its brains eaten like this policeman.<VAR ]><ELSE>Like the ones on the first floor, this one also has its head cracked open. Is it like Doc said? That they know our weak points?"
+Cole,だとしたら人間を殺す原因とは一体なんだろう？　何か理由があるのかな‥‥‥？<ENDIF>,"If so, why are they killing people? What's the reason...?<ENDIF>"
+Cole,手に持っている拳銃を調べてみると、全て撃ち尽した後のようだった。弾倉には１発の弾も残っていない。,Looks like the gun in his hand fired every shot. There's no bullets left in the magazine.
+Cole,何度調べたところで、弾は１発も残っていない。拳銃のスライドが引かれたままの状態だ。,"Even looking multiple times, there's no bullets left. Even the slide is still pulled."
+Cole,床には机の上の物が全て落ちたように思える。激しい乱闘の末、こうなったものだろう。,Everything that was on the desk is now on the floor. Looks like it was due to a fierce struggle.
+Cole,書類、椅子、灰皿、封筒などが散らばっている。この刑事は煙草を吸いながら椅子に座って書類整理をしていたと思われる。,"Documents, chairs, ashtrays and envelopes are scattered around. He seems to have been sitting on a chair while smoking and organizing documents."
+Cole,この部屋で唯一、この机だけが倒れていないようだ。だが、かなり所定地から移動している様子だ。,This one didn't fall dowm. But it seems like it moved from where it was originally.
+Cole,机の引出を調べてみたが、ファイルが入っているだけで何もない。,"I checked the drawer on the desk, but there was nothing but just the file."
+Cole,椅子のパイプが曲がっている。警官が曲げたとは思えないし、どこをどうすればこんな事が起きるのだろう。,The leg on the chair is bent. I don't think the police did this.
+Cole,警官がこの椅子に座って仕事をしていた所に、死霊が襲ってきたと思われる。,Looks like a zombie attacked the cop while he was sitting and working.
+Cole,話しかけた所で脳が無いんじゃ返事はできないな。,He can't talk without a brain.
+Cole,もしもし‥‥‥‥\n<SPECIAL NEWLINE?>‥‥‥‥‥‥‥‥‥‥‥‥。,Hello.....n<SPECIAL NEWLINE?>...............
+Cole,やはり返事がない。さすがに、この出血で人間が生きていられる訳がない。,No reply. Not surprising since no one could live after this much blood loss.
+Cole,俺は再度呼び掛けたが、警官は喋るどころかピクリとも動かない。,"I called out again, but he doesn't move, let alone speak."
+Cole,死体を持ち歩く程、俺は馬鹿じゃない。死霊に襲われた時にこの警官を盾にする事ができるかもしれないが、そんな事をしてもいい死に方をしないだろう。,I'm not going to carry around a corpse. Maybe I could use him as a shield but I don't think it'd be effective.
+Cole,死体を持ち歩く訳にはいかないな。,I can't take a corpse with me.
+Cole,弾の入っていない拳銃は必要ない。邪魔になるだけだ。,No need to take an empty gun. It'd just get in the way.
+Cole,この拳銃はスライドが引かれた状態だ。これは取る前に調べてみた方がよさそうだ。,It looks like the slide is still pulled on this gun. Should examine it before I take it.
+Cole,俺は床に落ちた物を取ろうとしたが、どれも使えそうに思えない。諦めた方がよさそうだ。,"I tried to collect the things on the floor, but it was no good. Better off just leaving them."
+Cole,よし、廊下に戻ろう。,"OK, let's go back to the hallway."
+Cole,もう少しこの部屋で調べてみようか‥‥‥。,Let's check this room a little more...
+,廊下に出る　<OR>キャンセル,Leave<OR>Cancel

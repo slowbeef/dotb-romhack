@@ -1,0 +1,29 @@
+Nametag,Japanese,English
+Cole,さて、次はどの部屋を調べようか‥‥‥。,"Okay, so which room should I investigate next...?"
+Cole,２階の廊下だ‥‥‥。ここは照明がついていて結構明るいな。まだ生存者が残っていればいいんだが‥‥‥。,"The second floor corridor... The light's on, so it's not as dark here. I hope there are still some survivors here..."
+Cole,床には血痕が残っている。かなり時間が経つのか血が固まっている。,"There are blood stains on the floor. The blood's gotten dry, so I think some time have passed."
+Cole,この血痕を見ると２階でもかなり殺られているようだな。,"Judging by all the blood, I guess a lot of people were killed here too."
+Cole,警察の廊下が一瞬で血の海になるなんて、誰も予測してなかった事だろうな。,No one probably ever imagined a police station's floor would turn into a sea of blood in a matter of moments.
+Cole,この部屋は会議室だったな。薄暗くて気味の悪い部屋だ‥‥‥。,That was the meeting room. There's not much light there and it's creepy.
+Cole,２階の扉は全部で５つか‥‥‥どこが何の部屋かは判らないな。こりゃ、片っ端から調べてみるほうがよさそうだな。,There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+Cole,とにかく入ってみない事には何も判らないな。,I won't know what's inside until I go in.
+Cole,ここは署長室だったな。今となっては、ここの署長も殺られている可能性はでかいぞ。,That was the station chief's office. It's possible he was killed too.
+Cole,２階の扉は全部で５つか‥‥‥どこが何の部屋かは判らないな。こりゃ、片っ端から調べてみるほうがよさそうだな。,There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+Cole,とにかく入ってみない事には何も判らないな。,I won't know what's inside until I go in.
+Cole,この電算室では、かなり殺られていたようだな‥‥‥。,More people dead in this computer room...
+Cole,２階の扉は全部で５つか‥‥‥どこが何の部屋かは判らないな。こりゃ、片っ端から調べてみるほうがよさそうだな。,There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+Cole,とにかく入ってみない事には何も判らないな。,I won't know what's inside until I go in.
+Cole,ここは取調べ室だったな‥‥‥。ここで書類整理をしていた刑事も殺られてしまったんだ‥‥‥。,This is the interrogation room. The person who was organizing documents was also killed.
+Cole,２階の扉は全部で５つか‥‥‥どこが何の部屋かは判らないな。こりゃ、片っ端から調べてみるほうがよさそうだな。,There are five doors in total here... I have no idea where they lead. I'd better start investigating.
+Cole,とにかく入ってみない事には何も判らないな。,I won't know what's inside until I go in.
+Cole,この扉だけ他のものとは違った造りになっているみたいだな。とても頑丈そうな扉だが、一体何の部屋だろう‥‥‥。,This door is built different than everything else here. It's way more sturdy -- I wonder what's in there...
+Cole,この警察署には留置所がない筈だし‥‥‥ま、考えるより入ってみるのが一番手っ取り早いな。,"There is probably no detention facility in this police station... Well, instead of thinking about it too much I should just go in and see."
+Cole,こんな所に消火器が置いてある。警察も火事には弱いか‥‥‥。,"Huh, there's a fire hydrant here. I guess the police aren't very good with fires."
+Cole,かなり古い消火器だな‥‥‥取っ手が錆付いているぞ。これじゃ火事になっても使用できなさそうだ。,"This is a pretty old fire extinguisher, the handle is all rusty. I don't think it could even put out a fire!"
+Cole,この消火器を武器にしようと思ったけど、使えないんじゃ仕方ないな。,"I thought about using the fire extinguisher as a weapon, but I don't think it'd be very good."
+Cole,<IF>使い物にならないものを持って歩く訳にはいかないな。邪魔になるだけだ<ELSE>使用できない消火器なんてただ重いだけで何の役にも立たないな<ENDIF>。,"<IF>I don't want to lug useless stuff around. It'll just get in the way.<ELSE>Carrying a heavy, broken fire extinguishers is more trouble than it's worth.<ENDIF>"
+Cole,<IF >もう１度<ENDIF>このドアの開いている部屋を調べてみるか‥‥‥。,<IF >I should investigate the room behind this door one more time.<ELSE>I should investigate the room behind this door.<ENDIF>
+Cole,この部屋は扉が閉まっているな‥‥‥。<IF >もう１度調べてみようか。<ENDIF>,<IF >The door to this room is closed... Let's investigate it again.<ELSE>The door to this room is closed... <ENDIF>
+Cole,<IF >この部屋は死体が多いせいか、何か匂うな。<ELSE>扉が閉まっているとなんだか無気味だな‥‥‥。<ENDIF>,"<IF >There are a lot of corpses inside, and I can smell them out here.<ELSE>The door is closed, which is a little creepy...<ENDIF>"
+Cole,<IF >たしかこの部屋は警官が死んでいたな。<ELSE>この部屋はドアが開いているぞ。<ENDIF>,<IF >That room's door is open.<ELSE>The officer in there is definitely dead.<ENDIF>
+Cole,<IF >もう１度<ENDIF>この部屋を調べてみるか‥‥‥。,<IF >Once more... Let's investigate that room.<ELSE>Let's investigate that room.<ENDIF>

@@ -1,0 +1,4 @@
+Nametag,Japanese,English
+Cole,あの声は確かにここから聞こえたものだったな。,That voice definitely came from here.
+Cole,銃の弾は‥‥‥よし、十分にあるな。ドクのカタキをとってやる！,
+Cole,<IF>さっきの声はこの部屋から聞こえたものではないな。たしか１０３号室だった気がする‥‥‥。<ELSE>この部屋は１０３号室じゃないな。あの声は確かに１０３号室から聞こえたものだったからな。<ENDIF>,<IF>That voice didn't come from here. I think it was Room 103.<ELSE>This room isn't Room 103. That's where I heard the voice.<ENDIF>

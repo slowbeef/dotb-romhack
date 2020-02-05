@@ -1,0 +1,21 @@
+Nametag,Japanese,English
+,"　　コール　２４歳　セントラルホテルにて原因不明の事故死
+
+　　　　　　　　　　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",           COLE       24 YEARS OLD    DIED AT CENTRAL HOTEL\n\n                          GAME OVER
+,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～
+　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝",                 NIGHTMARE COLLECTION\n         DEAD OF THE BRAIN\n .         GAME OVER {}
+,"　　コール　２４歳　セントラルホテルにて原因不明の事故死
+
+　　　　　　　　　　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",           COLE       24 YEARS OLD    DIED AT CENTRAL HOTEL\n\n                          GAME OVER
+,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～
+　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝<ENDIF>",                 NIGHTMARE COLLECTION\n         DEAD OF THE BRAIN\n .         GAME OVER {} <ENDIF>
+Cooger,コール！！,Cole!
+Cole,くそっ‥‥‥俺としたことが‥‥‥こんな所で‥‥‥　‥‥‥<TEST >,Shit... What did I do.... <TEST >
+Cole,なんだかレイに悪い事をしたな‥‥‥ノーズの気持ちが判る気がするよ。,I feel like I wronged Ray... Now I know how Nose feels...
+Cooger,仕方のない事なんだよ。一度死霊に変わってしまったら二度と人間には戻れないさ。安らかに死なせてやるのが我々にとっての一番の優しさだろう。,"It can't be helped. Once you become a zombie, it's best to die so you won't attack people."
+Cooger,コール！！,Cole!
+Cole,くそっ‥‥‥俺としたことが‥‥‥こんな所で‥‥‥　‥‥‥<TEST >,Shit... What did I do.... <TEST >
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit

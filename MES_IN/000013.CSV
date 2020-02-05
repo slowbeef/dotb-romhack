@@ -1,0 +1,21 @@
+Nametag,Japanese,English
+Cole,こんな所にホテルが建っていたなんて今まで気付かなかったな。\nSheila: このホテルって、上の方がまだ未完成のようね。,I never noticed a hotel like this here...\nSheila: It seems to be incomplete up top.
+Cole,こんな所にホテルが建っていたなんて今まで気付かなかったな。\nSheila: このホテルって、上の方がまだ未完成のようね。,I never noticed a hotel like this here...\nSheila: It seems to be incomplete up top.
+Cole,工事のためのカバーが風になびいている。まるで俺を呼んでいるようだ。,The cover for the construction work is blowing in the wind. It's like it's calling me.
+Cole,工事がまだ終わっていないようだ。完成まであと数ヶ月はかかると思う。\nSheila: 薄気味悪いわ‥‥‥。,Construction isn't finished. It looks like it'll take months to complete.\nSheila: It's creepy...
+Cole,大丈夫だよ。きっとこの中には街の人が大勢避難しているさ。,It's okay. There's probably a lot of people taking refuge in here.
+Cooger,あのカバーについてるマークは大手の建設会社のものだ。,The mark on the cover is from a major construction company.
+Cole,無気味なホテルだな。本当にここが避難場所なのか？\nCooger: 地図通りに来たんだ、間違いないだろう。,"This is really eerie looking. Is this really the Central Hotel.\nCooger: According to the map, it is."
+Cole,随分と近代的なホテルだな。普段ならまずこんな所には入れないだろう。,This is a very modern hotel. I've never stayed in one like this.
+Cole,この辺じゃこのホテルより高いビルは見当たらないようだ。,I think this is the tallest building in the city.
+Cole,<IF>残念ながらあそこのカバーからは入る事ができないな<ELSE>さすがにあそこから侵入する事は不可能だ<ENDIF>。,<IF>We can't get in through the cover.<ELSE>We really can't get in from the cover.<ENDIF>
+Cole,よし、中に入ってみよう。,"Ok, let's go in."
+Cooger,ん！？　コール、このドア、鍵がかかってるようだぞ。Cole: 鍵だって？　くそ、肝心な時になんて事だ‥‥‥。,"Hmmm? Cole, this door is locked. Did you find a key?\nCole: A key? Crap. Always missing something important."
+Sheila,"コール、これを見て。\n<IMAGE ""B:\GRAPH\BL027.GPC"">","Cole, look at this.\n<IMAGE ""B:\GRAPH\BL027.GPC"">"
+Cole,これはオートロックだな‥‥‥,It's an electronic lokc.
+Sheila,暗証番号が判らないと開かないわよ。コール、番号判る？Cole: 番号か‥‥‥あっ、確か警察署で‥‥‥。,"It's locked. Cole, do you have the ID number?\nWasn't there one at the police station...?"
+Cole,このオートロックを解除しないとホテルに入る事はできないな。,You can't get into the hotel unless you put in the right code.
+Cole,０から９までのキーが並んでいるな。\nCooger: このオートロックは３桁の暗証を入力するタイプだな。,Keys from 0-9 on this lock.\nCooger: You've got to enter a three-digit security code.
+Cole,３桁の番号を入力するのか‥‥‥とにかくやってみるよ。,No harm in trying...
+Cole,やっぱり止めておくか‥‥‥。<ENDIF>,Want to stop?<ENDIF>
+,暗証を入力する<OR>　キャンセル　,

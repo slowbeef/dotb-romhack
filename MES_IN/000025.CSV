@@ -1,0 +1,58 @@
+Nametag,Japanese,English
+,ドクと知り合ったのは、４年前に俺がこの街へ越してすぐだった<EMDASH><EMDASH><EMDASH>。,
+Cole,見た感じ、殺風景な部屋だが‥‥‥。ドク、死霊の姿は見えるかい？,"It looks like people were killed here. Doc, do you see any zombies?"
+Cooger,いや、今は見えないが何処に潜んでいるか判らないからな。気をつけた方がいいぞ。,"None here, but who knows where they're lurking. Be careful!"
+Cole,さっき見た時には死霊のいる気配がなかったんだよな。,No sign of zombies where I saw.
+Cooger,どこかに隠れているのかもしれんよ。気をつけないとな。,They may be hiding somewhere. We have to be careful.
+Cole,あの木箱を調べてみるか‥‥‥‥。,Maybe we should check out that box...
+Cole,なんだ、何も入っていないみたいだな。ただ立てかけてあるだけのようだ。,I'm not sure what that thing standing up is.
+Cole,この木箱には何も入っていないようだ。でも、あんな所に死霊が隠れているなんて思えないよな。,Nothing in that box. No zombies hiding there either.
+Cole,きっと工事の邪魔になるからあそこに立てかけてあるのだろう。,That thing must be used for construction.
+Cole,この箱には何が入っているんだろう‥‥‥。,What's in this box?
+Cole,くそっ、ゴミばっかりじゃないか！　ただのゴミ箱みたいだな。,Damn there's so much trash. Didn't they have any trash cans?
+Cole,あの箱にはゴミしか入っていないようだな。ゴミなんか漁ってて死霊に襲われたりしてもつまらないぞ。,"This box contains trash. Trash boxes and zombies, that's all this place is."
+Cole,このダンボールには何も入っていないみたいだな。多分、工事に必要な機材でも入っていたのだろう。,Nothing in this cardboard box. Whatever was in here was probably for construction.
+Cole,ただのダンボールだ。こんな物は時間をかけてまで調べる物でもないな。,Just a cardboard box. It's a waste of time to keep examining it.
+Cole,この部屋の窓はまだ付けられていないようだな。今日はそんなに寒くないからよかったよ。,No window was installed yet. I'm glad it's not that cold out today.
+Cole,ここから下を覗いてみると‥‥‥ニードル川があるけど音が聞こえるだけで暗くて見えないな。,"If you look out, you should be able to see the Needle River. But it's so dark out, you can only hear it."
+Cole,外は真っ暗だ。ドク、今何時頃だい？,"It's dark out. Doc, what time is it?"
+Cooger,わしは時計を持たないから判らんな。,I don't know. I don't have a watch.
+Cole,この部屋の床には血痕がないな。死霊はこの部屋には入ってきていないのかな？,No blood on the floor. Does that mean there are no zombies here?
+Cole,工事中なので床には細かいゴミがたくさん散らばっているな。,"Because it's under construction, there's a lot of trash on the floor."
+Cole,取り敢えず見回したところで死霊はいなさそうだな。,"Looking around, there's no zombies for the time being."
+Cole,部屋の隅に何かのコードが垂れ下がっているな。あれは何のコードだろう‥‥‥。,There's something in the corner of the room. What cord is that?
+Cooger,多分、電話か電気か‥‥‥テレビのアンテナってことも考えられるな。,Maybe it's a phone or some electrical thing like a TV. Possibly an antenna?
+Cole,壁にはあのコード以外に目につく物はないな。,I don't see anything on the wall besides that cord.
+Cole,おや？　あそこにあるのは工具箱かな？　何が入っているんだろう‥‥‥。,Oh! Is that a toolbox? What's in it?
+Cooger,‥‥‥‥‥‥‥‥‥どうだ？　開いたか？,Hm? Why is it open?
+Cole,ダメみたいだな。諦めた方が<IF 0><VAR D>‥‥‥あれ？　開いたみたいだぞ？,No good. Looks like someone gave up-<IF 0><VAR D>...wait. Why is it open?
+Cooger,どうだ？　何かめぼしい物はあるのかい？,Hm? What's going on with this?
+Cole,いろんな工具が入ってるみたいだな‥‥‥ドライバーにハンマーに‥‥‥スパナ‥‥に‥‥‥,"Looks like all sorts of tools. A hammer, a screwdriver... a spanner..."
+Cooger,コール、早くしてくれ。死霊はあと一体残っているんだ。,"Cole, hurry up. There's still zombies around..."
+Cole,うん、判ってるよ‥‥‥あとは‥‥‥釘ばっかりだな‥‥‥。,Gotcha. The rest... just nails.
+Cooger,くっ‥‥‥コ、コール‥‥‥,Sh- C- Cole!
+Cole,ドク！！！,Doc!!!
+Cole,クソッ！　逃げられたか！！,Damn! Get out of here!!!
+Cole,ドク！！　しっかりしてくれ！！　い、今、救急車‥‥‥いや、上に連れて行くから！！,"Doc! Stay alive! We'll get you an ambulance! Or, wait, I'll bring you back up!"
+Cooger,コール‥‥‥もう‥手遅れだよ‥‥‥。,Cole... it's already too late...
+Cole,喋るなよ！！　上に行ってすぐに傷の手当をするから！！大丈夫、助かるよ！！,Don't say that! It'll be okay! We'll take you up and treat your wound! I'll save you!
+Cooger,コール‥‥‥蘇生薬はヴィールスなんだ‥‥‥血液に入ったらアウトだよ。研究所であの警官を見ただろう‥‥‥わしもすぐに奴等の仲間になってしまうよ‥‥‥。,Cole... the resurrection drug is like a virus... it infects the blood. I saw what happened to the officer in my lab. I'll be one of them soon.
+Cole,なんでだよ！！　どうしてそんな事言うんだよ！！　大丈夫だって、ドク、しっかりしろよ！！,"What! Why are you saying that! You'll be okay, Doc, I'm sure of it!"
+Cooger,‥‥‥自業自得だよ。第一‥‥あんな物を作ってしまった私が、のうのうと生きているのは‥‥ちょっとおかしいだろう‥‥‥。,This was my fault to begin with. I made that terrible drug... it's a little strange I'm still alive...
+Cooger,コール‥‥‥君には本当にすまない事をしたな‥‥‥シーラ君にまで怖い思いをさせてしまって‥‥‥。,Cole... I'm so sorry... tell Sheila not to be scared...
+Cooger,それにレイのガールフレンドをあんな目に合わせたのも‥‥‥結局はわしのせいなんだ。,I've also seen what happend to Ray's girlfriend...
+Cole,ドク、もういいよ！！　大丈夫だよ！！　死霊を退治したらまた３人でパーティやろうよ！！　ドク！！　頼むよ、死なないでくれよ！！　ドクが死んだら俺‥‥‥。,"Doc, you're gonna make it! You'll see! We'll get rid of all the zombies and the three of us will celebrate! ...Doc, don't die!"
+Cooger,コール、最後に一つだけ頼みがあるんだ‥‥‥。聞いてくれるか？,"Cole, I have one final thing to ask. Can you still hear me?"
+Cole,‥‥‥頼みって‥‥‥何を？,A last request...? What is it?
+Cooger,わしはこのままではいずれ死霊になってしまう‥‥‥。その前に君の手でわしを撃ってくれないか‥‥‥？,I don't want to become one of them. Kill me first.
+Cole,なんて事言うんだよ！！　そんな事が俺にできると思っているのかよ！？,What are you saying! I can't do that!
+Cooger,コール、わしの最後の頼みなんだ‥‥‥それにシーラ君にもわしが死霊になった姿を見せたくはないんだ‥‥‥。,"Cole, please, I'm asking you. I don't want Sheila to see me as a zombie."
+Cooger,コール、君はわしの信頼できるたった一人の友達だよ。わしの気持ちも判ってくれるだろ？　,
+Cole,‥‥‥‥‥‥‥‥‥。,...........
+Cooger,泣くなよ、コール。お前さんは強い男だ‥‥‥涙は似合わないよ。ああ‥‥‥もう目が霞んできたようだ‥‥‥さあ、頼むよ‥‥‥‥,"Don't cry, Cole. Stay strong. Tears don't suit you. Oh... it's getting darker...."
+Cole,‥‥‥判ったよ‥‥‥ドク。必ず天国へ行ってくれよ‥‥‥。,I understand. Doc... please go to Heaven...
+Cooger,‥‥‥ああ、約束するよ。シーラ君と‥‥‥幸せにな‥‥‥。,...I'll try... I hope you and Sheila... live a happy life...
+Cole,この部屋には死霊が居ないみたいだな。別の部屋を捜してみるか‥‥‥。,No zombies here. Let's search elsewhere...
+Cole,もう少しこの部屋を調べてみるか‥‥‥。,Let's investigate here a little more...
+,廊下に出る　<OR>キャンセル　,
+,よさそうだ‥‥‥。,

@@ -1,0 +1,11 @@
+Nametag,Japanese,English
+Cole,１階に戻ってきたが‥‥‥あれ？　二人がいない‥‥‥,"I came back to the first floor, but... they weren't here?"
+Cole,１階に戻ってきたが‥‥‥あれ？　二人がいない‥‥‥,"I came back to the first floor, but... they weren't here?"
+Sheila,‥‥‥その刑事が‥‥とは思えな‥‥わ‥‥‥。,I don't think... the culprit... is...
+Cole,ん？　シーラの声だ‥‥‥。声はあそこの資料室から聞こえたな。,Hmmm? Sheila's voice... I think it's coming from the Resource Room.
+Cole,<IF>まさか、シーラが死体になってしまったとは思えないな<ELSE>死体が喋る訳がない。声は別の方向から聞こえたな<ENDIF>。,"<IF>Seems like Sheila's okay.<ELSE>No need to stay by the corpse, her voice came from another direction.<ENDIF>"
+Cole,<IF>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ENDIF>。,<IF>I couldn't hear it from another direction.<ELSE>Sheila's voice wasn't coming from there.<ENDIF>
+Cole,<IF>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな<ENDIF>。,<IF>I couldn't hear it from another direction.<ELSE>Sheila's voice wasn't coming from there.<ELSE>It looks like a library.<ENDIF>
+Cole,<IF>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな<ENDIF>。,<IF>I couldn't hear it from another direction.<ELSE>Sheila's voice wasn't coming from there.<ELSE>It looks like a library.<ENDIF>
+Cole,<IF>そっちの方角からは聞こえなかったな<ELSE>シーラの声はそっちから聞こえたものではないな<ELSE>そっちは資料室じゃないみたいだな<ENDIF>。,<IF>I couldn't hear it from another direction.<ELSE>Sheila's voice wasn't coming from there.<ELSE>It looks like a library.<ENDIF>
+Cole,シーラの声はここから聞こえたよな。,I heard Sheila's voice from here.

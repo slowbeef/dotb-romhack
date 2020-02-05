@@ -1,0 +1,42 @@
+Nametag,Japanese,English
+,‥‥‥‥‥ガー‥‥‥‥ガー‥‥‥‥。,.....Gaaaa....Gaaaa....
+,ノウミソを‥‥‥ノウミソを‥‥‥‥。\nCole: だ、誰かいるんですね！！,Brains... Brains...\nCole: W-Who the hell is this?!
+,もっとノウミソを‥‥ハァハァ‥‥ノウミソを喰わせろ‥‥‥\nCole: な、なんだって！？　脳ミソって‥‥‥まさか‥‥‥！？,More brains... haha... eat brains....\nCole: What in God's name?! Is he saying 'brains'?!
+,もっとノウミソを‥‥ハァハァ‥‥ノウミソを‥‥‥ガー‥‥ビー‥‥‥\n<A828OF>ガチャ‥‥‥,More brains... ha ha...brains... ga... bee... \n<A828OF>Ga...cha...
+,<IF C>Cole: ここは通信室だな。いつ見てもこの部屋は酷いな。<ELSE>Cole: うわっ！！　なんて事だ‥‥‥！！　この通信室には警官が居なかったのか！？<ENDIF>,"<IF C>Cole: This is a communications room. No matter how you look at it, it's awful.<ELSE>Cole: Uwaaa!!! Oh my god! All these dead police officers...!<ENDIF>"
+Cole,ここは通信室だな。いつ見てもこの部屋は酷いな。<OR>Cole: うわっ！！　なんて事だ‥‥‥！！　この通信室には警官が居なかったのか！？<ENDIF>,"This is a communications room. No matter how you look at it, it's awful.<OR>Uwaaa!!! Oh my god! All these dead police officers...!<ENDIF>"
+Cole,あの人は死霊に背後から襲われたのだろう。椅子に座ったまま絶命しているようだ。,It looks like a zombie got him from behind. He must have died sitting in this chair.
+Cole,ヘッドホンをしていたせいで、何も聞こえなかったのだろう。いきなり背後から死霊に襲われたらひとたまりもないな。俺も気をつけないと‥‥‥。,"He wouldn't have heard anything with these headphones. If there was a zombie right behind him, he'd never have known. I should stay alert, myself."
+Cole,完全に死んでいる。なんだか、死体を目の前にしていると気分が悪くなるな。さっさと調べて早めにここから出た方がいいな。,He's definitely dead. I can't get used to seeing all these bodies in front of me. I'd better search quickly and get out of here.
+Cole,この人は他の人に比べて出血が多いようだ。こんな残酷に人を殺すなんて、奴等は血も涙もない化け物だぜ。,This body is especially gory. These zombies are sick bastards to kill people this cruelly!
+Cole,この人は拳銃を持っていなかったのか？　でも、まさか警察に強盗が入る訳ないし‥‥‥ましてや死霊が来るなんて思ってもみなかった事だろうな。,"Weren't they armed? ...Even so, I guess nobody's ready for a zombie attack."
+Cole,男の傷口を調べてみると、血が完全に固まっていない。殺されてからまだそんなに時間が経っていないようだ。,This man's blood hasn't coagulated yet. He must've died somewhat recently.
+Cole,入り口から入った死霊は、一番最初にこの女の人を襲ったのだろう。それを右の男が助けようとした所に別の死霊に襲われた。俺の推理だと死霊は２体以上いた事になるな。,"A zombie probably came in here and killed her first. Looks like the other guy tried to help the cop on the right, but was attacked by another zombie. More than two zombies, I'm guessing."
+Cole,相手がいくら女といえど死霊は容赦なしに襲いかかるようだ。,"Doesn't matter who you are, these zombies are merciless."
+Cole,まだこんなに若い女性なのに‥‥‥可哀想だな。,She was still so young. I'm sorry.
+Cole,時計は壊れていないようだ。現在の時刻を示している。,At least this watch still works. It's showing the current time.
+Cole,机の上にはパトカーと連絡をとるための通信機や、コンピューターなどの機材が備え付けてある。,"On the desk, there's communications gear, computers, and other equipment"
+Cole,これらの机を見れば、その場の状況が一目瞭然である。特に、生々しく血痕のついた机は恐怖心さえ込み上げてくるようだ。,"If you look at these desks, it's obvious what happened. All this blood is making the fear well up inside me."
+Cole,机にはこれといって特に気になるものは見つからない。,I don't see anything important about this desk.
+Cole,床には机の上にあったと思われる資料などが散らかっている。激しい乱闘があった事は間違いないだろう。,"There's stuff strewn about everywhere. Obviously, there was a huge struggle."
+Cole,この通信機はパトカーに無線で連絡できるようだ。このぐらいの機械なら俺にも使えそうだな。,This device seems to be able to communicate with police cars remotely. Seems like I could use it.
+Cole,この無線機はパトカーとの交信に使われるものだ。,This radio is used to communicate with police cars.
+Cole,もう完全に息をひきとっているから話すことは無理だろう。,He's breathed his last. He's got nothing to say.
+Cole,もう完全に息をひきとっているから話すことは無理だろう。,He's breathed his last. He's got nothing to say.
+Cole,もう完全に息をひきとっているから話すことは無理だろう。,He's breathed his last. He's got nothing to say.
+Cole,この通信機でパトカーと連絡が取れないかな‥‥‥。,I wonder if I could contact a patrol car...
+Cole,もしもし、誰かいませんか？　もしもし？\n,"Hello, is anyone there? Hello...?\n"
+Cole,もしもし、誰もいないんですか？\n,Hello? Is someone there?\n
+Cole,だ、誰かいるんですね！！,"Bah, no one's answering!"
+Cole,な、なんだって！？　脳ミソって‥‥‥まさか‥‥‥！？,W-what?! Are those brains... ?!
+Cole,まるでこの世のものとは思えない‥‥‥地獄の底から唸っているような声‥‥‥。もしかしたら今無線に出たのは死霊なのかも‥‥‥,It sounded otherworldy... like a voice groaning from the pits of Hell... a zombie on the radio?
+Cole,‥‥‥‥‥‥‥‥‥！！,...............!!
+Cole,そうか、死霊は人間の脳ミソが狙いだったのか！！　だからこれらの死体は全て頭が割れていたんだな。しかし、どうして人間の脳ミソなんか欲しがるんだ？,Are the zombies eating human brains? Is that why they tore these people apart? But why would you want to eat human brains?
+Cole,もしかしたら、奴等にとって人間の脳ミソは生きていく為の唯一の食料なのかもしれないな。,"Maybe the zombies need to eat brains to ""live."""
+Cole,またさっきの死霊が出るかもしれない。それに、もうあんな恐ろしい声なんて聞きたくないな。,"Another zombie might overhear it. Besides, I don't want to hear that voice anymore..."
+Cole,これで死霊の目的がやっと判ったな。後でドクにも教えてやろう。,I think I understand why she's like this. I'd better tell Doc about it later.
+Cole,そろそろ別の部屋を調べてみるか。,Go to another room?
+Cole,いや、やっぱりもう少し調べてからだな‥‥‥。,"No, I'll investigate here some more..."
+,廊下に出る　<OR>キャンセル,Leave<OR>Cancel
+,‥‥‥‥‥‥‥‥‥‥‥‥ガー‥‥‥‥。,.....................Ga.......
+,<A828OF>‥‥‥‥‥ガー‥‥‥‥ガー‥‥‥‥。,<A828OF>............Ga......Gaa.........
