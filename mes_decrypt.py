@@ -68,7 +68,8 @@ def addNametags(mesCode):
         "MES_IN/000009" : [b'\x23'],
         "MES_IN/000010" : [b'\x23'],
         "MES_IN/000011" : [b'\x23', b'\x25'],
-        "MES_IN/000012" : [b'\x23', b'\x24', b'\x25']
+        "MES_IN/000012" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000015" : [b'\x23', b'\x24', b'\x25', b'\x27']
     }
 
     nameLookup = {
@@ -84,7 +85,9 @@ def addNametags(mesCode):
         "MES_IN/000009" : ["Cole: "],
         "MES_IN/000010" : ["Cole: "],
         "MES_IN/000011" : ["Cole: ", "Sheila: "],
-        "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "]
+        "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000015" : ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "]
+
     }
 
     names = nameLookup.get(mesName, '')
@@ -113,6 +116,8 @@ def addLineBreaks(unbrokenLine, nametag):
     tagCount = 0
     countSinceIf = 0
     escaping = False
+
+    print unbrokenLine
 
     if len(nametag) > 0:
         unbrokenLine = nametag + ": " + unbrokenLine
@@ -239,7 +244,7 @@ def encodeEnglish(line, count):
     english = english.replace('\\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x97\xA8\x28\x05\x21')
     english = english.replace('<A828OF>',b'\x00\x81\x97\xA8\x28\x0F\x21')
-    english = english.replace('<C523280f>',b'\x00\x81\x97\xC5\x23\x28\x0F\x21')
+    english = english.replace('<C523280F>',b'\x00\x81\x97\xC5\x23\x28\x0F\x21')
     english = english.replace('<C523280FC52423>',b'\x00\x81\x97\xC5\x23\x28\x0F\xC5\x24\x23\x21')
     english = english.replace('<EMDASH>',b'\x00\x86\xA2\x21')
     english = english.replace('<A0A1>',b'\x00\xA0\xA1\x21')
