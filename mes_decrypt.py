@@ -237,13 +237,14 @@ def encodeEnglish(line, count):
     # Put one after a null to get things back to regular reading so control codes work again.
 
     english = english.replace('<IF>',b'\x00\x81\x97\xB2\xA2\x21')
-    english = english.replace('<ELSE>',b'\x00\x81\x97\xA4\x21')
+    english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
     english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('\\n',b'\x00\x81\x97\xBA\x28\x13\x21')
     english = english.replace('<SPECIAL NEWLINE?>',b'\x00\x81\x97\xA8\x28\x05\x21')
     english = english.replace('<A828OF>',b'\x00\x81\x97\xA8\x28\x0F\x21')
+    english = english.replace('<A8280F>',b'\x00\x81\x97\xA8\x28\x0F\x21')
     english = english.replace('<C523280F>',b'\x00\x81\x97\xC5\x23\x28\x0F\x21')
     english = english.replace('<C523280FC52423>',b'\x00\x81\x97\xC5\x23\x28\x0F\xC5\x24\x23\x21')
     english = english.replace('<EMDASH>',b'\x00\x86\xA2\x21')
@@ -352,7 +353,7 @@ encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0c\x0d].)?(?:\x19\x90)?(?:\x0c.)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0C\x0D].)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
@@ -480,7 +481,7 @@ if encodedJapaneseLines:
             elif c == '\xBF':
                 sub += '<LONEIF>'
             elif c == '\xA8':
-                sub += '<A828OF>'
+                sub += '<A8280F>'
             elif c == '\xA2' and isConditional:
                 # If conditional, but there's no flag present. Not really sure how DotB knows
                 # which flag to test in cases like this, honestly.
