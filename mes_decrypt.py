@@ -117,7 +117,8 @@ def addLineBreaks(unbrokenLine, nametag):
     countSinceIf = 0
     escaping = False
 
-    print unbrokenLine
+    if "in order here" in unbrokenLine:
+        print unbrokenLine
 
     if len(nametag) > 0:
         unbrokenLine = nametag + ": " + unbrokenLine
@@ -161,7 +162,7 @@ def addLineBreaks(unbrokenLine, nametag):
                 countSinceIf = count
             elif c == 'O' and tagCount == 0:
                 foundOr = True
-                count = countSinceIf
+#                count = countSinceIf
             elif c == 'E' and tagCount == 0:
                 foundElseOrOther = True
             elif c == 'L' and tagCount == 1:
@@ -175,14 +176,18 @@ def addLineBreaks(unbrokenLine, nametag):
         if c == '>':
             inTag = False
             tagCount = 0
-            if foundElse:
+            if foundElse or foundOr:
                 linebreak = count + linewidth
 
         count = count + 1
 
     if len(nametag) > 0:
         del line[0:len(nametag) + 2]
-    return ''.join(line)
+
+    brokenLine = ''.join(line)
+    if "in order here" in brokenLine:
+        print brokenLine
+    return brokenLine
 
 def encodeEnglish(line, count):
     nametag = line["Nametag"]
@@ -348,7 +353,10 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\x
 # One file will break without the BCA208 thing below, but then it doesn't match something with BCA219 in 000063. How to fix?
 # Negating C52424 for an edge case in 000012
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08)?.*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28))', encodedMESbytes)
+if mesName == 'MES_IN/OPEN_2':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+else:
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08).*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
