@@ -7,8 +7,6 @@
 # Look for B9 25 to figure out the new nametag
 
 #TODO: Extract these random control codes into a dictionary or function or something.
-#TODO: Linebreaking on if statements
-# 000009 has a lot, it looks like, specifically line 8.
 
 #TODO: 000063 is missing a big <IF>else construct at the end.
 
@@ -345,7 +343,9 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
 # constructs, so the replace will modify one line in multi-line replacements.
 # OOOOOO.MES contains A928 and A3B9
+#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+
 
 # Findall collides - meaning a previous match can influence another - ending on AB AA will screw it up if the next line
 # starts with AA. Hence the replace below.
@@ -355,13 +355,15 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\x
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
 if mesName == 'MES_IN/OPEN_2':
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+elif mesName == 'MES_IN/10PLUS' or mesName == 'MES_IN/11PLUS':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
 else:
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08).*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
 encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:[\x0C\x0D].)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
@@ -376,7 +378,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2([^\x21]
 # Okay, this collides with 000001.MES
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
 
-# 000025.MES has an incredible thing where one half of a sentnce starts, there's an <IF> and if it succeeds, you get one
+# 000025.MES has an incredible thing where one half of a sentence starts, there's an <IF> and if it succeeds, you get one
 # entire cutscene which also includes an <ELSE>. Then you get the <ELSE> that matches the first <IF> and an alternate second
 # half of a sentence.
 # This is a hack to get around that while I discover if the game has more stuff like that in it.
