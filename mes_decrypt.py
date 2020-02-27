@@ -67,7 +67,10 @@ def addNametags(mesCode):
         "MES_IN/000010" : [b'\x23'],
         "MES_IN/000011" : [b'\x23', b'\x25'],
         "MES_IN/000012" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000013" : [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000014" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000015" : [b'\x23', b'\x24', b'\x25', b'\x27']
+        "MES_IN/000017": [b'\x23', b'\x24', b'\x25'],
     }
 
     nameLookup = {
@@ -84,8 +87,10 @@ def addNametags(mesCode):
         "MES_IN/000010" : ["Cole: "],
         "MES_IN/000011" : ["Cole: ", "Sheila: "],
         "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000013" : ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000014" : ["Cole: ", "Cooger: ", "Sheila: "],
         "MES_IN/000015" : ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "]
-
+        "MES_IN/000017": ["Cole: ", "Cooger: ", "Sheila: "],
     }
 
     names = nameLookup.get(mesName, '')
