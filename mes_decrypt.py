@@ -348,9 +348,11 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
 # constructs, so the replace will modify one line in multi-line replacements.
 # OOOOOO.MES contains A928 and A3B9
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
-
+# 000018.MES contains A5 for newlines (as does 000014 below). Excepting for now.
+if mesName == 'MES_IN/000018':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+else:
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 
 # Findall collides - meaning a previous match can influence another - ending on AB AA will screw it up if the next line
 # starts with AA. Hence the replace below.
