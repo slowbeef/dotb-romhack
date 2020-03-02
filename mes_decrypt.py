@@ -54,7 +54,6 @@ def addNametags(mesCode):
     end = b'\x00\x81\x97\xA9\x28\x06\x23\xD0\x73\x65\x20\x28\x1B\x18\x12\xA3\xA3'
 
     tagLookup = {
-        "MES_IN/OPEN_1" : [b'\x23', b'\x24'],
         "MES_IN/000001" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000002" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000003" : [b'\x23', b'\x24', b'\x25'],
@@ -71,6 +70,12 @@ def addNametags(mesCode):
         "MES_IN/000014" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000015" : [b'\x23', b'\x24', b'\x25', b'\x27'],
         "MES_IN/000017": [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000020": [b'\x23', b'\x24'],
+        "MES_IN/000021": [b'\x23', b'\x24'],
+        "MES_IN/000022": [b'\x23', b'\x24'],
+        "MES_IN/000023": [b'\x23', b'\x24'],
+        "MES_IN/000024": [b'\x23', b'\x24'],
+        "MES_IN/000025": [b'\x23', b'\x24'],
     }
 
     nameLookup = {
@@ -91,6 +96,12 @@ def addNametags(mesCode):
         "MES_IN/000014" : ["Cole: ", "Cooger: ", "Sheila: "],
         "MES_IN/000015" : ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "],
         "MES_IN/000017": ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000020": ["Cole: ", "Cooger: "],
+        "MES_IN/000021": ["Cole: ", "Cooger: "],
+        "MES_IN/000022": ["Cole: ", "Cooger: "],
+        "MES_IN/000023": ["Cole: ", "Cooger: "],
+        "MES_IN/000024": ["Cole: ", "Cooger: "],
+        "MES_IN/000025": ["Cole: ", "Cooger: "],
     }
 
     names = nameLookup.get(mesName, '')
@@ -119,6 +130,7 @@ def addLineBreaks(unbrokenLine, nametag):
     tagCount = 0
     countSinceIf = 0
     escaping = False
+    foundNewbox = False
 
     if "in order here" in unbrokenLine:
         print unbrokenLine
@@ -170,9 +182,14 @@ def addLineBreaks(unbrokenLine, nametag):
                 foundElseOrOther = True
             elif c == 'L' and tagCount == 1:
                 foundElse = True
+            elif c == 'N' and tagCount == 0:
+                foundNewbox = True
 
             tagCount = tagCount + 1
-            linebreak = linebreak + 1
+
+            if foundNewbox:
+                numLines = 0
+                linebreak = count + linewidth
 
         if c == '<':
             inTag = True
@@ -197,8 +214,6 @@ def encodeEnglish(line, count):
     english = line["English"]
 
     english = addLineBreaks(english, nametag)
-    if count == 23 and mesName == "MES_IN/000004":
-        print english
 
     english = '!' + english + '\x00\x81\x97'
 
@@ -260,6 +275,7 @@ def encodeEnglish(line, count):
     english = english.replace('<B6>',b'\x00\xB6\x21')
     english = english.replace('<LONEIF>',b'\x00\x81\x97\xBC\xA2\x21')
     english = english.replace('<BA27>',b'\xBA\x27')
+    english = english.replace('<NEWBOX>',b'\x00\x81\x40\xBA\x26\x21')
     english = english.replace('<SETVAR91>', b'\x00\x81\x97\xBC\xA2\x19\x91\x21')
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
@@ -344,13 +360,18 @@ encodedJapaneseLines = []
 # 11PLUS introduced another weird edge case - 08CD29100027?!
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00\x27(.*?)(?:\xBA\x26)', encodedMESbytes)
 
+
+
 # Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
 # constructs, so the replace will modify one line in multi-line replacements.
 # OOOOOO.MES contains A928 and A3B9
 # 000018.MES contains A5 for newlines (as does 000014 below). Excepting for now.
+# 000025 - Dialogue boxes have no intro in Cole's eulogy. It just goes straight from BA26 right into dialogue. Jeez.
 if mesName == 'MES_IN/000018':
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+elif mesName == 'MES_IN/000025':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 else:
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 
@@ -546,6 +567,9 @@ if encodedJapaneseLines:
                     sub += nameTags[c] + ': '
                 isControl = False
                 couldBeNametag = False
+            elif isControl and c == '\x26':
+                sub += "<NEWBOX>"
+                isControl = False
             elif isControl and c == '\x28':   # punctuation control byte
                 isPunctuation = True
                 isControl = False
@@ -556,7 +580,7 @@ if encodedJapaneseLines:
                 sub += c
                 skip = True
             elif isPunctuation or isControl:
-                print "ERROR isPunctuation/control byte skipped" + c.encode()
+                print "ERROR isPunctuation/control byte skipped 0x" + c.encode("hex")
                 isPunctuation = False
                 isControl = False
             else:
