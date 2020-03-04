@@ -54,6 +54,7 @@ def addNametags(mesCode):
     end = b'\x00\x81\x97\xA9\x28\x06\x23\xD0\x73\x65\x20\x28\x1B\x18\x12\xA3\xA3'
 
     tagLookup = {
+        "MES_IN/OPEN_1" : [b'\x23', b'\x24'],
         "MES_IN/000001" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000002" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000003" : [b'\x23', b'\x24', b'\x25'],
@@ -70,6 +71,8 @@ def addNametags(mesCode):
         "MES_IN/000014" : [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000015" : [b'\x23', b'\x24', b'\x25', b'\x27'],
         "MES_IN/000017": [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000018": [b'\x23', b'\x24', b'\x25'],
+        "MES_IN/000019": [b'\x23', b'\x24', b'\x25'],
         "MES_IN/000020": [b'\x23', b'\x24'],
         "MES_IN/000021": [b'\x23', b'\x24'],
         "MES_IN/000022": [b'\x23', b'\x24'],
@@ -96,6 +99,8 @@ def addNametags(mesCode):
         "MES_IN/000014" : ["Cole: ", "Cooger: ", "Sheila: "],
         "MES_IN/000015" : ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "],
         "MES_IN/000017": ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000018": ["Cole: ", "Cooger: ", "Sheila: "],
+        "MES_IN/000019": ["Cole: ", "Cooger: ", "Sheila: "],
         "MES_IN/000020": ["Cole: ", "Cooger: "],
         "MES_IN/000021": ["Cole: ", "Cooger: "],
         "MES_IN/000022": ["Cole: ", "Cooger: "],
@@ -189,7 +194,6 @@ def addLineBreaks(unbrokenLine, nametag):
 
             if foundNewbox:
                 numLines = 0
-                linebreak = count + linewidth
 
         if c == '<':
             inTag = True
@@ -214,6 +218,8 @@ def encodeEnglish(line, count):
     english = line["English"]
 
     english = addLineBreaks(english, nametag)
+    if count == 23 and mesName == "MES_IN/000004":
+        print english
 
     english = '!' + english + '\x00\x81\x97'
 
@@ -280,6 +286,7 @@ def encodeEnglish(line, count):
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
+    english = english.replace(b'\x21\x00\x81\x97\x08', '\x08') # Remove cruft!
     nametag = ''
 
     return english
@@ -288,7 +295,7 @@ def readEnglishFromTranslationFile():
     englishLines = []
     japaneseEnglish = {}
     if os.path.exists(transFile):
-        with open(transFile) as csvfile:
+        with open(transFile, 'rb') as csvfile:
             reader = csv.DictReader(csvfile)
             count = 0
             for line in reader:
