@@ -53,64 +53,8 @@ def addNametags(mesCode):
     startToLowSpeedTag = b'\xA2\xD0\x73\x65\x20\x28\x1D\xA9\x23\xA8\x28\x0F\x21'
     end = b'\x00\x81\x97\xA9\x28\x06\x23\xD0\x73\x65\x20\x28\x1B\x18\x12\xA3\xA3'
 
-    tagLookup = {
-        "MES_IN/OPEN_1" : [b'\x23', b'\x24'],
-        "MES_IN/000001" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000002" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000003" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000004" : [b'\x23'],
-        "MES_IN/000005" : [b'\x23'],
-        "MES_IN/000006" : [b'\x23'],
-        "MES_IN/000007" : [b'\x23'],
-        "MES_IN/000008" : [b'\x23'],
-        "MES_IN/000009" : [b'\x23'],
-        "MES_IN/000010" : [b'\x23'],
-        "MES_IN/000011" : [b'\x23', b'\x25'],
-        "MES_IN/000012" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000013" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000014" : [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000015" : [b'\x23', b'\x24', b'\x25', b'\x27'],
-        "MES_IN/000017": [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000018": [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000019": [b'\x23', b'\x24', b'\x25'],
-        "MES_IN/000020": [b'\x23', b'\x24'],
-        "MES_IN/000021": [b'\x23', b'\x24'],
-        "MES_IN/000022": [b'\x23', b'\x24'],
-        "MES_IN/000023": [b'\x23', b'\x24'],
-        "MES_IN/000024": [b'\x23', b'\x24'],
-        "MES_IN/000025": [b'\x23', b'\x24'],
-    }
-
-    nameLookup = {
-        "MES_IN/OPEN_1" : ["Cole: ", "Cooger: "],
-        "MES_IN/000001" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000002" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000003" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000004" : ["Cole: "],
-        "MES_IN/000005" : ["Cole: "],
-        "MES_IN/000006" : ["Cole: "],
-        "MES_IN/000007" : ["Cole: "],
-        "MES_IN/000008" : ["Cole: "],
-        "MES_IN/000009" : ["Cole: "],
-        "MES_IN/000010" : ["Cole: "],
-        "MES_IN/000011" : ["Cole: ", "Sheila: "],
-        "MES_IN/000012" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000013" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000014" : ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000015" : ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "],
-        "MES_IN/000017": ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000018": ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000019": ["Cole: ", "Cooger: ", "Sheila: "],
-        "MES_IN/000020": ["Cole: ", "Cooger: "],
-        "MES_IN/000021": ["Cole: ", "Cooger: "],
-        "MES_IN/000022": ["Cole: ", "Cooger: "],
-        "MES_IN/000023": ["Cole: ", "Cooger: "],
-        "MES_IN/000024": ["Cole: ", "Cooger: "],
-        "MES_IN/000025": ["Cole: ", "Cooger: "],
-    }
-
-    names = nameLookup.get(mesName, '')
-    tags = tagLookup.get(mesName, '')
+    names = ["Cole: ", "Cooger: ", "Sheila: ", "Killer: "]
+    tags = [b'\x23', b'\x24', b'\x25', b'\x27']
     if names != '' and tags != '':
         count = 0
         for name in names:
@@ -194,6 +138,7 @@ def addLineBreaks(unbrokenLine, nametag):
 
             if foundNewbox:
                 numLines = 0
+                linebreak = count + linewidth
 
         if c == '<':
             inTag = True
@@ -286,7 +231,11 @@ def encodeEnglish(line, count):
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
-    english = english.replace(b'\x21\x00\x81\x97\x08', '\x08') # Remove cruft!
+#    english = english.replace(b'\x21\x00\x81\x97\x08', '\x08') # Remove cruft!
+
+    p9 = re.compile(r'([\xA4\x16-\x1a])\x21\x00\x81\x97([\x08\x0c])')
+    english = p9.sub(b'\\1\\2', english)
+
     nametag = ''
 
     return english
