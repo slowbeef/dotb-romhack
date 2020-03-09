@@ -231,7 +231,6 @@ def encodeEnglish(line, count):
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
-#    english = english.replace(b'\x21\x00\x81\x97\x08', '\x08') # Remove cruft!
 
     p9 = re.compile(r'([\xA4\x16-\x1a])\x21\x00\x81\x97([\x08\x0c])')
     english = p9.sub(b'\\1\\2', english)
@@ -372,6 +371,9 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c
 
 # 000008.MES has a crappy one-off for zombie on the comms
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBC\xA2\x0A\x59\x81\x97\xD0\x73\x65\x20\x28\x1D\xA9\x23\x23\xA3(.*?)(?:\xBA\x26)', encodedMESbytes)
+
+# 000028.MES has an annoying one-off for Sheila's Note
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\x81\x77.*?\x81\x78)(?:\xBA\x26)', encodedMESbytes)
 
 finalMES = encodedMESbytes
 
