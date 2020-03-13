@@ -210,7 +210,7 @@ def encodeEnglish(line, count):
     # The half-width english routine messes up control codes - 8140 is the hex for a Japanese space
     # Put one after a null to get things back to regular reading so control codes work again.
 
-    english = english.replace('<IF>',b'\x00\x81\x97\xB2\xA2\x21')
+    english = english.replace('<IF>',b'\x00\x81\x40\xB2\xA2\x21')
     english = english.replace('<ELSE>',b'\x00\x81\x40\xA4\x21')
     english = english.replace('<ENDIF>',b'\x00\x81\x40\xA3\x21')
     english = english.replace('<OR>',b'\x00\x81\x40\xA4\x21')
@@ -231,6 +231,9 @@ def encodeEnglish(line, count):
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
+
+    # I think I might want this one-off rather than try to output the endifs... maybe... 
+    english = english.replace(b'Is it cold in here or is it just me?\x00\x81\x97', b'Is it cold in here or is it just me?\x81\x40')
 
     p9 = re.compile(r'([\xA4\x16-\x1a])\x21\x00\x81\x97([\x08\x0c])')
     english = p9.sub(b'\\1\\2', english)
@@ -351,7 +354,7 @@ encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000039.MES, instead of nametag macros (BA23) it'll use BA2804-0C for nametag macros.
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x23)|(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
 
 # Nonstandard lines - usually with no nametag - start with A4AA280E...AC
 # Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
