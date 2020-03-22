@@ -318,7 +318,7 @@ with open(filename, 'rb') as f:
 encodedJapaneseLines = []
 
 # 11PLUS introduced another weird edge case - 08CD29100027?!
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00\x27(.*?)(?:\xBA\x26)', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x08\xCD\x29\x10\x00\x27(.*?)(?:\xBA\x26)', encodedMESbytes)
 
 # Nonstandard lines like the telephone ring/automated message are A8280f. This matches a bunch of other stuff so we're avoiding BB and D0 if they appear right afterwards.
 # This should come first because dialogue boxes will also match second/third lines in these sorts of
@@ -326,63 +326,63 @@ encodedJapaneseLines = []
 # OOOOOO.MES contains A928 and A3B9
 # 000018.MES contains A5 for newlines (as does 000014 below). Excepting for now.
 # 000025 - Dialogue boxes have no intro in Cole's eulogy. It just goes straight from BA26 right into dialogue. Jeez.
-#if mesName == 'MES_IN/000018':
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
-#elif mesName == 'MES_IN/000025':
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
-#else:
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+if mesName == 'MES_IN/000018':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+elif mesName == 'MES_IN/000025':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
+else:
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xA8\x28\x0F([^(?:\xA5{3,6})\xBB\xD0\x21].*?)(?:\x0C.)?(?:\x0D.)?(?:(?:\xBA\x26)|(?:\xA3\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\xC6\x28)|(?:\xA9\x28)|(?:\xA3\xB9)|(?:\x19\x90))', encodedMESbytes)
 
 # Findall collides - meaning a previous match can influence another - ending on AB AA will screw it up if the next line
 # starts with AA. Hence the replace below.
 
 # One file will break without the BCA208 thing below, but then it doesn't match something with BCA219 in 000063. How to fix?
 # Negating C52424 for an edge case in 000012
-#encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
-#if mesName == 'MES_IN/OPEN_2':
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
-#elif mesName == 'MES_IN/10PLUS' or mesName == 'MES_IN/11PLUS':
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
-#elif mesName == 'MES_IN/000014':
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
-#else:
-#    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08).*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
-#encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
+encodedMESbytes = encodedMESbytes.replace('\xAB\xAA','\xAB\xAB\xAA')
+if mesName == 'MES_IN/OPEN_2':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+elif mesName == 'MES_IN/10PLUS' or mesName == 'MES_IN/11PLUS':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+elif mesName == 'MES_IN/000014':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+else:
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08).*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
+encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000028.MES, instead of nametag macros (BA23-25,BA27) it'll use BA2804-0C for nametag macros.
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x23)|(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x23)|(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
 
 # Nonstandard lines - usually with no nametag - start with A4AA280E...AC
 # Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
 # Also OOOOOO.MES has these for NEW GAME, in English so let's exclude that.
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2([^\x21].*?)\xA3', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x02\x2C\xA2([^\x21].*?)\xA3', encodedMESbytes)
 
 
 # Oof, there's control codes for displaying an image mid-dialog box too!
 # Okay, this collides with 000001.MES
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'[^\x22-\x23]\xCF\x24\x23(.*?)(?:\x0c.)?\xBA\x26', encodedMESbytes)
 
 # 000025.MES has an incredible thing where one half of a sentence starts, there's an <IF> and if it succeeds, you get one
 # entire cutscene which also includes an <ELSE>. Then you get the <ELSE> that matches the first <IF> and an alternate second
 # half of a sentence.
 # This is a hack to get around that while I discover if the game has more stuff like that in it.
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c\xba\x28\x0e\xba\x28\x0e\xba\x28\x0e\xba\x28\x0f', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c\xba\x28\x0e\xba\x28\x0e\xba\x28\x0e\xba\x28\x0f', encodedMESbytes)
 
 # 000008.MES has a crappy one-off for zombie on the comms
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBC\xA2\x0A\x59\x81\x97\xD0\x73\x65\x20\x28\x1D\xA9\x23\x23\xA3(.*?)(?:\xBA\x26)', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBC\xA2\x0A\x59\x81\x97\xD0\x73\x65\x20\x28\x1D\xA9\x23\x23\xA3(.*?)(?:\xBA\x26)', encodedMESbytes)
 
 # 000028.MES has an annoying one-off for Sheila's Note
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\x81\x77.*?\x81\x78)(?:\xBA\x26)', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\x81\x77.*?\x81\x78)(?:\xBA\x26)', encodedMESbytes)
 
 # 000029.MES has an annoying one-off for Cole's knocking.
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x52.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x8F\x97.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x52.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x8F\x97.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
 # 000030.MES has one for Cole just out of nowhere without a nametag
-#encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xC5\x23\x23(\x83\x52.*?)(?:\xAD\x28)', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xC5\x23\x23(\x83\x52.*?)(?:\xAD\x28)', encodedMESbytes)
 
 finalMES = encodedMESbytes
 
