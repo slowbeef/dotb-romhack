@@ -21,6 +21,15 @@ import argparse
 
 import nametags
 
+# 37 breaks stuff.
+# With 38, 40, it's skipping game stuff now - most of the diary isn't read/photo isn't shown before we go to Cain.
+# But 20, 30, 35, 36 work. Trying 36
+#36: Is that everything?
+#37: There's no doubt someone stole Doc's work...
+#38: Should I re-read it?
+maxEnglish = 999
+skipThisLine = 2000
+
 debugBytes = False  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
 gotTranslation = False
 
@@ -80,6 +89,9 @@ def addLineBreaks(unbrokenLine, nametag):
     countSinceIf = 0
     escaping = False
     foundNewbox = False
+    foundS = False
+    foundSe = False
+    foundSetOrOther = False
 
     if "in order here" in unbrokenLine:
         print unbrokenLine
@@ -133,7 +145,14 @@ def addLineBreaks(unbrokenLine, nametag):
                 foundElse = True
             elif c == 'N' and tagCount == 0:
                 foundNewbox = True
-
+            elif c == 'S' and tagCount == 0:
+                foundS = True
+            elif c == 'E' and tagCount == 1 and foundS:
+                foundSe = True
+            elif c == 'T' and tagCount == 2 and foundSe:
+                foundSetOrOther = True
+            else:
+                foundSetOrOther = False
             tagCount = tagCount + 1
 
             if foundNewbox:
@@ -143,6 +162,9 @@ def addLineBreaks(unbrokenLine, nametag):
         if c == '<':
             inTag = True
         if c == '>':
+            if foundSetOrOther:
+                foundIf = True
+                countSinceIf = count
             inTag = False
             tagCount = 0
             if foundElse or foundOr:
@@ -231,14 +253,28 @@ def encodeEnglish(line, count):
     english = english.replace('<BOX>', b'\x00\x81\x97\xBA\x26\xAA\x28\x0E\x21')
     english = english.replace(b'Quit\x00\x81\x97', b'Quit\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
     english = english.replace(b'{}\x00\x81\x97', b'{}\x00\x81\x40') # One off case for the Game Overs which can't have 8197 after Quit
+    english = english.replace(b'\xE3\x80\x80', '') #Some weirdo thing Google Sheets seems to do for no good reason.
+
 
     # I think I might want this one-off rather than try to output the endifs... maybe...
     # You're really looking for 0x008197A3A3 in 000029. That's both of these.
     english = english.replace(b'Is it cold in here or is it just me?\x00\x81\x97', b'Is it cold in here or is it just me?\x00\x81\x40')
     english = english.replace(b'\xA0\xA1\x21\x00\x81\x97', b'\xA0\xA1')
 
+    # Ugly stuff around 000050 and 000051 complicated menu stuff.
+    english = english.replace(b'!<TEST \x00\x81\x97\xBA\x28\x13!>', b'\x08\x0D!')
+    english = english.replace(b'!<VAR \x00\x81\x97\xBA\x28\x13!>', b'\x0C\x0D!')
+    english = english.replace(b'\x21\x00\x81\x97\x08\x0B', b'\x08\x0B')
+
+
+    p85 = re.compile(r'(\xA4\x0C\x0D.*?\xA4)\x21\x00\x81\x97')
+    english = p85.sub(b'\\1', english)
+
     p9 = re.compile(r'([\xA4\x16-\x1a])\x21\x00\x81\x97([\x08\x0c])')
     english = p9.sub(b'\\1\\2', english)
+
+    if mesName == 'MES_IN/000039':  #TODO: Test drive this but it might be good for all files
+        re.sub(r'(.*)\x81\x97', r'\1\x81\x40', english)
 
     nametag = ''
 
@@ -314,6 +350,7 @@ with open(filename, 'rb') as f:
     encodedMESbytes = f.read()
 # get lines from bytes start marker BA 23-25 to end marker BA 26
 # 23 == cole, 24 == doc, 25 == jack(?)
+englishCount = 0
 
 encodedJapaneseLines = []
 
@@ -351,10 +388,14 @@ encodedMESbytes = encodedMESbytes.replace('\xAB\xAB\xAA','\xAB\xAA')
 
 # This regex matches standard dialog boxes, usually BA23-25...BA26. But as you can see, they can also end on A3A3, A4, C92242 or C32324. Note A4 can also appear as <ELSE> mid-dialog.
 # Note BA23-25 are nametags. They're technically not delimiters, but dialogue boxes can flow right after one another so BA26 may immediately be followed by BA23-25
-encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
+if mesName == "MES_IN/000030":
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F)|(?:\xBA\x28\x13\xBA\x28[\x04-\x0C]))', encodedMESbytes)
+else:
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA[\x23\x24\x25\x27].*?)(?:\xBC\xA2)?(?:\x19\x90)?(?:\x0C.)?(?:\x0A\x59)?(?:\x0D[\xF6-\xF8])?(?:\x81\x97)?(?:(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC1\x23)|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23)|(?:\xC6\x28)|(?:\xA8\x28\x0F))', encodedMESbytes)
 
 # As of 000028.MES, instead of nametag macros (BA23-25,BA27) it'll use BA2804-0C for nametag macros.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\xBA\x28[\x04-\x0C].*?)(?:\x0c.)?(?:\xD0\x24)?(?:\x19\x90)?(?:\x0d[\xf6-\xf8])?(?:(?:\xBA\x23)|(?:\xBA\x26)|(?:\xA3\xA3)|(?:\xC3[\x23-\x24]\x24)|(?:\xC4\x23\x23)|(?:\xC1[\x23\x24])|(?:\xCC\x28\x14)|(?:\xD0\x73)|(?:\xD0\x23))', encodedMESbytes)
+
 
 # Nonstandard lines - usually with no nametag - start with A4AA280E...AC
 # Options, like when you can pick "Leave for the corridor" or "Cancel" appear as 022CA2 ... A3. Note this is like the A2, A4, A3 if/else/endif construction, so 022C is the real delimiter
@@ -375,7 +416,7 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x74\x41\x49\x32\x4c
 # 000008.MES has a crappy one-off for zombie on the comms
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBC\xA2\x0A\x59\x81\x97\xD0\x73\x65\x20\x28\x1D\xA9\x23\x23\xA3(.*?)(?:\xBA\x26)', encodedMESbytes)
 
-# 000028.MES has an annoying one-off for Sheila's Note
+# 000028.MES has an annoying one-off for Sheila's Note, also 000050-51 have Doc's diary which works like that.
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'(\x81\x77.*?\x81\x78)(?:\xBA\x26)', encodedMESbytes)
 
 # 000029.MES has an annoying one-off for Cole's knocking.
@@ -383,6 +424,9 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x52.*?
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x8F\x97.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
 # 000030.MES has one for Cole just out of nowhere without a nametag
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xC5\x23\x23(\x83\x52.*?)(?:\xAD\x28)', encodedMESbytes)
+# 000039.MES has a one-off for Sheila (Woman)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x8F\x97.*?)(?:\xBA\x26)', encodedMESbytes)
+
 
 finalMES = encodedMESbytes
 
@@ -410,9 +454,12 @@ if encodedJapaneseLines:
         isQuote = False
 
         if gotTranslation:
-            if (len(englishLines) > 0):
-                finalMES = finalMES.replace(result, englishLines[0])
+            if (len(englishLines) > 0) and englishCount < maxEnglish:
+                if englishCount == maxEnglish - 1:
+                    print englishLines[0]
+                finalMES = finalMES.replace(result, englishLines[0], 1)
                 del englishLines[0]
+            englishCount = englishCount + 1
 
         result = re.sub(br'\xBC\xA2\x0C', b'\xBC', result) # Flag tests are multibyte and annoying to deal with so let's pare it down
         result = re.sub(br'\xBC\xA2\x08', b'\xB8', result) # Is this another flag test? Might be a setter? Not sure diff between 08 and 0C
@@ -563,7 +610,14 @@ writeJapaneseToTranslationFile(extractedLines, both)
 if gotTranslation:
     print "Translating"
     outputFile = open(mesName + '.ENG.MES', 'w+b')
-    if mesName != "MES_IN/000030":
+
+#    if mesName == "MES_IN/000050" or mesName == "MES_IN/000051":
+#        finalMES = finalMES.replace(b'\x81\x97', b'\x81\x40')
+
+    if mesName == "MES_IN/OPEN_2":
+        finalMES = finalMES
+    else:
         finalMES = addNametags(finalMES)
+
     outputFile.write(finalMES)
     outputFile.close()
