@@ -27,7 +27,7 @@ import nametags
 #36: Is that everything?
 #37: There's no doubt someone stole Doc's work...
 #38: Should I re-read it?
-maxEnglish = 999
+maxEnglish = 10
 skipThisLine = 2000
 
 debugBytes = False  # Turn this on manually to export the bytes being read to standard out; useful if the script breaks
@@ -380,7 +380,7 @@ if mesName == 'MES_IN/OPEN_2':
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
 elif mesName == 'MES_IN/10PLUS' or mesName == 'MES_IN/11PLUS':
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
-elif mesName == 'MES_IN/000014':
+elif mesName == 'MES_IN/000014' or mesName == 'MES_IN/000054' or mesName == 'MES_IN/000063':
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0].*?)(?:\x0C.)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
 else:
     encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xAA\x28\x0E([^\xA5{3,6}\xA6\xAC\xAD\xAF\xB0\xB4\xB6\xC9\xC5\xC6\xCD\xCF\xD0](?:\xBC\xA2^\x08).*?)(?:\x0C.)?^(\xC5\x24\x24)?(?:(?:\xAB\xAB)|(?:\xBA\x26)|(?:\xA3?\xFF\xFF)|(?:\xA3\xA4)|(?:\xC3\x23\x24)|(?:\xCD\x2A)|(?:\x24\x24)|(?:\xC6\x28)|(?:\xD0\x73)|(?:\xAC\x28)|(?:\xA3\xA3))', encodedMESbytes)
@@ -427,6 +427,22 @@ encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xC5\x23\x23(\x83\x5
 # 000039.MES has a one-off for Sheila (Woman)
 encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x8F\x97.*?)(?:\xBA\x26)', encodedMESbytes)
 
+# 000054.MES has one-offs for Cain
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x50.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x81\x42\xBA\x26(\x83\x52.*?\x81\x49\x81\x49)(?:\xBA\x26)', encodedMESbytes)
+encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\x81\x48\xBA\x26(\x83\x50.*?\x81\x49\x81\x49)(?:\xBA\x26)', encodedMESbytes)
+
+if mesName == 'MES_IN/000058':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xD0\x23(\x89.*?)(?:\xBA\x26)',
+                                                             encodedMESbytes)
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x6D.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x2E\x5A.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x94\xDE.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+
+if mesName == 'MES_IN/000059':
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x89\xB4\x5B\x8A.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x89\xB4.*?)(?:\x0D\xF9)?(?:\xBA[\x23\x26])', encodedMESbytes)
+    encodedJapaneseLines = encodedJapaneseLines + re.findall(br'\xBA\x26(\x83\x56.*?)(?:\xBA[\x23\x26])', encodedMESbytes)
 
 finalMES = encodedMESbytes
 
@@ -611,7 +627,7 @@ if gotTranslation:
     print "Translating"
     outputFile = open(mesName + '.ENG.MES', 'w+b')
 
-#    if mesName == "MES_IN/000050" or mesName == "MES_IN/000051":
+#    if mesName == "MES_IN/000053":
 #        finalMES = finalMES.replace(b'\x81\x97', b'\x81\x40')
 
     if mesName == "MES_IN/OPEN_2":
