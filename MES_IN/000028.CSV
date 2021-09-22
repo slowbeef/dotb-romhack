@@ -1,28 +1,29 @@
 Nametag,Japanese,English
-Cole,あれ‥‥‥少し寝すぎたか‥‥‥もう夜になるな。身体中が痛いな‥‥‥近ごろ運動不足だったからな。,
-Cole,今日は雨か‥‥‥あれ？　シーラがいない‥‥‥どこに行ったんだろ‥‥‥？‥‥‥メモがあるな‥‥‥。,
-Cole,シーラって結構しっかりしているんだなぁ。でも買いに行くといっても従業員がいないんじゃ‥‥‥けど、シーラの事だからお金は置いてくるだろうな。<OR><VAR >Cole: おかしいな‥‥‥まだ帰ってきてないみたいだ‥‥‥。<ELSE>Cole: シーラのやつ、まだ戻ってきていないようだな。もう少しブラブラしていた方がよさそうだな。<ENDIF>,
-Cole,このベッドはあまり寝心地がいいものではないな。少しクッションが硬いようだ。,
-Cole,この部屋にはベッドしか置いていないようだな。こんなベッドをどこから持ってきたんだか‥‥‥。,
-Cole,まぁ、いつまでもこんなところでベッドを見つめている訳にはいかないな。,
-Cole,今日は雨か‥‥‥雨の音を聞いていると妙に浸っちゃうんだよな。,
-Cole,結構降っているな‥‥‥雨が降ってると涼しいが、止んだ時って暑くなるんだよな‥‥‥。,
-Cole,下を覗き込むと‥‥‥人間どころか死霊は一体も見当たらない。なんとも寂しい街だな‥‥‥。,
-Cole,近くのビルが見えるな‥‥‥どうせあのビルにも人は居ないだろう。,
-Cole,この枕は妙にフカフカしていたな。ベッドもこの位フカフカだといいんだが。,
-Cole,ヨダレは‥‥‥よかった、垂らしていないようだ。,
-Cole,昨日はぐっすり寝たせいか夢を見なかったな‥‥‥。,
-Cole,廊下に出てみるか‥‥‥。,
-Cole,ん？　内線だ‥‥‥誰だろう‥‥‥？,
-Cole,あ、サリーおはよう。,
-Cole,なんだか笑い声とかしてて楽しそうですね。皆とも話してみたいし、僕も今から行きますよ。\nSally: ええ、待ってるわ。,
-Cole,サリーの後ろで結構盛り上がってたみたいだな。昨日のような緊迫感は全然ないみたいだ。,
-Cole,シーラもそのうち帰ってくるし、ミーティングルームで待ってるとするか。,
-Cole,もう少しここでボーっとしていよう‥‥‥。,
-Cole,シーラも帰っていないようだし、<IF>もう少しブラついてるか‥‥‥。<ELSE>もうちょっとブラついていよう‥‥‥。<ENDIF>,
-Cole,もう少しここでボーっとしていよう‥‥‥。,
-Cole,Sally: あ、コール起きてた？　私よ、サリー。\nあ、サリーおはよう。,
-,Sally: 今ね、皆でミーティングルームに集まっているからコールもどう？,
-,Sally: ええ、待ってるわ。,
+Cole,あれ‥‥‥少し寝すぎたか‥‥‥もう夜になるな。身体中が痛いな‥‥‥近ごろ運動不足だったからな。,Argh... I slept too long. I'm so sore... I hadn't been getting enough exercise. Until now.
+Cole,今日は雨か‥‥‥あれ？　シーラがいない‥‥‥どこに行ったんだろ‥‥‥？‥‥‥メモがあるな‥‥‥。,It's raining out... Hm? Where's Sheila? There's a note here.
+Cole,シーラって結構しっかりしているんだなぁ。でも買いに行くといっても従業員がいないんじゃ‥‥‥けど、シーラの事だからお金は置いてくるだろうな。<OR><VAR >Cole: おかしいな‥‥‥まだ帰ってきてないみたいだ‥‥‥。<ELSE>Cole: シーラのやつ、まだ戻ってきていないようだな。もう少しブラブラしていた方がよさそうだな。<ENDIF>,"Sheila's alright, but even if she goes to the store, it's not like there's going to be employees to give money to.<OR><VAR >Strange, she hasn't come back yet.<ELSE>She's not back yet. I'm starting to get worried.<ENDIF>"
+Cole,このベッドはあまり寝心地がいいものではないな。少しクッションが硬いようだ。,This bed is not very comfortable. The mattress seems a little stiff.
+Cole,この部屋にはベッドしか置いていないようだな。こんなベッドをどこから持ってきたんだか‥‥‥。,The room only has a bed. I wonder if they moved it in from somewhere else.
+Cole,まぁ、いつまでもこんなところでベッドを見つめている訳にはいかないな。,"Well, nothing's going to happen if I just stare at the bed."
+Cole,今日は雨か‥‥‥雨の音を聞いていると妙に浸っちゃうんだよな。,It's raining out. The sound is strangely calming.
+Cole,結構降っているな‥‥‥雨が降ってると涼しいが、止んだ時って暑くなるんだよな‥‥‥。,I like when it rains out because it's cool out; the city is pretty hot otherwise.
+Cole,下を覗き込むと‥‥‥人間どころか死霊は一体も見当たらない。なんとも寂しい街だな‥‥‥。,"When I look outside, I don't see any zombies, or people for that matter. What a lonely looking city..."
+Cole,近くのビルが見えるな‥‥‥どうせあのビルにも人は居ないだろう。,I can see a nearby building. I don't see anyone inside.
+Cole,この枕は妙にフカフカしていたな。ベッドもこの位フカフカだといいんだが。,The pillow is nice and fluffy. I wish I could say the same for the bed itself.
+Cole,ヨダレは‥‥‥よかった、垂らしていないようだ。,Looks like I was drooling on the pillow.
+Cole,昨日はぐっすり寝たせいか夢を見なかったな‥‥‥。,No bad dreams. I got a good night's sleep.
+Cole,廊下に出てみるか‥‥‥。,Should I go out to the hallway?
+Cole,ん？　内線だ‥‥‥誰だろう‥‥‥？,Hm? Someone's coming.
+Cole,あ、サリーおはよう。,"Ah, good morning Sally!"
+Cole,なんだか笑い声とかしてて楽しそうですね。皆とも話してみたいし、僕も今から行きますよ。\nSally: ええ、待ってるわ。,"Seems like everyone's in a good mood. I'll go talk to folks.\nSally: Ok, I'll be waiting."
+Cole,サリーの後ろで結構盛り上がってたみたいだな。昨日のような緊迫感は全然ないみたいだ。,It seems like the mood is more cheerful - not dour like before.
+Cole,シーラもそのうち帰ってくるし、ミーティングルームで待ってるとするか。,Sheila is waiting in the meeting room.
+Cole,もう少しここでボーっとしていよう‥‥‥。,I guess we'll start here...
+Cole,シーラも帰っていないようだし、<IF>もう少しブラついてるか‥‥‥。<ELSE>もうちょっとブラついていよう‥‥‥。<ENDIF>,<IF>Sheila's not here and that's her bra. I guess I can look longer.<ELSE>Sheila's not here. I guess I can look longer.<ENDIF>
+Cole,もう少しここでボーっとしていよう‥‥‥。,I guess we'll start here...
+,Sally: あ、コール起きてた？　私よ、サリー。\n,"Sally: Oh, Cole, are you awake? It's Sally.\n"
+,Sally: 今ね、皆でミーティングルームに集まっているからコールもどう？,Sally: Would you mind coming to the meeting room? Everyone's assembled.
+,Sally: ええ、待ってるわ。,"Sally: Ok, I'll be waiting."
 ,廊下に出る　<OR>キャンセル　,
 ,廊下に出る　<OR>キャンセル　,
+,『ちょっと起きるのが遅くなってしまったので、暗くならないうちに先に食べ物を買いにデパートへ行ってきます。銃を借りていくので安心してね。すぐ戻るからね。』,"""Cole, I decided to let you sleep in. I went to that market to get food before it got dark. I borrowed the gun so I'll be okay. Be back soon."""

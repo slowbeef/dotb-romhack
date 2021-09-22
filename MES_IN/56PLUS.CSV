@@ -1,7 +1,7 @@
 Nametag,Japanese,English
-Cole,よし、とにかく撃ってみよう。,
-Cole,だめだ‥‥‥あの瓦礫の山はビクともしないな。発想は良かったのだが、もう少し考えてみた方がよさそうだ。,
-Cole,やっぱりだめだな。あの瓦礫を何とかしないと二階に上がる事はできないぞ。,
-Cole,ん！？　今、少し崩れてきたような‥‥‥。,
-Cole,よし、瓦礫が崩れたお陰で通れるようになったぞ。,
-Cole,<IF>穴が空いたが‥‥‥今の行動はあんまり意味がなかったようだな。<ELSE>こんな所を撃っても弾の無駄にしかならないようだな。<ELSE>俺の撃った拳銃の発射音が、この病院内に響きわたった。<ENDIF>,
+Cole,よし、とにかく撃ってみよう。,"Okay, let's try shooting."
+Cole,だめだ‥‥‥あの瓦礫の山はビクともしないな。発想は良かったのだが、もう少し考えてみた方がよさそうだ。,That mountain of rubble won't move an inch. Better think of something else.
+Cole,やっぱりだめだな。あの瓦礫を何とかしないと二階に上がる事はできないぞ。,"No way, I can't get up the stairs without clearing that rubble."
+Cole,ん！？　今、少し崩れてきたような‥‥‥。,Hm? It looks a bit broken up now.
+Cole,よし、瓦礫が崩れたお陰で通れるようになったぞ。,"Okay, the rubble is cleared a bit, I can pass through."
+Cole,<IF>穴が空いたが‥‥‥今の行動はあんまり意味がなかったようだな。<ELSE>こんな所を撃っても弾の無駄にしかならないようだな。<ELSE>俺の撃った拳銃の発射音が、この病院内に響きわたった。<ENDIF>,"<IF>There's a hole, but it doesn't make any sense to do it now.<ELSE>Shooting here would be a waste of ammo.<ELSE>The sound of the gunshot resonated throughout the hall.<ENDIF>"

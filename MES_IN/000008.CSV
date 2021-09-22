@@ -2,7 +2,7 @@ Nametag,Japanese,English
 ,dddddƒK[ddddƒK[ddddB,.....Gaaaa....Gaaaa....
 ,ƒmƒEƒ~ƒ\‚ğdddƒmƒEƒ~ƒ\‚ğddddB\nCole: ‚¾A’N‚©‚¢‚é‚ñ‚Å‚·‚ËII,Brains... Brains...\nCole: W-Who the hell is this?!
 ,‚à‚Á‚ÆƒmƒEƒ~ƒ\‚ğddƒnƒ@ƒnƒ@ddƒmƒEƒ~ƒ\‚ğ‹ò‚í‚¹‚ëddd\nCole: ‚ÈA‚È‚ñ‚¾‚Á‚ÄIH@”]ƒ~ƒ\‚Á‚Äddd‚Ü‚³‚©dddIH,More brains... haha... eat brains....\nCole: What in God's name?! Is he saying 'brains'?!
-,‚à‚Á‚ÆƒmƒEƒ~ƒ\‚ğddƒnƒ@ƒnƒ@ddƒmƒEƒ~ƒ\‚ğdddƒK[ddƒr[ddd\n<A828OF>ƒKƒ`ƒƒddd,More brains... ha ha...brains... ga... bee... \n<A828OF>Ga...cha...
+,‚à‚Á‚ÆƒmƒEƒ~ƒ\‚ğddƒnƒ@ƒnƒ@ddƒmƒEƒ~ƒ\‚ğdddƒK[ddƒr[ddd\n<A8280F>ƒKƒ`ƒƒddd,
 Cole,‚±‚±‚Í’ÊMº‚¾‚ÈB‚¢‚ÂŒ©‚Ä‚à‚±‚Ì•”‰®‚Í“‚¢‚ÈB<OR>Cole: ‚¤‚í‚ÁII@‚È‚ñ‚Ä–‚¾dddII@‚±‚Ì’ÊMº‚É‚ÍŒxŠ¯‚ª‹‚È‚©‚Á‚½‚Ì‚©IH<ENDIF>,"This is a communications room. No matter how you look at it, it's awful.<OR>Uwaaa!!! Oh my god! All these dead police officers...!<ENDIF>"
 Cole,‚ ‚Ìl‚Í€—ì‚É”wŒã‚©‚çP‚í‚ê‚½‚Ì‚¾‚ë‚¤BˆÖq‚ÉÀ‚Á‚½‚Ü‚Üâ–½‚µ‚Ä‚¢‚é‚æ‚¤‚¾B,It looks like a zombie got him from behind. He must have died sitting in this chair.
 Cole,ƒwƒbƒhƒzƒ“‚ğ‚µ‚Ä‚¢‚½‚¹‚¢‚ÅA‰½‚à•·‚±‚¦‚È‚©‚Á‚½‚Ì‚¾‚ë‚¤B‚¢‚«‚È‚è”wŒã‚©‚ç€—ì‚ÉP‚í‚ê‚½‚ç‚Ğ‚Æ‚½‚Ü‚è‚à‚È‚¢‚ÈB‰´‚à‹C‚ğ‚Â‚¯‚È‚¢‚ÆdddB,"He wouldn't have heard anything with these headphones. If there was a zombie right behind him, he'd never have known. I should stay alert, myself."
@@ -24,7 +24,8 @@ Cole,‚à‚¤Š®‘S‚É‘§‚ğ‚Ğ‚«‚Æ‚Á‚Ä‚¢‚é‚©‚ç˜b‚·‚±‚Æ‚Í–³—‚¾‚ë‚¤B,He's breathed his la
 Cole,‚à‚¤Š®‘S‚É‘§‚ğ‚Ğ‚«‚Æ‚Á‚Ä‚¢‚é‚©‚ç˜b‚·‚±‚Æ‚Í–³—‚¾‚ë‚¤B,He's breathed his last. He's got nothing to say.
 Cole,‚à‚¤Š®‘S‚É‘§‚ğ‚Ğ‚«‚Æ‚Á‚Ä‚¢‚é‚©‚ç˜b‚·‚±‚Æ‚Í–³—‚¾‚ë‚¤B,He's breathed his last. He's got nothing to say.
 Cole,‚±‚Ì’ÊM‹@‚ÅƒpƒgƒJ[‚Æ˜A—‚ªæ‚ê‚È‚¢‚©‚ÈdddB,I wonder if I could contact a patrol car...
-Cole,‚à‚µ‚à‚µA’N‚©‚¢‚Ü‚¹‚ñ‚©H@‚à‚µ‚à‚µH\n,"Hello, is anyone there? Hello...?\n"
+Cole,‚à‚µ‚à‚µA’N‚©‚¢‚Ü‚¹‚ñ‚©H@‚à‚µ‚à‚µH\n,"Hello, is anyone there? Hello...?"
+Cole,‚à‚µ‚à‚µA’N‚à‚¢‚È‚¢‚ñ‚Å‚·‚©H\n,
 Cole,‚¾A’N‚©‚¢‚é‚ñ‚Å‚·‚ËII,"Bah, no one's answering!"
 Cole,‚ÈA‚È‚ñ‚¾‚Á‚ÄIH@”]ƒ~ƒ\‚Á‚Äddd‚Ü‚³‚©dddIH,W-what?! Are those brains... ?!
 Cole,‚Ü‚é‚Å‚±‚Ì¢‚Ì‚à‚Ì‚Æ‚Ív‚¦‚È‚¢ddd’n–‚Ì’ê‚©‚çšX‚Á‚Ä‚¢‚é‚æ‚¤‚ÈºdddB‚à‚µ‚©‚µ‚½‚ç¡–³ü‚Éo‚½‚Ì‚Í€—ì‚È‚Ì‚©‚àddd,It sounded otherworldy... like a voice groaning from the pits of Hell... a zombie on the radio?
@@ -36,5 +37,5 @@ Cole,‚±‚ê‚Å€—ì‚Ì–Ú“I‚ª‚â‚Á‚Æ”»‚Á‚½‚ÈBŒã‚ÅƒhƒN‚É‚à‹³‚¦‚Ä‚â‚ë‚¤B,I think I unde
 Cole,‚»‚ë‚»‚ë•Ê‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B,Go to another room?
 Cole,‚¢‚âA‚â‚Á‚Ï‚è‚à‚¤­‚µ’²‚×‚Ä‚©‚ç‚¾‚ÈdddB,"No, I'll investigate here some more..."
 ,˜L‰º‚Éo‚é@<OR>ƒLƒƒƒ“ƒZƒ‹@,
-,ddddddddddddƒK[ddddB,.....................Ga.......
-,<A828OF>dddddƒK[ddddƒK[ddddB,<A828OF>............Ga......Gaa.........
+,ddddddddddddƒK[ddddB,...............Gaaa....
+,<A8280F>dddddƒK[ddddƒK[ddddB,

@@ -9,7 +9,7 @@ Cooger,死霊でも完全に死んでしまえば死体と変わらんよ。,A dead zombie... I don't k
 Cole,死体の他には目につくような物は見当たらないようだな。,Nothing else besides the bodies.
 Cole,こいつらが喰っていたのは脳だけじゃないみたいだな。,Looks like they're not just eating brains.
 Cooger,うむ、脳を喰い終わった後に死体の各部を喰っていたのだろう。とんでもない奴等だな‥‥‥。,"Well, after the brain, they must move onto the rest of the body. Disgusting monsters..."
-Cole,これで<IF D>３<ELSE>２<ENDIF>体目だから残るは<IF D>１<ELSE>２<ENDIF>体か‥‥‥。全部殺ってからでないと安心して寝れないな。,This is the <IF D>3rd<ELSE>2nd<ENDIF>body. That means there's <IF D>1<ELSE>2<ENDIF> left.
+Cole,これで<IF D>３<ELSE>２<ENDIF>体目だから残るは<IF D>１<ELSE>２<ENDIF>体か‥‥‥。全部殺ってからでないと安心して寝れないな。,<IF D>This is the 3rd body. That means there's one left.<ELSE>This is the second body. That means there's two left.<ENDIF>
 Cooger,そうだな、早く残りの死霊を見つけて部屋に戻るとしよう。,"Well, let's get the remaining and go back to the room."
 Cooger,もうこの２体の死霊は二度と起き上がる事はないよ。,These two zombies aren't ever getting up again.
 Cole,俺が死霊の頭を撃ち抜いた時に出た血が壁に飛び散ったようだ。かなり残酷なやり方だが、一番安全なやり方でもあるからな。,Looks like the blood sprayed out of where I shot him. It's gory but it's the only way to be sure.

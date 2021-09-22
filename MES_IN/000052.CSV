@@ -1,39 +1,39 @@
 Nametag,Japanese,English
-Cole,例のクーガー博士の家さ。色々と調べててね。,
-Sheila,ケインさん、さっきはどうもありがとう。<ENDIF>,
-Cole,そういえばシーラが世話になったんだってな。危ないところを助けてもらったとか、俺からも礼を言うよ。ありがとう。,
-Cole,シーラ、すまないが部屋に戻っていてくれないか。そろそろ次のターゲットが決まっている頃だろう。何か連絡が入ったらすぐに俺に知らせてくれ。,
-Sheila,‥‥‥ええ、判ったわ。,
-Cole,ケインもかなり強力な情報を入手したようだ。さすがジャーナリストだな。,
-Cole,ケインがいなかったら、俺もあのとき死霊に殺られていただろうな。,
-Cole,ドクの家での事をケインに話した方がいいだろう。彼はドクの事を少し疑っている所があるからな。,
-Cole,結構この駐車場にはいい車が多いな。,
-Cole,この車の持ち主は生きているのだろうか‥‥‥。,
-Cole,ああ、書斎で彼の日記を見つけたよ。その日記には今から１ヶ月程前に、蘇生薬を何者かに盗まれている事が判ったんだ。,
-Cole,彼は学会でひょんな事から蘇生薬の事を話してしまったようだ。それを聞いていた誰かがクーガー博士の研究所に忍び込み、薬とその資料を盗んだ。,
-Cole,なに！？　キールを知っているのか！？,
-Cole,それじゃ、やはりドクの研究を盗んだのはキールだったのか‥‥‥。,
-Cole,ケイン、驚くなよ。キールは死霊退治のメンバーなんだ。,
-Cole,俺もキールとは一度しか話した事がないから彼の性格までは判らないが、そんなに動揺している気配もないし、非常に落ち着いていたよ。,
-Cole,それに、俺達がここへ来て一番最初に会ったのがキールなんだ。俺がもし、ドクの研究を盗んでいたとしたら、初めて会った時点でドクを口封じするだろう‥‥‥。,
-Cole,だが、彼はそれをしなかった‥‥‥。,
-Cole,いや、クーガー博士はたしかに死霊に襲われていたよ‥‥‥俺はこの目で見たんだ。,
-Cole,死霊を操るって‥‥‥まさかそんな事が‥‥‥,
-Cole,まさか‥‥‥キールは刑事だぜ？　それに薬を作った本人のクーガーでさえ、まだ解明しきれていないというのに‥‥‥。,
-Cole,くそっ！！　キールの野郎、絶対に許さねえぞ！！,
-Cole,まだ３階にいると思うよ。奴に本当の事を聞きにいかないとな。,
-,Cain: コール、遅かったな。何処へ行ってたんだ？,
-,Cain: なに、大した事じゃないよ。たまたま俺が通りかかっただけの話さ。,
-,Cain: それでクーガー博士の家では何か判ったのか？,
-,Cain: なるほどな‥‥‥。,
-,Cain: やはりな‥‥‥。多分、そいつはキールという刑事だろう。,
-,Cain: １６分署を調べていたら、キールという刑事のデスクにクーガー博士の資料が入っていたよ。それと青白く光る液体‥‥‥多分、あれが蘇生薬だろう。,
-,Cain: そのキールという男の身元を調べてみたんだが、どうも引っ掛かるんだよ。成績は優秀だし家族もいるんだ。感謝状なんて腐るほど貰っている。,
-,Cain: それだけ真面目な奴が、どうしてこんな事をするのかが一番疑問なんだ。もっとも本人に聞いた方が一番手っ取り早いが、彼が生きているのさえ判らないこんな状態で‥‥‥,
-,Cain: なんだって！？,
-,Cain: ちょっと待てよ。遅かれ早かれクーガー博士は死んでしまった‥‥‥。もし彼を殺したのが死霊でなくキールだったら‥‥‥。,
-,Cain: クーガー博士を死霊が襲った事には変わりはないが、もしキールが死霊を操ってクーガー博士を殺させたのだとしたら‥‥‥。,
-,Cain: いや、もしキールという男が１ヶ月前に薬を盗んで死霊の実験をしていたとなると‥‥‥考えられないことはないぞ。,
-,Cain: 奴が一人だけとは限らないさ。刑事という職業柄、どんな人間と繋がりをもっているのかは判らないよ。,
-,Cain: 彼は今どこに？,
-,Cain: だったら俺も行くよ。俺は人のネタを横取りした上に、自分だけのうのうと生きているような奴は許せない質でね。もっとも、コール一人じゃ心配だってところもあるがね。,
+Cole,例のクーガー博士の家さ。色々と調べててね。,We went to Doc Cooger's house. Check out what we found.
+Sheila,ケインさん、さっきはどうもありがとう。<ENDIF>,"Thanks, Cain! <ENDIF>"
+Cole,そういえばシーラが世話になったんだってな。危ないところを助けてもらったとか、俺からも礼を言うよ。ありがとう。,"Speaking of which, Sheila told me you helped her back in the city. Thank you for that."
+Cole,シーラ、すまないが部屋に戻っていてくれないか。そろそろ次のターゲットが決まっている頃だろう。何か連絡が入ったらすぐに俺に知らせてくれ。,"Sheila, would you mind heading back to the room? We have to decide what to do next and someone has to stay back with the others in case something happens."
+Sheila,‥‥‥ええ、判ったわ。,"...Yep, understood."
+Cole,ケインもかなり強力な情報を入手したようだ。さすがジャーナリストだな。,Cain seems to have gotten good info. He's a good journalist.
+Cole,ケインがいなかったら、俺もあのとき死霊に殺られていただろうな。,"If it weren't for Cain, I'd have been killed by a zombie."
+Cole,ドクの家での事をケインに話した方がいいだろう。彼はドクの事を少し疑っている所があるからな。,I have to tell Cain about Doc's house. He's still suspicious of Doc.
+Cole,結構この駐車場にはいい車が多いな。,There's a lot of nice cars in this garage.
+Cole,この車の持ち主は生きているのだろうか‥‥‥。,I wonder if the car owner is still alive.
+Cole,ああ、書斎で彼の日記を見つけたよ。その日記には今から１ヶ月程前に、蘇生薬を何者かに盗まれている事が判ったんだ。,"Ah, I found his diary in his study. According to it, someone stole the resurrection drug a month earlier."
+Cole,彼は学会でひょんな事から蘇生薬の事を話してしまったようだ。それを聞いていた誰かがクーガー博士の研究所に忍び込み、薬とその資料を盗んだ。,"It seems like he talked about the resurrection drug at a conference. Afterwards, someone may have broken into his house and stole a sample."
+Cole,なに！？　キールを知っているのか！？,What?! You know Killer?
+Cole,それじゃ、やはりドクの研究を盗んだのはキールだったのか‥‥‥。,"Wait, then, was Killer actually the one who stole Doc's research?"
+Cole,ケイン、驚くなよ。キールは死霊退治のメンバーなんだ。,I'm surprised. Killer's part of the zombie killing squad.
+Cole,俺もキールとは一度しか話した事がないから彼の性格までは判らないが、そんなに動揺している気配もないし、非常に落ち着いていたよ。,"I've only talked to Killer once, so I don't really know him. He was neither overly calm nor upset."
+Cole,それに、俺達がここへ来て一番最初に会ったのがキールなんだ。俺がもし、ドクの研究を盗んでいたとしたら、初めて会った時点でドクを口封じするだろう‥‥‥。,"Killer was the first person we met here, alone. If I were him, I would've killed us all to cover up the theft."
+Cole,だが、彼はそれをしなかった‥‥‥。,"But, he didn't, obviously..."
+Cole,いや、クーガー博士はたしかに死霊に襲われていたよ‥‥‥俺はこの目で見たんだ。,"No, Doc was definitely attacked by a zombie. I saw it myself."
+Cole,死霊を操るって‥‥‥まさかそんな事が‥‥‥,No way... how could you control a zombie?
+Cole,まさか‥‥‥キールは刑事だぜ？　それに薬を作った本人のクーガーでさえ、まだ解明しきれていないというのに‥‥‥。,"Isn't Killer a cop, though? Not a scientist? Doc wasn't finished with the drug at the time."
+Cole,くそっ！！　キールの野郎、絶対に許さねえぞ！！,Shit! That bastard! I'll make him pay!!!
+Cole,まだ３階にいると思うよ。奴に本当の事を聞きにいかないとな。,He should still be on the third floor. We've got to find out what he's done.
+,Cain: コール、遅かったな。何処へ行ってたんだ？,"Cain: Cole, you're late. Where'd you end up?"
+,Cain: なに、大した事じゃないよ。たまたま俺が通りかかっただけの話さ。,"Cain: Nah, no big deal. You were actually right by me."
+,Cain: それでクーガー博士の家では何か判ったのか？,Cain: What'd you find out there?
+,Cain: なるほどな‥‥‥。,Cain: I see...
+,Cain: やはりな‥‥‥。多分、そいつはキールという刑事だろう。,"Cain: Yeah... possibly a detective who goes by ""Killer?"""
+,Cain: １６分署を調べていたら、キールという刑事のデスクにクーガー博士の資料が入っていたよ。それと青白く光る液体‥‥‥多分、あれが蘇生薬だろう。,Cain: I was going through the 16th Precinct and found notes about Doc Cooger at Killer's desk. And a vial of clear liquid that may have been the resurrection drug.
+,Cain: そのキールという男の身元を調べてみたんだが、どうも引っ掛かるんだよ。成績は優秀だし家族もいるんだ。感謝状なんて腐るほど貰っている。,"Cain: I looked into him and it didn't add up. He had good marks, seemed upstanding, family man, that sort of thing. Could he have done such terrible things too?"
+,Cain: それだけ真面目な奴が、どうしてこんな事をするのかが一番疑問なんだ。もっとも本人に聞いた方が一番手っ取り早いが、彼が生きているのさえ判らないこんな状態で‥‥‥,Cain: Why would he do something like this? Normally it's best to just ask directly but in this case...
+,Cain: なんだって！？,Cain: What?!
+,Cain: ちょっと待てよ。遅かれ早かれクーガー博士は死んでしまった‥‥‥。もし彼を殺したのが死霊でなくキールだったら‥‥‥。,Cain: Wait a sec. Cooger died shortly thereafter. Could Killer actually have killed him?
+,Cain: クーガー博士を死霊が襲った事には変わりはないが、もしキールが死霊を操ってクーガー博士を殺させたのだとしたら‥‥‥。,"Cain: I don't doubt that, but what if Killer somehow got the zombie to kill Cooger?"
+,Cain: いや、もしキールという男が１ヶ月前に薬を盗んで死霊の実験をしていたとなると‥‥‥考えられないことはないぞ。,Cain: It's hard to imagine a police officer experimenting on the dead with a resurrection drug.
+,Cain: 奴が一人だけとは限らないさ。刑事という職業柄、どんな人間と繋がりをもっているのかは判らないよ。,"Cain: If it was him, he couldn't have acted alone. But who knows what kind of connections he might have."
+,Cain: 彼は今どこに？,Cain: Where is he now?
+,Cain: だったら俺も行くよ。俺は人のネタを横取りした上に、自分だけのうのうと生きているような奴は許せない質でね。もっとも、コール一人じゃ心配だってところもあるがね。,Cain: I'll go. I can't abide by someone stealing other people's work. And he might be waiting for you to come alone if you catch my meaning.

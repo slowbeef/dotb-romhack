@@ -1,36 +1,36 @@
 Nametag,Japanese,English
-Cole,こっ、これは‥‥‥！！,
-Cole,レイとサリーが！！　どうしてこんな所で‥‥‥！！,
-Cole,この二人が死んでしまったなんて‥‥‥俺は夢でも見ているような気分だ‥‥‥。,
-Cole,机の上は色々な物が散乱している。一体、何が起こったんだ！？,
-Cole,机の上でレイとサリーが殺られている。どうしてこんな事になってしまったのだ‥‥‥。,
-Cole,様々な書類が散乱している。かなり争った様子だが、どうしてこんな事になってしまったんだろう‥‥‥。,
-Cole,レイがサリーを追いかけていたという事は誰もが知っていた事だろうな。そこに目をつけたキールは、いかにも二人が撃ち合ったように見せかけた。,
-Cole,しかし俺を殺るならまだしも、どうしてメンバーの人間を‥‥‥。,
-Cole,この二人がキールの秘密を知っていたとなると話は判るが‥‥‥。とにかく、奴が何か良からぬ事を企んでいるには変わりはない。,
-Cole,下手すればメンバーの皆を殺しかねないだろう。,
-Cole,とにかく、これ以上の犠牲者が出ないうちにキールを探し出さないと！！,
-Cole,レイもやっと恋人の事から立ち直ったばっかりだというのに、どうしてこんな事に‥‥‥。,
-Cole,だけど二人ともどうして裸なんだ！？　レイはサリーを気にいってたようだからな。レイがサリーを襲って撃たれたとも考えられる。,
-Cole,レイの肩には傷跡が残っているが、サリーが引っ掻いたにしては大きすぎる。,
-Cole,傷は背中まで到っているし、弾丸がかすめたとも思えない。銃で撃たれた跡もないし、どうしたらこんな傷ができるのか不思議だ‥‥‥。,
-Cole,ん！？　レイの背中に<LONEIF>は何かで貫いたと思われる傷跡がある‥‥‥これが致命傷か。まるで長い棒のような物で、身体を串刺しにされたみたいだ。<OR>レイもサリーと同じ殺られ方か‥‥‥酷い事を‥‥‥。<ENDIF>,
-Cole,もし死霊に襲われたとしたら、脳を喰われているだろう。頭に傷がないという事は、やっぱりキールの仕業なのだろうか‥‥‥。,
-Cole,レイの手に<IF 0>も<ELSE>は<ENDIF>銃が握られている。サリーと撃ち合ったものかどうかは判らない。,
-Cole,この銃は誰に向けて撃ったものだろう‥‥‥。しかし、これだけの弾を撃ち込んだとなると、いくら死霊でも肉片が飛び散っている筈だが‥‥‥。,
-Cole,だが、それらしい物はどこにも落ちていない。サリーを撃ったとも考えられるが、サリーの身体にはそれらしい傷は残っていないようだし‥‥‥。,
-Cole,レイの持っている銃を調べてみると、弾は一発も残っていない。全て撃ち尽したものだ。,
-Cole,あんなに優しかったサリーがこんな事になってしまうなんて、まるで夢を見ているようだ‥‥‥。,
-Cole,<IF +>サリーもレイと同じ殺られ方か‥‥‥酷い事を‥‥‥。<ELSE>サリーの身体には何かで貫いたと思われる傷跡がある‥‥‥これが致命傷か。まるで長い棒のような物で、身体を串刺しにされたみたいだ。<ENDIF>,
-Cole,これもキールの仕業なのか‥‥‥。,
-Cole,もしキールが殺ったのだとしたら、二人を相手にしたキールもかなりのダメージを受けている筈だが‥‥‥。,
-Cole,この机以外、どこにも血痕がないとはどういう事だ！？,
-Cole,サリーの銃に<IF 2>も、弾は入っていないようだ。レイと同様、全弾を撃ち尽したものだな。<ELSE>は弾が入っていないぞ。まさかレイを撃ったものだとは考えられない。<ENDIF>,
-Cole,ん？　ちょっと待てよ‥‥‥。二人共、左手に銃を持っている‥‥‥何故だ！？,
-Cole,普通の人間だったら右手でトリガーを引く筈なのに‥‥‥それに弾倉が空だという事は誰かに向けて撃ったと思われるが、どこにも薬莢が落ちていない‥‥‥。,
-Cole,一体、どういう事だ！？,
-Cole,キールが二人を殺した後に銃を持たせ、いかにも二人で撃ち合ったかのように見せた‥‥‥。,
-Cole,キールだったら二人に近づくのは簡単な事だ。信頼しているメンバーにいきなり襲われたら一溜まりもないだろう。,
-Cole,とりあえず、一旦この部屋を出よう。,
-Cole,いや、もう少しここで調べたいな。,
-,部屋を出る<OR>キャンセル,
+Cole,こっ、これは‥‥‥！！,This... this is...!
+Cole,レイとサリーが！！　どうしてこんな所で‥‥‥！！,Ray and Sally! What happened?!
+Cole,この二人が死んでしまったなんて‥‥‥俺は夢でも見ているような気分だ‥‥‥。,I can't believe it. I just can't believe they died here!
+Cole,机の上は色々な物が散乱している。一体、何が起こったんだ！？,There's a lot of things scattered on the desk. What happened here?
+Cole,机の上でレイとサリーが殺られている。どうしてこんな事になってしまったのだ‥‥‥。,Ray and Sally are lying here on the desk. What happened?!
+Cole,様々な書類が散乱している。かなり争った様子だが、どうしてこんな事になってしまったんだろう‥‥‥。,Various documents are scattered around. It looks like there was a struggle but what happened?
+Cole,レイがサリーを追いかけていたという事は誰もが知っていた事だろうな。そこに目をつけたキールは、いかにも二人が撃ち合ったように見せかけた。,Did Ray attack Sally? Maybe Killer showed up and made it look like Ray and Sally shot each other.
+Cole,しかし俺を殺るならまだしも、どうしてメンバーの人間を‥‥‥。,"But, if he wants to kill me, why'd he come here?"
+Cole,この二人がキールの秘密を知っていたとなると話は判るが‥‥‥。とにかく、奴が何か良からぬ事を企んでいるには変わりはない。,Does this mean he discovered their secret? He's still out there and dangerous.
+Cole,下手すればメンバーの皆を殺しかねないだろう。,I hope Killer didn't kill everyone else.
+Cole,とにかく、これ以上の犠牲者が出ないうちにキールを探し出さないと！！,I have to find Killer before he kills again!
+Cole,レイもやっと恋人の事から立ち直ったばっかりだというのに、どうしてこんな事に‥‥‥。,Ray was recovering from the shock of losing his girlfriend. Why did he have to die?
+Cole,だけど二人ともどうして裸なんだ！？　レイはサリーを気にいってたようだからな。レイがサリーを襲って撃たれたとも考えられる。,Why aren't they wearing clothes? I think Ray had a thing for Sally but I don't see how that would explain this.
+Cole,レイの肩には傷跡が残っているが、サリーが引っ掻いたにしては大きすぎる。,There's marks on Ray's shoulders but they looks too big. I don't think Sally scratched him.
+Cole,傷は背中まで到っているし、弾丸がかすめたとも思えない。銃で撃たれた跡もないし、どうしたらこんな傷ができるのか不思議だ‥‥‥。,"This wound reaches the back, but I don't think a bullet would've made this mark. There's no traces of gunshots either. How did this happen?"
+Cole,ん！？　レイの背中に<LONEIF>は何かで貫いたと思われる傷跡がある‥‥‥これが致命傷か。まるで長い棒のような物で、身体を串刺しにされたみたいだ。<OR>レイもサリーと同じ殺られ方か‥‥‥酷い事を‥‥‥。<ENDIF>,"Hm. Looking at his back, <LONEIF>it looks like Ray was impaled by something. It must've been the fatal wound.<OR>Ray was killed in the same way as Sally.<ENDIF>"
+Cole,もし死霊に襲われたとしたら、脳を喰われているだろう。頭に傷がないという事は、やっぱりキールの仕業なのだろうか‥‥‥。,"If a zombie killed him, it would've eaten his brain. No head wound... does that mean Killer did this?"
+Cole,レイの手に<IF 0>も<ELSE>は<ENDIF>銃が握られている。サリーと撃ち合ったものかどうかは判らない。,Ray is<IF 0> also<ELSE> <ENDIF>holding a gun in his hand. Did he shoot Sally?
+Cole,この銃は誰に向けて撃ったものだろう‥‥‥。しかし、これだけの弾を撃ち込んだとなると、いくら死霊でも肉片が飛び散っている筈だが‥‥‥。,"Who did he try to shoot? If he'd shot zombies, I'd expect to see blood or pieces of flesh around."
+Cole,だが、それらしい物はどこにも落ちていない。サリーを撃ったとも考えられるが、サリーの身体にはそれらしい傷は残っていないようだし‥‥‥。,"I don't see any of that. But if he shot Sally, then she'd have some kind of bullet wounds or something."
+Cole,レイの持っている銃を調べてみると、弾は一発も残っていない。全て撃ち尽したものだ。,"There's no bullets left in Ray's gun. Whatever he was shooting at, he emptied the whole gun."
+Cole,あんなに優しかったサリーがこんな事になってしまうなんて、まるで夢を見ているようだ‥‥‥。,I really can't believe this happened to Sally.
+Cole,<IF +>サリーもレイと同じ殺られ方か‥‥‥酷い事を‥‥‥。<ELSE>サリーの身体には何かで貫いたと思われる傷跡がある‥‥‥これが致命傷か。まるで長い棒のような物で、身体を串刺しにされたみたいだ。<ENDIF>,"<IF +>Whatever happened to Sally, it's the same as Ray.<ELSE>Sally also has a wound like she got impaled on something.<ENDIF>"
+Cole,これもキールの仕業なのか‥‥‥。,Did Killer also do this...?
+Cole,もしキールが殺ったのだとしたら、二人を相手にしたキールもかなりのダメージを受けている筈だが‥‥‥。,"If Killer killed him, I'd have to think he was wounded in the attack as well."
+Cole,この机以外、どこにも血痕がないとはどういう事だ！？,Is there no blood anywhere except on the desk? How? Why?
+Cole,サリーの銃に<IF 2>も、弾は入っていないようだ。レイと同様、全弾を撃ち尽したものだな。<ELSE>は弾が入っていないぞ。まさかレイを撃ったものだとは考えられない。<ENDIF>,Sally's gun has no ammunition. <IF 2>Same as with Ray's.<ELSE>I can't imagine she was shooting all the shots at Ray.<ENDIF>
+Cole,ん？　ちょっと待てよ‥‥‥。二人共、左手に銃を持っている‥‥‥何故だ！？,Wait. Both of them have the guns in their left hand. Were they both left-handed?
+Cole,普通の人間だったら右手でトリガーを引く筈なのに‥‥‥それに弾倉が空だという事は誰かに向けて撃ったと思われるが、どこにも薬莢が落ちていない‥‥‥。,"I didn't notice if they were both left-handed, but that would be a big coincidence. And also why aren't there any bullet casings anywhere?"
+Cole,一体、どういう事だ！？,What the hell?
+Cole,キールが二人を殺した後に銃を持たせ、いかにも二人で撃ち合ったかのように見せた‥‥‥。,"So after he killed them, Killer fired a gun to make it look like they both died in a gunfight?"
+Cole,キールだったら二人に近づくのは簡単な事だ。信頼しているメンバーにいきなり襲われたら一溜まりもないだろう。,It was easy for Killer to get close to them. They trusted him. No idea he would kill them.
+Cole,とりあえず、一旦この部屋を出よう。,Let's get out of here for now.
+Cole,いや、もう少しここで調べたいな。,"No, there's more to investigate here."
+,部屋を出る<OR>キャンセル,Leave<OR>Cancel

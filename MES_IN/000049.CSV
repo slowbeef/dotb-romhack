@@ -1,56 +1,56 @@
 Nametag,Japanese,English
-Cole,さすが書斎というぐらい、この部屋にはたくさんの本があるな。,
-Cole,この棚に積まれたファイルの数は、何度見てもハンパじゃないな。ドクは研究熱心だからどんな些細な事でもファイルに記録しているんだ。,
-Cole,この本棚には、ドクが今までに行ってきた研究の記録の全てが収められている。,
-Cole,この棚に並んでいるファイルの数々は、ドクの永年の研究の成果だ。とても俺なんかが理解できるような代物ではないだろう。,
-Cole,これだけの研究を今まで続けていたなんてつくづく感心するな。,
-Cole,ドクはシーラに「大切な物だから」と言って、この金庫の鍵をシーラに預けたんだ。でも、ドクの大切な物って一体何だろう‥‥‥。,
-Cole,この金庫には何が入っているのだろう‥‥‥。まさか大切な物ってお金の事じゃないだろうな。,
-Cole,とにかくこの金庫を開けてみない事には何も判らないな。,
-Cole,壁に絵が飾られている。この絵を見ていると心成しか気持ちが落ち着いてくるな。,
-Cole,この花は何ていう種類のものかな‥‥‥。,
-Cole,ドクがこんな絵にも興味があったとは知らなかったな。,
-Cole,０から９までの数字が並んでいるな。４桁までの暗証を入力すると金庫の扉が開くって訳だな。,
-Cole,ドクはどんな数字を暗証にしたのだろうか‥‥‥。,
-Cole,まぁ、とにかく思った数字を押してみた方がよさそうだな。,
-Cole,さすがに外は真っ暗だな‥‥‥。,
-Cole,キールは昼には死霊が現れないって言ってたけど、もし本当にそうだとしたら一体何処に隠れているんだろう‥‥‥。,
-Cole,外ではかなり強い風が吹いているな。庭にはたくさんの木が植えてあるから風が吹けばザワついて一発で判るな。,
-Cole,さっきまで降っていた雨が止んだみたいだな。きっと夕立だったのだろう‥‥‥。,
-Cole,この机はきれいに片付いているようだ。ドクは１日の研究が終わると必ずここへ来て研究の内容をこまめに記録するんだ。,
-Cole,机の上には本に時計、ノートに‥‥‥これは何かのリモコンかな？,
-Cole,<SET M>この机の引き出しには鍵はかかっていないようだ。あの鍵は一体どこで使うものなのだろう‥‥‥？<ELSE>この机の引き出しはすぐに開くが、中にはこれといって気になる物は入ってなさそうだ。<ENDIF>,
-Cole,かなり古くから使われていたらしく、机のいたる部分が剥げているな。,
-Cole,この時計は随分と高級そうだな。壊すといけないからあまり触らない方がいいかもしれない。,
-Cole,時計は９時を指している。早くしないとケインとの待ち合わせに遅れてしまうぞ。,
-Cole,<IF M>時計の時刻が暗証になってると思ったが、時間は刻々と変わっているし‥‥‥。<ELSE>この時計にはどこにも鍵穴が見つからない。別の場所を捜した方がよさそうだな。<ENDIF>,
-Cole,これは何かのリモコンみたいだな。,
-Cole,テレビのリモコンにしてはボタンが少なすぎるし、一体何のリモコンだろうか？,
-Cole,このリモコンのお陰で金庫の場所が判ったな‥‥‥。,
-Cole,変だな‥‥‥このリモコンにはボタンが『パワー』と『オープン』の２つだけしかついていないようだぞ。,
-Cole,これはドクが研究の資料に使っていたと思われる医学辞典だな。中を見たところで俺が理解できるような代物ではないようだ。,
-Cole,医学辞典には一部にしおりが挟んでいるページがある。,
-Cole,このページには、人間の脳について詳しく書かれているようだ。,
-Cole,医学辞典は机の上に二冊置いてあるが、どちらを見ても俺が理解できるような内容のものではなさそうだ。,
-Cole,これを押せば電源が入るんだな‥‥‥。,
-Cole,これでいいのか？　音がしないから少し不安だが‥‥‥。,
-Cole,さっき押したから、既に電源は入っているのだろう。,
-Cole,ん？　何か聞こえるぞ？,
-Cole,わっ！　あんな所に隠し金庫があったのか‥‥‥！！,
-Cole,じゃ、この鍵はあの金庫に使われるんじゃ‥‥‥,
-Cole,‥‥‥やはりそうか‥‥‥ピッタリはまったな。,
-Cole,ん？　何だこれ‥‥‥？,
-Cole,まさか、鍵の他に暗証も入力しないと開かないのか！？,
-Cole,ちょ、ちょっと待てよ。俺、ドクの金庫の暗証なんて知らないぜ！？,
-Cole,でも、確かにこの鍵は金庫のものだし‥‥‥。ここまで来たらやってみるしかないか‥‥‥。,
-Cole,いくら押しても何も起きないぞ？,
-Cole,そうか、まず電源をいれないといけないのかもしれないな。,
-Cole,よし、入力してみるか。<VAR P><ELSE>Cole: もう一回やってみるか。<ENDIF>,
-Cole,‥‥‥‥‥‥‥‥‥。,
-Cole,金庫の扉は開かないみたいだな‥‥‥違う番号みたいだ。,
-Cole,お！？　扉が開いた！！　そうか、この金庫の暗証はメアリーの誕生日だったのか。,
-Cole,よし、さっそく中を調べてみるか‥‥‥。,
-Cole,中に入っているのは‥‥‥本と封筒ぐらいか‥‥‥。他には何も入っていないみたいだな。,
-Cole,今度は別の部屋を調べてみるか‥‥‥。,
-Cole,もう少しこの書斎を調べてみるか。,
+Cole,さすが書斎というぐらい、この部屋にはたくさんの本があるな。,"There are a lot of books in the study, unsurprisingly."
+Cole,この棚に積まれたファイルの数は、何度見てもハンパじゃないな。ドクは研究熱心だからどんな些細な事でもファイルに記録しているんだ。,I can't get over how many books are here. Doc was a research enthusiast.
+Cole,この本棚には、ドクが今までに行ってきた研究の記録の全てが収められている。,These books contains records of all the work Doc did.
+Cole,この棚に並んでいるファイルの数々は、ドクの永年の研究の成果だ。とても俺なんかが理解できるような代物ではないだろう。,These files are the results of all his research. I can't really understand them. 
+Cole,これだけの研究を今まで続けていたなんてつくづく感心するな。,I can't help but be impressed by all the research he did.
+Cole,ドクはシーラに「大切な物だから」と言って、この金庫の鍵をシーラに預けたんだ。でも、ドクの大切な物って一体何だろう‥‥‥。,Doc told Sheila the key was important and entrusted it to her... but why is it important?
+Cole,この金庫には何が入っているのだろう‥‥‥。まさか大切な物ってお金の事じゃないだろうな。,What's in this safe...? Probably not money. Something else important...
+Cole,とにかくこの金庫を開けてみない事には何も判らないな。,I'm not sure how to open this safe.
+Cole,壁に絵が飾られている。この絵を見ていると心成しか気持ちが落ち着いてくるな。,There's a picture on the wall. Looking at it calms me down.
+Cole,この花は何ていう種類のものかな‥‥‥。,What kind of flower is this?
+Cole,ドクがこんな絵にも興味があったとは知らなかったな。,I didn't know Doc had an interest in this kind of painting.
+Cole,０から９までの数字が並んでいるな。４桁までの暗証を入力すると金庫の扉が開くって訳だな。,"The numbers 0-9 are lined up. If you enter the four correct digits, the safe opens, probably."
+Cole,ドクはどんな数字を暗証にしたのだろうか‥‥‥。,What number did Doc use as his passcode?
+Cole,まぁ、とにかく思った数字を押してみた方がよさそうだな。,It seems like a good idea to try a number he would've thought was important...
+Cole,さすがに外は真っ暗だな‥‥‥。,It's completely dark outside...
+Cole,キールは昼には死霊が現れないって言ってたけど、もし本当にそうだとしたら一体何処に隠れているんだろう‥‥‥。,Killer said he didn't see any zombies in daylight... but where would they be hiding?
+Cole,外ではかなり強い風が吹いているな。庭にはたくさんの木が植えてあるから風が吹けばザワついて一発で判るな。,"There's a strong wind outside, which makes the trees blow noisily. It also means it's hard to hear if someone - or something - is outside."
+Cole,さっきまで降っていた雨が止んだみたいだな。きっと夕立だったのだろう‥‥‥。,The rain just now has stopped. It must've been a small shower.
+Cole,この机はきれいに片付いているようだ。ドクは１日の研究が終わると必ずここへ来て研究の内容をこまめに記録するんだ。,The desk is very organized. Doc probably did a lot of work here.
+Cole,机の上には本に時計、ノートに‥‥‥これは何かのリモコンかな？,"On the desk is a book, a clock, a notebook, and... some kind of remote?"
+Cole,<SET M>この机の引き出しには鍵はかかっていないようだ。あの鍵は一体どこで使うものなのだろう‥‥‥？<ELSE>この机の引き出しはすぐに開くが、中にはこれといって気になる物は入ってなさそうだ。<ENDIF>,<SET M>The drawer is unlocked. So where would we use that key?<ELSE>The drawer is unlocked but there's nothing interesting in it.<ENDIF>
+Cole,かなり古くから使われていたらしく、机のいたる部分が剥げているな。,It's an old desk - there's a lot of it that peeled off.
+Cole,この時計は随分と高級そうだな。壊すといけないからあまり触らない方がいいかもしれない。,"The clock looks very expensive. Probably best not to touch it, I don't want to break it."
+Cole,時計は９時を指している。早くしないとケインとの待ち合わせに遅れてしまうぞ。,About 9 o'clock. I'd better hurry if I want to meet Cain at 10.
+Cole,<IF M>時計の時刻が暗証になってると思ったが、時間は刻々と変わっているし‥‥‥。<ELSE>この時計にはどこにも鍵穴が見つからない。別の場所を捜した方がよさそうだな。<ENDIF>,"<IF M>I was thinking maybe there was a secret hidden in the clock, but it's keeping time correctly.<ELSE>No keyhole on the clock. I'd better look elsewhere.<ENDIF>"
+Cole,これは何かのリモコンみたいだな。,This looks like a remote control.
+Cole,テレビのリモコンにしてはボタンが少なすぎるし、一体何のリモコンだろうか？,There's not enough buttons for it to be a TV remote. What is it?
+Cole,このリモコンのお陰で金庫の場所が判ったな‥‥‥。,"I understand the location of the safe, thanks to this remote."
+Cole,変だな‥‥‥このリモコンにはボタンが『パワー』と『オープン』の２つだけしかついていないようだぞ。,"That's weird - this remote only has two buttons: ""Power"" and ""Open."""
+Cole,これはドクが研究の資料に使っていたと思われる医学辞典だな。中を見たところで俺が理解できるような代物ではないようだ。,Looks like a medical book Doc was using for research. It's over my head.
+Cole,医学辞典には一部にしおりが挟んでいるページがある。,Some of the pages in the medical dictionary are bookmarked.
+Cole,このページには、人間の脳について詳しく書かれているようだ。,This page describes the human brain in detail.
+Cole,医学辞典は机の上に二冊置いてあるが、どちらを見ても俺が理解できるような内容のものではなさそうだ。,"There are two medical encyclopedias on the desk, but I don't understand either of them."
+Cole,これを押せば電源が入るんだな‥‥‥。,Pressing this one turns the power on...
+Cole,これでいいのか？　音がしないから少し不安だが‥‥‥。,Did that work? I didn't hear any sound...
+Cole,さっき押したから、既に電源は入っているのだろう。,"The power is already on, because I pushed the button."
+Cole,ん？　何か聞こえるぞ？,Hm? What's that sound?
+Cole,わっ！　あんな所に隠し金庫があったのか‥‥‥！！,Whoa! Is that a hiddens safe there?
+Cole,じゃ、この鍵はあの金庫に使われるんじゃ‥‥‥,So the key is used for that safe...
+Cole,‥‥‥やはりそうか‥‥‥ピッタリはまったな。,"...Yep, seems like it. Perfect!"
+Cole,ん？　何だこれ‥‥‥？,Hmmm... what's this?
+Cole,まさか、鍵の他に暗証も入力しないと開かないのか！？,No way! You have to enter a passcode in addition to the key?!
+Cole,ちょ、ちょっと待てよ。俺、ドクの金庫の暗証なんて知らないぜ！？,W-Wait a minute. I don't know the passcode to Doc's safe!
+Cole,でも、確かにこの鍵は金庫のものだし‥‥‥。ここまで来たらやってみるしかないか‥‥‥。,But surely the key is for this safe. I came all the way here for it.
+Cole,いくら押しても何も起きないぞ？,Pushing the buttons doesn't seem to do anything.
+Cole,そうか、まず電源をいれないといけないのかもしれないな。,Or maybe you have to turn on the power first.
+Cole,よし、入力してみるか。<VAR P><ELSE>Cole: もう一回やってみるか。<ENDIF>,"Alright, let's try it.<VAR P><ELSE>Cole: Maybe we should try again.<ENDIF>"
+Cole,‥‥‥‥‥‥‥‥‥。,...
+Cole,金庫の扉は開かないみたいだな‥‥‥違う番号みたいだ。,The safe door didn't open. Maybe we put in the wrong number?
+Cole,お！？　扉が開いた！！　そうか、この金庫の暗証はメアリーの誕生日だったのか。,Oh! It opened! I guess Mrs. Cooger's birthday was the passcode.
+Cole,よし、さっそく中を調べてみるか‥‥‥。,"Alright, let's see what was inside!"
+Cole,中に入っているのは‥‥‥本と封筒ぐらいか‥‥‥。他には何も入っていないみたいだな。,Just ... a book and an envelope inside... nothing else.
+Cole,今度は別の部屋を調べてみるか‥‥‥。,Should we check this room again later?
+Cole,もう少しこの書斎を調べてみるか。,Let's keep investigating this room...
 ,廊下に出る　<OR>キャンセル　,

@@ -1,41 +1,41 @@
 Nametag,Japanese,English
-Cole,いいんだよ、それにビッグドッグも食えるしね。,
-Cole,何度見てもノーズの迫力には凄味があるなぁ‥‥‥。髪の毛が無いから恐く見えるんだよな、もしロングヘアーにでもしたら‥‥‥,
-Cole,ノーズって見掛けは恐いけど中身はいい奴なんだよな。俺もこんな人と知り合いになれて心強いな。,
-Cole,こらっ！　勝手に解釈するなっ！,
-Cole,すごい筋肉質だな‥‥‥俺も最近また鍛え始めたけど、ここまではどう足掻いたって無理だろうな。,
-Cole,見た感じ２メートルは超えているか‥‥‥俺とは２０センチ以上も違うんだよな。こんな巨体でラグビーでもやったら一躍有名になれそうだな。,
-Cole,これだけの身体だったら死霊がいくら来ても恐くないだろうな。,
-Cole,ノーズは<IF 7>昔、軍にいたって聞いたけど‥‥‥？,
-Cole,なるほど‥‥‥それでそんなに体格がいいのか。,
-Cole,俺はただの建設屋さ。でも日に日に塗装屋に変わってきてるけど‥‥‥。,
-Cole,もっとも、重い材料を毎日運んでいるからね、少しは筋肉がついてくるみたいだな。,
-Cole,はははは、当たり前だって。,
-Cole,ノーズから見たメンバーの皆はどんな感じ？,
-Cole,グールは？,
-Cole,そうか‥‥‥サリーは結構重要な仕事を任せられているんだな‥‥‥。,
-Cole,キールは一度ノーズに助けられた事があるって言ってたよ。,
-Cole,ノーズから見たキールはどんな感じ？,
-,Nose: コール、昨日は変な事頼んじゃって悪かったな。,
-,Nose: こいつ、まだ覚えていやがったな。,
-,Nose: どうしたんだ、コール。まだ俺に話があるのか？,
-,Nose: コール、何を一人で笑っているんだ？,
-,Nose: コール、何をさっきから見てるんだ？　まさか俺に気が‥‥‥！？,
-,Nose: やばいぜ、コール。俺はこれでも‥‥‥,
-,Nose: ああ、俺は元々陸軍にいたよ。戦場ではあまり活躍できなかったが‥‥‥俺自身、人を殺すのは嫌いだからな。<OR>ここに来る前はどんな仕事を？,
-,Nose: 俺は元々陸軍にいたよ。戦場ではあまり活躍できなかったが‥‥‥俺自身、人を殺すのは嫌いだからな。<ENDIF>,
-,Nose: コールも結構いい身体をしているが、どんな仕事を？,
-,Nose: 俺も一度はそういう仕事に憧れてた時もあったけど、やっぱり戦車転がして機関銃を撃ちまくっていた方が性に合っているな。,
-,Nose: コール、知ってるか？　戦車って意外と重いんだぜ。俺がどんなに力入れてもビクともしないんだ。,
-,Nose: そうだな‥‥‥皆正直でいい奴だよ。レイにしたって強がってる所はあるが、あれでも結構気の弱い所があるんだよ。,
-,Nose: ボスかい？　彼はさすがに署長というだけあって皆をまとめる力を持っているな。さすが１６分署のボスだっていう気がするよ。,
-,Nose: サリーは現場には来ないが、皆が安全に仕事を出来るように準備してくれる。彼女の指示は１００％とはいえないが、それに近い計画を立ててくれるよ。,
-,Nose: 彼女が居なかったら大幅な戦力を失う事になるだろうな。,
-,Nose: 今は来ていないが、サリーの隣に座っていたキャッシーの場合はどう説明していいか判らないが‥‥‥やはり女だし、年齢から考えても精神的に酷いダメージがあったのだろう。,
-,Nose: 彼女にしてみれば可哀想な所もあるが、はやく立ち直って貰わないとな。,
-,Nose: そうだったか？　忘れちまったな‥‥‥現場では必死にやってるからな、いちいちそんな事まで覚えてられないよ。,
-,Nose: もっとも俺としてはそんな事で変な気を回さないで欲しいな。,
-,Nose: キールは刑事というだけあって現場では的確な判断を下すが、かなり慎重な所があるな。だから逆に余計な時間を喰っちまう。,
-,Nose: 俺は一気に叩き潰す方が性に合っているからな。まぁ、人はそれぞれやり方が違うから何ともいえないが‥‥‥。,
-,Nose: 俺の知っているのは、そんなもんかな‥‥‥。,
-,Nose: 俺も今は暇してるからよ、また何かあったら呼んでくれよ。,
+Cole,いいんだよ、それにビッグドッグも食えるしね。,It's okay. I'm looking forward to that big dog meal.
+Cole,何度見てもノーズの迫力には凄味があるなぁ‥‥‥。髪の毛が無いから恐く見えるんだよな、もしロングヘアーにでもしたら‥‥‥,"I can't get over how big Nose is. With hair or without, he just towers over me."
+Cole,ノーズって見掛けは恐いけど中身はいい奴なんだよな。俺もこんな人と知り合いになれて心強いな。,Nose looks scary but he's a good person inside. I'm glad to know such a good guy.
+Cole,こらっ！　勝手に解釈するなっ！,Whoa! Don't misunderstand me!
+Cole,すごい筋肉質だな‥‥‥俺も最近また鍛え始めたけど、ここまではどう足掻いたって無理だろうな。,His muscles are amazing. I've done weight lifting before but I can't imagine ever getting that big.
+Cole,見た感じ２メートルは超えているか‥‥‥俺とは２０センチ以上も違うんだよな。こんな巨体でラグビーでもやったら一躍有名になれそうだな。,"Looks like he's over six feet. He's got a head on me, easily. If he were a football player, he'd be famous."
+Cole,これだけの身体だったら死霊がいくら来ても恐くないだろうな。,"With a body like that, I bet he's not scared no matter how many zombies he faces."
+Cole,ノーズは<IF 7>昔、軍にいたって聞いたけど‥‥‥？,"Nose, I heard you were in the army a long time ago?<IF 7>I heard you were in the army a long time ago?"
+Cole,なるほど‥‥‥それでそんなに体格がいいのか。,I see... Is that good?
+Cole,俺はただの建設屋さ。でも日に日に塗装屋に変わってきてるけど‥‥‥。,I work in construction. But it's turning into a paint shop more and more every day.
+Cole,もっとも、重い材料を毎日運んでいるからね、少しは筋肉がついてくるみたいだな。,"But, I carry heavy materials so I get a bit of a workout from it."
+Cole,はははは、当たり前だって。,"Haha, naturally."
+Cole,ノーズから見たメンバーの皆はどんな感じ？,"From what you can see, what do you think of the other members of the group?"
+Cole,グールは？,Ghoul?
+Cole,そうか‥‥‥サリーは結構重要な仕事を任せられているんだな‥‥‥。,"Yeah, Sally's been entrusted with a very important job."
+Cole,キールは一度ノーズに助けられた事があるって言ってたよ。,Killer said that he helped you once.
+Cole,ノーズから見たキールはどんな感じ？,"Nose, what do you think about Killer?"
+,Nose: コール、昨日は変な事頼んじゃって悪かったな。,"Nose: Cole, about yesterday. It was a lot to ask..."
+,Nose: こいつ、まだ覚えていやがったな。,Nose: I didn't forget!
+,Nose: どうしたんだ、コール。まだ俺に話があるのか？,Nose: Something wrong? Are you talking to me?
+,Nose: コール、何を一人で笑っているんだ？,"Nose: Cole, you're all alone but you don't seem sad."
+,Nose: コール、何をさっきから見てるんだ？　まさか俺に気が‥‥‥！？,"Nose: Cole, what are you looking at? You're not thinking..."
+,Nose: やばいぜ、コール。俺はこれでも‥‥‥,"Nose: No way, Cole. But still..."
+,Nose: ああ、俺は元々陸軍にいたよ。戦場ではあまり活躍できなかったが‥‥‥俺自身、人を殺すのは嫌いだからな。<OR>ここに来る前はどんな仕事を？,"Nose: Yeah, I was in the army. I didn't see any action, which is fine. I don't like the idea of killing people.<OR>What'd you do before coming here?"
+,Nose: 俺は元々陸軍にいたよ。戦場ではあまり活躍できなかったが‥‥‥俺自身、人を殺すのは嫌いだからな。<ENDIF>,"Nose: Yeah, I was in the army. I didn't see any action, which is fine. I don't like the idea of killing people.<ENDIF>"
+,Nose: コールも結構いい身体をしているが、どんな仕事を？,Nose: You're in pretty good shape. Do you work out?
+,Nose: 俺も一度はそういう仕事に憧れてた時もあったけど、やっぱり戦車転がして機関銃を撃ちまくっていた方が性に合っているな。,"Nose: I once wanted a job like that, but the idea of driving a tank or using heavy artillery appealed to me."
+,Nose: コール、知ってるか？　戦車って意外と重いんだぜ。俺がどんなに力入れてもビクともしないんだ。,Nose: Did you know? Tanks are extremely heavy. I'd never be able to lift one no matter how much I trained.
+,Nose: そうだな‥‥‥皆正直でいい奴だよ。レイにしたって強がってる所はあるが、あれでも結構気の弱い所があるんだよ。,"Nose: Everyone here is very nice. Even Ray, who's kind of brusque, well, everyone likes him."
+,Nose: ボスかい？　彼はさすがに署長というだけあって皆をまとめる力を持っているな。さすが１６分署のボスだっていう気がするよ。,"Nose: As a leader? He's good at pulling everyone together. I guess as a police chief, that's not surprising."
+,Nose: サリーは現場には来ないが、皆が安全に仕事を出来るように準備してくれる。彼女の指示は１００％とはいえないが、それに近い計画を立ててくれるよ。,Nose: Sally puts the plans together. They're not 100% perfect but they're pretty close.
+,Nose: 彼女が居なかったら大幅な戦力を失う事になるだろうな。,"Nose: Without her, we wouldn't have made the progress we had."
+,Nose: 今は来ていないが、サリーの隣に座っていたキャッシーの場合はどう説明していいか判らないが‥‥‥やはり女だし、年齢から考えても精神的に酷いダメージがあったのだろう。,"Nose: In the case of Cathy, the woman sitting next to Sally yesterday, I'm not sure why she's not here. She's young but seems capable."
+,Nose: 彼女にしてみれば可哀想な所もあるが、はやく立ち直って貰わないとな。,"Nose: She went to a bad place, but came back quickly."
+,Nose: そうだったか？　忘れちまったな‥‥‥現場では必死にやってるからな、いちいちそんな事まで覚えてられないよ。,"Nose: Oh? I don't remember that. But I can forget things, so who knows."
+,Nose: もっとも俺としてはそんな事で変な気を回さないで欲しいな。,Nose: Maybe I'm crazy...
+,Nose: キールは刑事というだけあって現場では的確な判断を下すが、かなり慎重な所があるな。だから逆に余計な時間を喰っちまう。,"Nose: Killer's a detective and we need to make fast, on the spot decisions. But he's thoughtful and takes too much time."
+,Nose: 俺は一気に叩き潰す方が性に合っているからな。まぁ、人はそれぞれやり方が違うから何ともいえないが‥‥‥。,Nose: I see a problem and try to smash it immediately. I guess we all have our methods.
+,Nose: 俺の知っているのは、そんなもんかな‥‥‥。,Nose: I know that kind of thing...
+,Nose: 俺も今は暇してるからよ、また何かあったら呼んでくれよ。,"Nose: I'm free, so if you need anything, let me know."

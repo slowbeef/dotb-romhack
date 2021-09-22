@@ -1,13 +1,13 @@
 Nametag,Japanese,English
-Cole,廊下だ‥‥‥。ドクの家の廊下ってこんなに無気味だったっけ？,
-Cole,ドクの家って外観より結構しっかりした造りになっているんだな。,
-Cole,<IF >この部屋は寝室だったな。見た感じ、何もそれらしい物はなかったが‥‥‥。<ELSE>確かこの部屋はドクの寝室だと思ったな‥‥‥。<ENDIF>,
-Cole,外で見てるより中で調べた方が早いな。,
-Cole,<LONEIF>ここは書斎だったな‥‥‥。<OR>この部屋は書斎だったな。俺もこの部屋にはあまり入った事がないから、何があったか良く覚えてないな。<ENDIF>,
-Cole,やばい‥‥‥もうこんな時間か、はやくしないと約束の時間に遅れてしまうな。,
-Cole,この肖像画は偉い学者とか言ってたが、俺にはさっぱり判らないな。,
-Cole,その筋では有名な学者さんだろう。なるほど‥‥‥みんな頭の良さそうな顔をしているな。,
-Cole,この先は研究室だったな。俺は研究室にある物は大体判るが、さすがにあそこに<IF M>暗証番号らしい数字が書かれているとは思えないな。<ELSE>は鍵のついた物など一つもなかったな。<ENDIF>,
-Cole,ジャックが暴れたおかげで研究室はメチャクチャだからな。それにあんな姿になってしまったキティは、もう見たくないよ。,
-Cole,<IF >ここはドクの寝室だったな。<ELSE>この部屋を調べてみるか‥‥‥。<ENDIF>,
-Cole,<LONEIF>書斎に入ってみよう‥‥‥。<OR>この部屋を調べてみようか。<ENDIF>,
+Cole,廊下だ‥‥‥。ドクの家の廊下ってこんなに無気味だったっけ？,It's a hallway. Were Doc's hallways always this creepy?
+Cole,ドクの家って外観より結構しっかりした造りになっているんだな。,Doc's house seems pretty well built.
+Cole,<IF >この部屋は寝室だったな。見た感じ、何もそれらしい物はなかったが‥‥‥。<ELSE>確かこの部屋はドクの寝室だと思ったな‥‥‥。<ENDIF>,"<IF >This is Doc's bedroom. It feels off, but nothing looks out of the ordinary.<ELSE>I thought this room was Doc's bedroom.<ENDIF>"
+Cole,外で見てるより中で調べた方が早いな。,It's faster to look inside than out.
+Cole,<LONEIF>ここは書斎だったな‥‥‥。<OR>この部屋は書斎だったな。俺もこの部屋にはあまり入った事がないから、何があったか良く覚えてないな。<ENDIF>,<LONEIF>This is the study.<OR>This is the study. I've never been in here so I don't know too much about it.<ENDIF>
+Cole,やばい‥‥‥もうこんな時間か、はやくしないと約束の時間に遅れてしまうな。,I better hurry so I'm not late to Cain's meeting.
+Cole,この肖像画は偉い学者とか言ってたが、俺にはさっぱり判らないな。,"This was a picture of a great scholar, but I don't know who it is."
+Cole,その筋では有名な学者さんだろう。なるほど‥‥‥みんな頭の良さそうな顔をしているな。,It's a picture of a famous scientist. Everyone here looks so smart.
+Cole,この先は研究室だったな。俺は研究室にある物は大体判るが、さすがにあそこに<IF M>暗証番号らしい数字が書かれているとは思えないな。<ELSE>は鍵のついた物など一つもなかったな。<ENDIF>,It's the lab. I don't know what's in there but...<IF M>it might be locked.<ELSE>it wasn't locked.<ENDIF>
+Cole,ジャックが暴れたおかげで研究室はメチャクチャだからな。それにあんな姿になってしまったキティは、もう見たくないよ。,The lab was messed up by Jack's rampage. I don't want to go in there and see Kitty.
+Cole,<IF >ここはドクの寝室だったな。<ELSE>この部屋を調べてみるか‥‥‥。<ENDIF>,<IF >This is Doc's bedroom.<ELSE>Let's check out this room.<ENDIF>
+Cole,<LONEIF>書斎に入ってみよう‥‥‥。<OR>この部屋を調べてみようか。<ENDIF>,<LONEIF>Let's go into the study.<OR>Let's check out this room.<ENDIF>

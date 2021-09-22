@@ -1,80 +1,83 @@
 Nametag,Japanese,English
 ,"　コール　２４歳
 　シーラ　２４歳　ベイサイド科学研究所にて原因不明の事故死
-　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",
+　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ","          Cole, 24 Years Old
+          Sheila, 24 Years Old    Died at Bayside Research Facility
+          GAME OVER"
 ,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
-　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝",
-,女の声：コールを放しなさい！！\nCole: あ、あの声は‥‥‥！！,
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝","                 NIGHTMARE COLLECTION
+                 Dead of the Brain: Cry of the Living Dead           GAME END {}"
+,女の声：コールを放しなさい！！\nCole: あ、あの声は‥‥‥！！,"Woman's Voice: Cole, don't shoot!\nCole: That- That voice."
 ,"　コール　２４歳
 　シーラ　２４歳　ベイサイド科学研究所にて原因不明の事故死
-　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",
+　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ","          Cole, 24 Years Old
+          Sheila, 24 Years Old    Died at Bayside Research Facility
+          GAME OVER"
 ,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
-　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝",
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝","                 NIGHTMARE COLLECTION
+                 Dead of the Brain: Cry of the Living Dead           GAME END {}"
 ,"　コール　２４歳
 　シーラ　２４歳　ベイサイド科学研究所にて原因不明の事故死
-　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",
+　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ","          Cole, 24 Years Old
+          Sheila, 24 Years Old    Died at Bayside Research Facility
+          GAME OVER"
 ,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
-　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝",
-Cole,グール！！,
-Cole,ちくしょう‥‥‥こんな所で‥‥‥,
-,グール：<IF>ハッハッハッ、どこを狙っておる！！<ELSE>当たらなければ、ただのオモチャだな！！,
-Cole,Guul: 小賢しい奴め！！　死ねっ！！！\nギャアアアアア！！！,
-Cole,ウリャアアアア！！！\nGuul: ガアアアア！！！,
-Cole,Guul: 小賢しい奴め！！　死ねっ！！！\nギャアアアアア！！！,
-Cole,グール！！,
-Cole,貴様ぁ、その手を放せ！！,
-Sheila,痛いっ！！,
-Cole,グール、やめろ！！,
-Cole,判った、言うとおりにするからシーラを放してくれ。,
-Cole,聞かせてくれ！　隣の街が死霊に殺られた時、どうしてこの街に報道されなかったんだ！？,
-Cole,なっ‥‥‥じゃ、あのメモは‥‥‥！！,
-Sheila,酷いわ‥‥‥。,
-Cole,どうして街の人達を監禁したりするんだ！？,
-Cole,なんて奴だ‥‥‥お前だって娘がいたんだろ！！　ホテルで話してくれたじゃないか！！,
-Sheila,クッ‥‥‥‥‥‥\nCole: シーラ！！　大丈夫か！？,
-Cole,ちくしょう‥‥‥こんな所で‥‥‥,
-Cole,なにっ！？　こいつも蘇生薬を‥‥‥！！,
-Cole,ぐああああ！！　な、なんてパワーだ‥‥‥。,
-Cole,があああああ！！！,
-Cole,クッ‥‥‥ど、どうしてこんな研究所に‥‥‥,
-Cole,やはり‥‥‥お前も死霊か‥‥‥！！,
-Cole,こ、こいつ‥‥ヒューマノイドか‥‥‥！？,
-Cole,あ、あの声は‥‥‥！！,
-Cole,キ、キャッシー！！　生きていたのか！？,
-Cole,〔しめた！！　グールはキャッシーに気を取られている。やるなら今しかない！！　手榴弾だ！！〕,
-Cole,ギャアアアアア！！！,
-Cole,ウリャアアアア！！！\nGuul: ガアアアア！！！,
-Cole,死ねえええええ！！！,
-Cole,ギャアアアアア！！！,
-,Guul: まさかあの状況で生き延びられるとは、俺の計算ミスだったようだな。,
-,Guul: おっと、動くな。少しでも動いたらこいつの両腕を引き抜くぞ。,
-,Guul: 無駄だ、どうせお前達はここで死ぬんだ。お前達は知りすぎたからな‥‥‥。,
-,Guul: 何かと思えばそんな事か‥‥‥。俺がテレビ局を襲っただけだ。この事が街の人間に知れれば大パニックになる事ぐらい計算済みだ。,
-,Guul: そして死霊がこの街に現れた頃、セントラルホテルに向かったのだ。あのメモを残してな。,
-,Guul: 死霊に襲われれば逃げた人間は警察署へ行く事ぐらい判っている。そしてモルモットになる事も知らずにノコノコとホテルに現れるという訳だ。コール、お前もそうだったな。,
-,Guul: 死霊退治のメンバーとかこつけて、ホテルに来た人間を次々とメンバーに入れたのだ。そうすればモルモット共は安心し、俺から離れなくなる。,
-,Guul: あの牢を見たのか‥‥‥。クーガーの作った蘇生薬には、未だに解明できない事がありすぎる。その為にはモルモットが必要だ。,
-,Guul: ワッハッハッ‥‥‥残念だったな、あの話はデタラメだ。,
-,Guul: さて、そろそろフィニッシュといくか。コール、お前から殺してやるよ。ミス・シーラ、お前は後でゆっくり可愛がってやろう。しばらく眠ってもらおうか。,
-,Guul: 死ねえ！！,
-,Guul: 無駄だ！！,
-,Guul: フッ‥‥‥そんなオモチャで私にかなうとでも思っているのか！！,
-,Guul: そうだ、その表情だ。もっと苦しめ！！,
-,Guul: このまま首の骨を折ってやろうか、ポキンってなあ‥‥‥。,
-,Guul: まだ口がきけるのか‥‥‥なら子守り歌代わりに聞かせてやろう。,
-,Guul: 元々、この研究所は軍の兵器開発のために造られたものだ。クーガーの蘇生薬をキールに盗ませた俺はここの所長に薬を売った。すると所長は部下を使って俺を殺しに来た。,
-,Guul: 政府の機密事項になったらしい。さすがにあれだけの人数に囲まれた俺は３秒で蜂の巣だ。,
-,Guul: 死霊といえば死霊だな。所長は動かなくなった俺を実験台に使った。そして狂暴化する俺を何度も殺し、狂暴化させない研究をした。,
-,Guul: 俺は生き返る度に所長への憎しみも増えていった。俺が最後に生き返った時に、彼をあの世へ送ってやったよ。,
-,Guul: あの薬は一度打つと１０年ぐらいの歳をとるらしい。俺の身体は腐っていき、それでも研究を重ねる所長は俺を‥‥‥,
-Cole,Guul: ‥‥‥‥‥‥！！\nこ、こいつ‥‥ヒューマノイドか‥‥‥！？,
-,Cathy: グール、死にたくなければその手を放しなさい！！,
-,Guul: チッ、この小娘までここへ来るとはな。さっさと殺しとけばよかったぜ。,
-,Cathy: まさかあなたの仕業だったとはね‥‥‥。,
-,Guul: フ‥‥‥お前も殺してやるさ。,
-Cole,Guul: 小賢しい奴め！！　死ねっ！！！\nギャアアアアア！！！,
-,Guul: ガアアアア！！！,
-Cole,Guul: 小賢しい奴め！！　死ねっ！！！\nギャアアアアア！！！,
-,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,
-,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,
-,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝","                 NIGHTMARE COLLECTION
+                 Dead of the Brain: Cry of the Living Dead           GAME END {}"
+Cole,グール！！,Ghoul!!!
+Cole,貴様ぁ、その手を放せ！！,Bastard... let go!!!
+Sheila,痛いっ！！,It hurts!!!
+Cole,グール、やめろ！！,Stop!
+Cole,判った、言うとおりにするからシーラを放してくれ。,"Alright! Let her go, and I'll do what you say."
+Cole,聞かせてくれ！　隣の街が死霊に殺られた時、どうしてこの街に報道されなかったんだ！？,"Tell me! When the last city was attacked by zombies, why wasn't it ever reported?"
+Cole,なっ‥‥‥じゃ、あのメモは‥‥‥！！,That... that letter...!!!
+Sheila,酷いわ‥‥‥。,That's terrible...
+Cole,どうして街の人達を監禁したりするんだ！？,Why did you confine people in the city?
+Cole,なんて奴だ‥‥‥お前だって娘がいたんだろ！！　ホテルで話してくれたじゃないか！！,"How could you do this? Back at the hotel, you even told me about your daughter!"
+Sheila,クッ‥‥‥‥‥‥\nCole: シーラ！！　大丈夫か！？,"Nnn....\nCole: Sheila, are you okay?"
+Cole,ちくしょう‥‥‥こんな所で‥‥‥,In a place like this...
+Cole,なにっ！？　こいつも蘇生薬を‥‥‥！！,What! This was also a resurrection drug!
+Cole,ぐああああ！！　な、なんてパワーだ‥‥‥。,Gahhhhhh!!! What... what power!
+Cole,があああああ！！！,Gaaaaa!!!
+Cole,クッ‥‥‥ど、どうしてこんな研究所に‥‥‥,What- what kind of research facility is this!
+Cole,やはり‥‥‥お前も死霊か‥‥‥！！,So after all... you actually are a zombie too!!
+Cole,こ、こいつ‥‥ヒューマノイドか‥‥‥！？,Th-this is an android?!
+Cole,あ、あの声は‥‥‥！！,That... that voice!
+Cole,キ、キャッシー！！　生きていたのか！？,C-Cathy! You're alive?!
+Cole,〔しめた！！　グールはキャッシーに気を取られている。やるなら今しかない！！　手榴弾だ！！〕,(Shit! Ghoul is distracted by Cathy! Now's my chance to use a grenade!)
+Cole,ギャアアアアア！！！,Gyaaaaaa!!!
+Cole,ウリャアアアア！！！\nGuul: ガアアアア！！！,Ahhhhhh!!!\nGhoul: Ahhhhhhh!!!
+Cole,死ねえええええ！！！,Die!!!!!
+Cole,ギャアアアアア！！！,Gyaaaaaa!!!
+,Guul: まさかあの状況で生き延びられるとは、俺の計算ミスだったようだな。,Ghoul: Looks like I calculated wrong. You managed to survive.
+,Guul: おっと、動くな。少しでも動いたらこいつの両腕を引き抜くぞ。,"Ghoul: Oops. Don't move. If you move even a hair, I'll tear off her arms."
+,Guul: 無駄だ、どうせお前達はここで死ぬんだ。お前達は知りすぎたからな‥‥‥。,Ghoul: There's no point. You'll both have to die here anyway. You know too much.
+,Guul: 何かと思えばそんな事か‥‥‥。俺がテレビ局を襲っただけだ。この事が街の人間に知れれば大パニックになる事ぐらい計算済みだ。,"Ghoul: Just think about it. If, say, a TV station broadcasted about that, there would be a massive panic."
+,Guul: そして死霊がこの街に現れた頃、セントラルホテルに向かったのだ。あのメモを残してな。,"Ghoul: When the zombies appeared in the city, we headed for the Central Hotel. I left that note as well."
+,Guul: 死霊に襲われれば逃げた人間は警察署へ行く事ぐらい判っている。そしてモルモットになる事も知らずにノコノコとホテルに現れるという訳だ。コール、お前もそうだったな。,"Ghoul: When zombies attack, it makes sense to flee to a police station. When we left the note, we wanted to see who would find it and go to the hotel without previously knowing it was a shelter. A guinea pig. Like you."
+,Guul: 死霊退治のメンバーとかこつけて、ホテルに来た人間を次々とメンバーに入れたのだ。そうすればモルモット共は安心し、俺から離れなくなる。,"Ghoul: I made up the Zombie Killing Squad and let members join one by one, so the pigs could rest and stay. With me."
+,Guul: あの牢を見たのか‥‥‥。クーガーの作った蘇生薬には、未だに解明できない事がありすぎる。その為にはモルモットが必要だ。,Ghoul: You saw that prison? There are still too many variables in Cooger's drug. Things we don't understand. So we need people to experiment on. Pigs. You.
+,Guul: ワッハッハッ‥‥‥残念だったな、あの話はデタラメだ。,Ghoul: Wahahaha... sorry. That story was a load of bullshit.
+,Guul: さて、そろそろフィニッシュといくか。コール、お前から殺してやるよ。ミス・シーラ、お前は後でゆっくり可愛がってやろう。しばらく眠ってもらおうか。,"Ghoul: Well, is that it? Cole, I'll kill you first. Sheila... you'll love me later, slowly. But perhaps you'll want to sleep first..."
+,Guul: 死ねえ！！,Ghoul: Die!
+,Guul: 無駄だ！！,Ghoul: Useless!
+,Guul: フッ‥‥‥そんなオモチャで私にかなうとでも思っているのか！！,Ghoul: Ha! Do you think a toy like that can hurt me?
+,Guul: そうだ、その表情だ。もっと苦しめ！！,Ghoul: I love that expression. Such torment!
+,Guul: このまま首の骨を折ってやろうか、ポキンってなあ‥‥‥。,Ghoul: I wonder how much of her spine I can break by just bending it really hard.
+,Guul: まだ口がきけるのか‥‥‥なら子守り歌代わりに聞かせてやろう。,"Ghoul: If you're able to speak, let's hear it instead of a lullaby."
+,Guul: 元々、この研究所は軍の兵器開発のために造られたものだ。クーガーの蘇生薬をキールに盗ませた俺はここの所長に薬を売った。すると所長は部下を使って俺を殺しに来た。,"Ghoul: Originally, this facility was for military research - weapons development. When Killer stole Cooger's resurrection drug at my behest, I gave it to the director here. But he double crossed me and tried to have me killed."
+,Guul: 政府の機密事項になったらしい。さすがにあれだけの人数に囲まれた俺は３秒で蜂の巣だ。,"Ghoul: Turns out it's a secret government facility. As expected, it took them 3 seconds to riddle me with bullets."
+,Guul: 死霊といえば死霊だな。所長は動かなくなった俺を実験台に使った。そして狂暴化する俺を何度も殺し、狂暴化させない研究をした。,Ghoul: But I already used the resurrection drug so a zombie is a zombie. He killed me many times in his research and I felt my mind go.
+,Guul: 俺は生き返る度に所長への憎しみも増えていった。俺が最後に生き返った時に、彼をあの世へ送ってやったよ。,"Ghoul: Every time I came back to life, my hatred for him grew and grew. And the last time I came back, I sent him to Hell instead."
+,Guul: あの薬は一度打つと１０年ぐらいの歳をとるらしい。俺の身体は腐っていき、それでも研究を重ねる所長は俺を‥‥‥,"Ghoul: That drug, once injected, lasts about ten years. But it doesn't stop the body from rotting. That part, the director had still been researching."
+,Guul: ‥‥‥‥‥‥！！\n,
+,Cathy: グール、死にたくなければその手を放しなさい！！,"Cathy: Ghoul! If you want to live, let her go!"
+,Guul: チッ、この小娘までここへ来るとはな。さっさと殺しとけばよかったぜ。,"Ghoul: Ugh, this girl? I should have killed her quickly."
+,Cathy: まさかあなたの仕業だったとはね‥‥‥。,Cathy: No way...
+,Guul: フ‥‥‥お前も殺してやるさ。,Ghoul: Guess I have to kill you too.
+,Guul: 小賢しい奴め！！　死ねっ！！！\n,Ghoul: Clever boy! Die!!!
+,Guul: ガアアアア！！！,Ghoul: Gahhhhhh!!!!
+,Guul: 小賢しい奴め！！　死ねっ！！！\n,Ghoul: Clever boy! Die!!!
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit

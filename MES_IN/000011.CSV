@@ -1,6 +1,5 @@
 Nametag,Japanese,English
 Cole,‚PŠK‚É–ß‚Á‚Ä‚«‚½‚ªddd‚ ‚êH@“ñl‚ª‚¢‚È‚¢ddd,"I came back to the first floor, but... they weren't here?"
-Cole,‚PŠK‚É–ß‚Á‚Ä‚«‚½‚ªddd‚ ‚êH@“ñl‚ª‚¢‚È‚¢ddd,"I came back to the first floor, but... they weren't here?"
 Sheila,ddd‚»‚ÌŒY–‚ªdd‚Æ‚Ív‚¦‚Èdd‚ídddB,I don't think... the culprit... is...
 Cole,‚ñH@ƒV[ƒ‰‚Ìº‚¾dddBº‚Í‚ ‚»‚±‚Ì‘—¿º‚©‚ç•·‚±‚¦‚½‚ÈB,Hmmm? Sheila's voice... I think it's coming from the Resource Room.
 Cole,<IF>‚Ü‚³‚©AƒV[ƒ‰‚ª€‘Ì‚É‚È‚Á‚Ä‚µ‚Ü‚Á‚½‚Æ‚Ív‚¦‚È‚¢‚È<ELSE>€‘Ì‚ª’‚é–ó‚ª‚È‚¢Bº‚Í•Ê‚Ì•ûŒü‚©‚ç•·‚±‚¦‚½‚È<ENDIF>B,"<IF>Seems like Sheila's okay.<ELSE>No need to stay by the corpse, her voice came from another direction.<ENDIF>"

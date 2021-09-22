@@ -1,13 +1,13 @@
 Nametag,Japanese,English
-Sheila,なんだか前に来たときより雰囲気が違うようね‥‥‥。<VAR ><ELSE>Sheila: いつも見慣れているのに、今日に限って壁の肖像画がなんだか無気味ね‥‥‥。<ENDIF>,
-Cole,<IF >この部屋は寝室だったな。見た感じ、何もそれらしい物はなかったが‥‥‥。<ELSE>確かこの部屋はドクの寝室だと思ったな‥‥‥。<ENDIF>,
-Sheila,コール、急いで。はやくしないとケインさんの待ち合わせに遅れてしまうわ。,
-Cole,表で見てるより中で調べた方が早いな。,
-Cole,<LONEIF>ここは書斎だったな‥‥‥。<OR>この部屋は書斎だったな。俺もこの部屋にはあまり入った事がないから、何があったか良く覚えてないな。<ENDIF>,
-Cole,やばい‥‥‥もうこんな時間か、はやくしないと約束の時間に遅れてしまうな。,
-Cole,この肖像画は偉い学者とか言ってたが、俺にはさっぱり判らないな。,
-Cole,その筋では有名な学者さんだろう。なるほど‥‥‥みんな頭の良さそうな顔をしているな。,
-Cole,この先は研究室だったな。俺は研究室にある物は大体判るが、さすがにあそこに<IF M>暗証番号らしい数字が書かれているとは思えないな。<ELSE>は鍵のついた物など一つもなかったな。<ENDIF>,
-Cole,ジャックが暴れたおかげで研究室はメチャクチャだからな。それにあんな姿のキティを見たらシーラは悲しむだろう。,
-Cole,<IF >ここはドクの寝室だったな。<ELSE>この部屋を調べてみるか‥‥‥。<ENDIF>,
-Cole,<LONEIF>書斎に入ってみよう‥‥‥。<OR>この部屋を調べてみようか。<ENDIF>,
+Sheila,なんだか前に来たときより雰囲気が違うようね‥‥‥。<VAR ><ELSE>Sheila: いつも見慣れているのに、今日に限って壁の肖像画がなんだか無気味ね‥‥‥。<ENDIF>,"The atmosphere feels different than last time.<VAR ><ELSE>Sheila: Even though I've seen it before, the portrait feels creepy somehow.<ENDIF>"
+Cole,<IF >この部屋は寝室だったな。見た感じ、何もそれらしい物はなかったが‥‥‥。<ELSE>確かこの部屋はドクの寝室だと思ったな‥‥‥。<ENDIF>,<IF >It's the bedroom. It feels weird but there's nothing wrong with them room.<ELSE>I thought this was Doc's bedroom.<ENDIF>
+Sheila,コール、急いで。はやくしないとケインさんの待ち合わせに遅れてしまうわ。,"Cole, hurry. We'll be late to our meeting with Cain."
+Cole,表で見てるより中で調べた方が早いな。,It's quicker to look inside than look at the table.
+Cole,<LONEIF>ここは書斎だったな‥‥‥。<OR>この部屋は書斎だったな。俺もこの部屋にはあまり入った事がないから、何があったか良く覚えてないな。<ENDIF>,"<LONEIF>This is the study.<OR>It's the study. I've never been in here before, so I'm not sure what happened.<ENDIF>"
+Cole,やばい‥‥‥もうこんな時間か、はやくしないと約束の時間に遅れてしまうな。,"No good. If I don't hurry, I'll be late."
+Cole,この肖像画は偉い学者とか言ってたが、俺にはさっぱり判らないな。,"This is the picture of a great scholar, but I don't know who it is."
+Cole,その筋では有名な学者さんだろう。なるほど‥‥‥みんな頭の良さそうな顔をしているな。,It's a famous scholar in a row of them. Everyone here even looks smart.
+Cole,この先は研究室だったな。俺は研究室にある物は大体判るが、さすがにあそこに<IF M>暗証番号らしい数字が書かれているとは思えないな。<ELSE>は鍵のついた物など一つもなかったな。<ENDIF>,The lab is up ahead.<IF M>I don't think it's locked.<ELSE>It wasn't locked.<ENDIF>
+Cole,ジャックが暴れたおかげで研究室はメチャクチャだからな。それにあんな姿のキティを見たらシーラは悲しむだろう。,The lab was messed up in Jack's rampage. Sheila will be upset if she sees what's left of Kitty.
+Cole,<IF >ここはドクの寝室だったな。<ELSE>この部屋を調べてみるか‥‥‥。<ENDIF>,<IF >It's Doc's bedroom.<ELSE>Let's check it out.<ENDIF>
+Cole,<LONEIF>書斎に入ってみよう‥‥‥。<OR>この部屋を調べてみようか。<ENDIF>,<LONEIF>Let's go into the study.<OR>Let's check out this room.<ENDIF>

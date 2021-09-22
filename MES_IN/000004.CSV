@@ -22,7 +22,7 @@ Cole,こんな所に消火器が置いてある。警察も火事には弱いか‥‥‥。,"Huh, there's a 
 Cole,かなり古い消火器だな‥‥‥取っ手が錆付いているぞ。これじゃ火事になっても使用できなさそうだ。,"This is a pretty old fire extinguisher, the handle is all rusty. I don't think it could even put out a fire!"
 Cole,この消火器を武器にしようと思ったけど、使えないんじゃ仕方ないな。,"I thought about using the fire extinguisher as a weapon, but I don't think it'd be very good."
 Cole,<IF>使い物にならないものを持って歩く訳にはいかないな。邪魔になるだけだ<ELSE>使用できない消火器なんてただ重いだけで何の役にも立たないな<ENDIF>。,"<IF>I don't want to lug useless stuff around. It'll just get in the way.<ELSE>Carrying a heavy, broken fire extinguishers is more trouble than it's worth.<ENDIF>"
-Cole,<IF >もう１度<ENDIF>このドアの開いている部屋を調べてみるか‥‥‥。,<IF >I should investigate the room behind this door one more time.<ELSE>I should investigate the room behind this door.<ENDIF>
+Cole,<IF >もう１度<ENDIF>このドアの開いている部屋を調べてみるか‥‥‥。<VAR >,
 Cole,この部屋は扉が閉まっているな‥‥‥。<IF >もう１度調べてみようか。<ENDIF>,<IF >The door to this room is closed... Let's investigate it again.<ELSE>The door to this room is closed... <ENDIF>
 Cole,<IF >この部屋は死体が多いせいか、何か匂うな。<ELSE>扉が閉まっているとなんだか無気味だな‥‥‥。<ENDIF>,"<IF >There are a lot of corpses inside, and I can smell them out here.<ELSE>The door is closed, which is a little creepy...<ENDIF>"
 Cole,<IF >たしかこの部屋は警官が死んでいたな。<ELSE>この部屋はドアが開いているぞ。<ENDIF>,<IF >That room's door is open.<ELSE>The officer in there is definitely dead.<ENDIF>

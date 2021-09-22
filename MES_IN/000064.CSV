@@ -1,26 +1,26 @@
 Nametag,Japanese,English
-Sheila,すごい機械だわ‥‥‥‥。,
-Cole,このコンソール室にはグールはいないようだな。,
-Cole,色々な計器が並んでいるな‥‥‥。かなり膨大な実験に使われるようだが‥‥‥。,
-Cole,たくさんのモニターが付いているが、何を意味するものなのか判らないな。,
-Sheila,私にもさっぱりだわ‥‥‥。,
-Sheila,コール、電源が入っているけど‥‥‥。,
-Cole,ああ、この手の装置は２４時間稼動している物だと思うよ。グールにこんな機械を操れる訳もないしね。,
-Cole,あのモニターには、何かグラフのような物が映しだされているな。,
-Sheila,コール、この数字は何かしら‥‥‥０を基点にプラスになったりマイナスになったりしているけど‥‥‥。,
-Cole,温度かな‥‥‥それとも圧力か‥‥‥,
-Cole,このモニターに映しだされている数字は何を意味するものだろう‥‥‥。,
-Sheila,何か嫌な感じね‥‥‥。,
-Cole,ここに座って操作するのだろう‥‥‥。一人でこれだけの機械を操るんだ、相当な技術者なのだろうな。,
-Cole,この椅子は床にしっかりと取り付けられている。移動は不可能だな。,
-Cole,手前の機械にはそれぞれレバーのような物がついている。,
-Cole,動かしてみたいが、どうも嫌な予感がするな。,
-Sheila,うん、私もそのままにしておいた方がいいと思う。,
-Cole,たくさんのスイッチがあるけど、一体何をするためのものだろう。,
-Sheila,きゃあああ！！！\nCole: ん！？　シーラ、どうした！？,
-Cole,大きなガラスだな‥‥‥。この下は何があるんだろう？,
-Sheila,暗くてよく見えないわ‥‥‥。,
-Cole,コンベアか？　何かの工場みたいだぞ。,
-Cole,ほら、あそこにコンベアが見えるだろ？,
-Sheila,うん、だけど今は動いてないみたいね。,
-Cole,このガラスもさっきの部屋と同じ防弾処理してあるのかな。,
+Sheila,すごい機械だわ‥‥‥‥。,What a big machine...
+Cole,このコンソール室にはグールはいないようだな。,I don't see Ghoul anywhere in the console room.
+Cole,色々な計器が並んでいるな‥‥‥。かなり膨大な実験に使われるようだが‥‥‥。,Various instruments are lined up. It looks like they're for various experiments...
+Cole,たくさんのモニターが付いているが、何を意味するものなのか判らないな。,"There are a lot of monitors, but I can't tell what they're used for."
+Sheila,私にもさっぱりだわ‥‥‥。,I'm looking...
+Sheila,コール、電源が入っているけど‥‥‥。,"Cole, it looks like the power is on."
+Cole,ああ、この手の装置は２４時間稼動している物だと思うよ。グールにこんな機械を操れる訳もないしね。,It looks like this device runs all day and night. Ghoul can't control this machine manually.
+Cole,あのモニターには、何かグラフのような物が映しだされているな。,That monitor is showing something like a graph.
+Sheila,コール、この数字は何かしら‥‥‥０を基点にプラスになったりマイナスになったりしているけど‥‥‥。,It looks like this is positive or negative depending on its relation to zero.
+Cole,温度かな‥‥‥それとも圧力か‥‥‥,So is it measuring temperature...? Or pressure?
+Cole,このモニターに映しだされている数字は何を意味するものだろう‥‥‥。,What do the numbers on this monitor mean?
+Sheila,何か嫌な感じね‥‥‥。,"Something bad, I'm sure."
+Cole,ここに座って操作するのだろう‥‥‥。一人でこれだけの機械を操るんだ、相当な技術者なのだろうな。,I guess this is where you sit to control this thing. It looks like you need to be an expert to operate this.
+Cole,この椅子は床にしっかりと取り付けられている。移動は不可能だな。,The chair is firmly secured to the floor. It's not possible to move it.
+Cole,手前の機械にはそれぞれレバーのような物がついている。,Each machine in the foreground has something like a lever.
+Cole,動かしてみたいが、どうも嫌な予感がするな。,"I'm tempted to pull it, but I have a bad feeling."
+Sheila,うん、私もそのままにしておいた方がいいと思う。,"Yeah, we should probably leave it alone."
+Cole,たくさんのスイッチがあるけど、一体何をするためのものだろう。,"There are a lot of switches, but what the heck are they for?"
+Sheila,きゃあああ！！！\nCole: ん！？　シーラ、どうした！？,"Kyaaaaa!!!\nCole: Sheila, what is it!"
+Cole,大きなガラスだな‥‥‥。この下は何があるんだろう？,It's a big glass... what's under it?
+Sheila,暗くてよく見えないわ‥‥‥。,It's too dark to see.
+Cole,コンベアか？　何かの工場みたいだぞ。,A conveyor belt? This place looks like a factory.
+Cole,ほら、あそこにコンベアが見えるだろ？,"You see a conveyor belt over there, right?"
+Sheila,うん、だけど今は動いてないみたいね。,"Yeah, but it looks like it's not moving."
+Cole,このガラスもさっきの部屋と同じ防弾処理してあるのかな。,I wonder if this glass is bulletproof like in the last room.

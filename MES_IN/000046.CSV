@@ -1,49 +1,49 @@
 Nametag,Japanese,English
-Sheila,クーガーさんの臭いがする‥‥‥。,
-Cole,この部屋でドクの奥さんが、いつも俺にケーキをご馳走してくれたんだ。,
-Cole,かなり大きな振り子の時計だ。１２時を指しているが、数年前からこの時計は止まっているんだ。,
-Cole,ドクはこんな骨董品を集めるのが趣味だったからな。この時計はその中でも一番大きなものだろう。,
-Cole,あの振り子が動いていた頃もあったが、その時の時報は家の外まで聞こえるようなかなり大きな音だったと思ったな。,
-Cole,さすがにこの時計に<IF M>金庫の暗証番号が隠されているとは思えないな。<ELSE>は鍵を使うような所は一つもないようだ。<ENDIF>,
-Cole,この机はあまり使われていないようだな。机の上にはホコリがつもっている。,
-Cole,机の上にはこれといって気になる物はないと思うが‥‥‥。,
-Sheila,あの鍵が使われるような物はなさそうね。,
-Sheila,あの<IF M>暗証番号を書いたメモがこの机に入っているとか？,
-Cole,いや、ドクならそんな事はしないだろう。本当に大事な物なら、ドクは自分で暗記してしまうだろう。<OR>鍵はもしかして引き出しの鍵かもしれないわ。,
-Cole,机の引き出しには鍵がついていないよ。それに、この鍵の形からして普通の鍵でなく磁気を使うものだろうな。<ENDIF>,
-Cole,机にはスタンドやノートが置いてあるだけで気になる物は何もないようだな。,
-Sheila,このノートは何かの計算式が書いてあるけど、私には何の事だかさっぱり判らないわ。,
-Cole,椅子‥‥‥だな。\nSheila: 椅子‥‥‥だね。,
-Sheila,この椅子にはおかしな所はないと思うけど‥‥‥。どっから見たって普通の椅子にしか見えないわ。,
-Cole,この椅子に<IF #>も<ELSE>は<ENDIF>ホコリが積もっているな。<IF #>机と同様、最近まで使われていなかったようだな。<ENDIF>,
-Cole,なんだかこの本棚にあるのは小説ばっかりだな‥‥‥。,
-Sheila,そうね、私の知っている小説も何冊かあるわ。,
-Cole,これだけの本の題名だけを読むのだってえらい大変だぞ。,
-Sheila,コールもむかし、小説ばっかり読んでた時があったよね。,
-Cole,この本棚には何もなさそうだな‥‥‥。,
-Sheila,コール、ベッドの脇にこんな物が落ちていたわ。,
-Cole,ん？　これは若い頃のドクと奥さんの写真だな‥‥‥。,
-Cole,こんな物があったなんて、やっぱりドクは奥さんが居なくなって寂しかったんだろうな。,
-Cole,最後にこの人を見たのは、俺がこの街へ越して間もない時だったな。,
-Sheila,きれいな人ね‥‥‥。,
-Cole,こんな優しくてきれいな人が交通事故で死んでしまうなんて、思ってもみなかったな。,
-Cole,『ハッピーバースデー・メアリー　２０－Ｏｃｔ』と書いてある。この写真は、ドクの奥さんの誕生日に撮ったものだろう。,
-Cole,おっと、いつまでも写真を眺めている訳にもいかないな。,
-Sheila,コール‥‥‥このベッドにはさっきの写真以外は、これといって気になるものは何もなさそうね。,
-Cole,ドクの使っていたセミダブルのベッドだな。奥さんが居なくなって、すぐに買い替えたと聞いたな。,
-Cole,ドクは研究熱心だったから、あまりこのベッドで眠る事はなかったんだよ。,
-Sheila,うん、いつも研究室で疲れて寝ちゃってたからね。,
-Cole,ベッドはきれいに整っているようだ。ドクは結構、几帳面な所があるからな。,
-Cole,このソファーに座るとドクがいた頃を思い出してしまうな。ドクはあの椅子に座って俺に将来の夢を語ってくれたんだ。,
-Cole,前にシーラをはじめて連れてきた時は、シーラは緊張してこのソファーの端でモジモジしていたんだ。,
-Cole,このソファーはフカフカしていて俺は結構気にいっているんだ。,
-Cole,このテーブルにはかなりホコリが積もっている。テーブルだけでなく、この部屋自体あまり使われていなかったようだな。,
-Cole,このテーブルにドクの奥さんが、よくケーキを焼いて持ってきてくれたんだ。‥‥‥あの頃に戻りたいな。,
-Cole,何の変哲もないテーブルだ。ここにあの<SET M>鍵が使われる<ELSE>暗証番号が書かれている<ENDIF>とは思えないな。,
-Cole,これは結構昔の写真だな‥‥‥こんな若いドクをみたのは初めてだな。,
-Sheila,クーガーさんが３０代頃に撮った写真のようね。,
-Cole,この写真のドクはとても幸せそうな顔をしているな。,
-Cole,この本棚には何もなさそうだな‥‥‥。,
-Cole,今度は別の部屋を調べてみるか‥‥‥。,
-Cole,もう少しこの部屋を調べてみるか。,
+Sheila,クーガーさんの臭いがする‥‥‥。,This room... it smells like Doctor Cooger...
+Cole,この部屋でドクの奥さんが、いつも俺にケーキをご馳走してくれたんだ。,"When she was alive, Doc's wife would serve us cake in this room."
+Cole,かなり大きな振り子の時計だ。１２時を指しているが、数年前からこの時計は止まっているんだ。,"It's a huge grandfather clock. It's showing 12, but it stopped working ages ago."
+Cole,ドクはこんな骨董品を集めるのが趣味だったからな。この時計はその中でも一番大きなものだろう。,Doc used to collect antiques in his spare time. This was probably his biggest piece.
+Cole,あの振り子が動いていた頃もあったが、その時の時報は家の外まで聞こえるようなかなり大きな音だったと思ったな。,"The clock used to work, but back when it did, the ticking was so loud, you could hear it outside the house."
+Cole,さすがにこの時計に<IF M>金庫の暗証番号が隠されているとは思えないな。<ELSE>は鍵を使うような所は一つもないようだ。<ENDIF>,"As expected, this clock <IF M>has a hidden compartment. I don't think the safe's lock is hidden.<ELSE>has a hidden compartment, but there's no place to put the key.<ENDIF>"
+Cole,この机はあまり使われていないようだな。机の上にはホコリがつもっている。,"Judging by all the dust, this desk didn't get a lot of use."
+Cole,机の上にはこれといって気になる物はないと思うが‥‥‥。,Nothing important on the desk.
+Sheila,あの鍵が使われるような物はなさそうね。,Nothing seems to use that key.
+Sheila,あの<IF M>暗証番号を書いたメモがこの机に入っているとか？,<IF M>Is there a note with the safe code on his desk?<ELSE>Is there a note or anything on his desk?
+Cole,いや、ドクならそんな事はしないだろう。本当に大事な物なら、ドクは自分で暗記してしまうだろう。<OR>鍵はもしかして引き出しの鍵かもしれないわ。,"No, if there was a code, Doc would've memorized it.<OR>It could be a drawer key."
+Cole,机の引き出しには鍵がついていないよ。それに、この鍵の形からして普通の鍵でなく磁気を使うものだろうな。<ENDIF>,I don't see a keyhole on the desk drawer. Also this lock uses magnets instead of tumblers like a regular key.<ENDIF>
+Cole,机にはスタンドやノートが置いてあるだけで気になる物は何もないようだな。,Nothing important in the stand or the notebook on the desk.
+Sheila,このノートは何かの計算式が書いてあるけど、私には何の事だかさっぱり判らないわ。,There's some formulas in the notebook but I have no idea what they mean.
+Cole,椅子‥‥‥だな。\nSheila: 椅子‥‥‥だね。,"A chair, isn't it?\nSheila: Yep, a chair."
+Sheila,この椅子にはおかしな所はないと思うけど‥‥‥。どっから見たって普通の椅子にしか見えないわ。,Just a normal chair. I can't find anything important around it.
+Cole,この椅子に<IF #>も<ELSE>は<ENDIF>ホコリが積もっているな。<IF #>机と同様、最近まで使われていなかったようだな。<ENDIF>,"<IF #>This chair is also dusty. Like the desk, it doesn't seem like it got much use.<ELSE>This chair is dusty.<ENDIF>"
+Cole,なんだかこの本棚にあるのは小説ばっかりだな‥‥‥。,"Strange, the bookshelf only has novels."
+Sheila,そうね、私の知っている小説も何冊かあるわ。,Some of these I know.
+Cole,これだけの本の題名だけを読むのだってえらい大変だぞ。,It's hard to know what the book's about from just the title.
+Sheila,コールもむかし、小説ばっかり読んでた時があったよね。,I used to read a lot of novels.
+Cole,この本棚には何もなさそうだな‥‥‥。,Seems to be nothing on this bookshelf.
+Sheila,コール、ベッドの脇にこんな物が落ちていたわ。,"Cole, it looks like something fell beside the bed."
+Cole,ん？　これは若い頃のドクと奥さんの写真だな‥‥‥。,Hm? It's a picture of Doc and his wife when they were young.
+Cole,こんな物があったなんて、やっぱりドクは奥さんが居なくなって寂しかったんだろうな。,I guess Doc was lonely after his wife passed away.
+Cole,最後にこの人を見たのは、俺がこの街へ越して間もない時だったな。,The last time I saw her was when I'd just arrived in the city.
+Sheila,きれいな人ね‥‥‥。,She's very pretty.
+Cole,こんな優しくてきれいな人が交通事故で死んでしまうなんて、思ってもみなかったな。,She was a good person. It's a shame she died in a traffic accident.
+Cole,『ハッピーバースデー・メアリー　２０－Ｏｃｔ』と書いてある。この写真は、ドクの奥さんの誕生日に撮ったものだろう。,"""Happy Birthday, Mary. Oct 20"" This must've been taken on her birthday."
+Cole,おっと、いつまでも写真を眺めている訳にもいかないな。,"Well, I can't waste time looking at photos."
+Sheila,コール‥‥‥このベッドにはさっきの写真以外は、これといって気になるものは何もなさそうね。,"It doesn't look like there's anything important in or around the bed, except for the photo you just saw."
+Cole,ドクの使っていたセミダブルのベッドだな。奥さんが居なくなって、すぐに買い替えたと聞いたな。,It's a twin bed used by Doc. I think he got a new one after his wife passed away.
+Cole,ドクは研究熱心だったから、あまりこのベッドで眠る事はなかったんだよ。,"Doc was so passionate about his work, he didn't sleep here much."
+Sheila,うん、いつも研究室で疲れて寝ちゃってたからね。,"Yeah, he'd always get tired and fall asleep in the lab."
+Cole,ベッドはきれいに整っているようだ。ドクは結構、几帳面な所があるからな。,The bed's in good condition. Doc was meticulous about certain things.
+Cole,このソファーに座るとドクがいた頃を思い出してしまうな。ドクはあの椅子に座って俺に将来の夢を語ってくれたんだ。,This sofa reminds me of our time together. He used to sit down and tell me about his future dreams and plans.
+Cole,前にシーラをはじめて連れてきた時は、シーラは緊張してこのソファーの端でモジモジしていたんだ。,"Sheila was nervous was she first came in here, and she sat nervously at the edge of the sofa."
+Cole,このソファーはフカフカしていて俺は結構気にいっているんだ。,"It's a nice soft sofa, and I like it a lot."
+Cole,このテーブルにはかなりホコリが積もっている。テーブルだけでなく、この部屋自体あまり使われていなかったようだな。,There's a lot of dust on the table. It seems like nothing in this room got a lot of use.
+Cole,このテーブルにドクの奥さんが、よくケーキを焼いて持ってきてくれたんだ。‥‥‥あの頃に戻りたいな。,Doc's wife used to bring us cake and set it on this table. Those were better days...
+Cole,何の変哲もないテーブルだ。ここにあの<SET M>鍵が使われる<ELSE>暗証番号が書かれている<ENDIF>とは思えないな。,"<SET M>It's a plain table. I can't use the key here, I don't think.<ELSE>It's a plain table. It doesn't have the password written on it, I don't think.<ENDIF>"
+Cole,これは結構昔の写真だな‥‥‥こんな若いドクをみたのは初めてだな。,This is a pretty old photo. I don't think I've ever seen Doc so young.
+Sheila,クーガーさんが３０代頃に撮った写真のようね。,It looks like Doc was in his 30s when this photo was taken.
+Cole,この写真のドクはとても幸せそうな顔をしているな。,Doc looks very happy in this photo.
+Cole,この本棚には何もなさそうだな‥‥‥。,Seems to be nothing on this bookshelf.
+Cole,今度は別の部屋を調べてみるか‥‥‥。,Should we check this room later?
+Cole,もう少しこの部屋を調べてみるか。,Let's keep investigating this room.
 ,廊下に出る　<OR>キャンセル　,

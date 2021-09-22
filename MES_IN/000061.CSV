@@ -1,40 +1,40 @@
 Nametag,Japanese,English
-,テリー：‥‥‥‥‥‥‥‥‥。,
-Cole,なんだか暑いな‥‥‥。この廊下は研究所のどこにつながっているんだろう‥‥‥。,
-Sheila,カビ臭いわ‥‥‥コール、急ぎましょ。,
-Cole,床は天井に備え付けられているパイプから、水がしたたり落ち、溜まっている。,
-Cole,床はかなり傷んでいるようだな。人が歩いたという形跡もないし‥‥‥非常口なのか？,
-Cole,一体この道はどこまでつながっているのだろうか‥‥‥。,
-Cole,狭いな‥‥‥この廊下はシーラと並んで歩く事は無理のようだな。,
-Cole,至る所に苔が生えている。掃除もロクにされていないようだな。,
-Sheila,キャッ！　ゴキブリ！,
-Cole,なんだ、ゴキブリか‥‥‥脅かすなよ。,
-Cole,こんなに狭いと前後から死霊に襲われたら一溜まりもないな。,
-Cole,天井にはパイプが通っているが、至る所に穴が空いている。,
-Cole,エアコン‥‥‥かな？　だけど、これだけの建物でパイプが３本だけってのもおかしいよな‥‥‥。,
-Cole,こんな物に見とれている暇はないな。,
-Cole,壁にキャッツアイがついている。側に寄ると温かく感じる。,
-Sheila,あっ、ダメ！\nCole: おっと‥‥‥‥‥‥。,
-Sheila,離れていてもこれだけ暑いんだから、触ったら火傷しちゃうわ。,
-Cole,赤い光が、なんとも無気味な雰囲気を漂わせているな。,
-Cole,かなり長そうだが、この廊下はどこまで続いているんだろうか‥‥‥。,
-Cole,この先には何があるんだろうか‥‥‥。,
-Cole,ここからうまく潜り込めればいいんだが‥‥‥。,
-Cole,ん？　何だろう、あの鉄格子は‥‥‥？\nSheila: 倉庫かしら？,
-Sheila,あっ‥‥‥あそこに座っている人‥‥‥テ‥‥‥テリー！？,
-Cole,なんだって！？,
-Cole,テリーだ！！　それに街の人も‥‥‥,
-Cole,おいっ！！　テリー、俺だ！！　コールだよ！！,
-Cole,聞こえているんだろ！？　返事しろよ！！,
-Sheila,コ、コール‥‥‥これってもしかしたら牢なのかも‥‥‥,
-Cole,そっ、そんな！？　でも、どうして‥‥‥,
-Sheila,あそこ見て‥‥‥鉄格子に鍵がかかっているわ！！,
-Cole,そんな‥‥‥酷すぎる‥‥‥！！,
-Cole,テリー、俺だ！！　コールだ！！,
-Sheila,この人達、ずっとここに閉じこめられていたから、気がおかしくなってしまったんだわ‥‥‥。,
-Sheila,コール‥‥‥これもグールさんの仕業なの？,
-Cole,あんな奴に「さん」付けなんてするな！！,
-Cole,クソッ‥‥‥,
-Cole,グールの野郎‥‥‥絶対に許さねえ！！,
-Sheila,あっ、待って‥‥‥。,
-Cole,扉だ！！　中に入るぞ！！,
+,テリー：‥‥‥‥‥‥‥‥‥。,Terry: ....
+Cole,なんだか暑いな‥‥‥。この廊下は研究所のどこにつながっているんだろう‥‥‥。,It's hot in here. Does this corridor lead to the lab?
+Sheila,カビ臭いわ‥‥‥コール、急ぎましょ。,It's so musty. Let's hurry.
+Cole,床は天井に備え付けられているパイプから、水がしたたり落ち、溜まっている。,The floor is wet and accumulating water from the pipes on the ceiling.
+Cole,床はかなり傷んでいるようだな。人が歩いたという形跡もないし‥‥‥非常口なのか？,The floor is very damaged. There's no evidence people use this tunnel. Is it some kind of emergency exit?
+Cole,一体この道はどこまでつながっているのだろうか‥‥‥。,How far does this passage go?
+Cole,狭いな‥‥‥この廊下はシーラと並んで歩く事は無理のようだな。,It's too narrow to walk alongside Sheila.
+Cole,至る所に苔が生えている。掃除もロクにされていないようだな。,There's moss growing everywhere. I don't think this tunnel is maintained.
+Sheila,キャッ！　ゴキブリ！,Kya! Roaches!
+Cole,なんだ、ゴキブリか‥‥‥脅かすなよ。,What? You saw a cockroach?!
+Cole,こんなに狭いと前後から死霊に襲われたら一溜まりもないな。,"It's so narrow, there's nowhere to run if the zombies attack."
+Cole,天井にはパイプが通っているが、至る所に穴が空いている。,There's pipes in the ceiling but there's holes everywhere in the pipes.
+Cole,エアコン‥‥‥かな？　だけど、これだけの建物でパイプが３本だけってのもおかしいよな‥‥‥。,"Is that an air conditioner? It's strange though, that there are only three pipes here."
+Cole,こんな物に見とれている暇はないな。,No time to look at these things.
+Cole,壁にキャッツアイがついている。側に寄ると温かく感じる。,There's a vent on the wall. It feels warm from the side.
+Sheila,あっ、ダメ！\nCole: おっと‥‥‥‥‥‥。,Oh no!\nCole: Oops...
+Sheila,離れていてもこれだけ暑いんだから、触ったら火傷しちゃうわ。,"It's hot even from here. If you touch it, you'll get burned!"
+Cole,赤い光が、なんとも無気味な雰囲気を漂わせているな。,The red light makes for an eerie atmosphere.
+Cole,かなり長そうだが、この廊下はどこまで続いているんだろうか‥‥‥。,It looks pretty long. How far does this corridor go?
+Cole,この先には何があるんだろうか‥‥‥。,I wonder what's ahead.
+Cole,ここからうまく潜り込めればいいんだが‥‥‥。,I wish I could see down the hall better...
+Cole,ん？　何だろう、あの鉄格子は‥‥‥？\nSheila: 倉庫かしら？,Hm? What is this grate?\nSheila: Is this a warehouse?
+Sheila,あっ‥‥‥あそこに座っている人‥‥‥テ‥‥‥テリー！？,Ah! ...That person sitting there... is that Terry?
+Cole,なんだって！？,"Wait, what?"
+Cole,テリーだ！！　それに街の人も‥‥‥,It's Terry! And other people from the city!
+Cole,おいっ！！　テリー、俺だ！！　コールだよ！！,"Terry! It's me, Cole!"
+Cole,聞こえているんだろ！？　返事しろよ！！,"Terry, can you hear me? Answer me!"
+Sheila,コ、コール‥‥‥これってもしかしたら牢なのかも‥‥‥,Cole... are they using this a prison?
+Cole,そっ、そんな！？　でも、どうして‥‥‥,M-maybe. But... why?
+Sheila,あそこ見て‥‥‥鉄格子に鍵がかかっているわ！！,Look over there! The door is barred.
+Cole,そんな‥‥‥酷すぎる‥‥‥！！,That's so horrible.
+Cole,テリー、俺だ！！　コールだ！！,"Terry, it's me! It's Cole!"
+Sheila,この人達、ずっとここに閉じこめられていたから、気がおかしくなってしまったんだわ‥‥‥。,They were trapped in here for who knows how long. Did they go crazy?
+Sheila,コール‥‥‥これもグールさんの仕業なの？,Do you think Chief Ghoul did this too?
+Cole,あんな奴に「さん」付けなんてするな！！,Don't call that guy Chief. He doesn't deserve the respect.
+Cole,クソッ‥‥‥,Shit...
+Cole,グールの野郎‥‥‥絶対に許さねえ！！,Ghoul's such a bastard. I'll never forgive him.
+Sheila,あっ、待って‥‥‥。,"Oh, wait."
+Cole,扉だ！！　中に入るぞ！！,A door. Let's go!

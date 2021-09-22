@@ -1,26 +1,39 @@
 Nametag,Japanese,English
 ,"　コール　２４歳
 　シーラ　２４歳　ベイサイド科学研究所にて原因不明の事故死
-　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ",
+　　　　　　　　　　ＧＡＭＥ－ＯＶＥＲ","    Cole, 24 Years Old
+    Sheila, 24 Years Old    Died at Research Facility
+                                        GAME OVER"
 ,"　　　　ＮＩＧＨＴＭＡＲＥ　ＣＯＬＬＥＣＴＩＯＮ
-　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝",
-Cole,薬が‥‥‥充満‥‥してい‥‥く‥　‥‥‥\nSheila: コー‥‥‥ル‥‥,
-,シーラ：コール、時間は刻々と経っているわ！！,
-,シーラ：コール、時間は刻々と経っているわ！！,
+　　Ｄｅａｄ　Ｏｆ　Ｔｈｅ　Ｂｒａｉｎ　～死霊の叫び～　　　　　　　　　ＧＡＭＥ　ＥＮＤ｛｝","                NIGHTMARE COLLECTION
+        Dead of the Brain: Cry of the Living Dead                                    GAME END {}"
+Cole,薬が‥‥‥充満‥‥してい‥‥く‥　‥‥‥\nSheila: コー‥‥‥ル‥‥,The room is filling with the drug...\nSheila: Cole...
+,シーラ：コール、時間は刻々と経っているわ！！,"Sheila: Cole, we're running out of time!"
+,シーラ：コール、時間は刻々と経っているわ！！,"Sheila: Cole, we're running out of time!"
 ,"コール：あの機械がもし爆発したら‥‥‥！！
-シーラ：コール、急いで！！",
+シーラ：コール、急いで！！","Cole: If that machine explodes...
+Sheila: Cole, hurry!"
 ,"コール：<IF>ケイン‥‥‥可哀想に‥‥‥。<ELSE>ケイン‥‥‥‥‥‥。<ENDIF>
-シーラ：コール、急いで！！",
+シーラ：コール、急いで！！","Cole: <IF>Cain... Poor guy... <ELSE>Cain... <ENDIF>
+Sheila: Cole, hurry!"
 ,"コール：あそこはグールがいたコンソールルームだ！！
-シーラ：コール！！　早く何とかして！！",
-,コール：グールの野郎、絶対に許さねえ！！,
+シーラ：コール！！　早く何とかして！！","Cole: That's the console room where Ghoul was!
+Sheila: Cole, quickly! Do something!"
+,コール：グールの野郎、絶対に許さねえ！！,"Cole: Ghoul, you son of a bitch!"
 ,"コール：手榴弾で床に穴を空けるか‥‥‥。
-シーラ：そんな事をしたら私達まで危ないわ！！",
-,シーラ：コール、煙が充満してきたわ！！,
-,コール：バズーカでもあれば壁を壊せるんだが‥‥‥。,
+シーラ：そんな事をしたら私達まで危ないわ！！","Cole: Can we blow a hole in the floor with a grenade?
+Sheila: Cole, that's dangerous!"
+,シーラ：コール、煙が充満してきたわ！！,Sheila: The room is filling with gas!
+,コール：バズーカでもあれば壁を壊せるんだが‥‥‥。,"Cole: If only I had a bazooka, we could break the wall!"
 ,"コール：壁を昇ったところで出口はないし‥‥‥
-シーラ：コール、早く！！",
-Cole,まずいぞ、早く脱出しないと！！,
-Cole,薬が‥‥‥充満‥‥してい‥‥く‥　‥‥‥\nSheila: コー‥‥‥ル‥‥,
-,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,
-,手榴弾<OR>　銃　<OR>キャンセル,
+シーラ：コール、早く！！","Cole: There's no way out even if we climb the wall.
+Sheila: Cole, hurry!"
+,"<SETVAR 0>コール：こんな所で使ったら俺達まで危ないぞ！！
+シーラ：コール、何をしているの！？　早くしないと！！<ELSE><LAST 2>コール：ここでは止めておいた方がいいだろう。
+シーラ：コール、何をしているの！？　早くしないと！！<ELSE><LAST 1><TEST >コール：こんな所で何を撃つっていうんだ！！<VAR ><ELSE>","<SETVAR 0>Cole: It's too dangerous to use it here!
+Sheila: Cole, what are you doing? Hurry!<ELSE><LAST 2>Cole: We should stop here.
+Sheila: Cole, what are you doing? Hurry!<ELSE><LAST 1><TEST >Cole: We've got to shoot here!<VAR ><ELSE>"
+Cole,まずいぞ、早く脱出しないと！！,"Shit, we've got to go!"
+Cole,薬が‥‥‥充満‥‥してい‥‥く‥　‥‥‥\nSheila: コー‥‥‥ル‥‥,The room is filling with the drug...\nSheila: Cole...
+,ＣＯＮＴＩＮＵＥ<OR>ＧＡＭＥ－ＥＮＤ,Continue<OR>Quit
+,手榴弾<OR>　銃　<OR>キャンセル,Grenade<OR>Gun<OR>Cancel

@@ -1,12 +1,12 @@
 Nametag,Japanese,English
-,ƒOƒ@ƒAƒAƒAƒAƒAdddd\nCole: ‚ÈA‚È‚ñ‚¾‚±‚Ìºddd‚P‚O‚R†º‚©‚ç•·‚±‚¦‚½‚ªdddƒhƒN‚ğP‚Á‚½€—ì‚©IH,
+,ƒOƒ@ƒAƒAƒAƒAƒAdddd\nCole: ‚ÈA‚È‚ñ‚¾‚±‚Ìºddd‚P‚O‚R†º‚©‚ç•·‚±‚¦‚½‚ªdddƒhƒN‚ğP‚Á‚½€—ì‚©IH,Guaaaaa....\nCole: That voice... it came from room 103. Is that the zombie that attacked Doc?
 Cooger,‚ñH@ƒR[ƒ‹A‚³‚Á‚«‚Ì€—ì‚Í‚¢‚È‚¢‚æ‚¤‚¾‚¼B,"Hm? Cole, there don't seem to be any zombies here."
 Cole,‚¤‚ñA‚Ç‚±‚©‚Ì•”‰®‚É“ü‚Á‚Ä‚¢‚é‚ñ‚¾‚ë‚¤B‹C‚ğ‚Â‚¯‚ë‚æB<OR><VAR ><TEST ><TEST ><TEST ><TEST >Cole: ‚ ‚Ì’ˆ’İ‚è‚Ì—«‚Ì€‘ÌA‚È‚ñ‚¾‚©‰Âˆ£‘z‚¾‚Á‚½‚ÈB,"Yeah, it's one of these rooms. Watch out!<OR><VAR ><TEST ><TEST ><TEST ><TEST >Cole: The dead woman's corpse. Sad."
 Cooger,‚¤‚ŞAƒR[ƒ‹‚ÍŒ‹\‚â‚³‚µ‚¢‚Æ‚±‚ë‚ª‚ ‚é‚ñ‚¾‚ÈB<OR><TEST ><VAR ><TEST ><TEST ><TEST >Cole: ‚Å‚àA‚ ‚Ì‚Q‘Ì‚Ì€—ì‚ª‰´’B‚É‹C•t‚©‚È‚­‚Ä‚æ‚©‚Á‚½‚æB‚³‚·‚ª‚É‚Q‘Ìˆê‹C‚ÉP‚Á‚Ä‚«‚½‚çƒ}ƒW‚Å‰´’B‚àƒ„ƒo‚©‚Á‚½‚©‚à‚µ‚ê‚È‚¢‚æ‚ÈB<ELSE><TEST ><TEST ><VAR ><TEST ><TEST >Cole: ‚³‚Á‚«‚Ì•”‰®‚É€—ì‚Í‚¢‚È‚©‚Á‚½‚ÈB,"That was easier than I thought, Cole.<OR><TEST ><VAR ><TEST ><TEST ><TEST >Cole: I'm glad we got by those two zombies. If we got attacked by more than one, it'd be a nightmare.<ELSE><TEST ><TEST ><VAR ><TEST ><TEST >Cole: There weren't zombies here before."
 Cooger,•Ê‚Ì•”‰®‚ğ‘{‚µ‚½•û‚ª‚¢‚¢‚©‚à‚µ‚ê‚ñ‚ÈB<OR><TEST ><TEST ><TEST ><VAR ><TEST >Cole: €—ì‚É‚È‚Á‚Ä‚à‚ ‚ÌƒƒPƒbƒg‚ğè•ú‚³‚È‚©‚Á‚½–‚ğl‚¦‚é‚ÆA­‚µ‰Âˆ£‘z‚È–‚ğ‚µ‚½‚©‚ÈdddB,"We should check another room.<OR><TEST ><TEST ><TEST ><VAR ><TEST >Cole: Do you think if you were a zombie, and you had that locket, you'd feel a little sad?"
 Cooger,dddddddddB,.........
 Cole,ƒhƒNA‚»‚¤—‚¿‚Ş‚È‚Á‚ÄdddB<OR><TEST ><TEST ><TEST ><TEST ><VAR ><TEST O>Cole: ‚³‚Á‚«‚Ì•”‰®‚Í‰½‚à‚È‚©‚Á‚½‚æ‚¤‚¾‚ÈB‚â‚Á‚Ï‚è€—ì‚Í•Ê‚Ì•”‰®‚É‚¢‚é‚Ì‚©‚ÈH<ELSE><TEST ><TEST ><TEST ><TEST ><VAR ><VAR O>Cole: ‰´‚ª‚ ‚ñ‚È‚Éƒ‚ƒ^‚Â‚¢‚Ä‚È‚¯‚ê‚ÎAƒhƒN‚Í€‚È‚¸‚É‚·‚ñ‚¾‚Ì‚ÉdddBƒV[ƒ‰‚É˜b‚µ‚½‚ç‚¦‚ç‚­”ß‚µ‚ª‚é‚¾‚ë‚¤‚ÈdddB,Doc seems so depressed...<OR><TEST ><TEST ><TEST ><TEST ><VAR ><TEST O>Looks like there was nothing in the last room... could the zombie be in another room?<ELSE><TEST ><TEST ><TEST ><TEST ><VAR ><VAR O>Cole: It's my fault that Doc died. Sheila is going to be so upset when I tell her.
-Cole,‚ÈA‚È‚ñ‚¾‚±‚Ìºddd‚P‚O‚R†º‚©‚ç•·‚±‚¦‚½‚ªdddƒhƒN‚ğP‚Á‚½€—ì‚©IH,
+Cole,‚ÈA‚È‚ñ‚¾‚±‚Ìºddd‚P‚O‚R†º‚©‚ç•·‚±‚¦‚½‚ªdddƒhƒN‚ğP‚Á‚½€—ì‚©IH,That voice... it came from room 103. Is that the zombie that attacked Doc?
 Cole,‚Æ‚É‚©‚­’†‚É“ü‚Á‚Ä‚â‚Á‚Â‚¯‚È‚¢‚ÆII,"Anyway, we have to get inside!!"
 Cole,‚à‚¤‚±‚Ì•”‰®‚É‚Í“ü‚è‚½‚­‚È‚¢‚ÈB’ˆ’İ‚è‚Ì€‘Ì‚È‚ñ‚ÄŒ©‚Ä‚ç‚ê‚é‚Ù‚ÇA‰´‚Í”ñî‚ÈlŠÔ‚¶‚á‚È‚¢‚æB,No need to go back in here. I'm not a sicko who wants to keep looking at a suspended body.
 Cole,‚±‚Ì•”‰®‚É‚¢‚½‚Q‘Ì‚Ì€—ì‚Í“|‚µ‚½‚©‚çA¡“x‚Í•Ê‚Ì•”‰®‚ğ‘{‚µ‚Ä‚İ‚é‚©dddB,"Since the zombies in here were defeated, is it safe to search the room again?"
@@ -26,18 +26,18 @@ Cole,<IF>‚±‚Ì•”‰®‚ÆŒÀ‚ç‚¸‚Ç‚Ì•”‰®‚Å‚àŒ¾‚¦‚é–‚¾‚ªA–h‰¹ˆ—‚ğ‚µ‚Ä‚¢‚é‚½‚ß‚©’†‚Ì‰
 Cole,°‚É‚ÍŒŒŒĞ‚ª‚×‚Á‚½‚è‚Â‚¢‚Ä‚¢‚éB‚±‚ê‚È‚ç‚Ç‚±‚©‚ç€—ì‚ªŒ»‚ê‚Ä‚à‚¨‚©‚µ‚­‚È‚¢‚ºB,Blood stains on the floor. Not surprising since there are zombies around.
 Cole,‚±‚ê‚¾‚¯‚ÌŒŒ‚ª‚Â‚¢‚Ä‚¢‚é‚ñ‚¾A€—ì‚Í‚±‚Ì•”‰®‚Ì‚Ç‚±‚©‚É•K‚¸‚¢‚é‚ÈB,"There's so much blood, there's no doubt zombies were in here."
 Cole,‚Ü‚½ŒŒŒĞ‚ÅŠŠ‚ç‚È‚¢‚æ‚¤‚É‚µ‚È‚¢‚Æ‚ÈB“ñ“x‚à¬Œ÷‚·‚é‚Æ‚ÍŒÀ‚ç‚È‚¢‚µdddB,I have to be careful not to slip on the blood (again).
-Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B,"First, let's check this room."
+Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B<VAR >,
 Cole,‚±‚Ì•”‰®‚É‚Í‚Ü‚¾“ü‚Á‚½–‚ª‚È‚©‚Á‚½‚ÈdddB,I haven't been in this room yet.
 Cole,‚±‚Ì•”‰®‚É‚Í’ˆ’İ‚è‚Ì€‘Ì‚ª‚ ‚Á‚½‚Á‚¯dddB,There was a suspended corpse in this room...
 Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B<VAR ><TEST >,"First, let's check this room.<VAR ><TEST >"
 Cole,‚±‚Ì•”‰®‚É‚Í‚Ü‚¾“ü‚Á‚½–‚ª‚È‚©‚Á‚½‚ÈdddB,I haven't been in this room yet.
 Cole,‚±‚Ì•”‰®‚Å‚Í€—ì‚ğ‚Q‘Ì‚â‚Á‚Â‚¯‚½‚Á‚¯dddB,Got rid of two zombies in here...
-Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B,"First, let's check this room."
+Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B<VAR >,
 Cole,‚±‚Ì•”‰®‚É‚Í‚Ü‚¾“ü‚Á‚½–‚ª‚È‚©‚Á‚½‚ÈdddB,I haven't been in this room yet.
 Cole,‚±‚Ì•”‰®‚É‚Í‰½‚à‚È‚©‚Á‚½‚¯‚ÇA‚à‚¤ˆê“x“ü‚Á‚Ä‚İ‚é‚©‚ÈdddB,"I didn't find anything in here, but I can check one more time..."
-Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B,"First, let's check this room."
+Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B<VAR >,
 Cole,‚±‚Ì•”‰®‚É‚Í‚Ü‚¾“ü‚Á‚½–‚ª‚È‚©‚Á‚½‚ÈdddB,I haven't been in this room yet.
 Cole,‚±‚Ì•”‰®‚É‚ÍƒŒƒC‚Ì—öl‚ª‚¢‚½‚ñ‚¾‚Á‚¯dddB,Ray's girlfriend was in this room.
-Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B,"First, let's check this room."
+Cole,‚Ü‚¸‚Í‚±‚Ì•”‰®‚ğ’²‚×‚Ä‚İ‚é‚©B<VAR >,
 Cole,‚±‚Ì•”‰®‚É‚Í‚Ü‚¾“ü‚Á‚½–‚ª‚È‚©‚Á‚½‚ÈdddB,I haven't been in this room yet.
 Cole,‚±‚Ì•”‰®‚É‚ÍŠm‚©€—ì‚ª‚¢‚È‚©‚Á‚½‚ñ‚¾‚æ‚ÈB,No zombies in this room.

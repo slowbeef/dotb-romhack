@@ -1,23 +1,47 @@
 Nametag,Japanese,English
-Cole,あ、どうも‥‥‥。,
-Cole,ええ、残念な事ですが俺が気付いた時には既に彼は‥‥‥。,
-Cole,いえ‥‥‥。,
-Cole,昨日会った時から思ってたんだけど、キールって昔のチャイナ系の顔つきだな。テレビでよくこんな感じの人を見るぞ。,
-Cole,なかなか鋭い目つきだな‥‥‥。普段からこんな目つきだと取調べの時にはもっと恐い顔になるのかな。,
-Cole,顔つきはおっかないけど、中身はそうでもないらしいな。,
-Cole,なかなか体格がいいみたいだな。俺より肩幅があるかもしれない‥‥‥でも、あんまり貧弱だと刑事なんて勤まらないか‥‥‥。,
-Cole,結構、刑事にしては着ている物がオシャレだな。キールって意外とミーハーなのかもしれない。,
-Cole,ショルダーベルトには銃が見える。見たところオートマチックか‥‥‥。,
-Cole,俺にもこんなショルダーベルトが欲しいぞ。腰に下げてたのを忘れて椅子に座ると結構痛いんだよな。,
-Cole,昨日は危なくこの銃で撃たれるところだったな。,
-Cole,実は昨日２階で、クーガー博士が俺の身代わりになってしまったんだ。もし彼がいなかったら俺は今頃ここには居なかったかもしれないんだ。,
-Cole,はい、彼は死霊に頭をかじられて‥‥‥クーガー博士は俺に殺してくれと‥‥‥。,
-Cole,彼はガン細胞の研究が主だったと聞きましたが‥‥‥それが何か？,
-Cole,はい、彼女は食料を取りにデパートへ行きましたが‥‥‥。もうそろそろ帰ってくる頃だとは思うんですけど‥‥‥。,
-Cole,確かブラッディフォックスってあの暴走族ですよね？　でも何でレイが？,
-Cole,そうだったんだ‥‥‥それで彼らは？,
-Cole,隠れてる！？　‥‥‥一体どこに？,
-Cole,気になった事か‥‥‥\n〔まずいな、キールはドクを疑っているのかもしれないぞ〕,
-Cole,あ、そうだ‥‥‥。クーガー博士はキールをどこかで見た覚えがあるとか言ってました。,
-Cole,それもそうですね。,
-Cole,キールから見た他のメンバーってどうですか？,
+Killer,コール、俺がさっき２階を確認したよ。実に見事な仕事だったな。,"Cole, I just checked the second floor. You did a great job."
+Cole,あ、どうも‥‥‥。,"Ah, thanks."
+Killer,昨日コールと一緒だった人の死体もあったが‥‥‥奴等に？,But that person you were here with... I saw his corpse too...
+Cole,ええ、残念な事ですが俺が気付いた時には既に彼は‥‥‥。,"Well, unfortunately, when I realized he was already..."
+Killer,そうか‥‥‥。悪かったな、変な事を聞いてしまったようだ。,"Really. That's bad, I'm sorry to hear it."
+Cole,いえ‥‥‥。,Yeah...
+Killer,コールか、今度はどんな用事だ？,"Cole, what are you up to now?"
+Cole,昨日会った時から思ってたんだけど、キールって昔のチャイナ系の顔つきだな。テレビでよくこんな感じの人を見るぞ。,"I've been thinking about it since yesterday, but Killer has an old-fashioned Chinese face. It's like he's a TV character."
+Cole,なかなか鋭い目つきだな‥‥‥。普段からこんな目つきだと取調べの時にはもっと恐い顔になるのかな。,It's quite sharp. I wonder if it makes him scarier when he investigates people...
+Cole,顔つきはおっかないけど、中身はそうでもないらしいな。,"His face is fine, but scary."
+Cole,なかなか体格がいいみたいだな。俺より肩幅があるかもしれない‥‥‥でも、あんまり貧弱だと刑事なんて勤まらないか‥‥‥。,Not bad. He has broader shoulders than me. I wonder if I could beat him in a fight.
+Cole,結構、刑事にしては着ている物がオシャレだな。キールって意外とミーハーなのかもしれない。,He's pretty fashionable for a cop.
+Cole,ショルダーベルトには銃が見える。見たところオートマチックか‥‥‥。,Looks like he's got a serious gun on his shoulder harness.
+Cole,俺にもこんなショルダーベルトが欲しいぞ。腰に下げてたのを忘れて椅子に座ると結構痛いんだよな。,I need a harness like that. I forgot I had my gun in my pocket until I sat down.
+Cole,昨日は危なくこの銃で撃たれるところだったな。,"Yesterday, I was almost shot with that gun."
+Cole,実は昨日２階で、クーガー博士が俺の身代わりになってしまったんだ。もし彼がいなかったら俺は今頃ここには居なかったかもしれないんだ。,"In fact on the second floor, if it weren't for Doc, I'd be dead."
+Killer,そのクーガー博士の額には弾痕があったが、それはコールが？,There was a bullet hole in his forehead.
+Cole,はい、彼は死霊に頭をかじられて‥‥‥クーガー博士は俺に殺してくれと‥‥‥。,"Yeah, he was bitten by a zombie... I had to ... "
+Killer,そうか‥‥‥辛かったな。俺にもそのような事が色々あったよ、コールの気持ちは判るさ。,"I see. I've had to do things like that. I understand now, Cole."
+Killer,クーガー博士はどんな分野の研究を？,"What sort of doctor was this Cooger, anyway?"
+Cole,彼はガン細胞の研究が主だったと聞きましたが‥‥‥それが何か？,"I heard that he was mainly researching cancer cells, but why do you ask?"
+Killer,いや、無数のシミのついた白衣を着ていたからね。少し気になっただけだよ。,"Well, he had a lab coat with countless old stains. It was a bit odd."
+Killer,シーラ君だっけ、あの女の子はどこへ？　,
+Cole,はい、彼女は食料を取りにデパートへ行きましたが‥‥‥。もうそろそろ帰ってくる頃だとは思うんですけど‥‥‥。,"Yeah, she went to the market to get food. She should've been back by now..."
+Killer,俺もさっき外へ出てみたが彼女は見なかったな。彼女どころか死霊の一体も見なかった‥‥‥いたのはブラッディフォックスの生き残りぐらいだったな。,"I also went outside but didn't see her. No zombies, either. I only saw members of Bloody Fox."
+Killer,さすがにその中にレイはいなかったがね。,"And as I expected, Ray wasn't there."
+Cole,確かブラッディフォックスってあの暴走族ですよね？　でも何でレイが？,So Bloody Fox is the marauding gang. But Ray was a member?
+Killer,あれ？　聞いてなかったのか？　昔はレイもそのチームに入っていたらしいぞ。,You didn't know? Ray used to be part of the gang.
+Cole,そうだったんだ‥‥‥それで彼らは？,Is that so. Then... what are they?
+Killer,俺の顔を見たら一目散に逃げて行ったよ。しかし、そんな奴等よりも‥‥‥これは俺の推測だが、ひょっとすると死霊は昼間はどこかに隠れているんじゃないかと思うんだ。,"When they saw me, they ran. But the zombies... I'm just guessing, but maybe they go hide during the day."
+Cole,隠れてる！？　‥‥‥一体どこに？,Hiding?! ...But where?
+Killer,そこまでは判らないが、もし死霊がどこかに隠れているとしたら奴等を昼間のうちに全てやっつける事もできない事はないだろう。,"I don't know, but if the zombies are all in hiding, we won't be able to exterminate all of them until night time."
+Killer,コール、クーガー博士の事だが死ぬ前に何か言ってなかったか？　死霊の事とか‥‥‥何か気になった事とか。,"Cole, did Cooger say anything about all this before he died? Anything about zombies or what caused this?"
+Cole,気になった事か‥‥‥\n〔まずいな、キールはドクを疑っているのかもしれないぞ〕,Nothing interesting...\n(This is no good. Killer is suspecting Doc.)
+Cole,あ、そうだ‥‥‥。クーガー博士はキールをどこかで見た覚えがあるとか言ってました。,"Oh, that's right. Doc said he recognized you from somewhere..."
+Killer,俺を？　まぁ、職業柄パトロールは欠かせないしな‥‥‥でも俺はクーガー博士を見た覚えはないよ。いつもあんな格好をしていれば、どこに居たって必ず目につくだろうし‥‥‥。,"Me? Well, I've been out in the city before, so possibly. But I don't remember seeing him and a lab coat like that sort of sticks out."
+Cole,それもそうですね。,That's also true.
+Cole,キールから見た他のメンバーってどうですか？,What about other people besides Killer?
+Killer,ボスは永年付き合っているけど、いつも部下にはよく面倒みてくれるよ。,The boss has been with us for years. He always takes care of his own.
+Killer,サリーの頭の良さは刑事の俺でも目を見張るものがある。一つのミスも許されないプロジェクトを短時間でまとめてくれるからな。,"Sally's sharp, and as a detective, I don't say that lightly. She can really put a detailed plan together in short order."
+Killer,ノーズに関しては元々軍にいたせいもあり、現場ではかなり優秀だ。恥ずかしい話だが、俺も一度彼に助けられた事がある。,"Nose used to be in the military, so it's good to have him. He might be embarassed that I'm telling you, but I had to help him out."
+Killer,レイも現場ではよくやってくれるが、少し人間関係に問題があるな。自分の事しか考えてないようだが、あの性格をなんとかしないとこの先やっていけないだろう。,"Ray does a lot for us, but he's got a strong personality and doesn't get along with others. He needs to curb that if he's going to survive this."
+Killer,キャッシーの場合、ハッキリ言って足手まといだな。彼女は彼女なりにやってるつもりなんだろうが、いざという時には震えだしてトリガーも引けなくなっちまう。,"As for Cathy, well, she has a lot of potential. But it seems like she tends to panic and can't fire a gun when she needs to."
+Killer,‥‥‥と、まぁこんなところだ。どうだ、参考になったか？,"So, there you go. Was that helpful?"
+Killer,まぁ、コールもこのメンバーとなら仲良くやっていけるだろう。,"Well, Cole, you've got a friend in our little group."
+Killer,また何かあったら呼んでくれよ。,Please feel free to ask me if you need anything.

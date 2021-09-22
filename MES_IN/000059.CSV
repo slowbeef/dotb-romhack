@@ -1,43 +1,77 @@
 Nametag,Japanese,English
-Cole,シーラ‥‥‥。,
-Cole,シーラ‥‥‥。,
-Cole,大丈夫か‥‥‥おい、シーラ！！,
-Cole,大丈夫だ‥‥‥まだ息はある。たぶん気絶しているのだろう。,
-Cole,可哀想に‥‥‥俺がもっとしっかりしていれば、こんな事にはならなかったのに‥‥‥。,
-Cole,シーラにまで恐い思いをさせてしまって‥‥‥許してくれ‥‥‥。,
-Cole,早く服を着せてやらないと、風邪をひいてしまうな‥‥‥。,
-Cole,俺といたばっかりに、こんな目に遭うなんて‥‥‥シーラ、すまない。,
-Sheila,ん‥‥‥コール‥‥‥‥。,
-Cole,シーラ、大丈夫か！？,
-Sheila,ええ‥‥‥ここはどこ？\nCole: アシスト病院さ。,
-Sheila,でも私、どうして裸なの‥‥‥？\nCole: ここに服がある。さあ‥‥‥。,
-Cole,‥‥‥‥‥‥‥‥‥！！,
-Cole,お‥‥‥お前、どうして‥‥‥！！,
-Cole,シーラはもう少し寝かせてやった方がいいだろう。,
-Cole,シーラ！！　大丈夫か！？,
-Sheila,<IF>う‥‥‥うーん‥‥‥‥。<ELSE>うっ‥‥‥‥うーん‥‥‥‥。<ENDIF>,
-Cole,<IF>目が覚めない‥‥‥。もう少し寝かせてやった方がいいかもしれないな。<ELSE>シーラ！！　俺だ、コールだ！！　目を覚ませ！！<ELSE>シーラ！！　目を覚ましてくれ！！<ENDIF>,
-Cole,キールはグールに脅されていたんだ‥‥‥‥。家族を奪われ、キールの命まで握られて‥‥‥。,
-Cole,キールの奴、これだけやられてもまだ生きていたとは‥‥‥。,
-Cole,キールは完全にくたばっている。これもノーズのお陰だ‥‥‥。,
-Cole,ノーズがいなかったら、俺は今頃こいつに殺られていただろうな。,
-Cole,俺の銃弾は見事にキールの頭に命中した。もし外してたらと思うとゾッとするな‥‥‥。,
-Cole,な、なんだって！？　お前、一度死んでいるのか！？,
-Cole,なに！？　ま、まさかお前自分で‥‥‥蘇生薬を‥‥‥！！,
-Cole,グールだと！？　彼はお前が殺したんじゃないのか！？,
-Cole,どういう事だ！？,
-Cole,そんな‥‥‥グールが‥‥‥まさか‥‥‥。,
-Cole,なんて事を‥‥‥,
-Cole,そんな‥‥‥ドクだって襲われたのに‥‥‥。,
-Cole,ドクとホテルで会った時に、どうしてドクに手を出さなかったんだ？　学会で会っていたのだから、ドクが思いださないとも限らないだろ？,
-Cole,なんだって！？　じゃ、あのジャックという警官は既に‥‥‥。,
-Cole,なんて事だ‥‥‥あの蘇生薬が完成していたなんて‥‥‥。,
-Cole,だが、ジャックは俺達を殺そうとはしなかったぜ？,
-Cole,でも、それならあの時ジャックはどうして死んでしまったんだ！？　永遠の命を掴んだ筈じゃないのか！？,
-Cole,でもあんたはドクに会った時には何もしなかっただろ？,
-Cole,あの時の死霊は随分と手回しが良かったが、まさかそんな事だったなんて‥‥‥。,
-Cole,グールは今どこに！？,
-Cole,やはりあの二人もグールに‥‥‥！？,
-Cole,キール‥‥‥。,
-Cole,キールは完全に死んでしまったようだ‥‥‥。,
-Cole,これだけやられて生きている筈がないか‥‥‥。,
+Cole,シーラ‥‥‥。,Sheila...
+Cole,大丈夫か‥‥‥おい、シーラ！！,Are you okay? ...Sheila!
+Cole,大丈夫だ‥‥‥まだ息はある。たぶん気絶しているのだろう。,Are you okay? ... Still breathing. She's only unconscious.
+Cole,可哀想に‥‥‥俺がもっとしっかりしていれば、こんな事にはならなかったのに‥‥‥。,"If only I'd gotten here faster, all this might not have happened."
+Cole,シーラにまで恐い思いをさせてしまって‥‥‥許してくれ‥‥‥。,"Sheila, I'm sorry. I was so worried about you."
+Cole,早く服を着せてやらないと、風邪をひいてしまうな‥‥‥。,"Put something on, you'll catch cold."
+Cole,俺といたばっかりに、こんな目に遭うなんて‥‥‥シーラ、すまない。,I'm sorry this happened.
+Sheila,ん‥‥‥コール‥‥‥‥。,Mm... Cole...?
+Cole,シーラ、大丈夫か！？,"Sheila, are you okay?"
+Sheila,ええ‥‥‥ここはどこ？\nCole: アシスト病院さ。,Yeah... Where are we?\nCole: Assist Hospital.
+Sheila,でも私、どうして裸なの‥‥‥？\nCole: ここに服がある。さあ‥‥‥。,"But... where are my clothes?\nCole: Here, put this on."
+Killer,安心しな‥‥‥。その女には指一本触れちゃいない‥‥‥。,Don't worry. I didn't lay a finger on her.
+Cole,‥‥‥‥‥‥‥‥‥！！,....!
+Killer,今更そんな物を向けたって、どっち道俺は死んじまうさ‥‥‥,It's too late for me... I'm a goner...
+Cole,お‥‥‥お前、どうして‥‥‥！！,W- Why? Why did you do this?
+Cole,シーラはもう少し寝かせてやった方がいいだろう。,"Sheila, just try to rest a little."
+Cole,シーラ！！　大丈夫か！？,"Sheila, are you okay?"
+Sheila,<IF>う‥‥‥うーん‥‥‥‥。<ELSE>うっ‥‥‥‥うーん‥‥‥‥。<ENDIF>,<IF>Uh... uhhhh....<ELSE>Uh... mmmm... <ENDIF>
+Cole,<IF>目が覚めない‥‥‥。もう少し寝かせてやった方がいいかもしれないな。<ELSE>シーラ！！　俺だ、コールだ！！　目を覚ませ！！<ELSE>シーラ！！　目を覚ましてくれ！！<ENDIF>,"<IF>No response... I guess I should let her rest a little.<ELSE>Sheila, it's me, Cole! Wake up!<ELSE>Sheila! Wake up!<ENDIF>"
+Cole,キールはグールに脅されていたんだ‥‥‥‥。家族を奪われ、キールの命まで握られて‥‥‥。,"Killer was threatened by Ghoul. Without his family, Ghoul decided to take advantage of his position to influence Killer."
+Cole,キールの奴、これだけやられてもまだ生きていたとは‥‥‥。,Killer's guy wasn't even alive if he did this.
+Cole,キールは完全にくたばっている。これもノーズのお陰だ‥‥‥。,Killer is totally out of it. Thanks to Nose.
+Cole,ノーズがいなかったら、俺は今頃こいつに殺られていただろうな。,I wouldn't be alive if it weren't for Nose.
+Cole,俺の銃弾は見事にキールの頭に命中した。もし外してたらと思うとゾッとするな‥‥‥。,My shot hit Killer right in the head. But he's not dead?
+Killer,驚いたか‥‥‥？　これが蘇生薬の本当の力だ。,"Surprised? After all, this is the power of the resurrection drug!"
+Cole,な、なんだって！？　お前、一度死んでいるのか！？,"Wait, what? You were dead?"
+Killer,クーガーは蘇生にばかり気をとられていたようだな‥‥‥。あの薬は人間を蘇生するだけでなく、生きてる人間に永遠の命を与える事ができるのだ。,"Cooger was only concerned with the resurrection properties, but the drug can also give eternal life to humans!"
+Cole,なに！？　ま、まさかお前自分で‥‥‥蘇生薬を‥‥‥！！,What? But... you gave yourself the resurrection drug?
+Killer,この際だから教えてやろう。俺に薬を注入したのはグールなのさ。,"No, actually, I'll tell you. It was Ghoul who injected me with it!"
+Cole,グールだと！？　彼はお前が殺したんじゃないのか！？,Ghoul?! You didn't kill him too?
+Killer,奴は生きているよ。それに、俺が今までやってきた事は実は全てグールの指示なんだよ。,"On the contrary. In fact, I've been acting under his direction all along!"
+Cole,どういう事だ！？,What!
+Killer,クーガーの研究所付近で妙な事件がしばしば起こってたのは確かだ。クーガーの調査を担当した俺は学会へ忍び込み、奴の研究発表を聞いていた。お陰で記念写真まで撮られちまったがな。,"There were always strange incidients happening around Cooger's lab. Ghoul had me keep an eye on him. In fact, that photo of him at the conference? I was the one who took it!"
+Killer,ところがクーガーの発表があまりにもバカバカしいと、出席していた科学者達は彼を口汚なく罵った。さすがにクーガーは怒ったね。,The other scientists didn't take him seriously. They thought a resurrection drug was ridiculous or impossible. Cooger was very angry about it!
+Killer,発表までワクワクしていた彼の表情が、まるでゴーストのようにな。そこで彼が言ったんだ‥‥‥,He was so excited until he got that terrible reception. Then he said...
+Killer,『今進めている研究は誰にも真似は出来ない。死を克服してしまうという研究なんだ』とね。,"""No one can imitate the research I'm doing! I'm going to overcome death itself!"""
+Killer,俺も蘇生薬なんて馬鹿馬鹿しい話についていけなかったよ。しかし、グールはクーガーの家宅捜査を指示してきたんだ。それもクーガーに見つからないようにとね。,It was hard to keep track of all of Cooger's weird experiments. But Ghoul ordered me to raid his house. I didn't think the drug would work.
+Killer,もちろん法外さ。俺だってそんな泥棒みたいな真似は断ったよ。するとグールは脅しに出たよ、クビにするってね。俺は家族に心配かけたくないからね‥‥‥嫌々ＯＫしたさ。,"I actually thought it was pointless. But Ghoul threatened to fire me, and I have a family to provide for..."
+Cole,そんな‥‥‥グールが‥‥‥まさか‥‥‥。,So Ghoul was the real culprit... no way!
+Killer,そしてグールは俺がクーガーの研究所から持ち出してきた薬の生体実験をするために、俺の家族を選んだんだ‥‥‥。,And then Ghoul used my family for testing when I brought back the drug.
+Cole,なんて事を‥‥‥,...How could he?
+Killer,さすがにその時は、いくら俺でも彼を殺してやりたかったよ。だが奴には死霊がいた。生みの親ってやつか、何故か死霊はグールを敵だと思わないらしいんだ。,"At the time, I wanted to kill him. But he had an army of zombies. For some reason, they won't attack their creator, I guess."
+Cole,そんな‥‥‥ドクだって襲われたのに‥‥‥。,But... Doc was attacked by the zombies.
+Killer,俺だって死霊に喰われるぐらいだったら奴についてた方が安全だと思ったよ。結局は俺もこの通り実験に使われたがね‥‥‥。,"I thought it would be best to follow Cooger, to see if he would be attacked by the zombies. After all, I've been experimented on too."
+Cole,ドクとホテルで会った時に、どうしてドクに手を出さなかったんだ？　学会で会っていたのだから、ドクが思いださないとも限らないだろ？,Why didn't you kill Doc when he arrived at the hotel? Was it because he didn't remember you from the conference?
+Killer,あの時はさすがにびっくりしたさ。あの晩、警官にクーガーの研究所を襲わせたのにホテルまで逃げて来たんだからな。,"I was shocked to see him. That night, a police officer attacked his lab and wreaked havoc on the police station."
+Cole,なんだって！？　じゃ、あのジャックという警官は既に‥‥‥。,You must mean Officer Jack...
+Killer,その通りだ。生きている人間にあの蘇生薬を打った場合、一度脳の機能が停止して仮死状態になる。後に死霊となって蘇る訳だが、死霊と違う所は平常心があるという事だ。,"Right. If you inject the drug into a living person, their mind becomes suspended. But when they die, they are revived, and have a normal mind."
+Killer,つまり、死ぬ寸前の奴に投薬すると永遠の命を掴むことができる。クーガーの蘇生薬は既に完成していたという訳だ。,"If you inject someone who is about to die, they get eternal life. See? Cooger's resurrection drug was actually already completed!"
+Cole,なんて事だ‥‥‥あの蘇生薬が完成していたなんて‥‥‥。,But... Doc said it wasn't ready yet. Just a prototype.
+Cole,だが、ジャックは俺達を殺そうとはしなかったぜ？,But wait... Jack tried to kill us.
+Killer,そうか‥‥‥ジャックはグールに脅されていた。もしクーガーを消さなかった場合は、ジャックの全てを奪い取るとね。,"Well, Jack was threatened by Ghoul too. If he hadn't died, he might've killed Cooger."
+Killer,‥‥‥たぶん奴にも人間の心が残っていたのだろうな。,...Maybe some part of him was still human.
+Cole,でも、それならあの時ジャックはどうして死んでしまったんだ！？　永遠の命を掴んだ筈じゃないのか！？,But why did Jack die? Shouldn't he have gotten eternal life?
+Killer,さあな‥‥‥。一つだけ言える事は、あの薬は血液と一緒に常に身体中を循環していないといけない。多分、何かの拍子にジャックは大出血をするような傷を負ってしまったのだろう。,I don't know. All I can say is that the drug has to circulate through the whole body. Maybe Jack had some kind of gaping wound and that couldn't happen.
+Cole,でもあんたはドクに会った時には何もしなかっただろ？,"Regardless, you didn't do anything when you met Doc."
+Killer,そう思っているのはお前だけだよ。俺はクーガーの事をグールに話すと、再度クーガーを襲わせたさ。計画は成功しクーガーは死んでくれた。,"Or so you thought. When I saw him, I informed Ghoul and the zombies took care of Cooger for us."
+Killer,だがとどめを刺したのはコール、アンタだ。その話を聞いたグールはアンタはただ者じゃないと察したね。そして今後、一番邪魔になる人物だと言ってたよ。,"But it was actually you who killed Cooger. When Ghoul heard the story, he knew he'd have to take care of you too."
+Killer,死霊はグールを敵だと思わない上に、グールは死霊を操る事ができるのさ。俺だって、何度襲われそうになったか‥‥‥。,"The zombies won't attack Ghoul and moreover, he can control them. How do you think I survived them for so long?"
+Cole,あの時の死霊は随分と手回しが良かったが、まさかそんな事だったなんて‥‥‥。,I guess an army of undead soldiers is quite the advantage.
+Killer,そしてクーガーの家に証拠となる物を抹消するために潜り込んだら、既に俺の写真と日記帳が開いたまま部屋に放置してあったよ。既にお前に証拠を握られた後だったって訳だ。,I went to Cooger's house to destroy the evidence - the documents and the photo. But you'd already been there and saw the proof.
+Killer,だからホテルに爆弾を仕掛け、その女をさらってアンタを一人にしようと計画をたてたのさ。間違って生きていたとしてもこの女がいる限り逆らうような真似は出来ないだろうと思ってね。,"So I set up a bomb at the hotel to take you out and kidnapped the woman. That way if you survived, I'd have some leverage against you."
+Killer,しかしほとんどの計画が失敗に終わった。やはりアンタはただ者じゃなかった。,But my plans all failed. You're quite the survivor.
+Cole,グールは今どこに！？,Where is Ghoul now?
+Killer,‥‥‥奴はヘリを使ってベイサイドの科学研究所に行ったよ。だが、気をつけろ‥‥‥レイとサリーを見ただろう‥‥‥。,"He took a helicopter to the Bayside Research Facility. But unfortunately for you, you've already seen Ray and Sally."
+Cole,やはりあの二人もグールに‥‥‥！？,Did his zombies kill them?
+Killer,ああ‥‥‥奴は何か特殊な武器を持っている‥‥‥。二人を殺せない俺を見かねて、グールは‥‥‥。,"Ah, no... Ghoul has... special weapons. He didn't think I'd be able to stomach killing them."
+Killer,コール‥‥‥お前だったら英雄になれるかもな、ランボーやロッキーのような英雄‥‥‥に‥‥‥。,"Cole... a guy like you, acting like Rocky or Rambo... you can't be a hero like that."
+Cole,キール‥‥‥。,Killer...
+Killer,‥‥‥‥‥‥‥‥‥。\nCole: キールは完全に死んでしまったようだ‥‥‥。,...\nCole: Killer seems like he's actually dead.
+Killer,‥‥‥‥‥‥‥‥‥‥‥‥‥‥。,...
+Cole,これだけやられて生きている筈がないか‥‥‥。,Maybe he can't live without this?
+,俺は皆の仇を討つために、グールのいるベイサイド科学研究所へ行くと決心した。,"I decided to go to the Bayside Research Institute, where the zombies were, to avenge everyone's death."
+,俺は今まであった事を全てシーラに話すと、シーラは真剣に俺の話を聞いた。,"I told Sheila everything that had happened, and she listened very seriously."
+,俺はシーラの条件をのみ‥‥‥彼女を連れて行く事にした。,The condition being that she came with me...
+,シーラは俺が行く事に対し、一つだけ条件を出してきた。,Sheila thought this was the best course of action... under one condition...

@@ -15,23 +15,24 @@ Cole,ええ、中で死霊に襲われましたが何とか無事に‥‥‥。,"Yeah, I was attacked by
 Cole,そうだったんですか‥‥‥どうりでカラッポだった訳だ‥‥‥。でもあそこの署長が貴方だったなんて‥‥‥えっと、何て呼べばいいんでしょうか？,"That so? Is that the reason it was crap? But if you're not the chief, then who are you?"
 Cole,俺はコール、そしてクーガー博士とこっちがシーラです。でも避難場所って書いてあったのでここに来れば街の人達がいると思って来たんですが‥‥‥６人しか生き残れないなんて‥‥‥。,"I'm Cole, and this is Doctor Cooger and Sheila. I figured there'd be more people here, but if only six survived..."
 Cole,〔あの男はレイというのか‥‥あまりいい奴とはいえないな。あのサリーっていう女の人はなかなかしっかりしているように思えるぞ〕,That guy Ray... I don't trust him. But Sally seems like a good person.
+Sheila,コール、どうするの？,"Cole, what will you do?"
 Cole,"俺やってみるよ。やっと生きてる人間にめぐり合えたからね。
 〔ドクのためにもその方がいいだろうな〕<OR>Cole: やっぱり俺‥‥‥
 Ray: ほらみろ、そんなガンも持てねぇ小僧に化け物退治なんてやる勇気はねぇよ！",I'll do it. Just to help find more survivors.\n(But I think Doc should go with me.)<OR>Well...\nRay: I don't know! I can't face more zombies.
 Cole,そこまで言われたんじゃ俺にだって面子があるんだ。やってやるさ！！<ENDIF>,I'm determined. I'll do it!<ENDIF>
 Sheila,"コール、行きましょ。
 Cole: あ、うん‥‥‥。","Cole, you have to go.\nCole: Oh, yeah..."
-,Guul: いつもリーダー的な存在にいるからだろう、気付かぬうちにグールなんてあだ名が付いていたよ。署でもここでも‥‥‥。,"Guul: I got this nickname but since I was in charge, no one told me about it. Either at the police station or here."
-,Guul: ああ。だが今はこの６人で必死に死霊を相手に戦っている。奴等はほうっておけばどんどん増えていくだろう。そのためには一人でも多くの人員が必要だ。,"Guul: There's six of us holding up here now. But as we find more survivors, it'll be harder to keep everyone here. Some survivors can't be helped..."
-,Guul: かなりきつい仕事だが、生き延びるためにはそれしか方法はない。どうだろ、君も仲間に加わってくれないか？,"Guul: It's a hard job, but it's the only way to survive. Why not join us?"
+,Guul: いつもリーダー的な存在にいるからだろう、気付かぬうちにグールなんてあだ名が付いていたよ。署でもここでも‥‥‥。,
+,Guul: ああ。だが今はこの６人で必死に死霊を相手に戦っている。奴等はほうっておけばどんどん増えていくだろう。そのためには一人でも多くの人員が必要だ。,
+,Guul: かなりきつい仕事だが、生き延びるためにはそれしか方法はない。どうだろ、君も仲間に加わってくれないか？,
 ,Ray: へぇ、一般市民を本当に守ってくれてるのかよ、この状況になったのもそれを考えているからだっていうワケか？　え？　サリーよぉ。,"Ray: Is it really about saving the general populace? What do you think, Sally?"
 ,Sally: こんな状況になってしまったからみんなで必死にやってるんでしょ！？,Sally: This is a desperate situation and everyone has to pitch in!
 ,Ray: そんな古い無線で一生懸命やって一体どうなるんだ？　ＳＯＳを出しても電波が届かなきゃ意味ねえんだよ。俺は今すぐにでもこんな所出ていきたいんだよ！！,Ray: What if the radio doesn't work? What if we're out of range? I think our best plan is to move on from here.
 ,Ray: くっ‥‥‥‥‥‥‥‥‥。,Ray: C-...
 ,Ray: ほらみろ、そんなガンも持てねぇ小僧に化け物退治なんてやる勇気はねぇよ！,"Ray: It's not that I don't care, I just can't face those monsters."
-,Guul: ありがとう、コール君。３人共疲れただろう、しばらく部屋で休んでいるといい。サリー、銃とカードを。,"Guul: Thank you, Cole. You all must be tired. Why not take a room? Sally will give you ID Cards and weapons."
+,Guul: ありがとう、コール君。３人共疲れただろう、しばらく部屋で休んでいるといい。サリー、銃とカードを。,
 ,Sally: はい、これです。,"Sally: Yep, here you go."
-,Guul: 君の部屋は２２０号室だ。このＩＤカードを通せば入れるよ。暗証番号は殺してあるから入れる必要はない。それとこの銃は決して人間に向けるな。向けるのは死霊だけだぞ。,"Guul: Here you go, this is the card for room 220. You won't need a PIN - we managed to disable that function. And never point this gun at a person, only zombies."
-,Guul: 作戦は後でそこのサリーに伝えてもらう。３０分後には出動してもらうから、それまで部屋でじっとしていなさい。,Guul: Sally will debrief you soon. Hang tight for about 30 minutes.
-,Guul: それとレイ、意見は多い程いい。だが、チームワークを乱すことが命取りになるという事を忘れるな。,"Guul: And Ray, the more opinions the better. But sowing discord can be fatal."
+,Guul: 君の部屋は２２０号室だ。このＩＤカードを通せば入れるよ。暗証番号は殺してあるから入れる必要はない。それとこの銃は決して人間に向けるな。向けるのは死霊だけだぞ。,
+,Guul: 作戦は後でそこのサリーに伝えてもらう。３０分後には出動してもらうから、それまで部屋でじっとしていなさい。,
+,Guul: それとレイ、意見は多い程いい。だが、チームワークを乱すことが命取りになるという事を忘れるな。,
 ,　やる　<OR>やらない,

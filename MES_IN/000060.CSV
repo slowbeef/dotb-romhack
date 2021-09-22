@@ -1,20 +1,20 @@
 Nametag,Japanese,English
-Cole,ベイサイドの科学研究所だ。ケインもあのヘリを追っていたから、きっとここにいるのだろう。,
-Cole,あっ、裏口があるぞ！！,
-Sheila,すごく汚れているようね‥‥‥ここは使われていないのかしら？,
-Sheila,コール、どうしたの？,
-Cole,いや、どうも嫌な予感がするんだ‥‥‥。何か罠のような気が‥‥‥。,
-Sheila,‥‥‥どうする？,
-Cole,うん、ここまで来たんだし‥‥‥入ってみるしかないだろうな。ケインもきっと中で俺を待ってるだろうからね。,
-Cole,シーラ、いいか？　俺の側を絶対に離れるなよ。,
-Sheila,うん、判ってる。,
-Cole,ここは何かの工場かと思っていたが、科学研究所だったとはな。,
-Cole,ここにグールがいると聞いたが、どうしてこんな所に‥‥‥？,
-Cole,何か嫌な予感がするな‥‥‥ここへ入ったら二度と出てこれないような気が‥‥‥。,
-Cole,キープアウトか‥‥‥鍵がかかっているし、門を越えるか‥‥‥。,
-Cole,俺は大丈夫だとしてもシーラには無理だろうな‥‥‥。ここで待たせる訳にもいかないし、どうしようか‥‥‥。,
-Cole,シーラ、ここで待って‥‥‥\nSheila: 約束したでしょ、コールと一緒にいたいの。,
-Cole,困ったな‥‥‥どうやって侵入しようか‥‥‥。,
-Cole,<IF>今日は満月か‥‥‥薄気味悪い夜だ‥‥‥。<ELSE>風が強いのか、雲の動きが速いな‥‥‥。<ENDIF>,
-Cole,色々と訳の判らない物が研究所の屋根に取り付けられている。俺には、一体どんな機能をするのか判らないな。,
-Cole,たくさんの煙突や様々な装置が取り付けられている。いかにも工場という感じがするな。,
+Cole,ベイサイドの科学研究所だ。ケインもあのヘリを追っていたから、きっとここにいるのだろう。,"Bayside Research Lab... if Cain was following the helicopter, he'd be here too."
+Cole,あっ、裏口があるぞ！！,"Oh, there's a back door!"
+Sheila,すごく汚れているようね‥‥‥ここは使われていないのかしら？,It looks very dirty. Was it not ever used?
+Sheila,コール、どうしたの？,"Cole, are you okay?"
+Cole,いや、どうも嫌な予感がするんだ‥‥‥。何か罠のような気が‥‥‥。,No. I have a bad feeling. Like this is a trap.
+Sheila,‥‥‥どうする？,...What do we do?
+Cole,うん、ここまで来たんだし‥‥‥入ってみるしかないだろうな。ケインもきっと中で俺を待ってるだろうからね。,"Well, we've come this far. What choice do we have? Cain has to be inside."
+Cole,シーラ、いいか？　俺の側を絶対に離れるなよ。,"Sheila, listen. Stay close to me, no matter what happens."
+Sheila,うん、判ってる。,Got it.
+Cole,ここは何かの工場かと思っていたが、科学研究所だったとはな。,"I had thought this was a factory, but it's a scientific research institute."
+Cole,ここにグールがいると聞いたが、どうしてこんな所に‥‥‥？,"If Ghoul is inside, is he alone?"
+Cole,何か嫌な予感がするな‥‥‥ここへ入ったら二度と出てこれないような気が‥‥‥。,"I have no choice, but... I feel like if I go in here, I won't be coming out alive."
+Cole,キープアウトか‥‥‥鍵がかかっているし、門を越えるか‥‥‥。,"""Keep Out."" It's locked but we climbed over the gate."
+Cole,俺は大丈夫だとしてもシーラには無理だろうな‥‥‥。ここで待たせる訳にもいかないし、どうしようか‥‥‥。,"Sheila can't stay out here alone, it's too dangerous. I can't stay out here, what choice do I have?"
+Cole,シーラ、ここで待って‥‥‥\nSheila: 約束したでしょ、コールと一緒にいたいの。,"Sheila, wait here.\nSheila: I promised to stay with you, Cole."
+Cole,困ったな‥‥‥どうやって侵入しようか‥‥‥。,This is a problem... how do we get in?
+Cole,<IF>今日は満月か‥‥‥薄気味悪い夜だ‥‥‥。<ELSE>風が強いのか、雲の動きが速いな‥‥‥。<ENDIF>,<IF>The moon is full... it's a spooky night.<ELSE>Either the wind is strong or the clouds are moving fast.<ENDIF>
+Cole,色々と訳の判らない物が研究所の屋根に取り付けられている。俺には、一体どんな機能をするのか判らないな。,There's a lot of stuff on the roof. I don't know what a lot of these things do.
+Cole,たくさんの煙突や様々な装置が取り付けられている。いかにも工場という感じがするな。,There's a lot installed on the roof. I guess it's not a factory.

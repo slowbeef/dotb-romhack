@@ -1,46 +1,46 @@
 Nametag,Japanese,English
-Cole,ああ、そうだが。\n〔なんか腹の立つ奴だな‥‥‥〕,
-Cole,ああ、あの事か。そんなに気にする事もないだろう。,
-Cole,レイの髪型は一言で説明できないな。よくこんな感じの髪型をした奴等が駅前で演奏しているのを見た事があるが、もしかしたらレイもその中にいたりして‥‥‥。,
-Cole,〔むかつくな‥‥‥‥〕,
-Cole,あんまり見ているとまた何か言われるな。ここで頭の事で喧嘩する訳にもいかないし‥‥‥。,
-Cole,こんな格好をした奴を俗にパンクというが、レイも何か楽器ができるのだろうか。,
-Cole,身体つきはあまり強そうには見えないが、ちゃんと死霊を相手に戦えるのだろうか‥‥‥。,
-Cole,レイ、ブラッディフォックスって知ってるかい？,
-Cole,俺も名前だけしか知らないが、一体どんなチームなんだい？,
-Cole,ブラッディフォックスってただの暴走族じゃなかったのか？,
-Cole,いや、ちょっと気になったもんでね‥‥‥。,
-Cole,まずいな‥‥‥もし、そんな奴等にシーラが見つかってしまったら‥‥‥。いくら拳銃をもってるからといって、そんな物にビビる相手じゃないだろうし‥‥‥。,
-Cole,ちょっと話を聞きたいんだが、いいかい？,
-Cole,お前、その言葉遣いは何とかならないのか？　聞いててあまり気分のいいモノじゃないぞ？,
-Cole,〔かわいくねぇなぁ‥‥‥〕,
-Cole,俺、ここに来たばっかりだからメンバーの事をよく知らないんだ。教えてくれよ。,
-Cole,だけどノーズはレイの事を色々な面で心配してくれているよ。,
-Cole,‥‥‥あとのメンバーは？,
-Cole,<IF *>そうなんだ‥‥‥レイって意外とモテるんだな。\n〔サリーの言ってた通りだ‥‥‥レイの奴、えらい勘違いをしているようだな〕<ELSE>そうなんだ‥‥‥レイって以外とモテるんだな。<ENDIF>,
-Cole,〔レイのように八つ当たりするよりはマシだと思うけどな‥‥‥〕,
-Cole,成る程ね‥‥‥。,
-Cole,成る程ね‥‥‥。,
-,Ray: よう、アンタたしかコールって言ったよな？,
-,Ray: 昨日は悪かったな、ちょっと頭に来てたんで当たっちまってよ。,
-,Ray: 悪いな‥‥‥。,
-,Ray: コールか‥‥‥今度はどんな用事なんだ？,
-,Ray: 何をさっきから俺の頭ばっかり見てるんだ？　そんなに珍しいものなのかよ。,
-,Ray: よしてくれよ‥‥‥俺はもうあんなチームとは縁を切ったんだ。,
-,Ray: あいつらはとにかくムチャクチャだよ。欲しい物があれば、どんな事をしたって手に入れるさ。殺人だって屁とも思わないような奴等だよ。,
-,Ray: 俺がいた時だって、新車のフェラーリを見つけたと思ったら１分でスクラップにしやがった‥‥‥。俺も当時は喜んで見ていたが、さすがについていけないと思って逃げ出したよ。,
-,Ray: もっとも後で捕まって半殺しにされたがな。,
-,Ray: でも、コール。どうしてそんな事を聞くんだ？,
-,Ray: その為に俺を呼んだんだろ？　いいからさっさと話せよ。,
-,Ray: 悪かったな、俺は生まれつきこういう性格なんだよ。,
-,Ray: 俺だって来たばっかりだぜ。しょうがねぇなぁ‥‥‥。,
-,Ray: グールは俺の意見も聞かずにリーダーになっちまった。俺があいつの言うことを聞いているのは、奴は俺の弱みを握っているからな。,
-,Ray: 俺が車を盗んだ罪を帳消しにするって言うから、仕方なくやってる事だ。,
-,Ray: キールとノーズはどうも好かねぇな。俺の言う事なんてまるっきし聞く耳を持たねぇよ。,
-,Ray: へっ‥‥‥大きなお世話だよ。俺は誰も信じねぇよ。,
-,Ray: サリーはなかなかいい女だな。コールに一つ言っておくが、サリーに手を出しても無駄だよ。あいつは俺に惚れているんだからな。,
-,Ray: そのサリーの隣に昨日座っていた奴が‥‥‥えーと‥‥‥キャッシーとか言ったっけ‥‥‥。,
-,Ray: その女はここに来るなり震え出してよ、まったく情けないったらないよな。今日は部屋から一歩も出て来やしねぇ。,
-,Ray: 俺が知っているのはこのぐらいだな。,
-,Ray: 俺が知っているのはこのぐらいだな。,
-,Ray: またな。,
+Cole,ああ、そうだが。\n〔なんか腹の立つ奴だな‥‥‥〕,"Ah, yeah.\n(He seems like an angry guy.)"
+Cole,ああ、あの事か。そんなに気にする事もないだろう。,"Oh, that. Not that much."
+Cole,レイの髪型は一言で説明できないな。よくこんな感じの髪型をした奴等が駅前で演奏しているのを見た事があるが、もしかしたらレイもその中にいたりして‥‥‥。,"It's hard to describe Ray's hairstyle in a word. I've seen young guys fooling around in front of the train station with hair like this, but Ray doesn't seem like that kind of person."
+Cole,〔むかつくな‥‥‥‥〕,(I hope I don't get sick.)
+Cole,あんまり見ているとまた何か言われるな。ここで頭の事で喧嘩する訳にもいかないし‥‥‥。,"I don't think that sounds right, at least I don't think he was hit in the head."
+Cole,こんな格好をした奴を俗にパンクというが、レイも何か楽器ができるのだろうか。,"Normally, I'd call a guy like this punk, but I don't think he's in a band."
+Cole,身体つきはあまり強そうには見えないが、ちゃんと死霊を相手に戦えるのだろうか‥‥‥。,He doesn't look so tough. Can he actually fight zombies?
+Cole,レイ、ブラッディフォックスって知ってるかい？,Do you know about Bloody Fox?
+Cole,俺も名前だけしか知らないが、一体どんなチームなんだい？,"I only know the name, what sort of people are they?"
+Cole,ブラッディフォックスってただの暴走族じゃなかったのか？,Isn't Bloody Fox just a roving gang?
+Cole,いや、ちょっと気になったもんでね‥‥‥。,"No, I'm a little worried."
+Cole,まずいな‥‥‥もし、そんな奴等にシーラが見つかってしまったら‥‥‥。いくら拳銃をもってるからといって、そんな物にビビる相手じゃないだろうし‥‥‥。,"That's not good... if Sheila runs into them... even with a gun, I'm worried about her..."
+Cole,ちょっと話を聞きたいんだが、いいかい？,Can we talk for a minute?
+Cole,お前、その言葉遣いは何とかならないのか？　聞いててあまり気分のいいモノじゃないぞ？,How can you say things like that? Weren't you listening?
+Cole,〔かわいくねぇなぁ‥‥‥〕,(Very cute.)
+Cole,俺、ここに来たばっかりだからメンバーの事をよく知らないんだ。教えてくれよ。,"I just got here, so I don't know everyone very well. Can you tell me about them?"
+Cole,だけどノーズはレイの事を色々な面で心配してくれているよ。,"Well, Nose is worried about Ray for a few reasons."
+Cole,‥‥‥あとのメンバーは？,What about the others?
+Cole,<IF *>そうなんだ‥‥‥レイって意外とモテるんだな。\n〔サリーの言ってた通りだ‥‥‥レイの奴、えらい勘違いをしているようだな〕<ELSE>そうなんだ‥‥‥レイって以外とモテるんだな。<ENDIF>,<IF *>That's right. Ray is surprisingly popular.\n(That's actually not what Sally told me.)<ELSE>Everyone seems motivated except for Ray.<ENDIF>
+Cole,〔レイのように八つ当たりするよりはマシだと思うけどな‥‥‥〕,(It's probably better than hitting eight like Ray.)
+Cole,成る程ね‥‥‥。,Of course...
+Cole,成る程ね‥‥‥。,Of course...
+,Ray: よう、アンタたしかコールって言ったよな？,"Ray: Cole, right? What do you want?"
+,Ray: 昨日は悪かったな、ちょっと頭に来てたんで当たっちまってよ。,Ray: I wasn't doing so hot yesterday. Took a bad hit to the head.
+,Ray: 悪いな‥‥‥。,Ray: Not good.
+,Ray: コールか‥‥‥今度はどんな用事なんだ？,Ray: What are you up to this time?
+,Ray: 何をさっきから俺の頭ばっかり見てるんだ？　そんなに珍しいものなのかよ。,Ray: What are you staring at my head for? Haven't you seen a head before?
+,Ray: よしてくれよ‥‥‥俺はもうあんなチームとは縁を切ったんだ。,"Ray: Okay, so... I'm no longer associated with them."
+,Ray: あいつらはとにかくムチャクチャだよ。欲しい物があれば、どんな事をしたって手に入れるさ。殺人だって屁とも思わないような奴等だよ。,"Ray: They're rough. If they want something, they just take it. They don't even shy away from murder."
+,Ray: 俺がいた時だって、新車のフェラーリを見つけたと思ったら１分でスクラップにしやがった‥‥‥。俺も当時は喜んで見ていたが、さすがについていけないと思って逃げ出したよ。,"Ray: Even when I was in Bloody Fox, I saw a Ferrari and just took it. I thought that was pretty big, but they weren't impressed. I left, because I thought I couldn't keep up with them."
+,Ray: もっとも後で捕まって半殺しにされたがな。,Ray: They caught me later and almost killed me.
+,Ray: でも、コール。どうしてそんな事を聞くんだ？,Ray: But... where'd you hear about this?
+,Ray: その為に俺を呼んだんだろ？　いいからさっさと話せよ。,Ray: That's why you want to talk? Make it quick.
+,Ray: 悪かったな、俺は生まれつきこういう性格なんだよ。,Ray: I was born this bad.
+,Ray: 俺だって来たばっかりだぜ。しょうがねぇなぁ‥‥‥。,Ray: I just got back on my feet. I can't help.
+,Ray: グールは俺の意見も聞かずにリーダーになっちまった。俺があいつの言うことを聞いているのは、奴は俺の弱みを握っているからな。,Ray: Ghoul appointed himself the leader without any input from me. I'm only agreeing because he knows my weakness.
+,Ray: 俺が車を盗んだ罪を帳消しにするって言うから、仕方なくやってる事だ。,"Ray: The stolen car. Ghoul says if I go along with him, they'll drop the charges after all this."
+,Ray: キールとノーズはどうも好かねぇな。俺の言う事なんてまるっきし聞く耳を持たねぇよ。,Ray: I don't like Killer and Nose. They don't listen to me.
+,Ray: へっ‥‥‥大きなお世話だよ。俺は誰も信じねぇよ。,Ray: Eh. Who cares. I don't care about anyone.
+,Ray: サリーはなかなかいい女だな。コールに一つ言っておくが、サリーに手を出しても無駄だよ。あいつは俺に惚れているんだからな。,Ray: Sally's hot but don't get any funny ideas. She's all mine.
+,Ray: そのサリーの隣に昨日座っていた奴が‥‥‥えーと‥‥‥キャッシーとか言ったっけ‥‥‥。,Ray: The girl sitting next to Sally.. what's her name again? Cassie?
+,Ray: その女はここに来るなり震え出してよ、まったく情けないったらないよな。今日は部屋から一歩も出て来やしねぇ。,Ray: That girl was shaking when we she came here. She's been in her room all day.
+,Ray: 俺が知っているのはこのぐらいだな。,Ray: That's all I know.
+,Ray: 俺が知っているのはこのぐらいだな。,Ray: That's all I know.
+,Ray: またな。,Ray: Seeya.

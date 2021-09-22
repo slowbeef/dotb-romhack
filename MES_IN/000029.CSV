@@ -1,14 +1,17 @@
 Nametag,Japanese,English
-,女性の声：どうぞ、鍵は開いてるわよ。,
-Cole,この廊下は昨日見た時とは全然雰囲気が違うな。あんなに薄気味悪い廊下だったのに‥‥‥。<OR>Cole: <IF>この廊下はいつ来ても薄気味悪いな‥‥‥。<ELSE>なんだか冷えるな‥‥‥風邪でもひいたのかな？,
-Cole,さて、どこへ行こうかな‥‥‥。<OR>Cole: 次はどこに行こうかな‥‥‥。<ENDIF>,
-Cole,電話の感じではみんな集まってるみたいだったな。,
-Cole,まだみんなはこの部屋にいるのかな？,
-Cole,ここはキャッシーっていう女の子の部屋だって聞いたけど‥‥‥。,
-Cole,コールだけど‥‥‥時間あります？,
-Cole,キャッシーの部屋はあそこだったな‥‥‥。,
-Cole,コールだけど‥‥‥入っていいかな？,
-Cole,今出てきたばっかりだからな。取り敢えずミーティングルームの方に行ってみた方がよさそうだ。,
-Cole,シーラはもう部屋に戻ってきてるかな？,
-,Cathy: どうぞ‥‥‥開いてるわ。,
-,ミーティングルーム<A0A1><VAR +>キャッシーの部屋　<A0A1>自分の部屋　　　　<A0A1>,
+,女性の声：どうぞ、鍵は開いてるわよ。,"Woman's Voice: Come on in, door's unlocked."
+Cole,この廊下は昨日見た時とは全然雰囲気が違うな。あんなに薄気味悪い廊下だったのに‥‥‥。<OR>Cole: <IF>この廊下はいつ来ても薄気味悪いな‥‥‥。<ELSE>なんだか冷えるな‥‥‥風邪でもひいたのかな？,The hallway looks so different than yesterday. It was so creepy last night.<OR>Cole: <IF>The corridor was really creepy.<ELSE>Is it cold in here or is it just me?
+Cole,さて、どこへ行こうかな‥‥‥。<OR>Cole: 次はどこに行こうかな‥‥‥。<ENDIF>,Where now?<OR>Cole: Where should I go next?<ENDIF>
+Cole,電話の感じではみんな集まってるみたいだったな。,Looks like a conference call.
+Cole,まだみんなはこの部屋にいるのかな？,Is everyone still here...?
+Cole,ここはキャッシーっていう女の子の部屋だって聞いたけど‥‥‥。,I think this is Cathy's room.
+Cole,コールだけど‥‥‥時間あります？,I'm Cole... do you have a minute?
+Cole,キャッシーの部屋はあそこだったな‥‥‥。,That's Cathy's room over there.
+Cole,コールだけど‥‥‥入っていいかな？,It's Cole... can I come in?
+Cole,今出てきたばっかりだからな。取り敢えずミーティングルームの方に行ってみた方がよさそうだ。,I'm just leaving now. Probably best to go to the meeting room for the time being.
+Cole,シーラはもう部屋に戻ってきてるかな？,Is Sheila back already?
+,Cathy: どうぞ‥‥‥開いてるわ。,"Come on in, the door's open!"
+,ミーティングルーム<A0A1><VAR +>キャッシーの部屋　<A0A1>自分の部屋　　　　<A0A1>,Meeting room<A0A1><VAR +>Cathy's Room<A0A1>Cole's room<A0A1>
+,コンコン‥‥‥。コンコン‥‥‥。,*knock knock*...
+,コンコン‥‥‥。コンコン‥‥‥。\n,*knock knock*...\n
+,女性の声：はい、だあれ？\n,Woman's Voice: Who is it?\n
